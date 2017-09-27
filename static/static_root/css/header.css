@@ -1,0 +1,49 @@
+nav#Header{
+	background-color: white;
+	padding: 8px 0 8px 0;
+}
+#Left-Header{
+	padding-left: 42px;
+	padding-right: 42px;
+}
+
+hr{
+	margin:0 0 0 0;
+}
+
+#tabHeader{
+	border-left: 1px solid #848484;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+#Header.nav-link:hover{
+	color: #ce251c;
+	text-decoration: none;
+}
+
+a#Header{
+	color: black;
+}
+
+/*login Dialog Section*/
+.modal-dialog {
+    width: 300px;
+}
+.modal-footer {
+    height: 70px;
+    margin: 0;
+}
+.modal-footer .btn {
+    font-weight: bold;
+}
+.modal-footer .progress {
+    display: none;
+    height: 32px;
+    margin: 0;
+}
+.input-group-addon {
+    background:black;
+    color:white;
+}
+
