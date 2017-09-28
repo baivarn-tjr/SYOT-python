@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-
 <html>
   <head>
     <head>
+      {% load static %}
     	<title>SYOT: The best online toys store</title>
     	<!-- Boostrap -->
     	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
@@ -13,18 +13,21 @@
     	<!--Font Awesom import-->
       	<script src="https://use.fontawesome.com/ef3af9c398.js"></script>
       	<!-- Css file -->
-      	<link rel="stylesheet" type="text/css" href="css/styleyaya.css">
+        <link rel="stylesheet" type="text/css" href='{% static "css/styleyaya.css" %}' />
+        <link rel="stylesheet" type="text/css" href='{% static "css/header.css" %}' />
+        <link rel="stylesheet" type="text/css" href='{% static "css/footer.css" %}' />
+      	<!-- <link rel="stylesheet" type="text/css" href="css/styleyaya.css">
         <link rel="stylesheet" type="text/css" href="css/header.css">
-        <link rel="stylesheet" type="text/css" href="css/footer.css">
+        <link rel="stylesheet" type="text/css" href="css/footer.css"> -->
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href='{% static "css/style.css" %}' />
     <meta charset="utf-8">
     <!-- <title>yayaa</title> -->
   </head>
   <body>
     <!-- Header section -->
   <nav class="navbar navbar-expand-lg navbar-light" id="Header">
-      <a class="navbar-brand col-lg-3" href="" id="Header"><img src="images/logo.png" width="35" height="35" class="d-inline-block align-top" id="brand-name">SYOT</a>
+      <a class="navbar-brand col-lg-3" href="" id="Header"><img src='{% static "images/logo.png" %}' width="35" height="35" class="d-inline-block align-top" id="brand-name">SYOT</a>
       <div class="collapse navbar-collapse col-lg-6 justify-content-center" id="navHeaderCenter">
           <ul class="navbar-nav" id="centerTabHeader">
             <li class="nav-item active" id="Left-Header">
@@ -41,7 +44,7 @@
             </li>
             <li class="nav-item" id="tabHeader">
                 <a class="nav-link" href="#" id="Header">Contact</a>
-            </li> 
+            </li>
           </ul>
       </div>
     <!--Header Homepage Right-->
