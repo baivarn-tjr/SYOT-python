@@ -25,6 +25,8 @@ SECRET_KEY = 'dl^a_7ll2$ipi9^@p=ic!81t!y5cr#sbec9#3gh*aqrd+spt4p'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+TEMPLATE_DEBUG = True
+
 ALLOWED_HOSTS = []
 
 
@@ -38,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     ####
+    'products',
 
 ]
 

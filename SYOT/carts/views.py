@@ -1,3 +1,7 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 
-# Create your views here.
+def cart(request):
+    context = {}
+    template = 'carts/basket.html'
+    return render(request,template,context)
