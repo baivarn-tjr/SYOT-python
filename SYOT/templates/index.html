@@ -1,8 +1,9 @@
+
 <!DOCTYPE html>
 <html>
   <head>
     <head>
-      {% load static %}
+      {% load staticfiles %}
     	<title>SYOT: The best online toys store</title>
     	<!-- Boostrap -->
     	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
@@ -118,7 +119,7 @@
 
     	<hr>
 
-    <img id="head" src="images/pic4.jpg">
+    <img id="head" src="{% static 'images/pic4.jpg' %}">
     <pre id="text1">
         O U R  N E W
         A R R I V A L S
@@ -128,7 +129,7 @@
     <!-- <div class="foo beige"></div> -->
     <nav>
   <a class="navbar-brand" href="Product-page.html">
-    <img id="pic1" src="images/4.jpg" alt="">
+    <img id="pic1" src="{% static 'images/4.jpg' %}" alt="">
   </a>
 </nav>
     <!-- <img id="pic1" src="4.jpg"> -->
@@ -143,7 +144,7 @@
     </pre>
     <nav>
   <a class="navbar-brand" href="Product-page.html">
-    <img id="pic2" src="images/5.jpg">
+    <img id="pic2" src="{% static 'images/5.jpg' %}">
   </a>
 </nav>
     <!-- <img id="pic2" src="5.jpg"> -->
@@ -159,14 +160,14 @@
     <hr id="hr2"/>
     <nav>
   <a class="navbar-brand" href="Product-page.html">
-    <img id="pic3" src="images/pic6.jpg">
+    <img id="pic3" src="{% static 'images/pic6.jpg' %}">
   </a>
 </nav>
     <!-- <img id="pic3" src="pic6.jpg"> -->
     <div class="foo beige3"></div>
     <pre id="text6">
         B A C K
-        I N
+        I N}
         S T O C K
     </pre>
     <pre id="text7">
