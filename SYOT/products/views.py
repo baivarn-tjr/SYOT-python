@@ -3,17 +3,25 @@ from django.http import HttpResponse, Http404
 from .models import Product, Catagory
 
 def product(request):
-    context = locals()
+    products = Product.objects.all()
+    context = {
+            'products' : products,
+        }
     template = 'product.html'
     return render(request, template , context)
 
 # def product(request):
+#     context = locals()
+#     template = 'start.html'
+#     return render(request, template , context)
+
+# def product(request):
 #     return HttpResponse("<h1></>")
-def catagory(request):
-    # catagory = Catagory.objects.get(id = int(catagory_id))
-    products = Product.objects.all
-    context = {
-        # 'catagory' : catagory,
-        'products' : products,
-    }
-    return render(request, 'product.html', context)
+# def catagory(request):
+#     # catagory = Catagory.objects.get(id = int(catagory_id))
+#     products = Product.objects.all
+#     context = {
+#         # 'catagory' : catagory,
+#         'products' : products,
+#     }
+#     return render(request, 'product.html', context)
