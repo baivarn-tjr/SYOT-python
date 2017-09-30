@@ -2,13 +2,23 @@ from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse, Http404
 from .models import Product, Catagory
 
-def product(request):
+def index(request):
     products = Product.objects.all()
     context = {
             'products' : products,
         }
     template = 'product.html'
     return render(request, template , context)
+
+#
+def detail(request, product_id):
+    product = Product.objects.get(id = product_id)
+    quantityWarning = 20
+    context = {
+        'getProduct' : product,
+        'quantityWarning' : quantityWarning,
+    }
+    return render(request, 'Product-page.html', context)
 
 # def product(request):
 #     context = locals()
