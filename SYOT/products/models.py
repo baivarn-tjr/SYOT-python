@@ -32,7 +32,7 @@ class Product(models.Model):
     #     ('GR', 'Green Read Paper'),
     # )
 
-    id = models.AutoField(primary_key=True)
+    id = models.AutoField(primary_key=True,db_column='ProductID')
     # idpro = models.DecimalField(max_digits = 13, decimal_places = 0, unique = True)
     name = models.CharField(max_length = 250)
     description = models.TextField(blank = True)
