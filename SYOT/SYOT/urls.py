@@ -16,6 +16,8 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from django.views.generic import TemplateView
+from django.conf import settings
+from django.conf.urls.static import static
 
 from products import views as products_views
 from carts import views as carts_views
@@ -27,4 +29,6 @@ urlpatterns = [
     url(r'^products/$', products_views.product, name='product'),
     url(r'^carts/$', carts_views.cart, name='cart'),
     url(r'^favorite/$', favorite_views.favorite, name='favorite'),
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+

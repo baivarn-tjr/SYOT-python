@@ -248,3 +248,488 @@
 [Sat Sep 30 13:46:36.592779 2017] [wsgi:error] [pid 21813:tid 140429478299392] Not Found: /static/images/5.jpg
 [Sat Sep 30 13:46:36.637861 2017] [wsgi:error] [pid 21813:tid 140429478299392] Not Found: /static/images/pic4.jpg
 [Sat Sep 30 13:46:36.638747 2017] [wsgi:error] [pid 21813:tid 140429469898496] Not Found: /static/images/4.jpg
+[Sat Sep 30 13:49:10.322981 2017] [wsgi:error] [pid 21813:tid 140429579110144] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 13:49:10.326176 2017] [wsgi:error] [pid 21813:tid 140429469898496] Not Found: /static/css/footer.css
+[Sat Sep 30 13:49:10.386175 2017] [wsgi:error] [pid 21813:tid 140429478299392] Not Found: /static/css/header.css
+[Sat Sep 30 13:49:10.460890 2017] [wsgi:error] [pid 21813:tid 140429579110144] Not Found: /static/css/style.css
+[Sat Sep 30 13:49:25.229492 2017] [wsgi:error] [pid 21813:tid 140429478299392] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 13:53:52.083836 2017] [mpm_event:notice] [pid 21269:tid 140429689317248] AH00493: SIGUSR1 received.  Doing graceful restart
+[Sat Sep 30 13:53:52.182700 2017] [wsgi:warn] [pid 21269:tid 140429689317248] mod_wsgi: Compiled for Python/3.5.1+.
+[Sat Sep 30 13:53:52.182716 2017] [wsgi:warn] [pid 21269:tid 140429689317248] mod_wsgi: Runtime using Python/3.5.2.
+[Sat Sep 30 13:53:52.182971 2017] [mpm_event:notice] [pid 21269:tid 140429689317248] AH00489: Apache/2.4.18 (Ubuntu) mod_wsgi/4.3.0 Python/3.5.2 configured -- resuming normal operations
+[Sat Sep 30 13:53:52.182982 2017] [core:notice] [pid 21269:tid 140429689317248] AH00094: Command line: '/usr/sbin/apache2'
+[Sat Sep 30 13:53:55.506619 2017] [wsgi:error] [pid 21995:tid 140429495101184] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 13:53:59.389531 2017] [wsgi:error] [pid 21995:tid 140429495101184] Not Found: /static/css/footer.css
+[Sat Sep 30 13:53:59.396255 2017] [wsgi:error] [pid 21995:tid 140429579110144] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 13:53:59.469392 2017] [wsgi:error] [pid 21995:tid 140429495101184] Not Found: /static/css/style.css
+[Sat Sep 30 13:53:59.472130 2017] [wsgi:error] [pid 21995:tid 140429579110144] Not Found: /static/css/header.css
+[Sat Sep 30 13:53:59.556572 2017] [wsgi:error] [pid 21995:tid 140429570709248] Not Found: /static/images/logo.png
+[Sat Sep 30 13:53:59.625071 2017] [wsgi:error] [pid 21995:tid 140429579110144] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 13:53:59.625227 2017] [wsgi:error] [pid 21995:tid 140429570709248] Not Found: /static/css/footer.css
+[Sat Sep 30 13:53:59.672826 2017] [wsgi:error] [pid 21995:tid 140429495101184] Not Found: /static/images/5.jpg
+[Sat Sep 30 13:53:59.676486 2017] [wsgi:error] [pid 21995:tid 140429579110144] Not Found: /static/images/pic6.jpg
+[Sat Sep 30 13:53:59.694578 2017] [wsgi:error] [pid 21995:tid 140429495101184] Not Found: /static/css/style.css
+[Sat Sep 30 13:53:59.703418 2017] [wsgi:error] [pid 21995:tid 140429579110144] Not Found: /static/images/4.jpg
+[Sat Sep 30 13:53:59.703529 2017] [wsgi:error] [pid 21995:tid 140429495101184] Not Found: /static/images/pic4.jpg
+[Sat Sep 30 13:53:59.714696 2017] [wsgi:error] [pid 21995:tid 140429570709248] Not Found: /static/css/header.css
+[Sat Sep 30 13:54:02.513339 2017] [wsgi:error] [pid 21995:tid 140429570709248] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 13:54:02.539709 2017] [wsgi:error] [pid 21995:tid 140429495101184] Not Found: /static/css/footer.css
+[Sat Sep 30 13:54:02.628209 2017] [wsgi:error] [pid 21995:tid 140429570709248] Not Found: /static/css/header.css
+[Sat Sep 30 13:54:02.639675 2017] [wsgi:error] [pid 21995:tid 140429495101184] Not Found: /static/css/style.css
+[Sat Sep 30 13:54:02.756020 2017] [wsgi:error] [pid 21995:tid 140429570709248] Not Found: /static/images/logo.png
+[Sat Sep 30 13:54:02.756148 2017] [wsgi:error] [pid 21995:tid 140429495101184] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 13:54:02.762579 2017] [wsgi:error] [pid 21995:tid 140429579110144] Not Found: /static/css/footer.css
+[Sat Sep 30 13:54:02.765359 2017] [wsgi:error] [pid 21995:tid 140429570709248] Not Found: /static/images/pic6.jpg
+[Sat Sep 30 13:54:02.794960 2017] [wsgi:error] [pid 21995:tid 140429579110144] Not Found: /static/css/header.css
+[Sat Sep 30 13:54:02.838772 2017] [wsgi:error] [pid 21995:tid 140429570709248] Not Found: /static/images/pic4.jpg
+[Sat Sep 30 13:54:02.841409 2017] [wsgi:error] [pid 21995:tid 140429579110144] Not Found: /static/css/style.css
+[Sat Sep 30 13:54:02.844306 2017] [wsgi:error] [pid 21995:tid 140429495101184] Not Found: /static/images/4.jpg
+[Sat Sep 30 13:54:02.910748 2017] [wsgi:error] [pid 21995:tid 140429579110144] Not Found: /static/images/5.jpg
+[Sat Sep 30 13:54:04.089840 2017] [wsgi:error] [pid 21995:tid 140429570709248] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 13:56:00.358411 2017] [wsgi:error] [pid 21995:tid 140429579110144] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 13:57:26.402234 2017] [mpm_event:notice] [pid 21269:tid 140429689317248] AH00493: SIGUSR1 received.  Doing graceful restart
+[Sat Sep 30 13:57:26.501354 2017] [wsgi:warn] [pid 21269:tid 140429689317248] mod_wsgi: Compiled for Python/3.5.1+.
+[Sat Sep 30 13:57:26.501369 2017] [wsgi:warn] [pid 21269:tid 140429689317248] mod_wsgi: Runtime using Python/3.5.2.
+[Sat Sep 30 13:57:26.501611 2017] [mpm_event:notice] [pid 21269:tid 140429689317248] AH00489: Apache/2.4.18 (Ubuntu) mod_wsgi/4.3.0 Python/3.5.2 configured -- resuming normal operations
+[Sat Sep 30 13:57:26.501622 2017] [core:notice] [pid 21269:tid 140429689317248] AH00094: Command line: '/usr/sbin/apache2'
+[Sat Sep 30 13:57:30.775465 2017] [wsgi:error] [pid 22115:tid 140429461497600] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 13:57:30.801508 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/css/footer.css
+[Sat Sep 30 13:57:30.849792 2017] [wsgi:error] [pid 22115:tid 140429461497600] Not Found: /static/css/header.css
+[Sat Sep 30 13:57:30.854203 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/css/style.css
+[Sat Sep 30 13:57:30.942357 2017] [wsgi:error] [pid 22115:tid 140429461497600] Not Found: /static/images/logo.png
+[Sat Sep 30 13:57:31.014882 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/images/pic4.jpg
+[Sat Sep 30 13:57:31.048744 2017] [wsgi:error] [pid 22115:tid 140429461497600] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 13:57:31.054442 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/css/footer.css
+[Sat Sep 30 13:57:31.054550 2017] [wsgi:error] [pid 22115:tid 140429469898496] Not Found: /static/images/pic6.jpg
+[Sat Sep 30 13:57:31.096065 2017] [wsgi:error] [pid 22115:tid 140429478299392] Not Found: /static/css/header.css
+[Sat Sep 30 13:57:31.098905 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/css/style.css
+[Sat Sep 30 13:57:31.129331 2017] [wsgi:error] [pid 22115:tid 140429469898496] Not Found: /static/images/4.jpg
+[Sat Sep 30 13:57:31.173971 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/images/5.jpg
+[Sat Sep 30 13:57:31.997870 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 13:57:32.037069 2017] [wsgi:error] [pid 22115:tid 140429469898496] Not Found: /static/css/footer.css
+[Sat Sep 30 13:57:32.080634 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/css/header.css
+[Sat Sep 30 13:57:32.134685 2017] [wsgi:error] [pid 22115:tid 140429469898496] Not Found: /static/css/style.css
+[Sat Sep 30 13:57:32.231642 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/images/logo.png
+[Sat Sep 30 13:57:32.231787 2017] [wsgi:error] [pid 22115:tid 140429469898496] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 13:57:32.235220 2017] [wsgi:error] [pid 22115:tid 140429478299392] Not Found: /static/css/footer.css
+[Sat Sep 30 13:57:32.240569 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/images/pic6.jpg
+[Sat Sep 30 13:57:32.304381 2017] [wsgi:error] [pid 22115:tid 140429478299392] Not Found: /static/images/4.jpg
+[Sat Sep 30 13:57:32.319575 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/images/pic4.jpg
+[Sat Sep 30 13:57:32.327100 2017] [wsgi:error] [pid 22115:tid 140429478299392] Not Found: /static/css/header.css
+[Sat Sep 30 13:57:32.330780 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/images/5.jpg
+[Sat Sep 30 13:57:35.457273 2017] [wsgi:error] [pid 22115:tid 140429478299392] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 13:57:36.383955 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 13:57:37.255930 2017] [wsgi:error] [pid 22115:tid 140429478299392] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 13:57:38.310020 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 13:57:39.461046 2017] [wsgi:error] [pid 22115:tid 140429478299392] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 13:57:40.259140 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 13:57:47.143726 2017] [wsgi:error] [pid 22115:tid 140429478299392] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 14:02:08.226699 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /templates
+[Sat Sep 30 14:03:17.686983 2017] [wsgi:error] [pid 22115:tid 140429478299392] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 14:04:36.565843 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /robots.txt
+[Sat Sep 30 14:04:38.219411 2017] [wsgi:error] [pid 22115:tid 140429478299392] Not Found: /product.html
+[Sat Sep 30 14:04:38.485421 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /basket.html
+[Sat Sep 30 14:04:38.494712 2017] [wsgi:error] [pid 22115:tid 140429478299392] Not Found: /favorite.html
+[Sat Sep 30 14:04:38.675308 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /product.html
+[Sat Sep 30 14:04:38.952936 2017] [wsgi:error] [pid 22115:tid 140429478299392] Not Found: /basket.html
+[Sat Sep 30 14:04:38.965025 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /favorite.html
+[Sat Sep 30 14:04:39.467178 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /Product-page.html
+[Sat Sep 30 14:04:39.928599 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /Product-page.html
+[Sat Sep 30 14:04:39.958202 2017] [wsgi:error] [pid 22115:tid 140429478299392] Not Found: /products/product.html
+[Sat Sep 30 14:04:40.188459 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /products/basket.html
+[Sat Sep 30 14:04:40.427294 2017] [wsgi:error] [pid 22115:tid 140429478299392] Not Found: /products/product.html
+[Sat Sep 30 14:04:40.447827 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /products/favorite.html
+[Sat Sep 30 14:04:40.643851 2017] [wsgi:error] [pid 22115:tid 140429478299392] Not Found: /products/basket.html
+[Sat Sep 30 14:04:40.917861 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /products/favorite.html
+[Sat Sep 30 14:06:28.981704 2017] [wsgi:error] [pid 22115:tid 140429478299392] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 14:06:53.293602 2017] [wsgi:error] [pid 22115:tid 140429478299392] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 14:06:53.323696 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/css/footer.css
+[Sat Sep 30 14:06:53.343455 2017] [wsgi:error] [pid 22115:tid 140429478299392] Not Found: /static/css/header.css
+[Sat Sep 30 14:06:53.358535 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/css/style.css
+[Sat Sep 30 14:06:53.450110 2017] [wsgi:error] [pid 22115:tid 140429478299392] Not Found: /static/images/logo.png
+[Sat Sep 30 14:06:53.526811 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/images/pic4.jpg
+[Sat Sep 30 14:06:53.597045 2017] [wsgi:error] [pid 22115:tid 140429478299392] Not Found: /static/images/4.jpg
+[Sat Sep 30 14:06:53.754862 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/images/5.jpg
+[Sat Sep 30 14:06:53.849590 2017] [wsgi:error] [pid 22115:tid 140429478299392] Not Found: /static/images/pic6.jpg
+[Sat Sep 30 14:06:53.932571 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 14:06:53.932709 2017] [wsgi:error] [pid 22115:tid 140429478299392] Not Found: /static/css/footer.css
+[Sat Sep 30 14:06:53.942016 2017] [wsgi:error] [pid 22115:tid 140429469898496] Not Found: /static/css/style.css
+[Sat Sep 30 14:06:53.954295 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/css/header.css
+[Sat Sep 30 14:07:00.572601 2017] [wsgi:error] [pid 22115:tid 140429469898496] Not Found: /product.html
+[Sat Sep 30 14:07:08.024448 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 14:07:08.049809 2017] [wsgi:error] [pid 22115:tid 140429469898496] Not Found: /static/images/pic6.jpg
+[Sat Sep 30 14:07:08.054028 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/css/header.css
+[Sat Sep 30 14:07:08.060057 2017] [wsgi:error] [pid 22115:tid 140429469898496] Not Found: /static/css/style.css
+[Sat Sep 30 14:07:08.062739 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/images/logo.png
+[Sat Sep 30 14:07:08.092092 2017] [wsgi:error] [pid 22115:tid 140429478299392] Not Found: /static/images/pic4.jpg
+[Sat Sep 30 14:07:08.096534 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/images/5.jpg
+[Sat Sep 30 14:07:08.122277 2017] [wsgi:error] [pid 22115:tid 140429478299392] Not Found: /static/images/4.jpg
+[Sat Sep 30 14:07:11.254468 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /product.html
+[Sat Sep 30 14:07:12.429417 2017] [wsgi:error] [pid 22115:tid 140429478299392] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 14:07:12.444309 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/images/pic6.jpg
+[Sat Sep 30 14:07:12.449889 2017] [wsgi:error] [pid 22115:tid 140429478299392] Not Found: /static/images/logo.png
+[Sat Sep 30 14:07:12.457008 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/css/style.css
+[Sat Sep 30 14:07:12.464125 2017] [wsgi:error] [pid 22115:tid 140429478299392] Not Found: /static/css/header.css
+[Sat Sep 30 14:07:12.471287 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/images/5.jpg
+[Sat Sep 30 14:07:12.524711 2017] [wsgi:error] [pid 22115:tid 140429478299392] Not Found: /static/images/4.jpg
+[Sat Sep 30 14:07:12.527461 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/images/pic4.jpg
+[Sat Sep 30 14:07:18.343946 2017] [wsgi:error] [pid 22115:tid 140429469898496] Not Found: /product.html
+[Sat Sep 30 14:07:20.041914 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 14:07:20.052790 2017] [wsgi:error] [pid 22115:tid 140429469898496] Not Found: /static/css/style.css
+[Sat Sep 30 14:07:20.065127 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/css/header.css
+[Sat Sep 30 14:07:20.078475 2017] [wsgi:error] [pid 22115:tid 140429469898496] Not Found: /static/images/pic6.jpg
+[Sat Sep 30 14:07:20.081188 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/images/logo.png
+[Sat Sep 30 14:07:20.096785 2017] [wsgi:error] [pid 22115:tid 140429478299392] Not Found: /static/images/5.jpg
+[Sat Sep 30 14:07:20.120163 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/images/pic4.jpg
+[Sat Sep 30 14:07:20.126493 2017] [wsgi:error] [pid 22115:tid 140429478299392] Not Found: /static/images/4.jpg
+[Sat Sep 30 14:07:22.853740 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /product.html
+[Sat Sep 30 14:07:33.600193 2017] [wsgi:error] [pid 22115:tid 140429478299392] Not Found: /favorite.html
+[Sat Sep 30 14:07:39.280518 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 14:07:39.298512 2017] [wsgi:error] [pid 22115:tid 140429478299392] Not Found: /static/css/header.css
+[Sat Sep 30 14:07:39.302758 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/css/style.css
+[Sat Sep 30 14:07:39.316712 2017] [wsgi:error] [pid 22115:tid 140429478299392] Not Found: /static/images/logo.png
+[Sat Sep 30 14:07:39.319341 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/images/pic6.jpg
+[Sat Sep 30 14:07:39.329589 2017] [wsgi:error] [pid 22115:tid 140429469898496] Not Found: /static/images/5.jpg
+[Sat Sep 30 14:07:39.347669 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/images/pic4.jpg
+[Sat Sep 30 14:07:39.375842 2017] [wsgi:error] [pid 22115:tid 140429469898496] Not Found: /static/images/4.jpg
+[Sat Sep 30 14:07:45.134382 2017] [wsgi:error] [pid 22115:tid 140429469898496] Not Found: /static/css/footer.css
+[Sat Sep 30 14:07:45.143234 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/css/header.css
+[Sat Sep 30 14:07:45.151707 2017] [wsgi:error] [pid 22115:tid 140429469898496] Not Found: /static/css/style.css
+[Sat Sep 30 14:07:45.198095 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/images/logo.png
+[Sat Sep 30 14:07:45.334646 2017] [wsgi:error] [pid 22115:tid 140429469898496] Not Found: /static/css/header.css
+[Sat Sep 30 14:07:45.338836 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/css/footer.css
+[Sat Sep 30 14:07:45.346313 2017] [wsgi:error] [pid 22115:tid 140429469898496] Not Found: /static/css/style.css
+[Sat Sep 30 14:07:47.510827 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 14:07:47.517216 2017] [wsgi:error] [pid 22115:tid 140429469898496] Not Found: /static/css/footer.css
+[Sat Sep 30 14:07:47.539580 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/images/pic6.jpg
+[Sat Sep 30 14:07:47.539700 2017] [wsgi:error] [pid 22115:tid 140429469898496] Not Found: /static/images/logo.png
+[Sat Sep 30 14:07:47.562871 2017] [wsgi:error] [pid 22115:tid 140429478299392] Not Found: /static/css/header.css
+[Sat Sep 30 14:07:47.592137 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/images/pic4.jpg
+[Sat Sep 30 14:07:47.606889 2017] [wsgi:error] [pid 22115:tid 140429478299392] Not Found: /static/css/style.css
+[Sat Sep 30 14:07:47.610635 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/images/4.jpg
+[Sat Sep 30 14:07:47.656625 2017] [wsgi:error] [pid 22115:tid 140429478299392] Not Found: /static/images/5.jpg
+[Sat Sep 30 14:07:49.941404 2017] [wsgi:error] [pid 22115:tid 140429478299392] Not Found: /static/css/footer.css
+[Sat Sep 30 14:07:49.952186 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/css/style.css
+[Sat Sep 30 14:07:49.956397 2017] [wsgi:error] [pid 22115:tid 140429478299392] Not Found: /static/css/header.css
+[Sat Sep 30 14:07:50.001473 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/images/logo.png
+[Sat Sep 30 14:07:50.102192 2017] [wsgi:error] [pid 22115:tid 140429478299392] Not Found: /static/css/header.css
+[Sat Sep 30 14:07:50.104848 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/css/style.css
+[Sat Sep 30 14:07:50.140070 2017] [wsgi:error] [pid 22115:tid 140429469898496] Not Found: /static/css/footer.css
+[Sat Sep 30 14:07:53.405134 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/css/header.css
+[Sat Sep 30 14:07:53.405317 2017] [wsgi:error] [pid 22115:tid 140429469898496] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 14:07:53.448538 2017] [wsgi:error] [pid 22115:tid 140429478299392] Not Found: /static/images/pic6.jpg
+[Sat Sep 30 14:07:53.476232 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/css/style.css
+[Sat Sep 30 14:07:53.504185 2017] [wsgi:error] [pid 22115:tid 140429478299392] Not Found: /static/images/pic4.jpg
+[Sat Sep 30 14:07:53.522978 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/images/4.jpg
+[Sat Sep 30 14:07:53.534066 2017] [wsgi:error] [pid 22115:tid 140429478299392] Not Found: /static/images/5.jpg
+[Sat Sep 30 14:07:53.837035 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/css/footer.css
+[Sat Sep 30 14:07:53.846595 2017] [wsgi:error] [pid 22115:tid 140429478299392] Not Found: /static/images/logo.png
+[Sat Sep 30 14:08:18.430037 2017] [wsgi:error] [pid 22115:tid 140429478299392] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 14:08:18.459672 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/css/footer.css
+[Sat Sep 30 14:08:18.495705 2017] [wsgi:error] [pid 22115:tid 140429478299392] Not Found: /static/css/style.css
+[Sat Sep 30 14:08:18.498677 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/css/header.css
+[Sat Sep 30 14:08:18.588095 2017] [wsgi:error] [pid 22115:tid 140429469898496] Not Found: /static/images/logo.png
+[Sat Sep 30 14:08:18.654061 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/images/pic4.jpg
+[Sat Sep 30 14:08:18.663088 2017] [wsgi:error] [pid 22115:tid 140429469898496] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 14:08:18.677072 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/images/pic6.jpg
+[Sat Sep 30 14:08:18.677199 2017] [wsgi:error] [pid 22115:tid 140429469898496] Not Found: /static/css/footer.css
+[Sat Sep 30 14:08:18.680697 2017] [wsgi:error] [pid 22115:tid 140429478299392] Not Found: /static/css/style.css
+[Sat Sep 30 14:08:18.710206 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/css/header.css
+[Sat Sep 30 14:08:18.739409 2017] [wsgi:error] [pid 22115:tid 140429478299392] Not Found: /static/images/4.jpg
+[Sat Sep 30 14:08:18.750391 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/images/5.jpg
+[Sat Sep 30 14:09:35.648071 2017] [wsgi:error] [pid 22115:tid 140429478299392] Not Found: /static/css/footer.css
+[Sat Sep 30 14:09:35.648238 2017] [wsgi:error] [pid 22115:tid 140429570709248] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 14:09:35.658201 2017] [wsgi:error] [pid 22115:tid 140429469898496] Not Found: /static/css/header.css
+[Sat Sep 30 14:09:35.663371 2017] [wsgi:error] [pid 22115:tid 140429478299392] Not Found: /static/css/style.css
+[Sat Sep 30 14:10:08.183262 2017] [mpm_event:notice] [pid 21269:tid 140429689317248] AH00493: SIGUSR1 received.  Doing graceful restart
+[Sat Sep 30 14:10:08.282352 2017] [wsgi:warn] [pid 21269:tid 140429689317248] mod_wsgi: Compiled for Python/3.5.1+.
+[Sat Sep 30 14:10:08.282367 2017] [wsgi:warn] [pid 21269:tid 140429689317248] mod_wsgi: Runtime using Python/3.5.2.
+[Sat Sep 30 14:10:08.282651 2017] [mpm_event:notice] [pid 21269:tid 140429689317248] AH00489: Apache/2.4.18 (Ubuntu) mod_wsgi/4.3.0 Python/3.5.2 configured -- resuming normal operations
+[Sat Sep 30 14:10:08.282666 2017] [core:notice] [pid 21269:tid 140429689317248] AH00094: Command line: '/usr/sbin/apache2'
+[Sat Sep 30 14:10:10.621263 2017] [wsgi:error] [pid 22258:tid 140429461489408] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 14:10:10.649546 2017] [wsgi:error] [pid 22258:tid 140429579110144] Not Found: /static/css/footer.css
+[Sat Sep 30 14:10:10.660040 2017] [wsgi:error] [pid 22258:tid 140429461489408] Not Found: /static/css/style.css
+[Sat Sep 30 14:10:10.675641 2017] [wsgi:error] [pid 22258:tid 140429579110144] Not Found: /static/css/header.css
+[Sat Sep 30 14:10:10.849763 2017] [wsgi:error] [pid 22258:tid 140429461489408] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 14:10:10.853477 2017] [wsgi:error] [pid 22258:tid 140429469890304] Not Found: /static/images/pic6.jpg
+[Sat Sep 30 14:10:10.853673 2017] [wsgi:error] [pid 22258:tid 140429579110144] Not Found: /static/css/header.css
+[Sat Sep 30 14:10:10.872879 2017] [wsgi:error] [pid 22258:tid 140429478291200] Not Found: /static/images/logo.png
+[Sat Sep 30 14:10:10.892763 2017] [wsgi:error] [pid 22258:tid 140429579110144] Not Found: /static/css/footer.css
+[Sat Sep 30 14:10:10.892899 2017] [wsgi:error] [pid 22258:tid 140429478291200] Not Found: /static/css/style.css
+[Sat Sep 30 14:10:10.932609 2017] [wsgi:error] [pid 22258:tid 140429469890304] Not Found: /static/images/pic4.jpg
+[Sat Sep 30 14:10:10.939247 2017] [wsgi:error] [pid 22258:tid 140429579110144] Not Found: /static/images/4.jpg
+[Sat Sep 30 14:10:10.939365 2017] [wsgi:error] [pid 22258:tid 140429469890304] Not Found: /static/images/5.jpg
+[Sat Sep 30 14:11:07.393355 2017] [wsgi:error] [pid 22258:tid 140429579110144] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 14:11:07.420377 2017] [wsgi:error] [pid 22258:tid 140429478291200] Not Found: /static/css/footer.css
+[Sat Sep 30 14:11:07.435566 2017] [wsgi:error] [pid 22258:tid 140429579110144] Not Found: /static/css/header.css
+[Sat Sep 30 14:11:07.452551 2017] [wsgi:error] [pid 22258:tid 140429478291200] Not Found: /static/css/style.css
+[Sat Sep 30 14:11:07.535863 2017] [wsgi:error] [pid 22258:tid 140429579110144] Not Found: /static/images/logo.png
+[Sat Sep 30 14:11:07.579541 2017] [wsgi:error] [pid 22258:tid 140429478291200] Not Found: /static/images/pic4.jpg
+[Sat Sep 30 14:11:07.631483 2017] [wsgi:error] [pid 22258:tid 140429579110144] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 14:11:07.638093 2017] [wsgi:error] [pid 22258:tid 140429478291200] Not Found: /static/css/footer.css
+[Sat Sep 30 14:11:07.670769 2017] [wsgi:error] [pid 22258:tid 140429478291200] Not Found: /static/css/style.css
+[Sat Sep 30 14:11:07.672003 2017] [wsgi:error] [pid 22258:tid 140429579110144] Not Found: /static/css/header.css
+[Sat Sep 30 14:11:07.674936 2017] [wsgi:error] [pid 22258:tid 140429469890304] Not Found: /static/images/pic6.jpg
+[Sat Sep 30 14:11:07.697342 2017] [wsgi:error] [pid 22258:tid 140429478291200] Not Found: /static/images/5.jpg
+[Sat Sep 30 14:11:07.705137 2017] [wsgi:error] [pid 22258:tid 140429579110144] Not Found: /static/images/4.jpg
+[Sat Sep 30 14:11:21.185635 2017] [wsgi:error] [pid 22258:tid 140429478291200] Not Found: /static/css/style.css
+[Sat Sep 30 14:13:10.031089 2017] [wsgi:error] [pid 22258:tid 140429478291200] Not Found: /static/css/style.css
+[Sat Sep 30 14:13:10.063054 2017] [wsgi:error] [pid 22258:tid 140429579110144] Not Found: /static/css/footer.css
+[Sat Sep 30 14:13:10.071096 2017] [wsgi:error] [pid 22258:tid 140429478291200] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 14:13:10.120829 2017] [wsgi:error] [pid 22258:tid 140429579110144] Not Found: /static/css/header.css
+[Sat Sep 30 14:13:10.204277 2017] [wsgi:error] [pid 22258:tid 140429478291200] Not Found: /static/images/logo.png
+[Sat Sep 30 14:13:10.273140 2017] [wsgi:error] [pid 22258:tid 140429579110144] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 14:13:10.280870 2017] [wsgi:error] [pid 22258:tid 140429478291200] Not Found: /static/images/pic6.jpg
+[Sat Sep 30 14:13:10.283557 2017] [wsgi:error] [pid 22258:tid 140429579110144] Not Found: /static/css/footer.css
+[Sat Sep 30 14:13:10.318872 2017] [wsgi:error] [pid 22258:tid 140429469890304] Not Found: /static/css/header.css
+[Sat Sep 30 14:13:10.343534 2017] [wsgi:error] [pid 22258:tid 140429579110144] Not Found: /static/css/style.css
+[Sat Sep 30 14:13:10.343681 2017] [wsgi:error] [pid 22258:tid 140429469890304] Not Found: /static/images/pic4.jpg
+[Sat Sep 30 14:13:10.349651 2017] [wsgi:error] [pid 22258:tid 140429478291200] Not Found: /static/images/4.jpg
+[Sat Sep 30 14:13:10.352296 2017] [wsgi:error] [pid 22258:tid 140429579110144] Not Found: /static/images/5.jpg
+[Sat Sep 30 14:13:32.990231 2017] [wsgi:error] [pid 22258:tid 140429579110144] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 14:13:33.034605 2017] [wsgi:error] [pid 22258:tid 140429478291200] Not Found: /static/css/footer.css
+[Sat Sep 30 14:13:33.058641 2017] [wsgi:error] [pid 22258:tid 140429579110144] Not Found: /static/css/style.css
+[Sat Sep 30 14:13:33.061869 2017] [wsgi:error] [pid 22258:tid 140429478291200] Not Found: /static/css/header.css
+[Sat Sep 30 14:13:33.168909 2017] [wsgi:error] [pid 22258:tid 140429579110144] Not Found: /static/images/logo.png
+[Sat Sep 30 14:13:33.226061 2017] [wsgi:error] [pid 22258:tid 140429478291200] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 14:13:33.228743 2017] [wsgi:error] [pid 22258:tid 140429469890304] Not Found: /static/css/footer.css
+[Sat Sep 30 14:13:33.231445 2017] [wsgi:error] [pid 22258:tid 140429579110144] Not Found: /static/images/pic6.jpg
+[Sat Sep 30 14:13:33.279248 2017] [wsgi:error] [pid 22258:tid 140429461489408] Not Found: /static/css/style.css
+[Sat Sep 30 14:13:33.302270 2017] [wsgi:error] [pid 22258:tid 140429579110144] Not Found: /static/images/pic4.jpg
+[Sat Sep 30 14:13:33.302389 2017] [wsgi:error] [pid 22258:tid 140429478291200] Not Found: /static/images/5.jpg
+[Sat Sep 30 14:13:33.302634 2017] [wsgi:error] [pid 22258:tid 140429461489408] Not Found: /static/images/4.jpg
+[Sat Sep 30 14:13:33.310806 2017] [wsgi:error] [pid 22258:tid 140429469890304] Not Found: /static/css/header.css
+[Sat Sep 30 14:18:08.227553 2017] [wsgi:error] [pid 22258:tid 140429579110144] Not Found: /static/css/style.css
+[Sat Sep 30 14:18:09.574759 2017] [wsgi:error] [pid 22258:tid 140429579110144] Not Found: /static/css/style.css
+[Sat Sep 30 14:18:09.600792 2017] [wsgi:error] [pid 22258:tid 140429469890304] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 14:18:09.603508 2017] [wsgi:error] [pid 22258:tid 140429579110144] Not Found: /static/css/footer.css
+[Sat Sep 30 14:18:09.626963 2017] [wsgi:error] [pid 22258:tid 140429461489408] Not Found: /static/css/header.css
+[Sat Sep 30 14:18:09.699121 2017] [wsgi:error] [pid 22258:tid 140429579110144] Not Found: /static/images/logo.png
+[Sat Sep 30 14:18:09.742279 2017] [wsgi:error] [pid 22258:tid 140429461489408] Not Found: /static/images/pic4.jpg
+[Sat Sep 30 14:18:09.767608 2017] [wsgi:error] [pid 22258:tid 140429579110144] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 14:18:09.805068 2017] [wsgi:error] [pid 22258:tid 140429461489408] Not Found: /static/css/footer.css
+[Sat Sep 30 14:18:09.815568 2017] [wsgi:error] [pid 22258:tid 140429579110144] Not Found: /static/css/header.css
+[Sat Sep 30 14:18:09.825195 2017] [wsgi:error] [pid 22258:tid 140429461489408] Not Found: /static/images/pic6.jpg
+[Sat Sep 30 14:18:09.837453 2017] [wsgi:error] [pid 22258:tid 140429579110144] Not Found: /static/images/4.jpg
+[Sat Sep 30 14:18:09.845376 2017] [wsgi:error] [pid 22258:tid 140429461489408] Not Found: /static/images/5.jpg
+[Sat Sep 30 14:18:09.849723 2017] [wsgi:error] [pid 22258:tid 140429579110144] Not Found: /static/css/style.css
+[Sat Sep 30 14:18:27.017385 2017] [mpm_event:notice] [pid 21269:tid 140429689317248] AH00493: SIGUSR1 received.  Doing graceful restart
+[Sat Sep 30 14:18:27.116139 2017] [wsgi:warn] [pid 21269:tid 140429689317248] mod_wsgi: Compiled for Python/3.5.1+.
+[Sat Sep 30 14:18:27.117377 2017] [wsgi:warn] [pid 21269:tid 140429689317248] mod_wsgi: Runtime using Python/3.5.2.
+[Sat Sep 30 14:18:27.117637 2017] [mpm_event:notice] [pid 21269:tid 140429689317248] AH00489: Apache/2.4.18 (Ubuntu) mod_wsgi/4.3.0 Python/3.5.2 configured -- resuming normal operations
+[Sat Sep 30 14:18:27.117649 2017] [core:notice] [pid 21269:tid 140429689317248] AH00094: Command line: '/usr/sbin/apache2'
+[Sat Sep 30 14:18:30.053647 2017] [mpm_event:notice] [pid 21269:tid 140429689317248] AH00491: caught SIGTERM, shutting down
+[Sat Sep 30 14:18:31.060100 2017] [wsgi:warn] [pid 22555:tid 140445321856896] mod_wsgi: Compiled for Python/3.5.1+.
+[Sat Sep 30 14:18:31.060138 2017] [wsgi:warn] [pid 22555:tid 140445321856896] mod_wsgi: Runtime using Python/3.5.2.
+[Sat Sep 30 14:18:31.060744 2017] [mpm_event:notice] [pid 22555:tid 140445321856896] AH00489: Apache/2.4.18 (Ubuntu) mod_wsgi/4.3.0 Python/3.5.2 configured -- resuming normal operations
+[Sat Sep 30 14:18:31.060761 2017] [core:notice] [pid 22555:tid 140445321856896] AH00094: Command line: '/usr/sbin/apache2'
+[Sat Sep 30 14:18:33.476106 2017] [wsgi:error] [pid 22558:tid 140445094078208] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 14:18:33.540565 2017] [wsgi:error] [pid 22558:tid 140445211649792] Not Found: /static/css/style.css
+[Sat Sep 30 14:18:33.551251 2017] [wsgi:error] [pid 22558:tid 140445094078208] Not Found: /static/css/header.css
+[Sat Sep 30 14:18:33.696295 2017] [wsgi:error] [pid 22558:tid 140445211649792] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 14:18:33.722148 2017] [wsgi:error] [pid 22558:tid 140445094078208] Not Found: /static/images/pic6.jpg
+[Sat Sep 30 14:18:33.741600 2017] [wsgi:error] [pid 22558:tid 140445211649792] Not Found: /static/css/header.css
+[Sat Sep 30 14:18:33.758179 2017] [wsgi:error] [pid 22558:tid 140445094078208] Not Found: /static/css/style.css
+[Sat Sep 30 14:18:33.805610 2017] [wsgi:error] [pid 22558:tid 140445211649792] Not Found: /static/images/pic4.jpg
+[Sat Sep 30 14:18:33.823828 2017] [wsgi:error] [pid 22558:tid 140445094078208] Not Found: /static/images/5.jpg
+[Sat Sep 30 14:18:33.842227 2017] [wsgi:error] [pid 22558:tid 140445211649792] Not Found: /static/images/4.jpg
+[Sat Sep 30 14:18:34.078416 2017] [wsgi:error] [pid 22558:tid 140445094078208] Not Found: /static/css/footer.css
+[Sat Sep 30 14:18:34.082556 2017] [wsgi:error] [pid 22558:tid 140445211649792] Not Found: /static/images/logo.png
+[Sat Sep 30 14:18:35.498704 2017] [wsgi:error] [pid 22558:tid 140445211649792] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 14:18:35.530500 2017] [wsgi:error] [pid 22558:tid 140445102479104] Not Found: /static/css/footer.css
+[Sat Sep 30 14:18:35.543436 2017] [wsgi:error] [pid 22558:tid 140445211649792] Not Found: /static/css/header.css
+[Sat Sep 30 14:18:35.548589 2017] [wsgi:error] [pid 22558:tid 140445102479104] Not Found: /static/css/style.css
+[Sat Sep 30 14:18:35.629069 2017] [wsgi:error] [pid 22558:tid 140445211649792] Not Found: /static/images/logo.png
+[Sat Sep 30 14:18:35.735537 2017] [wsgi:error] [pid 22558:tid 140445102479104] Not Found: /static/images/pic4.jpg
+[Sat Sep 30 14:18:35.741874 2017] [wsgi:error] [pid 22558:tid 140445094078208] Not Found: /static/images/pic6.jpg
+[Sat Sep 30 14:18:35.761341 2017] [wsgi:error] [pid 22558:tid 140445110880000] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 14:18:35.764065 2017] [wsgi:error] [pid 22558:tid 140445211649792] Not Found: /static/css/footer.css
+[Sat Sep 30 14:18:35.764311 2017] [wsgi:error] [pid 22558:tid 140445127681792] Not Found: /static/css/header.css
+[Sat Sep 30 14:18:35.765819 2017] [wsgi:error] [pid 22558:tid 140445119280896] Not Found: /static/css/style.css
+[Sat Sep 30 14:18:35.833646 2017] [wsgi:error] [pid 22558:tid 140445136082688] Not Found: /static/images/5.jpg
+[Sat Sep 30 14:18:35.836581 2017] [wsgi:error] [pid 22558:tid 140445119280896] Not Found: /static/images/4.jpg
+[Sat Sep 30 14:20:25.722717 2017] [mpm_event:notice] [pid 22555:tid 140445321856896] AH00493: SIGUSR1 received.  Doing graceful restart
+[Sat Sep 30 14:20:25.821515 2017] [wsgi:warn] [pid 22555:tid 140445321856896] mod_wsgi: Compiled for Python/3.5.1+.
+[Sat Sep 30 14:20:25.821530 2017] [wsgi:warn] [pid 22555:tid 140445321856896] mod_wsgi: Runtime using Python/3.5.2.
+[Sat Sep 30 14:20:25.821792 2017] [mpm_event:notice] [pid 22555:tid 140445321856896] AH00489: Apache/2.4.18 (Ubuntu) mod_wsgi/4.3.0 Python/3.5.2 configured -- resuming normal operations
+[Sat Sep 30 14:20:25.821807 2017] [core:notice] [pid 22555:tid 140445321856896] AH00094: Command line: '/usr/sbin/apache2'
+[Sat Sep 30 14:20:30.688625 2017] [wsgi:error] [pid 22678:tid 140445211649792] Not Found: /static/css/style.css
+[Sat Sep 30 14:20:32.070391 2017] [wsgi:error] [pid 22678:tid 140445094045440] Not Found: /static/css/style.css
+[Sat Sep 30 14:20:32.589221 2017] [wsgi:error] [pid 22678:tid 140445211649792] Not Found: /static/css/style.css
+[Sat Sep 30 14:21:15.336800 2017] [mpm_event:notice] [pid 22555:tid 140445321856896] AH00493: SIGUSR1 received.  Doing graceful restart
+[Sat Sep 30 14:21:15.443278 2017] [wsgi:warn] [pid 22555:tid 140445321856896] mod_wsgi: Compiled for Python/3.5.1+.
+[Sat Sep 30 14:21:15.443294 2017] [wsgi:warn] [pid 22555:tid 140445321856896] mod_wsgi: Runtime using Python/3.5.2.
+[Sat Sep 30 14:21:15.443570 2017] [mpm_event:notice] [pid 22555:tid 140445321856896] AH00489: Apache/2.4.18 (Ubuntu) mod_wsgi/4.3.0 Python/3.5.2 configured -- resuming normal operations
+[Sat Sep 30 14:21:15.443585 2017] [core:notice] [pid 22555:tid 140445321856896] AH00094: Command line: '/usr/sbin/apache2'
+[Sat Sep 30 14:21:17.474195 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:28907] mod_wsgi (pid=22783): Target WSGI script '/home/ubuntu/syot-project/syot/SYOT/SYOT/wsgi.py' cannot be loaded as Python module.
+[Sat Sep 30 14:21:17.474249 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:28907] mod_wsgi (pid=22783): Exception occurred processing WSGI script '/home/ubuntu/syot-project/syot/SYOT/SYOT/wsgi.py'.
+[Sat Sep 30 14:21:17.475853 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:28907] Traceback (most recent call last):
+[Sat Sep 30 14:21:17.475899 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:28907]   File "/home/ubuntu/syot-project/syot/SYOT/SYOT/wsgi.py", line 20, in <module>
+[Sat Sep 30 14:21:17.475903 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:28907]     application = get_wsgi_application()
+[Sat Sep 30 14:21:17.475909 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:28907]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+[Sat Sep 30 14:21:17.475911 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:28907]     django.setup(set_prefix=False)
+[Sat Sep 30 14:21:17.475916 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:28907]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/__init__.py", line 22, in setup
+[Sat Sep 30 14:21:17.475918 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:28907]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Sat Sep 30 14:21:17.475923 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:28907]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/conf/__init__.py", line 56, in __getattr__
+[Sat Sep 30 14:21:17.475925 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:28907]     self._setup(name)
+[Sat Sep 30 14:21:17.475929 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:28907]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/conf/__init__.py", line 41, in _setup
+[Sat Sep 30 14:21:17.475932 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:28907]     self._wrapped = Settings(settings_module)
+[Sat Sep 30 14:21:17.475936 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:28907]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/conf/__init__.py", line 110, in __init__
+[Sat Sep 30 14:21:17.475938 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:28907]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Sat Sep 30 14:21:17.475942 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:28907]   File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+[Sat Sep 30 14:21:17.475944 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:28907]     return _bootstrap._gcd_import(name[level:], package, level)
+[Sat Sep 30 14:21:17.475948 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:28907]   File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+[Sat Sep 30 14:21:17.475952 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:28907]   File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+[Sat Sep 30 14:21:17.475956 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:28907]   File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+[Sat Sep 30 14:21:17.475960 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:28907]   File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+[Sat Sep 30 14:21:17.475972 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:28907]   File "<frozen importlib._bootstrap_external>", line 661, in exec_module
+[Sat Sep 30 14:21:17.475976 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:28907]   File "<frozen importlib._bootstrap_external>", line 767, in get_code
+[Sat Sep 30 14:21:17.475980 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:28907]   File "<frozen importlib._bootstrap_external>", line 727, in source_to_code
+[Sat Sep 30 14:21:17.475985 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:28907]   File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+[Sat Sep 30 14:21:17.475999 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:28907]   File "/home/ubuntu/syot-project/syot/SYOT/SYOT/settings.py", line 131
+[Sat Sep 30 14:21:17.476006 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:28907]     'static'
+[Sat Sep 30 14:21:17.476020 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:28907]     ^
+[Sat Sep 30 14:21:17.476026 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:28907] IndentationError: unexpected indent
+[Sat Sep 30 14:21:18.672342 2017] [wsgi:error] [pid 22783:tid 140445094045440] [remote 171.6.113.217:27883] mod_wsgi (pid=22783): Target WSGI script '/home/ubuntu/syot-project/syot/SYOT/SYOT/wsgi.py' cannot be loaded as Python module.
+[Sat Sep 30 14:21:18.672396 2017] [wsgi:error] [pid 22783:tid 140445094045440] [remote 171.6.113.217:27883] mod_wsgi (pid=22783): Exception occurred processing WSGI script '/home/ubuntu/syot-project/syot/SYOT/SYOT/wsgi.py'.
+[Sat Sep 30 14:21:18.672571 2017] [wsgi:error] [pid 22783:tid 140445094045440] [remote 171.6.113.217:27883] Traceback (most recent call last):
+[Sat Sep 30 14:21:18.672617 2017] [wsgi:error] [pid 22783:tid 140445094045440] [remote 171.6.113.217:27883]   File "/home/ubuntu/syot-project/syot/SYOT/SYOT/wsgi.py", line 20, in <module>
+[Sat Sep 30 14:21:18.672620 2017] [wsgi:error] [pid 22783:tid 140445094045440] [remote 171.6.113.217:27883]     application = get_wsgi_application()
+[Sat Sep 30 14:21:18.672626 2017] [wsgi:error] [pid 22783:tid 140445094045440] [remote 171.6.113.217:27883]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+[Sat Sep 30 14:21:18.672628 2017] [wsgi:error] [pid 22783:tid 140445094045440] [remote 171.6.113.217:27883]     django.setup(set_prefix=False)
+[Sat Sep 30 14:21:18.672633 2017] [wsgi:error] [pid 22783:tid 140445094045440] [remote 171.6.113.217:27883]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/__init__.py", line 22, in setup
+[Sat Sep 30 14:21:18.672636 2017] [wsgi:error] [pid 22783:tid 140445094045440] [remote 171.6.113.217:27883]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Sat Sep 30 14:21:18.672640 2017] [wsgi:error] [pid 22783:tid 140445094045440] [remote 171.6.113.217:27883]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/conf/__init__.py", line 56, in __getattr__
+[Sat Sep 30 14:21:18.672648 2017] [wsgi:error] [pid 22783:tid 140445094045440] [remote 171.6.113.217:27883]     self._setup(name)
+[Sat Sep 30 14:21:18.672654 2017] [wsgi:error] [pid 22783:tid 140445094045440] [remote 171.6.113.217:27883]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/conf/__init__.py", line 41, in _setup
+[Sat Sep 30 14:21:18.672657 2017] [wsgi:error] [pid 22783:tid 140445094045440] [remote 171.6.113.217:27883]     self._wrapped = Settings(settings_module)
+[Sat Sep 30 14:21:18.672661 2017] [wsgi:error] [pid 22783:tid 140445094045440] [remote 171.6.113.217:27883]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/conf/__init__.py", line 110, in __init__
+[Sat Sep 30 14:21:18.672664 2017] [wsgi:error] [pid 22783:tid 140445094045440] [remote 171.6.113.217:27883]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Sat Sep 30 14:21:18.672678 2017] [wsgi:error] [pid 22783:tid 140445094045440] [remote 171.6.113.217:27883]   File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+[Sat Sep 30 14:21:18.672681 2017] [wsgi:error] [pid 22783:tid 140445094045440] [remote 171.6.113.217:27883]     return _bootstrap._gcd_import(name[level:], package, level)
+[Sat Sep 30 14:21:18.672686 2017] [wsgi:error] [pid 22783:tid 140445094045440] [remote 171.6.113.217:27883]   File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+[Sat Sep 30 14:21:18.672690 2017] [wsgi:error] [pid 22783:tid 140445094045440] [remote 171.6.113.217:27883]   File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+[Sat Sep 30 14:21:18.672695 2017] [wsgi:error] [pid 22783:tid 140445094045440] [remote 171.6.113.217:27883]   File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+[Sat Sep 30 14:21:18.672699 2017] [wsgi:error] [pid 22783:tid 140445094045440] [remote 171.6.113.217:27883]   File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+[Sat Sep 30 14:21:18.672703 2017] [wsgi:error] [pid 22783:tid 140445094045440] [remote 171.6.113.217:27883]   File "<frozen importlib._bootstrap_external>", line 661, in exec_module
+[Sat Sep 30 14:21:18.672707 2017] [wsgi:error] [pid 22783:tid 140445094045440] [remote 171.6.113.217:27883]   File "<frozen importlib._bootstrap_external>", line 767, in get_code
+[Sat Sep 30 14:21:18.672711 2017] [wsgi:error] [pid 22783:tid 140445094045440] [remote 171.6.113.217:27883]   File "<frozen importlib._bootstrap_external>", line 727, in source_to_code
+[Sat Sep 30 14:21:18.672716 2017] [wsgi:error] [pid 22783:tid 140445094045440] [remote 171.6.113.217:27883]   File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+[Sat Sep 30 14:21:18.672729 2017] [wsgi:error] [pid 22783:tid 140445094045440] [remote 171.6.113.217:27883]   File "/home/ubuntu/syot-project/syot/SYOT/SYOT/settings.py", line 131
+[Sat Sep 30 14:21:18.672736 2017] [wsgi:error] [pid 22783:tid 140445094045440] [remote 171.6.113.217:27883]     'static'
+[Sat Sep 30 14:21:18.672749 2017] [wsgi:error] [pid 22783:tid 140445094045440] [remote 171.6.113.217:27883]     ^
+[Sat Sep 30 14:21:18.672756 2017] [wsgi:error] [pid 22783:tid 140445094045440] [remote 171.6.113.217:27883] IndentationError: unexpected indent
+[Sat Sep 30 14:21:19.990061 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:27883] mod_wsgi (pid=22783): Target WSGI script '/home/ubuntu/syot-project/syot/SYOT/SYOT/wsgi.py' cannot be loaded as Python module.
+[Sat Sep 30 14:21:19.990112 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:27883] mod_wsgi (pid=22783): Exception occurred processing WSGI script '/home/ubuntu/syot-project/syot/SYOT/SYOT/wsgi.py'.
+[Sat Sep 30 14:21:19.990273 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:27883] Traceback (most recent call last):
+[Sat Sep 30 14:21:19.990341 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:27883]   File "/home/ubuntu/syot-project/syot/SYOT/SYOT/wsgi.py", line 20, in <module>
+[Sat Sep 30 14:21:19.990345 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:27883]     application = get_wsgi_application()
+[Sat Sep 30 14:21:19.990350 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:27883]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+[Sat Sep 30 14:21:19.990353 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:27883]     django.setup(set_prefix=False)
+[Sat Sep 30 14:21:19.990358 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:27883]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/__init__.py", line 22, in setup
+[Sat Sep 30 14:21:19.990360 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:27883]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Sat Sep 30 14:21:19.990375 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:27883]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/conf/__init__.py", line 56, in __getattr__
+[Sat Sep 30 14:21:19.990378 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:27883]     self._setup(name)
+[Sat Sep 30 14:21:19.990382 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:27883]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/conf/__init__.py", line 41, in _setup
+[Sat Sep 30 14:21:19.990384 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:27883]     self._wrapped = Settings(settings_module)
+[Sat Sep 30 14:21:19.990388 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:27883]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/conf/__init__.py", line 110, in __init__
+[Sat Sep 30 14:21:19.990391 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:27883]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Sat Sep 30 14:21:19.990395 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:27883]   File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+[Sat Sep 30 14:21:19.990397 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:27883]     return _bootstrap._gcd_import(name[level:], package, level)
+[Sat Sep 30 14:21:19.990401 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:27883]   File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+[Sat Sep 30 14:21:19.990406 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:27883]   File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+[Sat Sep 30 14:21:19.990410 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:27883]   File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+[Sat Sep 30 14:21:19.990414 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:27883]   File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+[Sat Sep 30 14:21:19.990418 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:27883]   File "<frozen importlib._bootstrap_external>", line 661, in exec_module
+[Sat Sep 30 14:21:19.990423 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:27883]   File "<frozen importlib._bootstrap_external>", line 767, in get_code
+[Sat Sep 30 14:21:19.990427 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:27883]   File "<frozen importlib._bootstrap_external>", line 727, in source_to_code
+[Sat Sep 30 14:21:19.990431 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:27883]   File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+[Sat Sep 30 14:21:19.990445 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:27883]   File "/home/ubuntu/syot-project/syot/SYOT/SYOT/settings.py", line 131
+[Sat Sep 30 14:21:19.990452 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:27883]     'static'
+[Sat Sep 30 14:21:19.990466 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:27883]     ^
+[Sat Sep 30 14:21:19.990472 2017] [wsgi:error] [pid 22783:tid 140445211649792] [remote 171.6.113.217:27883] IndentationError: unexpected indent
+[Sat Sep 30 14:21:48.733231 2017] [wsgi:error] [pid 22783:tid 140445211649792] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 14:21:48.767910 2017] [wsgi:error] [pid 22783:tid 140445094045440] Not Found: /static/css/footer.css
+[Sat Sep 30 14:21:48.792534 2017] [wsgi:error] [pid 22783:tid 140445211649792] Not Found: /static/css/style.css
+[Sat Sep 30 14:21:48.795286 2017] [wsgi:error] [pid 22783:tid 140445094045440] Not Found: /static/css/header.css
+[Sat Sep 30 14:21:48.889132 2017] [wsgi:error] [pid 22783:tid 140445102446336] Not Found: /static/images/logo.png
+[Sat Sep 30 14:21:48.972611 2017] [wsgi:error] [pid 22783:tid 140445094045440] Not Found: /static/images/pic4.jpg
+[Sat Sep 30 14:21:49.073258 2017] [wsgi:error] [pid 22783:tid 140445102446336] Not Found: /static/images/4.jpg
+[Sat Sep 30 14:21:49.186091 2017] [wsgi:error] [pid 22783:tid 140445094045440] Not Found: /static/images/5.jpg
+[Sat Sep 30 14:21:49.273446 2017] [wsgi:error] [pid 22783:tid 140445102446336] Not Found: /static/images/pic6.jpg
+[Sat Sep 30 14:21:49.386204 2017] [wsgi:error] [pid 22783:tid 140445094045440] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 14:21:49.397665 2017] [wsgi:error] [pid 22783:tid 140445102446336] Not Found: /static/css/footer.css
+[Sat Sep 30 14:21:49.419307 2017] [wsgi:error] [pid 22783:tid 140445094045440] Not Found: /static/css/header.css
+[Sat Sep 30 14:21:49.421960 2017] [wsgi:error] [pid 22783:tid 140445102446336] Not Found: /static/css/style.css
+[Sat Sep 30 14:21:54.850214 2017] [wsgi:error] [pid 22783:tid 140445102446336] Not Found: /static/css/style.css
+[Sat Sep 30 14:21:54.877037 2017] [wsgi:error] [pid 22783:tid 140445211649792] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 14:21:54.902978 2017] [wsgi:error] [pid 22783:tid 140445102446336] Not Found: /static/css/footer.css
+[Sat Sep 30 14:21:54.903095 2017] [wsgi:error] [pid 22783:tid 140445211649792] Not Found: /static/css/header.css
+[Sat Sep 30 14:21:54.998748 2017] [wsgi:error] [pid 22783:tid 140445094045440] Not Found: /static/images/logo.png
+[Sat Sep 30 14:21:55.083490 2017] [wsgi:error] [pid 22783:tid 140445102446336] Not Found: /static/images/pic4.jpg
+[Sat Sep 30 14:21:55.092783 2017] [wsgi:error] [pid 22783:tid 140445094045440] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 14:21:55.095940 2017] [wsgi:error] [pid 22783:tid 140445102446336] Not Found: /static/images/pic6.jpg
+[Sat Sep 30 14:21:55.117411 2017] [wsgi:error] [pid 22783:tid 140445094045440] Not Found: /static/css/footer.css
+[Sat Sep 30 14:21:55.126185 2017] [wsgi:error] [pid 22783:tid 140445102446336] Not Found: /static/css/style.css
+[Sat Sep 30 14:21:55.126311 2017] [wsgi:error] [pid 22783:tid 140445094045440] Not Found: /static/css/header.css
+[Sat Sep 30 14:21:55.168882 2017] [wsgi:error] [pid 22783:tid 140445211649792] Not Found: /static/images/4.jpg
+[Sat Sep 30 14:21:55.197307 2017] [wsgi:error] [pid 22783:tid 140445094045440] Not Found: /static/images/5.jpg
+[Sat Sep 30 14:22:00.072816 2017] [wsgi:error] [pid 22783:tid 140445211649792] Not Found: /static/css/style.css
+[Sat Sep 30 14:25:57.019943 2017] [wsgi:error] [pid 22783:tid 140445094045440] Not Found: /static/css/style.css
+[Sat Sep 30 14:28:06.352098 2017] [wsgi:error] [pid 22783:tid 140445094045440] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 14:28:06.385831 2017] [wsgi:error] [pid 22783:tid 140445211649792] Not Found: /static/css/footer.css
+[Sat Sep 30 14:28:06.391423 2017] [wsgi:error] [pid 22783:tid 140445094045440] Not Found: /static/css/style.css
+[Sat Sep 30 14:28:06.407959 2017] [wsgi:error] [pid 22783:tid 140445211649792] Not Found: /static/css/header.css
+[Sat Sep 30 14:28:06.483538 2017] [wsgi:error] [pid 22783:tid 140445094045440] Not Found: /static/images/logo.png
+[Sat Sep 30 14:28:06.574222 2017] [wsgi:error] [pid 22783:tid 140445211649792] Not Found: /static/images/pic4.jpg
+[Sat Sep 30 14:28:06.644225 2017] [wsgi:error] [pid 22783:tid 140445094045440] Not Found: /static/images/4.jpg
+[Sat Sep 30 14:28:06.739009 2017] [wsgi:error] [pid 22783:tid 140445211649792] Not Found: /static/images/5.jpg
+[Sat Sep 30 14:28:06.829699 2017] [wsgi:error] [pid 22783:tid 140445094045440] Not Found: /static/images/pic6.jpg
+[Sat Sep 30 14:28:07.026614 2017] [wsgi:error] [pid 22783:tid 140445211649792] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 14:28:07.032609 2017] [wsgi:error] [pid 22783:tid 140445094045440] Not Found: /static/css/footer.css
+[Sat Sep 30 14:28:07.065987 2017] [wsgi:error] [pid 22783:tid 140445211649792] Not Found: /static/css/style.css
+[Sat Sep 30 14:28:07.066110 2017] [wsgi:error] [pid 22783:tid 140445094045440] Not Found: /static/css/header.css
+[Sat Sep 30 14:28:09.665821 2017] [wsgi:error] [pid 22783:tid 140445102446336] Not Found: /static/css/style.css
+[Sat Sep 30 14:31:41.112296 2017] [wsgi:error] [pid 22783:tid 140445102446336] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 14:31:41.137984 2017] [wsgi:error] [pid 22783:tid 140445211649792] Not Found: /static/css/footer.css
+[Sat Sep 30 14:31:41.142779 2017] [wsgi:error] [pid 22783:tid 140445102446336] Not Found: /static/css/header.css
+[Sat Sep 30 14:31:41.145525 2017] [wsgi:error] [pid 22783:tid 140445211649792] Not Found: /static/css/style.css
+[Sat Sep 30 14:31:41.207465 2017] [wsgi:error] [pid 22783:tid 140445102446336] Not Found: /static/images/logo.png
+[Sat Sep 30 14:31:41.270714 2017] [wsgi:error] [pid 22783:tid 140445211649792] Not Found: /static/images/pic4.jpg
+[Sat Sep 30 14:31:41.339399 2017] [wsgi:error] [pid 22783:tid 140445102446336] Not Found: /static/images/4.jpg
+[Sat Sep 30 14:31:41.415379 2017] [wsgi:error] [pid 22783:tid 140445211649792] Not Found: /static/images/5.jpg
+[Sat Sep 30 14:31:41.493620 2017] [wsgi:error] [pid 22783:tid 140445102446336] Not Found: /static/images/pic6.jpg
+[Sat Sep 30 14:31:41.760410 2017] [wsgi:error] [pid 22783:tid 140445211649792] Not Found: /static/css/header.css
+[Sat Sep 30 14:31:41.764065 2017] [wsgi:error] [pid 22783:tid 140445102446336] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 14:31:41.767258 2017] [wsgi:error] [pid 22783:tid 140445211649792] Not Found: /static/css/footer.css
+[Sat Sep 30 14:31:41.771341 2017] [wsgi:error] [pid 22783:tid 140445102446336] Not Found: /static/css/style.css
+[Sat Sep 30 14:32:34.818228 2017] [wsgi:error] [pid 22783:tid 140445102446336] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 14:32:34.851215 2017] [wsgi:error] [pid 22783:tid 140445211649792] Not Found: /static/css/footer.css
+[Sat Sep 30 14:32:34.859742 2017] [wsgi:error] [pid 22783:tid 140445102446336] Not Found: /static/css/header.css
+[Sat Sep 30 14:32:34.865697 2017] [wsgi:error] [pid 22783:tid 140445211649792] Not Found: /static/css/style.css
+[Sat Sep 30 14:32:34.926593 2017] [wsgi:error] [pid 22783:tid 140445102446336] Not Found: /static/images/logo.png
+[Sat Sep 30 14:32:35.009377 2017] [wsgi:error] [pid 22783:tid 140445211649792] Not Found: /static/images/pic4.jpg
+[Sat Sep 30 14:32:35.034834 2017] [wsgi:error] [pid 22783:tid 140445102446336] Not Found: /static/css/header.css
+[Sat Sep 30 14:32:35.037673 2017] [wsgi:error] [pid 22783:tid 140445211649792] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 14:32:35.063322 2017] [wsgi:error] [pid 22783:tid 140445094045440] Not Found: /static/css/footer.css
+[Sat Sep 30 14:32:35.066039 2017] [wsgi:error] [pid 22783:tid 140445211649792] Not Found: /static/images/pic6.jpg
+[Sat Sep 30 14:32:35.104630 2017] [wsgi:error] [pid 22783:tid 140445094045440] Not Found: /static/css/style.css
+[Sat Sep 30 14:32:35.112091 2017] [wsgi:error] [pid 22783:tid 140445211649792] Not Found: /static/images/5.jpg
+[Sat Sep 30 14:32:35.112216 2017] [wsgi:error] [pid 22783:tid 140445094045440] Not Found: /static/images/4.jpg
+[Sat Sep 30 14:33:41.935439 2017] [wsgi:error] [pid 22783:tid 140445102446336] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 14:33:41.935580 2017] [wsgi:error] [pid 22783:tid 140445094045440] Not Found: /static/css/footer.css
+[Sat Sep 30 14:33:41.940390 2017] [wsgi:error] [pid 22783:tid 140445211649792] Not Found: /static/css/header.css
+[Sat Sep 30 14:33:41.943232 2017] [wsgi:error] [pid 22783:tid 140445102446336] Not Found: /static/css/style.css
+[Sat Sep 30 14:33:48.792028 2017] [wsgi:error] [pid 22783:tid 140445211649792] Not Found: /static/images/5.jpg
+[Sat Sep 30 14:46:38.903178 2017] [mpm_event:notice] [pid 22555:tid 140445321856896] AH00493: SIGUSR1 received.  Doing graceful restart
+[Sat Sep 30 14:46:39.002251 2017] [wsgi:warn] [pid 22555:tid 140445321856896] mod_wsgi: Compiled for Python/3.5.1+.
+[Sat Sep 30 14:46:39.002274 2017] [wsgi:warn] [pid 22555:tid 140445321856896] mod_wsgi: Runtime using Python/3.5.2.
+[Sat Sep 30 14:46:39.002530 2017] [mpm_event:notice] [pid 22555:tid 140445321856896] AH00489: Apache/2.4.18 (Ubuntu) mod_wsgi/4.3.0 Python/3.5.2 configured -- resuming normal operations
+[Sat Sep 30 14:46:39.002551 2017] [core:notice] [pid 22555:tid 140445321856896] AH00094: Command line: '/usr/sbin/apache2'
+[Sat Sep 30 14:46:43.527016 2017] [wsgi:error] [pid 23077:tid 140445102446336] [remote 171.6.113.217:28907] mod_wsgi (pid=23077): Exception occurred processing WSGI script '/home/ubuntu/syot-project/syot/SYOT/SYOT/wsgi.py'.
+[Sat Sep 30 14:46:43.527166 2017] [wsgi:error] [pid 23077:tid 140445102446336] [remote 171.6.113.217:28907] OSError: failed to write data
+[Sat Sep 30 14:46:57.511585 2017] [wsgi:error] [pid 23077:tid 140445102446336] Not Found: /product.html
+[Sat Sep 30 14:51:09.472109 2017] [wsgi:error] [pid 23077:tid 140445102446336] Not Found: /product.html
+[Sat Sep 30 14:52:06.473998 2017] [wsgi:error] [pid 23077:tid 140445102446336] Not Found: /product.html
+[Sat Sep 30 14:52:17.351261 2017] [wsgi:error] [pid 23077:tid 140445094045440] Not Found: /product.html
+[Sat Sep 30 14:54:30.712852 2017] [wsgi:error] [pid 23077:tid 140445094045440] Not Found: /product.html

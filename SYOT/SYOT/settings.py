@@ -29,8 +29,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -127,11 +125,14 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    'static'
+    'static',
 ]
 if DEBUG :
     STATICFILES_DIRS = [
-        os.path.join(BASE_DIR, "static"),
+        os.path.join(BASE_DIR, STATIC_URL),
     ]
     MEDIA_URL = '/static/media/'
     MEDIA_ROOT = os.path.join(BASE_DIR, "static", "media")
+
+#hard url cus os.path.join doesn't work properly
+STATIC_ROOT = '/home/ubuntu/syot-project/syot/SYOT/static/'
