@@ -12,7 +12,30 @@
 	<div class="header bgimg">
 	</div>
 	<div class="main">
-		<span><h1>Product</h1></span>
+    <div class = "container">
+      <div class = "row">
+          <div class="col-12">
+              <h1>{{ catagory.name }}</h1>
+              <br />
+          </div>
+          {% for product in products %}
+              <div class="col-12 col-sm-6 col-md-4">
+                  <div class="card test-center">
+                      <div class="card-block">
+                          <br />
+                          <!-- <a href="{% url 'Catalog:detail' product.id %}"><img src= "{{ product.pictureUrl.url }}" class="mx-auto d-block" height="200"></a> -->
+                          <br />
+                          <h6 style="text-align:center;">{{ product.name }}</h6>
+                          <!-- <ul class="list-group list-group-flush">
+                              <li class="list-group-item" style="text-align:center;">{{ product.price|floatformat:2 }} บาท</li>
+                          </ul> -->
+                      </div>
+                  </div>
+              </div>
+          {% endfor %}
+      </div>
+    </div>
+		<!-- <span><h1>Product</h1></span>
 		<div class="row">
 			<div class="col-lg-3" align="center">
 				<div class="product-img "><img src="images/batman-thumbnail.jpg"></div>
@@ -46,6 +69,6 @@
 					<p>$49.00</p>
 				</div>
 			</div>
-		</div>
+		</div> -->
 	<div>
 {% endblock %}

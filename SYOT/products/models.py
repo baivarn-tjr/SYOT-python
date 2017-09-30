@@ -19,18 +19,18 @@ class Catagory(models.Model):
         return self.name
 
 class Product(models.Model):
-    COVER_TYPE = (
-        ('PD', 'Paperback'),
-        ('HC', 'Hardcover'),
-    )
-
-    PAPER_TYPE = (
-        ('NS', 'Newsprint'),
-        ('CP', 'Coated Paper'),
-        ('UP', 'Uncoated Paper'),
-        ('BP', 'Bond Paper'),
-        ('GR', 'Green Read Paper'),
-    )
+    # COVER_TYPE = (
+    #     ('PD', 'Paperback'),
+    #     ('HC', 'Hardcover'),
+    # )
+    #
+    # PAPER_TYPE = (
+    #     ('NS', 'Newsprint'),
+    #     ('CP', 'Coated Paper'),
+    #     ('UP', 'Uncoated Paper'),
+    #     ('BP', 'Bond Paper'),
+    #     ('GR', 'Green Read Paper'),
+    # )
 
     id = models.AutoField(primary_key=True)
     # idpro = models.DecimalField(max_digits = 13, decimal_places = 0, unique = True)
