@@ -1,0 +1,57 @@
+[Sat Sep 30 10:51:49.269595 2017] [wsgi:warn] [pid 19498:tid 140041759692672] mod_wsgi: Compiled for Python/3.5.1+.
+[Sat Sep 30 10:51:49.269637 2017] [wsgi:warn] [pid 19498:tid 140041759692672] mod_wsgi: Runtime using Python/3.5.2.
+[Sat Sep 30 10:51:49.270245 2017] [mpm_event:notice] [pid 19498:tid 140041759692672] AH00489: Apache/2.4.18 (Ubuntu) mod_wsgi/4.3.0 Python/3.5.2 configured -- resuming normal operations
+[Sat Sep 30 10:51:49.270258 2017] [core:notice] [pid 19498:tid 140041759692672] AH00094: Command line: '/usr/sbin/apache2'
+[Sat Sep 30 10:51:51.869363 2017] [authz_core:error] [pid 19502:tid 140041657878272] [client 171.6.113.217:49190] AH01630: client denied by server configuration: /home/ubuntu/syot-project/syot/SYOT/syot
+[Sat Sep 30 11:30:55.914197 2017] [authz_core:error] [pid 19502:tid 140041649485568] [client 117.78.15.5:49542] AH01630: client denied by server configuration: /home/ubuntu/syot-project/syot/SYOT/syot
+[Sat Sep 30 11:50:22.429331 2017] [authz_core:error] [pid 19503:tid 140041485506304] [client 171.6.113.217:49384] AH01630: client denied by server configuration: /home/ubuntu/syot-project/syot/SYOT/syot
+[Sat Sep 30 11:50:22.514826 2017] [authz_core:error] [pid 19503:tid 140041477113600] [client 171.6.113.217:49384] AH01630: client denied by server configuration: /home/ubuntu/syot-project/syot/SYOT/syot, referer: http://www.syotshop.xyz/
+[Sat Sep 30 11:51:39.152390 2017] [authz_core:error] [pid 19502:tid 140041393186560] [client 171.6.113.217:49387] AH01630: client denied by server configuration: /home/ubuntu/syot-project/syot/SYOT/syot
+[Sat Sep 30 11:51:39.196842 2017] [authz_core:error] [pid 19502:tid 140041502291712] [client 171.6.113.217:49387] AH01630: client denied by server configuration: /home/ubuntu/syot-project/syot/SYOT/syot, referer: http://www.syotshop.xyz/
+[Sat Sep 30 11:51:44.889993 2017] [mpm_event:notice] [pid 19498:tid 140041759692672] AH00493: SIGUSR1 received.  Doing graceful restart
+[Sat Sep 30 11:51:44.942471 2017] [wsgi:warn] [pid 19498:tid 140041759692672] mod_wsgi: Compiled for Python/3.5.1+.
+[Sat Sep 30 11:51:44.942485 2017] [wsgi:warn] [pid 19498:tid 140041759692672] mod_wsgi: Runtime using Python/3.5.2.
+[Sat Sep 30 11:51:44.942774 2017] [mpm_event:notice] [pid 19498:tid 140041759692672] AH00489: Apache/2.4.18 (Ubuntu) mod_wsgi/4.3.0 Python/3.5.2 configured -- resuming normal operations
+[Sat Sep 30 11:51:44.942786 2017] [core:notice] [pid 19498:tid 140041759692672] AH00094: Command line: '/usr/sbin/apache2'
+[Sat Sep 30 11:51:47.388935 2017] [wsgi:error] [pid 19744:tid 140041649485568] [remote 171.6.113.217:17141] mod_wsgi (pid=19744): Target WSGI script '/home/ubuntu/syot-project/syot/SYOT/SYOT/wsgi.py' cannot be loaded as Python module.
+[Sat Sep 30 11:51:47.388985 2017] [wsgi:error] [pid 19744:tid 140041649485568] [remote 171.6.113.217:17141] mod_wsgi (pid=19744): Exception occurred processing WSGI script '/home/ubuntu/syot-project/syot/SYOT/SYOT/wsgi.py'.
+[Sat Sep 30 11:51:47.389190 2017] [wsgi:error] [pid 19744:tid 140041649485568] [remote 171.6.113.217:17141] Traceback (most recent call last):
+[Sat Sep 30 11:51:47.389214 2017] [wsgi:error] [pid 19744:tid 140041649485568] [remote 171.6.113.217:17141]   File "/home/ubuntu/syot-project/syot/SYOT/SYOT/wsgi.py", line 12, in <module>
+[Sat Sep 30 11:51:47.389217 2017] [wsgi:error] [pid 19744:tid 140041649485568] [remote 171.6.113.217:17141]     from django.core.wsgi import get_wsgi_application
+[Sat Sep 30 11:51:47.389231 2017] [wsgi:error] [pid 19744:tid 140041649485568] [remote 171.6.113.217:17141] ImportError: No module named 'django'
+[Sat Sep 30 11:51:47.480813 2017] [wsgi:error] [pid 19744:tid 140041531881216] [remote 171.6.113.217:16117] mod_wsgi (pid=19744): Target WSGI script '/home/ubuntu/syot-project/syot/SYOT/SYOT/wsgi.py' cannot be loaded as Python module.
+[Sat Sep 30 11:51:47.480857 2017] [wsgi:error] [pid 19744:tid 140041531881216] [remote 171.6.113.217:16117] mod_wsgi (pid=19744): Exception occurred processing WSGI script '/home/ubuntu/syot-project/syot/SYOT/SYOT/wsgi.py'.
+[Sat Sep 30 11:51:47.480932 2017] [wsgi:error] [pid 19744:tid 140041531881216] [remote 171.6.113.217:16117] Traceback (most recent call last):
+[Sat Sep 30 11:51:47.480965 2017] [wsgi:error] [pid 19744:tid 140041531881216] [remote 171.6.113.217:16117]   File "/home/ubuntu/syot-project/syot/SYOT/SYOT/wsgi.py", line 12, in <module>
+[Sat Sep 30 11:51:47.480969 2017] [wsgi:error] [pid 19744:tid 140041531881216] [remote 171.6.113.217:16117]     from django.core.wsgi import get_wsgi_application
+[Sat Sep 30 11:51:47.480984 2017] [wsgi:error] [pid 19744:tid 140041531881216] [remote 171.6.113.217:16117] ImportError: No module named 'django'
+[Sat Sep 30 11:54:30.225132 2017] [wsgi:error] [pid 19744:tid 140041649485568] [remote 91.196.50.33:16117] mod_wsgi (pid=19744): Target WSGI script '/home/ubuntu/syot-project/syot/SYOT/SYOT/wsgi.py' cannot be loaded as Python module.
+[Sat Sep 30 11:54:30.225248 2017] [wsgi:error] [pid 19744:tid 140041649485568] [remote 91.196.50.33:16117] mod_wsgi (pid=19744): Exception occurred processing WSGI script '/home/ubuntu/syot-project/syot/SYOT/SYOT/wsgi.py'.
+[Sat Sep 30 11:54:30.225330 2017] [wsgi:error] [pid 19744:tid 140041649485568] [remote 91.196.50.33:16117] Traceback (most recent call last):
+[Sat Sep 30 11:54:30.225351 2017] [wsgi:error] [pid 19744:tid 140041649485568] [remote 91.196.50.33:16117]   File "/home/ubuntu/syot-project/syot/SYOT/SYOT/wsgi.py", line 12, in <module>
+[Sat Sep 30 11:54:30.225354 2017] [wsgi:error] [pid 19744:tid 140041649485568] [remote 91.196.50.33:16117]     from django.core.wsgi import get_wsgi_application
+[Sat Sep 30 11:54:30.225371 2017] [wsgi:error] [pid 19744:tid 140041649485568] [remote 91.196.50.33:16117] ImportError: No module named 'django'
+[Sat Sep 30 11:56:18.007640 2017] [mpm_event:notice] [pid 19498:tid 140041759692672] AH00493: SIGUSR1 received.  Doing graceful restart
+[Sat Sep 30 11:56:18.059732 2017] [wsgi:warn] [pid 19498:tid 140041759692672] mod_wsgi: Compiled for Python/3.5.1+.
+[Sat Sep 30 11:56:18.059747 2017] [wsgi:warn] [pid 19498:tid 140041759692672] mod_wsgi: Runtime using Python/3.5.2.
+[Sat Sep 30 11:56:18.060017 2017] [mpm_event:notice] [pid 19498:tid 140041759692672] AH00489: Apache/2.4.18 (Ubuntu) mod_wsgi/4.3.0 Python/3.5.2 configured -- resuming normal operations
+[Sat Sep 30 11:56:18.060029 2017] [core:notice] [pid 19498:tid 140041759692672] AH00094: Command line: '/usr/sbin/apache2'
+[Sat Sep 30 11:56:20.503565 2017] [wsgi:error] [pid 20212:tid 140041649485568] [remote 171.6.113.217:17141] mod_wsgi (pid=20212): Target WSGI script '/home/ubuntu/syot-project/syot/SYOT/SYOT/wsgi.py' cannot be loaded as Python module.
+[Sat Sep 30 11:56:20.503604 2017] [wsgi:error] [pid 20212:tid 140041649485568] [remote 171.6.113.217:17141] mod_wsgi (pid=20212): Exception occurred processing WSGI script '/home/ubuntu/syot-project/syot/SYOT/SYOT/wsgi.py'.
+[Sat Sep 30 11:56:20.503752 2017] [wsgi:error] [pid 20212:tid 140041649485568] [remote 171.6.113.217:17141] Traceback (most recent call last):
+[Sat Sep 30 11:56:20.503773 2017] [wsgi:error] [pid 20212:tid 140041649485568] [remote 171.6.113.217:17141]   File "/home/ubuntu/syot-project/syot/SYOT/SYOT/wsgi.py", line 12, in <module>
+[Sat Sep 30 11:56:20.503777 2017] [wsgi:error] [pid 20212:tid 140041649485568] [remote 171.6.113.217:17141]     from django.core.wsgi import get_wsgi_application
+[Sat Sep 30 11:56:20.503790 2017] [wsgi:error] [pid 20212:tid 140041649485568] [remote 171.6.113.217:17141] ImportError: No module named 'django'
+[Sat Sep 30 11:56:20.577467 2017] [wsgi:error] [pid 20212:tid 140041531881216] [remote 171.6.113.217:16117] mod_wsgi (pid=20212): Target WSGI script '/home/ubuntu/syot-project/syot/SYOT/SYOT/wsgi.py' cannot be loaded as Python module.
+[Sat Sep 30 11:56:20.577510 2017] [wsgi:error] [pid 20212:tid 140041531881216] [remote 171.6.113.217:16117] mod_wsgi (pid=20212): Exception occurred processing WSGI script '/home/ubuntu/syot-project/syot/SYOT/SYOT/wsgi.py'.
+[Sat Sep 30 11:56:20.577588 2017] [wsgi:error] [pid 20212:tid 140041531881216] [remote 171.6.113.217:16117] Traceback (most recent call last):
+[Sat Sep 30 11:56:20.577610 2017] [wsgi:error] [pid 20212:tid 140041531881216] [remote 171.6.113.217:16117]   File "/home/ubuntu/syot-project/syot/SYOT/SYOT/wsgi.py", line 12, in <module>
+[Sat Sep 30 11:56:20.577623 2017] [wsgi:error] [pid 20212:tid 140041531881216] [remote 171.6.113.217:16117]     from django.core.wsgi import get_wsgi_application
+[Sat Sep 30 11:56:20.577639 2017] [wsgi:error] [pid 20212:tid 140041531881216] [remote 171.6.113.217:16117] ImportError: No module named 'django'
+[Sat Sep 30 12:02:45.190446 2017] [mpm_event:notice] [pid 19498:tid 140041759692672] AH00493: SIGUSR1 received.  Doing graceful restart
+[Sat Sep 30 12:02:45.242563 2017] [wsgi:warn] [pid 19498:tid 140041759692672] mod_wsgi: Compiled for Python/3.5.1+.
+[Sat Sep 30 12:02:45.242579 2017] [wsgi:warn] [pid 19498:tid 140041759692672] mod_wsgi: Runtime using Python/3.5.2.
+[Sat Sep 30 12:02:45.242826 2017] [mpm_event:notice] [pid 19498:tid 140041759692672] AH00489: Apache/2.4.18 (Ubuntu) mod_wsgi/4.3.0 Python/3.5.2 configured -- resuming normal operations
+[Sat Sep 30 12:02:45.242895 2017] [core:notice] [pid 19498:tid 140041759692672] AH00094: Command line: '/usr/sbin/apache2'
+[Sat Sep 30 12:02:48.910558 2017] [wsgi:error] [pid 20390:tid 140041641092864] Invalid HTTP_HOST header: 'www.syotshop.xyz'. You may need to add 'www.syotshop.xyz' to ALLOWED_HOSTS.
+[Sat Sep 30 12:02:49.213011 2017] [wsgi:error] [pid 20390:tid 140041531881216] Invalid HTTP_HOST header: 'www.syotshop.xyz'. You may need to add 'www.syotshop.xyz' to ALLOWED_HOSTS.
