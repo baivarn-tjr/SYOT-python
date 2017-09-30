@@ -55,3 +55,196 @@
 [Sat Sep 30 12:02:45.242895 2017] [core:notice] [pid 19498:tid 140041759692672] AH00094: Command line: '/usr/sbin/apache2'
 [Sat Sep 30 12:02:48.910558 2017] [wsgi:error] [pid 20390:tid 140041641092864] Invalid HTTP_HOST header: 'www.syotshop.xyz'. You may need to add 'www.syotshop.xyz' to ALLOWED_HOSTS.
 [Sat Sep 30 12:02:49.213011 2017] [wsgi:error] [pid 20390:tid 140041531881216] Invalid HTTP_HOST header: 'www.syotshop.xyz'. You may need to add 'www.syotshop.xyz' to ALLOWED_HOSTS.
+[Sat Sep 30 13:24:37.024993 2017] [wsgi:error] [pid 20390:tid 140041641092864] Invalid HTTP_HOST header: 'www.syotshop.xyz'. You may need to add 'www.syotshop.xyz' to ALLOWED_HOSTS.
+[Sat Sep 30 13:24:37.351809 2017] [wsgi:error] [pid 20390:tid 140041531881216] Invalid HTTP_HOST header: 'www.syotshop.xyz'. You may need to add 'www.syotshop.xyz' to ALLOWED_HOSTS.
+[Sat Sep 30 13:29:14.588375 2017] [mpm_event:notice] [pid 19498:tid 140041759692672] AH00493: SIGUSR1 received.  Doing graceful restart
+[Sat Sep 30 13:29:14.687495 2017] [wsgi:warn] [pid 19498:tid 140041759692672] mod_wsgi: Compiled for Python/3.5.1+.
+[Sat Sep 30 13:29:14.687521 2017] [wsgi:warn] [pid 19498:tid 140041759692672] mod_wsgi: Runtime using Python/3.5.2.
+[Sat Sep 30 13:29:14.687837 2017] [mpm_event:notice] [pid 19498:tid 140041759692672] AH00489: Apache/2.4.18 (Ubuntu) mod_wsgi/4.3.0 Python/3.5.2 configured -- resuming normal operations
+[Sat Sep 30 13:29:14.687849 2017] [core:notice] [pid 19498:tid 140041759692672] AH00094: Command line: '/usr/sbin/apache2'
+[Sat Sep 30 13:29:17.187546 2017] [wsgi:error] [pid 20899:tid 140041649485568] Invalid HTTP_HOST header: 'www.syotshop.xyz'. You may need to add 'www.syotshop.xyz' to ALLOWED_HOSTS.
+[Sat Sep 30 13:29:17.506862 2017] [wsgi:error] [pid 20899:tid 140041531881216] Invalid HTTP_HOST header: 'www.syotshop.xyz'. You may need to add 'www.syotshop.xyz' to ALLOWED_HOSTS.
+[Sat Sep 30 13:29:20.446113 2017] [wsgi:error] [pid 20899:tid 140041649485568] Invalid HTTP_HOST header: 'www.syotshop.xyz'. You may need to add 'www.syotshop.xyz' to ALLOWED_HOSTS.
+[Sat Sep 30 13:29:20.703432 2017] [wsgi:error] [pid 20899:tid 140041531881216] Invalid HTTP_HOST header: 'www.syotshop.xyz'. You may need to add 'www.syotshop.xyz' to ALLOWED_HOSTS.
+[Sat Sep 30 13:29:36.544567 2017] [mpm_event:notice] [pid 19498:tid 140041759692672] AH00493: SIGUSR1 received.  Doing graceful restart
+[Sat Sep 30 13:29:36.643436 2017] [wsgi:warn] [pid 19498:tid 140041759692672] mod_wsgi: Compiled for Python/3.5.1+.
+[Sat Sep 30 13:29:36.643451 2017] [wsgi:warn] [pid 19498:tid 140041759692672] mod_wsgi: Runtime using Python/3.5.2.
+[Sat Sep 30 13:29:36.643723 2017] [mpm_event:notice] [pid 19498:tid 140041759692672] AH00489: Apache/2.4.18 (Ubuntu) mod_wsgi/4.3.0 Python/3.5.2 configured -- resuming normal operations
+[Sat Sep 30 13:29:36.643734 2017] [core:notice] [pid 19498:tid 140041759692672] AH00094: Command line: '/usr/sbin/apache2'
+[Sat Sep 30 13:29:38.120515 2017] [wsgi:error] [pid 21005:tid 140041649485568] Invalid HTTP_HOST header: 'www.syotshop.xyz'. You may need to add 'www.syotshop.xyz' to ALLOWED_HOSTS.
+[Sat Sep 30 13:29:38.431697 2017] [wsgi:error] [pid 21005:tid 140041632691968] Invalid HTTP_HOST header: 'www.syotshop.xyz'. You may need to add 'www.syotshop.xyz' to ALLOWED_HOSTS.
+[Sat Sep 30 13:29:40.659967 2017] [wsgi:error] [pid 21005:tid 140041649485568] Invalid HTTP_HOST header: 'www.syotshop.xyz'. You may need to add 'www.syotshop.xyz' to ALLOWED_HOSTS.
+[Sat Sep 30 13:29:40.924254 2017] [wsgi:error] [pid 21005:tid 140041632691968] Invalid HTTP_HOST header: 'www.syotshop.xyz'. You may need to add 'www.syotshop.xyz' to ALLOWED_HOSTS.
+[Sat Sep 30 13:30:46.710725 2017] [mpm_event:notice] [pid 19498:tid 140041759692672] AH00493: SIGUSR1 received.  Doing graceful restart
+[Sat Sep 30 13:30:46.809691 2017] [wsgi:warn] [pid 19498:tid 140041759692672] mod_wsgi: Compiled for Python/3.5.1+.
+[Sat Sep 30 13:30:46.809706 2017] [wsgi:warn] [pid 19498:tid 140041759692672] mod_wsgi: Runtime using Python/3.5.2.
+[Sat Sep 30 13:30:46.810008 2017] [mpm_event:notice] [pid 19498:tid 140041759692672] AH00489: Apache/2.4.18 (Ubuntu) mod_wsgi/4.3.0 Python/3.5.2 configured -- resuming normal operations
+[Sat Sep 30 13:30:46.810020 2017] [core:notice] [pid 19498:tid 140041759692672] AH00094: Command line: '/usr/sbin/apache2'
+[Sat Sep 30 13:30:49.856806 2017] [wsgi:error] [pid 21144:tid 140041632691968] Invalid HTTP_HOST header: 'www.syotshop.xyz'. You may need to add 'www.syotshop.xyz' to ALLOWED_HOSTS.
+[Sat Sep 30 13:30:50.174393 2017] [wsgi:error] [pid 21144:tid 140041649485568] Invalid HTTP_HOST header: 'www.syotshop.xyz'. You may need to add 'www.syotshop.xyz' to ALLOWED_HOSTS.
+[Sat Sep 30 13:30:53.970885 2017] [mpm_event:notice] [pid 19498:tid 140041759692672] AH00491: caught SIGTERM, shutting down
+[Sat Sep 30 13:30:54.979847 2017] [wsgi:warn] [pid 21269:tid 140429689317248] mod_wsgi: Compiled for Python/3.5.1+.
+[Sat Sep 30 13:30:54.979883 2017] [wsgi:warn] [pid 21269:tid 140429689317248] mod_wsgi: Runtime using Python/3.5.2.
+[Sat Sep 30 13:30:54.980512 2017] [mpm_event:notice] [pid 21269:tid 140429689317248] AH00489: Apache/2.4.18 (Ubuntu) mod_wsgi/4.3.0 Python/3.5.2 configured -- resuming normal operations
+[Sat Sep 30 13:30:54.980525 2017] [core:notice] [pid 21269:tid 140429689317248] AH00094: Command line: '/usr/sbin/apache2'
+[Sat Sep 30 13:30:57.338487 2017] [wsgi:error] [pid 21272:tid 140429528745728] Invalid HTTP_HOST header: 'www.syotshop.xyz'. You may need to add 'www.syotshop.xyz' to ALLOWED_HOSTS.
+[Sat Sep 30 13:30:57.653444 2017] [wsgi:error] [pid 21272:tid 140429579110144] Invalid HTTP_HOST header: 'www.syotshop.xyz'. You may need to add 'www.syotshop.xyz' to ALLOWED_HOSTS.
+[Sat Sep 30 13:31:49.543762 2017] [wsgi:error] [pid 21272:tid 140429528745728] Invalid HTTP_HOST header: 'www.syotshop.xyz'. You may need to add 'www.syotshop.xyz' to ALLOWED_HOSTS.
+[Sat Sep 30 13:31:49.846298 2017] [wsgi:error] [pid 21272:tid 140429579110144] Invalid HTTP_HOST header: 'www.syotshop.xyz'. You may need to add 'www.syotshop.xyz' to ALLOWED_HOSTS.
+[Sat Sep 30 13:33:56.810246 2017] [wsgi:error] [pid 21272:tid 140429528745728] Invalid HTTP_HOST header: 'www.syotshop.xyz'. You may need to add 'www.syotshop.xyz' to ALLOWED_HOSTS.
+[Sat Sep 30 13:33:57.160944 2017] [wsgi:error] [pid 21272:tid 140429579110144] Invalid HTTP_HOST header: 'www.syotshop.xyz'. You may need to add 'www.syotshop.xyz' to ALLOWED_HOSTS.
+[Sat Sep 30 13:34:16.876480 2017] [mpm_event:notice] [pid 21269:tid 140429689317248] AH00493: SIGUSR1 received.  Doing graceful restart
+[Sat Sep 30 13:34:16.975551 2017] [wsgi:warn] [pid 21269:tid 140429689317248] mod_wsgi: Compiled for Python/3.5.1+.
+[Sat Sep 30 13:34:16.975566 2017] [wsgi:warn] [pid 21269:tid 140429689317248] mod_wsgi: Runtime using Python/3.5.2.
+[Sat Sep 30 13:34:16.975850 2017] [mpm_event:notice] [pid 21269:tid 140429689317248] AH00489: Apache/2.4.18 (Ubuntu) mod_wsgi/4.3.0 Python/3.5.2 configured -- resuming normal operations
+[Sat Sep 30 13:34:16.975861 2017] [core:notice] [pid 21269:tid 140429689317248] AH00094: Command line: '/usr/sbin/apache2'
+[Sat Sep 30 13:34:18.922390 2017] [wsgi:error] [pid 21406:tid 140429579110144] Internal Server Error: /
+[Sat Sep 30 13:34:18.922424 2017] [wsgi:error] [pid 21406:tid 140429579110144] Traceback (most recent call last):
+[Sat Sep 30 13:34:18.922427 2017] [wsgi:error] [pid 21406:tid 140429579110144]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+[Sat Sep 30 13:34:18.922429 2017] [wsgi:error] [pid 21406:tid 140429579110144]     response = get_response(request)
+[Sat Sep 30 13:34:18.922431 2017] [wsgi:error] [pid 21406:tid 140429579110144]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 217, in _get_response
+[Sat Sep 30 13:34:18.922433 2017] [wsgi:error] [pid 21406:tid 140429579110144]     response = self.process_exception_by_middleware(e, request)
+[Sat Sep 30 13:34:18.922435 2017] [wsgi:error] [pid 21406:tid 140429579110144]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 215, in _get_response
+[Sat Sep 30 13:34:18.922437 2017] [wsgi:error] [pid 21406:tid 140429579110144]     response = response.render()
+[Sat Sep 30 13:34:18.922438 2017] [wsgi:error] [pid 21406:tid 140429579110144]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/template/response.py", line 107, in render
+[Sat Sep 30 13:34:18.922440 2017] [wsgi:error] [pid 21406:tid 140429579110144]     self.content = self.rendered_content
+[Sat Sep 30 13:34:18.922442 2017] [wsgi:error] [pid 21406:tid 140429579110144]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/template/response.py", line 82, in rendered_content
+[Sat Sep 30 13:34:18.922444 2017] [wsgi:error] [pid 21406:tid 140429579110144]     template = self.resolve_template(self.template_name)
+[Sat Sep 30 13:34:18.922446 2017] [wsgi:error] [pid 21406:tid 140429579110144]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/template/response.py", line 64, in resolve_template
+[Sat Sep 30 13:34:18.922448 2017] [wsgi:error] [pid 21406:tid 140429579110144]     return select_template(template, using=self.using)
+[Sat Sep 30 13:34:18.922450 2017] [wsgi:error] [pid 21406:tid 140429579110144]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/template/loader.py", line 53, in select_template
+[Sat Sep 30 13:34:18.922452 2017] [wsgi:error] [pid 21406:tid 140429579110144]     raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+[Sat Sep 30 13:34:18.922455 2017] [wsgi:error] [pid 21406:tid 140429579110144] django.template.exceptions.TemplateDoesNotExist: index.html
+[Sat Sep 30 13:34:18.922460 2017] [wsgi:error] [pid 21406:tid 140429579110144] 
+[Sat Sep 30 13:34:19.214110 2017] [wsgi:error] [pid 21406:tid 140429461505792] Not Found: /favicon.ico
+[Sat Sep 30 13:34:30.483454 2017] [wsgi:error] [pid 21406:tid 140429579110144] Internal Server Error: /
+[Sat Sep 30 13:34:30.483481 2017] [wsgi:error] [pid 21406:tid 140429579110144] Traceback (most recent call last):
+[Sat Sep 30 13:34:30.483484 2017] [wsgi:error] [pid 21406:tid 140429579110144]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+[Sat Sep 30 13:34:30.483486 2017] [wsgi:error] [pid 21406:tid 140429579110144]     response = get_response(request)
+[Sat Sep 30 13:34:30.483488 2017] [wsgi:error] [pid 21406:tid 140429579110144]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 217, in _get_response
+[Sat Sep 30 13:34:30.483491 2017] [wsgi:error] [pid 21406:tid 140429579110144]     response = self.process_exception_by_middleware(e, request)
+[Sat Sep 30 13:34:30.483493 2017] [wsgi:error] [pid 21406:tid 140429579110144]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 215, in _get_response
+[Sat Sep 30 13:34:30.483495 2017] [wsgi:error] [pid 21406:tid 140429579110144]     response = response.render()
+[Sat Sep 30 13:34:30.483497 2017] [wsgi:error] [pid 21406:tid 140429579110144]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/template/response.py", line 107, in render
+[Sat Sep 30 13:34:30.483508 2017] [wsgi:error] [pid 21406:tid 140429579110144]     self.content = self.rendered_content
+[Sat Sep 30 13:34:30.483510 2017] [wsgi:error] [pid 21406:tid 140429579110144]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/template/response.py", line 82, in rendered_content
+[Sat Sep 30 13:34:30.483512 2017] [wsgi:error] [pid 21406:tid 140429579110144]     template = self.resolve_template(self.template_name)
+[Sat Sep 30 13:34:30.483514 2017] [wsgi:error] [pid 21406:tid 140429579110144]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/template/response.py", line 64, in resolve_template
+[Sat Sep 30 13:34:30.483516 2017] [wsgi:error] [pid 21406:tid 140429579110144]     return select_template(template, using=self.using)
+[Sat Sep 30 13:34:30.483518 2017] [wsgi:error] [pid 21406:tid 140429579110144]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/template/loader.py", line 53, in select_template
+[Sat Sep 30 13:34:30.483520 2017] [wsgi:error] [pid 21406:tid 140429579110144]     raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+[Sat Sep 30 13:34:30.483523 2017] [wsgi:error] [pid 21406:tid 140429579110144] django.template.exceptions.TemplateDoesNotExist: index.html
+[Sat Sep 30 13:34:30.483527 2017] [wsgi:error] [pid 21406:tid 140429579110144] 
+[Sat Sep 30 13:39:33.435825 2017] [mpm_event:notice] [pid 21269:tid 140429689317248] AH00493: SIGUSR1 received.  Doing graceful restart
+[Sat Sep 30 13:39:33.534898 2017] [wsgi:warn] [pid 21269:tid 140429689317248] mod_wsgi: Compiled for Python/3.5.1+.
+[Sat Sep 30 13:39:33.534913 2017] [wsgi:warn] [pid 21269:tid 140429689317248] mod_wsgi: Runtime using Python/3.5.2.
+[Sat Sep 30 13:39:33.535171 2017] [mpm_event:notice] [pid 21269:tid 140429689317248] AH00489: Apache/2.4.18 (Ubuntu) mod_wsgi/4.3.0 Python/3.5.2 configured -- resuming normal operations
+[Sat Sep 30 13:39:33.535182 2017] [core:notice] [pid 21269:tid 140429689317248] AH00094: Command line: '/usr/sbin/apache2'
+[Sat Sep 30 13:39:37.388969 2017] [wsgi:error] [pid 21578:tid 140429579110144] Internal Server Error: /
+[Sat Sep 30 13:39:37.388999 2017] [wsgi:error] [pid 21578:tid 140429579110144] Traceback (most recent call last):
+[Sat Sep 30 13:39:37.389002 2017] [wsgi:error] [pid 21578:tid 140429579110144]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+[Sat Sep 30 13:39:37.389004 2017] [wsgi:error] [pid 21578:tid 140429579110144]     response = get_response(request)
+[Sat Sep 30 13:39:37.389007 2017] [wsgi:error] [pid 21578:tid 140429579110144]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 217, in _get_response
+[Sat Sep 30 13:39:37.389009 2017] [wsgi:error] [pid 21578:tid 140429579110144]     response = self.process_exception_by_middleware(e, request)
+[Sat Sep 30 13:39:37.389011 2017] [wsgi:error] [pid 21578:tid 140429579110144]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 215, in _get_response
+[Sat Sep 30 13:39:37.389013 2017] [wsgi:error] [pid 21578:tid 140429579110144]     response = response.render()
+[Sat Sep 30 13:39:37.389015 2017] [wsgi:error] [pid 21578:tid 140429579110144]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/template/response.py", line 107, in render
+[Sat Sep 30 13:39:37.389017 2017] [wsgi:error] [pid 21578:tid 140429579110144]     self.content = self.rendered_content
+[Sat Sep 30 13:39:37.389019 2017] [wsgi:error] [pid 21578:tid 140429579110144]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/template/response.py", line 82, in rendered_content
+[Sat Sep 30 13:39:37.389021 2017] [wsgi:error] [pid 21578:tid 140429579110144]     template = self.resolve_template(self.template_name)
+[Sat Sep 30 13:39:37.389023 2017] [wsgi:error] [pid 21578:tid 140429579110144]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/template/response.py", line 64, in resolve_template
+[Sat Sep 30 13:39:37.389033 2017] [wsgi:error] [pid 21578:tid 140429579110144]     return select_template(template, using=self.using)
+[Sat Sep 30 13:39:37.389035 2017] [wsgi:error] [pid 21578:tid 140429579110144]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/template/loader.py", line 53, in select_template
+[Sat Sep 30 13:39:37.389037 2017] [wsgi:error] [pid 21578:tid 140429579110144]     raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+[Sat Sep 30 13:39:37.389040 2017] [wsgi:error] [pid 21578:tid 140429579110144] django.template.exceptions.TemplateDoesNotExist: index.html
+[Sat Sep 30 13:39:37.389045 2017] [wsgi:error] [pid 21578:tid 140429579110144] 
+[Sat Sep 30 13:39:38.748235 2017] [wsgi:error] [pid 21578:tid 140429461497600] Internal Server Error: /
+[Sat Sep 30 13:39:38.748262 2017] [wsgi:error] [pid 21578:tid 140429461497600] Traceback (most recent call last):
+[Sat Sep 30 13:39:38.748265 2017] [wsgi:error] [pid 21578:tid 140429461497600]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+[Sat Sep 30 13:39:38.748267 2017] [wsgi:error] [pid 21578:tid 140429461497600]     response = get_response(request)
+[Sat Sep 30 13:39:38.748269 2017] [wsgi:error] [pid 21578:tid 140429461497600]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 217, in _get_response
+[Sat Sep 30 13:39:38.748272 2017] [wsgi:error] [pid 21578:tid 140429461497600]     response = self.process_exception_by_middleware(e, request)
+[Sat Sep 30 13:39:38.748274 2017] [wsgi:error] [pid 21578:tid 140429461497600]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 215, in _get_response
+[Sat Sep 30 13:39:38.748276 2017] [wsgi:error] [pid 21578:tid 140429461497600]     response = response.render()
+[Sat Sep 30 13:39:38.748278 2017] [wsgi:error] [pid 21578:tid 140429461497600]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/template/response.py", line 107, in render
+[Sat Sep 30 13:39:38.748280 2017] [wsgi:error] [pid 21578:tid 140429461497600]     self.content = self.rendered_content
+[Sat Sep 30 13:39:38.748282 2017] [wsgi:error] [pid 21578:tid 140429461497600]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/template/response.py", line 82, in rendered_content
+[Sat Sep 30 13:39:38.748283 2017] [wsgi:error] [pid 21578:tid 140429461497600]     template = self.resolve_template(self.template_name)
+[Sat Sep 30 13:39:38.748285 2017] [wsgi:error] [pid 21578:tid 140429461497600]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/template/response.py", line 64, in resolve_template
+[Sat Sep 30 13:39:38.748287 2017] [wsgi:error] [pid 21578:tid 140429461497600]     return select_template(template, using=self.using)
+[Sat Sep 30 13:39:38.748289 2017] [wsgi:error] [pid 21578:tid 140429461497600]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/template/loader.py", line 53, in select_template
+[Sat Sep 30 13:39:38.748291 2017] [wsgi:error] [pid 21578:tid 140429461497600]     raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+[Sat Sep 30 13:39:38.748294 2017] [wsgi:error] [pid 21578:tid 140429461497600] django.template.exceptions.TemplateDoesNotExist: index.html
+[Sat Sep 30 13:39:38.748299 2017] [wsgi:error] [pid 21578:tid 140429461497600] 
+[Sat Sep 30 13:39:40.522160 2017] [wsgi:error] [pid 21578:tid 140429579110144] Internal Server Error: /
+[Sat Sep 30 13:39:40.522186 2017] [wsgi:error] [pid 21578:tid 140429579110144] Traceback (most recent call last):
+[Sat Sep 30 13:39:40.522189 2017] [wsgi:error] [pid 21578:tid 140429579110144]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+[Sat Sep 30 13:39:40.522191 2017] [wsgi:error] [pid 21578:tid 140429579110144]     response = get_response(request)
+[Sat Sep 30 13:39:40.522201 2017] [wsgi:error] [pid 21578:tid 140429579110144]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 217, in _get_response
+[Sat Sep 30 13:39:40.522204 2017] [wsgi:error] [pid 21578:tid 140429579110144]     response = self.process_exception_by_middleware(e, request)
+[Sat Sep 30 13:39:40.522206 2017] [wsgi:error] [pid 21578:tid 140429579110144]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 215, in _get_response
+[Sat Sep 30 13:39:40.522208 2017] [wsgi:error] [pid 21578:tid 140429579110144]     response = response.render()
+[Sat Sep 30 13:39:40.522209 2017] [wsgi:error] [pid 21578:tid 140429579110144]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/template/response.py", line 107, in render
+[Sat Sep 30 13:39:40.522211 2017] [wsgi:error] [pid 21578:tid 140429579110144]     self.content = self.rendered_content
+[Sat Sep 30 13:39:40.522213 2017] [wsgi:error] [pid 21578:tid 140429579110144]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/template/response.py", line 82, in rendered_content
+[Sat Sep 30 13:39:40.522215 2017] [wsgi:error] [pid 21578:tid 140429579110144]     template = self.resolve_template(self.template_name)
+[Sat Sep 30 13:39:40.522217 2017] [wsgi:error] [pid 21578:tid 140429579110144]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/template/response.py", line 64, in resolve_template
+[Sat Sep 30 13:39:40.522219 2017] [wsgi:error] [pid 21578:tid 140429579110144]     return select_template(template, using=self.using)
+[Sat Sep 30 13:39:40.522221 2017] [wsgi:error] [pid 21578:tid 140429579110144]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/template/loader.py", line 53, in select_template
+[Sat Sep 30 13:39:40.522223 2017] [wsgi:error] [pid 21578:tid 140429579110144]     raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+[Sat Sep 30 13:39:40.522226 2017] [wsgi:error] [pid 21578:tid 140429579110144] django.template.exceptions.TemplateDoesNotExist: index.html
+[Sat Sep 30 13:39:40.522232 2017] [wsgi:error] [pid 21578:tid 140429579110144] 
+[Sat Sep 30 13:43:49.899861 2017] [mpm_event:notice] [pid 21269:tid 140429689317248] AH00493: SIGUSR1 received.  Doing graceful restart
+[Sat Sep 30 13:43:49.998960 2017] [wsgi:warn] [pid 21269:tid 140429689317248] mod_wsgi: Compiled for Python/3.5.1+.
+[Sat Sep 30 13:43:49.998975 2017] [wsgi:warn] [pid 21269:tid 140429689317248] mod_wsgi: Runtime using Python/3.5.2.
+[Sat Sep 30 13:43:49.999191 2017] [mpm_event:notice] [pid 21269:tid 140429689317248] AH00489: Apache/2.4.18 (Ubuntu) mod_wsgi/4.3.0 Python/3.5.2 configured -- resuming normal operations
+[Sat Sep 30 13:43:49.999202 2017] [core:notice] [pid 21269:tid 140429689317248] AH00094: Command line: '/usr/sbin/apache2'
+[Sat Sep 30 13:43:53.281013 2017] [wsgi:error] [pid 21701:tid 140429478299392] Internal Server Error: /
+[Sat Sep 30 13:43:53.281047 2017] [wsgi:error] [pid 21701:tid 140429478299392] Traceback (most recent call last):
+[Sat Sep 30 13:43:53.281050 2017] [wsgi:error] [pid 21701:tid 140429478299392]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+[Sat Sep 30 13:43:53.281052 2017] [wsgi:error] [pid 21701:tid 140429478299392]     response = get_response(request)
+[Sat Sep 30 13:43:53.281055 2017] [wsgi:error] [pid 21701:tid 140429478299392]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 217, in _get_response
+[Sat Sep 30 13:43:53.281057 2017] [wsgi:error] [pid 21701:tid 140429478299392]     response = self.process_exception_by_middleware(e, request)
+[Sat Sep 30 13:43:53.281059 2017] [wsgi:error] [pid 21701:tid 140429478299392]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 215, in _get_response
+[Sat Sep 30 13:43:53.281062 2017] [wsgi:error] [pid 21701:tid 140429478299392]     response = response.render()
+[Sat Sep 30 13:43:53.281071 2017] [wsgi:error] [pid 21701:tid 140429478299392]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/template/response.py", line 107, in render
+[Sat Sep 30 13:43:53.281074 2017] [wsgi:error] [pid 21701:tid 140429478299392]     self.content = self.rendered_content
+[Sat Sep 30 13:43:53.281075 2017] [wsgi:error] [pid 21701:tid 140429478299392]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/template/response.py", line 82, in rendered_content
+[Sat Sep 30 13:43:53.281078 2017] [wsgi:error] [pid 21701:tid 140429478299392]     template = self.resolve_template(self.template_name)
+[Sat Sep 30 13:43:53.281079 2017] [wsgi:error] [pid 21701:tid 140429478299392]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/template/response.py", line 64, in resolve_template
+[Sat Sep 30 13:43:53.281081 2017] [wsgi:error] [pid 21701:tid 140429478299392]     return select_template(template, using=self.using)
+[Sat Sep 30 13:43:53.281083 2017] [wsgi:error] [pid 21701:tid 140429478299392]   File "/home/ubuntu/syot-project/env/lib/python3.6/site-packages/django/template/loader.py", line 53, in select_template
+[Sat Sep 30 13:43:53.281085 2017] [wsgi:error] [pid 21701:tid 140429478299392]     raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+[Sat Sep 30 13:43:53.281088 2017] [wsgi:error] [pid 21701:tid 140429478299392] django.template.exceptions.TemplateDoesNotExist: index.html
+[Sat Sep 30 13:43:53.281093 2017] [wsgi:error] [pid 21701:tid 140429478299392] 
+[Sat Sep 30 13:46:30.339777 2017] [mpm_event:notice] [pid 21269:tid 140429689317248] AH00493: SIGUSR1 received.  Doing graceful restart
+[Sat Sep 30 13:46:30.438919 2017] [wsgi:warn] [pid 21269:tid 140429689317248] mod_wsgi: Compiled for Python/3.5.1+.
+[Sat Sep 30 13:46:30.438934 2017] [wsgi:warn] [pid 21269:tid 140429689317248] mod_wsgi: Runtime using Python/3.5.2.
+[Sat Sep 30 13:46:30.439236 2017] [mpm_event:notice] [pid 21269:tid 140429689317248] AH00489: Apache/2.4.18 (Ubuntu) mod_wsgi/4.3.0 Python/3.5.2 configured -- resuming normal operations
+[Sat Sep 30 13:46:30.439250 2017] [core:notice] [pid 21269:tid 140429689317248] AH00094: Command line: '/usr/sbin/apache2'
+[Sat Sep 30 13:46:33.597958 2017] [wsgi:error] [pid 21813:tid 140429469898496] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 13:46:33.627499 2017] [wsgi:error] [pid 21813:tid 140429579110144] Not Found: /static/css/footer.css
+[Sat Sep 30 13:46:33.682267 2017] [wsgi:error] [pid 21813:tid 140429469898496] Not Found: /static/css/style.css
+[Sat Sep 30 13:46:33.690393 2017] [wsgi:error] [pid 21813:tid 140429579110144] Not Found: /static/css/header.css
+[Sat Sep 30 13:46:33.798156 2017] [wsgi:error] [pid 21813:tid 140429469898496] Not Found: /static/images/logo.png
+[Sat Sep 30 13:46:33.889672 2017] [wsgi:error] [pid 21813:tid 140429579110144] Not Found: /static/images/pic4.jpg
+[Sat Sep 30 13:46:33.997012 2017] [wsgi:error] [pid 21813:tid 140429469898496] Not Found: /static/images/4.jpg
+[Sat Sep 30 13:46:34.145525 2017] [wsgi:error] [pid 21813:tid 140429579110144] Not Found: /static/images/5.jpg
+[Sat Sep 30 13:46:34.263359 2017] [wsgi:error] [pid 21813:tid 140429469898496] Not Found: /static/images/pic6.jpg
+[Sat Sep 30 13:46:34.315350 2017] [wsgi:error] [pid 21813:tid 140429579110144] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 13:46:34.319310 2017] [wsgi:error] [pid 21813:tid 140429469898496] Not Found: /static/css/footer.css
+[Sat Sep 30 13:46:34.354959 2017] [wsgi:error] [pid 21813:tid 140429579110144] Not Found: /static/css/header.css
+[Sat Sep 30 13:46:34.392711 2017] [wsgi:error] [pid 21813:tid 140429469898496] Not Found: /static/css/style.css
+[Sat Sep 30 13:46:36.177208 2017] [wsgi:error] [pid 21813:tid 140429469898496] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 13:46:36.180844 2017] [wsgi:error] [pid 21813:tid 140429579110144] Not Found: /static/css/footer.css
+[Sat Sep 30 13:46:36.204351 2017] [wsgi:error] [pid 21813:tid 140429469898496] Not Found: /static/css/header.css
+[Sat Sep 30 13:46:36.234056 2017] [wsgi:error] [pid 21813:tid 140429579110144] Not Found: /static/css/style.css
+[Sat Sep 30 13:46:36.396021 2017] [wsgi:error] [pid 21813:tid 140429469898496] Not Found: /static/images/logo.png
+[Sat Sep 30 13:46:36.437911 2017] [wsgi:error] [pid 21813:tid 140429579110144] Not Found: /static/css/styleyaya.css
+[Sat Sep 30 13:46:36.441102 2017] [wsgi:error] [pid 21813:tid 140429461497600] Not Found: /static/images/pic6.jpg
+[Sat Sep 30 13:46:36.444071 2017] [wsgi:error] [pid 21813:tid 140429469898496] Not Found: /static/css/footer.css
+[Sat Sep 30 13:46:36.484334 2017] [wsgi:error] [pid 21813:tid 140429478299392] Not Found: /static/css/style.css
+[Sat Sep 30 13:46:36.489252 2017] [wsgi:error] [pid 21813:tid 140429469898496] Not Found: /static/css/header.css
+[Sat Sep 30 13:46:36.592779 2017] [wsgi:error] [pid 21813:tid 140429478299392] Not Found: /static/images/5.jpg
+[Sat Sep 30 13:46:36.637861 2017] [wsgi:error] [pid 21813:tid 140429478299392] Not Found: /static/images/pic4.jpg
+[Sat Sep 30 13:46:36.638747 2017] [wsgi:error] [pid 21813:tid 140429469898496] Not Found: /static/images/4.jpg
