@@ -19,19 +19,19 @@
 					{% for itemCart in carts %}
 					{% if itemCart.productID == item and itemCart.userId == user %}
 					<div class="item row">
-						<div class="item-img col-lg-3" align="center"><img src="{% static 'images/babygroot.jpg' %}"></div>
+						<div class="item-img col-lg-3" align="center"><img src="{{ item.pictureUrl.url }}"></div>
 						<div class="info col-lg-9">
 							<div class="row">
 								<div class="info1 col-lg-9">
 									<h3>{{ item.name }}</h3>
 									<p>{{ item.description }}</p>
-									<form action="{% url 'carts:delete' user.id item.id %}" method="post"> {% csrf_token %}
+									<form action="{% url 'delete' user.id item.id %}" method="post"> {% csrf_token %}
 										<input class="button" id="delete" value="DELETE" type="submit"/>
 									</form>
 								</div>
 								<div class="info2 col-lg-3">
 									<h5>{{ item.cost }}</h5>
-									<form action="{% url 'carts:addminusQuantity' user.id item.id %}" method="post"> {% csrf_token %}
+									<form action="{% url 'addminusQuantity' user.id item.id %}" method="post"> {% csrf_token %}
 										<div class="qty-box" data-reactid=".0">
 											<input type="submit" class="dec" data-reactid=".0.0" type="submit" value='-' name="dec"/>
 											<span class="qty" data-reactid=".0.1">{{ itemCart.quantity }}</span>

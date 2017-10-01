@@ -60,12 +60,16 @@
   				Int'l Dim. Weight : TBD -->
   			</p><br>
   			<div class="row">
-  				<div class="col-md-5" id="div-icon-cart">
-  					<a id="icon-cart-product" class="nav-link" href="basket.html"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></a>
-  				</div>
+                {% with user=1 %}
+                <form id="cart-form" action="{% url 'addtocart' user getProduct.id %}" method="post"> {% csrf_token %}
+      				<div class="col-md-5" id="div-icon-cart">
+      					<a id="icon-cart-product" class="nav-link" href='#' onclick='document.forms["cart-form"].submit(); return false;'><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></a>
+      				</div>
+                </form>
   				<div class="col-md-2" id="div-icon-fav">
   					<a id="icon-fav-product" class="nav-link" href="#"><i class="fa fa-heart fa-2x" aria-hidden="true"></i></a>
   				</div>
+                {% endwith %}
   			</div>
   		</div>
   	</div>

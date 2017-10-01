@@ -42,7 +42,7 @@ def delete(request, user_id, product_id):
     product = Product.objects.get(id=product_id)
     item = get_object_or_404(Basket, userId=user, productID=product)
     item.delete()
-    
+
     userBasket = User.objects.get(id=1)
     usercart = userBasket.myBasket.all()
     carts = Basket.objects.all()
