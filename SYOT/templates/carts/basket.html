@@ -1,6 +1,5 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
-{% load mathfilters %}
 
 {% block addcssjs %}
 	<link rel="stylesheet" type="text/css" href="{% static 'css/basket.css' %}">
@@ -30,12 +29,18 @@
 								</div>
 								<div class="info2 col-lg-3">
 									<h5>{{ item.cost }}</h5>
-									<div class="qty-box" data-reactid=".0"><span class="dec" data-reactid=".0.0">–</span><span class="qty" data-reactid=".0.1">{{ itemCart.quantity }}</span><span class="inc" data-reactid=".0.2">+</span></div>
+									<form action="{% url 'carts:addminusQuantity' user.id item.id %}" method="post"> {% csrf_token %}
+										<div class="qty-box" data-reactid=".0">
+											<input type="submit" class="dec" data-reactid=".0.0" type="submit" value='-' name="dec"/>
+											<span class="qty" data-reactid=".0.1">{{ itemCart.quantity }}</span>
+											<input type="submit" class="inc" data-reactid=".0.2" type="submit" value='+' name="inc"/>
+										</div>
+									</form>
 								</div>
 							</div>
 						</div>
 					</div>
-
+					</form>
 					{% endif %}
 					{% endfor %}
 					{% endfor %}
