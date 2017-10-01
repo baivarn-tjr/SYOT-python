@@ -4,6 +4,8 @@ from .models import Product, Catagory
 from carts.models import User,Basket
 from favorite.models import Account,Favorite
 
+import django.contrib.postgres.search
+
 def index(request):
     context = {
         }
@@ -34,7 +36,7 @@ def search(request):
     name = data['search_name']
     count = 0
 
-    toys = Product.objects.filter(name__search = 'Groot')
+    toys = Product.objects.filter(name__contains = name)
 
     for i in toys:
         count = count + 1
@@ -63,6 +65,9 @@ def addtocart(request, user_id , product_id):
     return render(request, 'Product-page.html', context)
 
 
+=======
+<<<<<<< HEAD
+
 def addtofav(request, user_id , product_id):
     user = Account.objects.get(id=user_id)
     product = Product.objects.get(id=product_id)
@@ -78,7 +83,14 @@ def addtofav(request, user_id , product_id):
         'quantityWarning' : quantityWarning,
     }
     return render(request, 'Product-page.html', context)
+<<<<<<< HEAD
 
+=======
+=======
+>>>>>>> ee816fd3a727dacd3f51cbebdea82a6a5ba2407b
+>>>>>>> adc252f8562e0f1dc7713e39ab0289f7f7469e04
+>>>>>>> 9384168992384af4ce859e9aea89dbcbcbd87c97
+>>>>>>> cb91237a912ee035ef8a230172f3e9e71f689c59
 # def product(request):
 #     context = locals()
 #     template = 'start.html'

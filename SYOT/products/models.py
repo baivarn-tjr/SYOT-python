@@ -1,5 +1,4 @@
 from django.db import models
-from django.contrib.postgres.fields import JSONField
 import os
 
 def get_product_image_path(instance, filename):
