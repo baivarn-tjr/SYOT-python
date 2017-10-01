@@ -1,8 +1,15 @@
 body, html {
 	height: 100%;
 }
-form{
-	display: inline-block;
+
+
+#input-search-box{
+	width: 300px;
+}
+
+#search-box{
+	margin-left: 38%;
+	margin-bottom: 50px;
 }
 .bgimg {
 	background-attachment: fixed;
