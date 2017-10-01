@@ -13,16 +13,19 @@
 	</div>
     <div class="main">
 		<span><h1>Product</h1></span>
+      <!-- <form class="form-inline" id="search-box">
+  			<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" id="input-search-box">
+     			<button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+  		</form> -->
+
         <div id="search-box">
         <form action="{% url 'search' %}" method="POST" class="form-inline my-2 my-lg-0">
           {% csrf_token %}
-            <input id="id_name" type="text" name="search_name" maxlength="250" class="form-control mr-sm-2" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <input id="input-search-box" type="text" name="search_name" maxlength="250" class="form-control mr-sm-2" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
           </form>
         </div>
     </div>
-    <br>
-    <br>
 		<div class="row">
       {% for product in products %}
 			<div class="product col-lg-3" align="center">

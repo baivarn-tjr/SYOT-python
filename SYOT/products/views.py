@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse, Http404
 from .models import Product, Catagory
 from carts.models import User,Basket
+import django.contrib.postgres.search
 
 def index(request):
     context = {
@@ -27,13 +28,13 @@ def detail(request, product_id):
     }
     return render(request, 'Product-page.html', context)
 
-<<<<<<< HEAD
+
 def search(request):
     data = request.POST
     name = data['search_name']
     count = 0
 
-    toys = Product.objects.filter(name__search = 'Groot')
+    toys = Product.objects.filter(name__contains = name)
 
     for i in toys:
         count = count + 1
@@ -44,7 +45,7 @@ def search(request):
         'Count' : count,
     }
     return render(request, 'product_search.html' ,context)
-=======
+
 def addtocart(request, user_id , product_id):
     user = User.objects.get(id=user_id)
     product = Product.objects.get(id=product_id)
@@ -60,7 +61,7 @@ def addtocart(request, user_id , product_id):
         'quantityWarning' : quantityWarning,
     }
     return render(request, 'Product-page.html', context)
->>>>>>> ee816fd3a727dacd3f51cbebdea82a6a5ba2407b
+
 # def product(request):
 #     context = locals()
 #     template = 'start.html'

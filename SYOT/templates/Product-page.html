@@ -3,6 +3,7 @@
 
 {% block addcssjs %}
     <link rel="stylesheet" type="text/css" href="{% static "css/product.css" %}">
+    <script src="{% static "js/product-page.js" %}" defer></script>
 {% endblock %}
 
 {% block content %}
@@ -14,14 +15,23 @@
   		<div class="col-md-6">
   			<div class="row" id="picture-product">
   				<div class="col-md-3" id="sub-model-picture">
-  					<img id="sub-model" src="images/babygroot3.jpg">
-  					<img id="sub-model" src="images/babygroot4.jpg">
-  					<img id="sub-model" src="images/babygroot6.jpg">
-  					<img id="sub-model" src="images/babygroot5.jpg">
+  					<img id="sub-model-1" src="{{ getProduct.pictureUrl.url }}">
+  					<img id="sub-model-2" src="{{ getProduct.pictureUrl.url }}">
+  					<img id="sub-model-3" src="{{ getProduct.pictureUrl.url }}">
+  					<img id="sub-model-4" src="{{ getProduct.pictureUrl.url }}">
   				</div>
   				<div class="col-md-6">
-  					<img id="front-model" src="images/babygroot.png">
+  					<img id="front-model" src="{{ getProduct.pictureUrl.url }}">
 				</div>
+        <!-- The Modal -->
+          <div id="myModal" class="modal">
+              <!-- The Close Button -->
+              <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+              <!-- Modal Content (The Image) -->
+              <img class="modal-content" id="img01">
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+          </div>
   			</div>
   		</div>
   		<div class="col-md-5" id="details-product">
