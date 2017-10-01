@@ -3,6 +3,12 @@ from django.http import HttpResponse, Http404
 from .models import Product, Catagory
 
 def index(request):
+    context = {
+        }
+    template = 'index.html'
+    return render(request, template , context)
+
+def catalog(request):
     products = Product.objects.all()
     context = {
             'products' : products,
