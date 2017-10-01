@@ -10,6 +10,7 @@
 	<!-- Boostrap -->
 	<!--Font Awesom import-->
   	<script src="https://use.fontawesome.com/ef3af9c398.js"></script>
+    <script src="js/product-page.js" defer></script>
   	<!-- Css file -->
   	<link rel="stylesheet" type="text/css" href="css/product.css">
   	<link rel="stylesheet" type="text/css" href="css/header.css">
@@ -64,17 +65,27 @@
   		<div class="col-md-6">
   			<div class="row" id="picture-product">
   				<div class="col-md-3" id="sub-model-picture">
-  					<img id="sub-model" src="images/babygroot3.jpg">
-  					<img id="sub-model" src="images/babygroot4.jpg">
-  					<img id="sub-model" src="images/babygroot6.jpg">
-  					<img id="sub-model" src="images/babygroot5.jpg">
-  				</div>
+  					<img id="sub-model-1" src="images/babygroot3.jpg" alt="babygroot">
+  					<img id="sub-model-2" src="images/babygroot4.jpg" alt="babygroot">
+  					<img id="sub-model-3" src="images/babygroot6.jpg" alt="babygroot">
+  					<img id="sub-model-4" src="images/babygroot5.jpg" alt="babygroot">
+          </div>
   				<div class="col-md-6">
-  					<img id="front-model" src="images/babygroot.png">
-				</div>
+  					<img id="front-model" src="images/babygroot.png" alt="babygroot">
+				  </div>
   			</div>
-  		</div>
-  		<div class="col-md-5" id="details-product">
+  		  <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- The Close Button -->
+            <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img01">
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+      </div>
+
+      <div class="col-md-5" id="details-product">
   			<h3><b>BABY GROOT</b></h3>
   			<h6>GUARDIANS OF THE GALAXY</h6>
   			<br>
