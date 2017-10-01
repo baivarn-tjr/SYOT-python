@@ -1,6 +1,5 @@
 body{
-  /*background-image: url('http://urbanfragment.files.wordpress.com/2012/10/mount-fuji-highest-mountain-in-japan-osx-lion-wallpaper.jpg');*/
-	background-size:100% 100%;
+  background-image: url('../images/bg-profile.jpg');
 	font-family:"Open Sans", sans-serif;
 }
 a.nostyle{
@@ -25,7 +24,7 @@ div.portfoliocard{
 div.portfoliocard div.coverphoto{
 	width:100%;
 	height:120px;
-	background:url('http://farm8.staticflickr.com/7149/6484148411_baf8d2e934_z.jpg');
+	background-image: url('../images/top-profile.jpg');
 	background-position:center center;
 	border-top-right-radius:5px;
 	border-top-left-radius:5px;
