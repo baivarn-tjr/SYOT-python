@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -7,6 +7,10 @@
   </head>
   <body>
       <img src='{% static "images/logo.png" %}' width="35" height="35" class="d-inline-block align-top" id="brand-name">
-      <!-- <img src='{% static "images/logo.png" %}' /> -->
+      <img src='{% static "images/logo.png" %}' />
   </body>
-</html>
+</html> -->
+<h1>test</h1>
+{% for pro in products %}
+  <h3>{{ pro.name }}</h3>
+{% endfor %}
