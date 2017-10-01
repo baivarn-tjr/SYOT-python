@@ -2,7 +2,7 @@ from django.conf.urls import url
 
 from . import views
 
-app_name = 'carts'
+# app_name = 'carts'
 urlpatterns = [
     # ex: /polls/
     url(r'^$', views.cart, name='cart'),
