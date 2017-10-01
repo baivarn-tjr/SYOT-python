@@ -2,11 +2,11 @@
 {% load staticfiles %}
 
 {% block addcssjs %}
-    <link rel="stylesheet" type="text/css" href="css/product.css">
+    <link rel="stylesheet" type="text/css" href="{% static "css/product.css" %}">
 {% endblock %}
 
 {% block content %}
-
+<!-- <h1>{{ product.name }}</h1> -->
   <hr>
   <!-- Product section-->
   <div class="container" id="product">
@@ -25,12 +25,17 @@
   			</div>
   		</div>
   		<div class="col-md-5" id="details-product">
-  			<h3><b>BABY GROOT</b></h3>
-  			<h6>GUARDIANS OF THE GALAXY</h6>
+  			<h3><b> {{ getProduct.name }} </b></h3>
+  			<!-- <h6>GUARDIANS OF THE GALAXY</h6> -->
+          {% if getProduct.catagory %}
+            {% for catagory in getProduct.catagory.all %}
+              <h6><b>Catagory : {{ catagory.name }}</b></h6>
+            {% endfor %}
+          {% endif %}
   			<br>
   			<div class="row">
   				<div class="col-md-6">
-  					<h4>99 USD</h4>
+  					<h4>{{ getProduct.cost }} USD</h4>
   				</div>
   				<div class="col-md-6">
   					<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
@@ -42,14 +47,17 @@
   			</div>
   			<hr>
   			<p id="details-product">
-  				“Groot!  Get out of the way, you’re gonna get hurt…Hi!”<br><br>
+          <br>
+          {{ getProduct.description}}
+  				<!-- “Groot!  Get out of the way, you’re gonna get hurt…Hi!”<br><br>
   				Somebody has to look after him! Sideshow in partnership with Legacy Effects is proud to present the definitive Baby Groot Maquette, sprouting right from the work of the film-makers to your Marvel collection. <br><br>
-  				Expected to Ship : Jan 2018 - Feb 2018
+  				Expected to Ship : Jan 2018 - Feb 2018 -->
   				<br>
-  				Product Size : 11" H (279.4mm) x 7" W (177.8mm) x 7" L (177.8mm)*<br>
-  				Product Weight : 2.50 lbs (1.13 kg)*<br>
+          <br>
+  				Product Size : {{ getProduct.height }}" H x {{ getProduct.width }}" W x {{ getProduct.length }}" L*<br>
+  				<!-- Product Weight : 2.50 lbs (1.13 kg)*<br>
   				Dimensional Weight : TBD <br>
-  				Int'l Dim. Weight : TBD
+  				Int'l Dim. Weight : TBD -->
   			</p><br>
   			<div class="row">
   				<div class="col-md-5" id="div-icon-cart">

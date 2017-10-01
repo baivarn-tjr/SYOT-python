@@ -11,30 +11,16 @@
   	<!--product section-->
 	<div class="header bgimg">
 	</div>
-  <!-- <div class = "container">
-        <div class = "row">
-            {% for product in products %}
-                <div class="col-12 col-sm-6 col-md-4">
-                    <br>
-                    <div class="card test-center">
-                        <div class="card-block">
-                          <img src= "{{ product.pictureUrl.url }}" class="mx-auto d-block" height="200">
-                        </div>
-                    </div>
-                </div>
-            {% endfor %}
-        </div>
-    </div> -->
     <div class="main">
 		<span><h1>Product</h1></span>
 		<div class="row">
       {% for product in products %}
 			<div class="product col-lg-3" align="center">
-				<div class="product-img "><img src="{{ product.pictureUrl.url }}"></div>
+				<a href="{% url 'detail' product.id %}"><div class="product-img "><img src="{{ product.pictureUrl.url }}"></div></a>
 				<div>
 					<h5>{{ product.name }}</h5>
 					<!-- <p>This is an awesome Batman model</p> -->
-					<p>{{ product.cost }} $</p>
+					<p>{{ product.cost }} USD</p>
 				</div>
 			</div>
       {% endfor %}

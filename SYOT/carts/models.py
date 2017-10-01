@@ -16,22 +16,17 @@ from products.models import Product
 #         except:
 #             return self.product.title
 
+#temp database
+class User(models.Model):
+    username = models.CharField(max_length=13)
+    myBasket = models.ManyToManyField(Product,through='Basket')
+    def __str__(self):
+        return str(self.username)
+
 class Basket(models.Model):
     time = models.DateTimeField(auto_now_add=True, auto_now=False)
-    userId = models.IntegerField(null=False)
+    userId = models.ForeignKey(User, on_delete=models.CASCADE)
     productID = models.ForeignKey(Product, db_column='ProductID')
-    quantity = models.IntegerField( null=False)
+    quantity = models.IntegerField( null=False,default=1)
     def __str__(self):
         return str(self.id)
-
-#temp database
-# class User(models.Model):
-#     username = models.CharField(max_length=13)
-#
-# class Basket(models.Model):
-#     time = models.DateTimeField(auto_now_add=True, auto_now=False)
-#     userId = models.ForeignKey(User,on_delete=models.CASCADE)
-#     productID = models.ForeignKey(Product, db_column='ProductID',on_delete=models.CASCADE)
-#     quantity = models.IntegerField(null=False)
-#     def __str__(self):
-#         return str(self.id)

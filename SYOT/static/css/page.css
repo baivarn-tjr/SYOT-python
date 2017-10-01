@@ -1,0 +1,267 @@
+#head {
+  width: 100%;
+  height: 700px;
+}
+#headtext1{
+  z-index: 9999;
+  display: block;
+  margin-left: 180px;
+  margin-top: 170px;
+}
+body {
+    display: block;
+    margin: 0px;
+}
+#hr1 {
+    z-index: 9999;
+    display: block;
+    width: 500px;
+    height: 1px;
+    border: 0;
+    border-top: 5px solid #ccc;
+    margin: 18em 0;
+    padding: 0;
+    margin-left: 700px;
+    /*top: 70px;*/
+}
+#hr2 {
+  z-index: 9999;
+  display: block;
+  width: 500px;
+  height: 1px;
+  border: 0;
+  border-top: 5px solid #ccc;
+  margin: 24em 0;
+  padding: 0;
+  margin-left: 150px;
+  /*top: 70px;*/
+}
+#hr3 {
+  z-index: 9999;
+  display: block;
+  width: 500px;
+  height: 1px;
+  border: 0;
+  border-top: 5px solid #ccc;
+  margin: 18em 0;
+  padding: 0;
+  margin-left: 800px;
+  /*top: 70px;*/
+}
+#text1 {
+  z-index: 100;
+  position: absolute;
+  color: White;
+  font-family: "Anton";
+  font-size: 3.2em;
+  font-weight: bold;
+  left: 500px;
+  top: 150px;
+  text-shadow: 4px 4px 6px #8c8c8c;
+}
+#text2 {
+  z-index: 100;
+  position: absolute;
+  color: Black;
+  font-family: "Anton";
+  font-size: 50px;
+  font-weight: bold;
+  left: 620px;
+  top: 950px;
+  /*text-shadow: 4px 4px 4px #8c8c8c;*/
+}
+#text3 {
+  z-index: 100;
+  position: absolute;
+  color: Black;
+  font-family: "Sukhumvit Set";
+  font-size: 20px;
+  font-weight: lighter;
+  left: 750px;
+  top: 1100px;
+  /*text-shadow: 4px 4px 4px #8c8c8c;*/
+}
+#text4 {
+  z-index: 100;
+  position: absolute;
+  color: Black;
+  font-family: "Anton";
+  font-size: 50px;
+  font-weight: bold;
+  left: 270px;
+  top: 1550px;
+  /*text-shadow: 4px 4px 4px #8c8c8c;*/
+}
+#text5 {
+  z-index: 100;
+  position: absolute;
+  color: Black;
+  font-family: "Sukhumvit Set";
+  font-size: 20px;
+  font-weight: lighter;
+  left: 290px;
+  top: 1750px;
+  /*text-shadow: 4px 4px 4px #8c8c8c;*/
+}
+#text6 {
+  z-index: 100;
+  position: absolute;
+  color: Black;
+  font-family: "Anton";
+  font-size: 45px;
+  font-weight: bold;
+  left: 740px;
+  top: 2150px;
+  /*text-shadow: 4px 4px 4px #8c8c8c;*/
+}
+#text7 {
+  z-index: 100;
+  position: absolute;
+  color: Black;
+  font-family: "Sukhumvit Set";
+  font-size: 20px;
+  font-weight: lighter;
+  left: 850px;
+  top: 2400px;
+  /*text-shadow: 4px 4px 4px #8c8c8c;*/
+}
+#shop {
+  z-index: 100;
+  position: absolute;
+  color: White;
+  font-family: "Sukhumvit Set";
+  font-weight: 500;
+  font-size: 20px;
+  left: 650px;
+  top: 450px;
+}
+
+.button1 {
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    border: 3px solid #ffffff;
+}
+
+.button1:hover {
+    background-color: #1e1e1e;
+    opacity: 0.4;
+    color: white;
+}
+
+
+#pic1 {
+  z-index: 100;
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  left: 200px;
+  top: 950px;
+}
+#pic2 {
+  z-index: 100;
+  position: absolute;
+  width: 500px;
+  height: 400px;
+  left: 726px;
+  top: 1550px;
+}
+#pic3 {
+  z-index: 100;
+  position: absolute;
+  width: 500px;
+  height: 400px;
+  left: 200px;
+  top: 2150px;
+}
+.foo {
+  /*z-index: 100;*/
+  position: absolute
+  float: left;
+  /*margin: 5px;*/
+  /*border: 1px solid rgba(0, 0, 0, .2);*/
+}
+.beige1 {
+  z-index: -100;
+  position: absolute;
+  background: #f8f8f8;
+  width: 400px;
+  height: 400px;
+  left: 400px;
+  top: 900px;
+}
+.beige2 {
+  z-index: -100;
+  position: absolute;
+  background: #f8f8f8;
+  width: 400px;
+  height: 400px;
+  left: 476px;
+  top: 1500px;
+}
+.beige3 {
+  z-index: -100;
+  position: absolute;
+  background: #f8f8f8;
+  width: 480px;
+  height: 400px;
+  left: 450px;
+  top: 2100px;
+}
+
+
+
+.transition-timer-carousel .carousel-caption {
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 4%, rgba(0,0,0,0.5) 32%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(4%,rgba(0,0,0,0.1)), color-stop(32%,rgba(0,0,0,0.5)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 4%,rgba(0,0,0,0.5) 32%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 4%,rgba(0,0,0,0.5) 32%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 4%,rgba(0,0,0,0.5) 32%,rgba(0,0,0,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 4%,rgba(0,0,0,0.5) 32%,rgba(0,0,0,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+	width: 100%;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	text-align: left;
+	padding-top: 5px;
+	padding-left: 15%;
+	padding-right: 15%;
+}
+.transition-timer-carousel .carousel-caption .carousel-caption-header {
+	margin-top: 10px;
+	font-size: 24px;
+}
+
+@media (min-width: 970px) {
+    /* Lower the font size of the carousel caption header so that our caption
+    doesn't take up the full image/slide on smaller screens */
+	.transition-timer-carousel .carousel-caption .carousel-caption-header {
+		font-size: 36px;
+	}
+}
+.transition-timer-carousel .carousel-indicators {
+	bottom: 0px;
+	margin-bottom: 5px;
+}
+.transition-timer-carousel .carousel-control {
+	z-index: 11;
+}
+.transition-timer-carousel .transition-timer-carousel-progress-bar {
+    height: 5px;
+    background-color: #5cb85c;
+    width: 0%;
+    margin: -5px 0px 0px 0px;
+    border: none;
+    z-index: 11;
+    position: relative;
+}
+.transition-timer-carousel .transition-timer-carousel-progress-bar.animate{
+    /* We make the transition time shorter to avoid the slide transitioning
+    before the timer bar is "full" - change the 4.25s here to fit your
+    carousel's transition time */
+    -webkit-transition: width 4.25s linear;
+	-moz-transition: width 4.25s linear;
+	-o-transition: width 4.25s linear;
+	transition: width 4.25s linear;
+}
