@@ -2,7 +2,11 @@ from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse, Http404
 from .models import Product, Catagory
 from carts.models import User,Basket
+<<<<<<< HEAD
 import django.contrib.postgres.search
+=======
+from favorite.models import Account,Favorite
+>>>>>>> 9384168992384af4ce859e9aea89dbcbcbd87c97
 
 def index(request):
     context = {
@@ -61,7 +65,30 @@ def addtocart(request, user_id , product_id):
         'quantityWarning' : quantityWarning,
     }
     return render(request, 'Product-page.html', context)
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+def addtofav(request, user_id , product_id):
+    user = Account.objects.get(id=user_id)
+    product = Product.objects.get(id=product_id)
+    try:
+        itemtocart = Favorite.objects.get(userId=user, productID=product)
+    except (KeyError, Favorite.DoesNotExist):
+        Favorite.objects.create(userId=user, productID=product)
+
+    product = Product.objects.get(id = product_id)
+    quantityWarning = 20
+    context = {
+        'getProduct' : product,
+        'quantityWarning' : quantityWarning,
+    }
+    return render(request, 'Product-page.html', context)
+=======
+>>>>>>> ee816fd3a727dacd3f51cbebdea82a6a5ba2407b
+>>>>>>> adc252f8562e0f1dc7713e39ab0289f7f7469e04
+>>>>>>> 9384168992384af4ce859e9aea89dbcbcbd87c97
 # def product(request):
 #     context = locals()
 #     template = 'start.html'

@@ -15,51 +15,25 @@
       </pre>
     <hr id="hr1">
         <div class="row" id="test">
+        {% for item in userfav %}
           <div class="col-md-4" align="center">
             <div class="product">
-              <img id="pic3" src="{% static 'images/pic6.jpg' %}">
+              <img id="pic3" src="{{ item.pictureUrl.url }}">
               <div class="row">
                 <div class="col-sm-9">
-                  <p>IRON MAN<br>3000 THB</p>
+                  <p>{{ item.name }}<br>{{ item.cost }} $</p>
                 </div>
-                <div class="col-sm-3">
-                  <a class="nav-link" href="#">
-                    <i id="heart1" class="fa fa-heart" aria-hidden="true"></i>
-                  </a>
-                </div>
+                <form id="fav-form" action="{% url 'deletefav' user.id item.id %}" method="post"> {% csrf_token %}
+                    <div class="col-sm-3">
+                      <a class="nav-link" href="#" onclick='document.forms["fav-form"].submit(); return false;'>
+                          <!-- {{ item.id }} -->
+                        <i id="heart1" class="fa fa-heart" aria-hidden="true"></i>
+                      </a>
+                    </div>
+                </form>
               </div>
             </div>
           </div>
-          <div class="col-md-4" align="center">
-            <div class="product">
-              <img id="pic3" src="{% static 'images/pic6.jpg' %}">
-              <div class="row">
-                <div class="col-sm-9">
-                <p>IRON MAN<br>3000 THB</p>
-                </div>
-                <div class="col-sm-3">
-                  <a class="nav-link" href="#">
-                    <i id="heart1" class="fa fa-heart" aria-hidden="true"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4" align="center">
-            <div class="product">
-              <img id="pic3" src="{% static 'images/pic6.jpg' %}">
-              <div class="row">
-                <div class="col-sm-9">
-                  <p>IRON MAN<br>3000 THB</p>
-                </div>
-                <div class="col-sm-3">
-                  <a class="nav-link" href="#">
-                    <i id="heart1" class="fa fa-heart" aria-hidden="true"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        {% endfor %}
     </div>
 {% endblock %}
