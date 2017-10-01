@@ -25,7 +25,9 @@
 								<div class="info1 col-lg-9">
 									<h3>{{ item.name }}</h3>
 									<p>{{ item.description }}</p>
-									<div class="button" id="delete">DELETE</div>
+									<form action="{% url 'carts:delete' user.id item.id %}" method="post"> {% csrf_token %}
+										<input class="button" id="delete" value="DELETE" type="submit"/>
+									</form>
 								</div>
 								<div class="info2 col-lg-3">
 									<h5>{{ item.cost }}</h5>
