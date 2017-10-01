@@ -20,11 +20,18 @@
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
           </form>
         </div>
+        <br>
+        {% if Count %}
+        <h5>----- {{ Count }} found -----</h5>
+        {% else %}
+        <h5>----- Not found ! -----</h5>
+        {% endif %}
     </div>
     <br>
     <br>
 		<div class="row">
-      {% for product in products %}
+      {% for product in toyPro %}
+      {% if product %}
 			<div class="product col-lg-3" align="center">
 				<a href="{% url 'detail' product.id %}"><div class="product-img "><img src="{{ product.pictureUrl.url }}"></div></a>
 				<div>
@@ -33,6 +40,7 @@
 					<p>{{ product.cost }} USD</p>
 				</div>
 			</div>
+      {% endif %}
       {% endfor %}
 		</div>
 	<div>

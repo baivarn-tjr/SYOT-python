@@ -7,4 +7,5 @@ urlpatterns = [
     url(r'^index/$',views.index, name='index'),
     url(r'^products/$',views.catalog, name='product'),  #ไว้เรียกหน้า product
     url(r'^detail/(?P<product_id>[0-9]+)/$', views.detail , name = 'detail'),
+    url(r'^products/search/',views.search, name='search'),
 ]

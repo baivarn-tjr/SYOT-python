@@ -26,6 +26,22 @@ def detail(request, product_id):
     }
     return render(request, 'Product-page.html', context)
 
+def search(request):
+    data = request.POST
+    name = data['search_name']
+    count = 0
+
+    toys = Product.objects.filter(name__search = 'Groot')
+
+    for i in toys:
+        count = count + 1
+
+    context = {
+        'toyPro' : toys,
+        'Name' : name,
+        'Count' : count,
+    }
+    return render(request, 'product_search.html' ,context)
 # def product(request):
 #     context = locals()
 #     template = 'start.html'
