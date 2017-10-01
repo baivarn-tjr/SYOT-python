@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse, Http404
 from .models import Product, Catagory
 from carts.models import User,Basket
+from favorite.models import Account,Favorite
 
 def index(request):
     context = {
@@ -34,6 +35,22 @@ def addtocart(request, user_id , product_id):
         itemtocart = Basket.objects.get(userId=user, productID=product)
     except (KeyError, Basket.DoesNotExist):
         Basket.objects.create(userId=user, productID=product)
+
+    product = Product.objects.get(id = product_id)
+    quantityWarning = 20
+    context = {
+        'getProduct' : product,
+        'quantityWarning' : quantityWarning,
+    }
+    return render(request, 'Product-page.html', context)
+
+def addtofav(request, user_id , product_id):
+    user = Account.objects.get(id=user_id)
+    product = Product.objects.get(id=product_id)
+    try:
+        itemtocart = Favorite.objects.get(userId=user, productID=product)
+    except (KeyError, Favorite.DoesNotExist):
+        Favorite.objects.create(userId=user, productID=product)
 
     product = Product.objects.get(id = product_id)
     quantityWarning = 20
