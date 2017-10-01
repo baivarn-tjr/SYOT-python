@@ -22,7 +22,7 @@
         <link rel="stylesheet" type="text/css" href="css/header.css">
         <link rel="stylesheet" type="text/css" href="css/footer.css"> -->
 
-    <link rel="stylesheet" type="text/css" href='{% static "css/style.css" %}' />
+        <link rel="stylesheet" type="text/css" href='{% static "css/style.css" %}' />
     <meta charset="utf-8">
     <!-- <title>yayaa</title> -->
   </head>
@@ -54,7 +54,7 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="carts" id="Header"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+            <a class="nav-link" href="{% url 'carts' %}" id="Header"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="favorite.html" id="Header"><i class="fa fa-heart" aria-hidden="true"></i></a>

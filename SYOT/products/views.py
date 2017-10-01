@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse, Http404
 from .models import Product, Catagory
+from carts.models import User,Basket
 
 def index(request):
     context = {
@@ -26,6 +27,18 @@ def detail(request, product_id):
     }
     return render(request, 'Product-page.html', context)
 
+def addtocart(request, user_id , product_id):
+    user = User.objects.get(id=user_id)
+    product = Product.objects.get(id=product_id)
+    Basket.objects.create(userId=user, productID=product)
+
+    product = Product.objects.get(id = product_id)
+    quantityWarning = 20
+    context = {
+        'getProduct' : product,
+        'quantityWarning' : quantityWarning,
+    }
+    return render(request, 'Product-page.html', context)
 # def product(request):
 #     context = locals()
 #     template = 'start.html'
