@@ -28,6 +28,24 @@ def detail(request, product_id):
     }
     return render(request, 'Product-page.html', context)
 
+<<<<<<< HEAD
+def search(request):
+    data = request.POST
+    name = data['search_name']
+    count = 0
+
+    toys = Product.objects.filter(name__search = 'Groot')
+
+    for i in toys:
+        count = count + 1
+
+    context = {
+        'toyPro' : toys,
+        'Name' : name,
+        'Count' : count,
+    }
+    return render(request, 'product_search.html' ,context)
+=======
 def addtocart(request, user_id , product_id):
     user = User.objects.get(id=user_id)
     product = Product.objects.get(id=product_id)
@@ -43,6 +61,7 @@ def addtocart(request, user_id , product_id):
         'quantityWarning' : quantityWarning,
     }
     return render(request, 'Product-page.html', context)
+<<<<<<< HEAD
 
 def addtofav(request, user_id , product_id):
     user = Account.objects.get(id=user_id)
@@ -59,6 +78,9 @@ def addtofav(request, user_id , product_id):
         'quantityWarning' : quantityWarning,
     }
     return render(request, 'Product-page.html', context)
+=======
+>>>>>>> ee816fd3a727dacd3f51cbebdea82a6a5ba2407b
+>>>>>>> adc252f8562e0f1dc7713e39ab0289f7f7469e04
 # def product(request):
 #     context = locals()
 #     template = 'start.html'
