@@ -1,0 +1,89 @@
+#text1 {
+  color: Black;
+  font-family: "Anton";
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 100px;
+  margin-top: 10px;
+  /*padding: 20px 0 0 260px;*/
+}
+.container{
+
+}
+.col-md-4{
+  /*padding-bottom: 120px;
+  background-color: pink;*/
+}
+#hr1{
+  z-index: 100;
+  position: absolute;
+  width: 1000px;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  /*margin: 1em 0;*/
+  top: 150px;
+  padding: 0;
+  margin-left: 55px;
+}
+#body{
+  height: 500px;
+}
+#heart{
+  z-index: 100;
+  position: absolute;
+  color: #ff5757;
+  margin-left: 120px;
+  margin-top: 15px;
+}
+/*.col-lg-4{
+  margin-left: 5px;
+}*/
+
+#heart1{
+  color: #ff5757;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+.product{
+  background-color: #f8f8f8;
+  width: 250px;
+  height: 340px;
+}
+
+div.crop {
+    /*background-color: pink;*/
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    /*margin-left: 300px;*/
+}
+
+img#pic3 {
+  z-index: 100;
+  width: 250px;
+  height: 250px;
+  /*position: absolute;*/
+  /*left: 200px;
+  top: 250px;*/
+  /*padding-bottom: 120px;
+  background-color: #f8f8f8;*/
+}
+.foo {
+  z-index: 100;
+  position: absolute
+  float: left;
+  margin: 5px;
+  /*border: 1px solid rgba(0, 0, 0, .2);*/
+}
+.white1 {
+  /*z-index: 100;
+  position: absolute;*/
+  background: #f8f8f8;
+  width: 250px;
+  height: 120px;
+
+  /*left: 50px;
+  top: 250px;*/
+}

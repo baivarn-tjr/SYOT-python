@@ -1,0 +1,115 @@
+
+/*product css*/
+img#front-model{
+	width: 300px;
+	height: 500px;
+	padding: 42px 20px 42px 20px;
+}
+
+div#product.row{
+	margin-left: 200px;
+	margin-right: 50px;
+	margin-bottom: 50px;
+}
+
+div#picture-product{
+	padding-left: 15px;
+}
+
+img#sub-model{
+	width:80px;
+	height: 100px;
+	padding: 5px 5px 0px 5px;	
+}
+
+#sub-model-picture.col-md-3{
+	padding-top: 50px;
+	padding-left: 25px;		
+}
+
+div#details-product{
+	margin-top:20px;
+	margin-left: 45px;
+}
+
+i#review-star{
+	margin-top: 6px;
+	color: #ce251c;
+}
+
+p#details-product{
+	padding:5px 2px 0px 2px;
+	font-size: 13px;
+}
+
+#icon-cart-product{
+	color: black;
+}
+
+#icon-cart-product:hover{
+	color: #ce251c;
+}
+
+div#div-icon-cart{
+	width: 0px;
+	margin: 0 0 0 0;
+	padding-left: 110px;
+}
+
+#icon-fav-product{
+	color: black;
+}
+
+#icon-fav-product:hover{
+	color: #ce251c;
+}
+
+div#review-section.row{
+	padding-left: 345px;
+	padding-right: 50px;
+	padding-bottom: 5px;
+}
+
+hr#line-review-section{
+	margin-left:300px;
+	margin-right: 200px;
+	border-bottom:  1px solid #c6c6c6;
+}
+
+div#commend-review{
+	padding-left: 358px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+img#pic-user-commend{
+	width:70px;
+	height:70px;
+}
+
+hr#line-user-commend{
+	padding-left: 200px
+	width:50px;
+	height: 70px;
+	border-left: 1px solid #c6c6c6;
+}
+
+/*
+@media screen and (max-width: 1400px) { 
+body{
+}*/
+
+p#text-review{
+	padding: 0 0 0 0;
+}
+
+textarea#review{
+	width:500px;
+	height: 100px;	
+}
+
+div.form-review{
+	margin-top:20px;
+	margin-left:450px;
+	margin-bottom: 30px;
+}

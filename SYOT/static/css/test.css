@@ -1,0 +1,188 @@
+.card-image {
+	display: block;
+	min-height: 20rem; /* layout hack */
+	background: #fff center center no-repeat;
+	background-size: cover;
+	filter: blur(3px); /* blur the lowres image */
+}
+
+.card-image > img {
+	display: block;
+	width: 100%;
+	opacity: 0; /* visually hide the img element */
+}
+
+.card-image.is-loaded {
+  width:
+	filter: none; /* remove the blur on fullres image */
+	transition: filter 1s;
+}
+
+
+
+
+/* Layout Styles */
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	font-size: 16px;
+	font-family: sans-serif;
+}
+
+.card-list {
+	display: block;
+	margin: 1rem auto;
+	padding: 0;
+	font-size: 0;
+	text-align: center;
+	list-style: none;
+}
+
+.card {
+	display: inline-block;
+	width: 90%;
+	max-width: 20rem;
+	margin: 1rem;
+	font-size: 1rem;
+	text-decoration: none;
+	box-shadow: 0 0 3rem -1rem rgba(0,0,0,0.5);
+	transition: transform 0.1s ease-in-out, box-shadow 0.1s;
+}
+
+.card:hover {
+	transform: translateY(-0.5rem) scale(1.0125);
+	box-shadow: 0 0.5em 3rem -1rem rgba(0,0,0,0.5);
+}
+
+.card-description {
+	display: block;
+	padding: 1em 0.5em;
+	color: #515151;
+	text-decoration: none;
+}
+
+.card-description > h2 {
+	margin: 0 0 0.5em;
+}
+
+.card-description > p {
+	margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.project-title {
+  color: #ff686b;
+  font-size: 50px;
+	margin: 40px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+.slider {
+  background: #000;
+  height: 400px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+.arrow {
+  background: black;
+  border: none;
+  border-radius: 10%;
+  color: white;
+  cursor: pointer;
+  display: none;
+  opacity: .4;
+  padding: 10px;
+  position: absolute;
+  text-transform: uppercase;
+  -webkit-transition: .2s;
+	top: 50%;
+  transition: .2s;
+}
+.arrow:hover {
+  opacity: .8;
+}
+.arrow.next {
+  right: 2%
+}
+.arrow.prev {
+  left: 2%;
+}
+.slide {
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  height: 100%;
+  padding: 90px 0 0;
+  position: absolute;
+  width: 100%;
+}
+.slide-title {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 15px 0;
+  text-transform: uppercase;
+}
+.slide-desc {
+  font-size: 20px;
+  margin: 40px auto 0;
+  width: 65%;
+}
+.slide-image,
+.slide-image img{
+  height: 100%;
+  width: 100%;
+}
+.slide:first-of-type {
+  background-image: url("https://images.pexels.com/photos/40120/pexels-photo-40120.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+}
+.slide:nth-of-type(2) {
+  background-image: url("https://images.pexels.com/photos/288477/pexels-photo-288477.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+}
+.slide:last-of-type {
+  background-image: url("https://images.pexels.com/photos/27665/pexels-photo-27665.jpg?w=1260&h=750&auto=compress&cs=tinysrgb");
+}
+.active {
+  display: block;
+}
+.slide-nav {
+  bottom: 30px;
+	position: absolute;
+   width: 100%;
+}
+.nav-item {
+  background: #fff;
+  border: 2px solid #ff686b;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 20px;
+  transition: background .4s;
+}
+.nav-item:last-of-type {
+  margin-right: 0;
+}
+.nav-item:hover {
+  transform: scale(1.3);
+}
+.item-active {
+  background: #ff686b;
+  transform: scale(1.3);
+}
+.dot {
+  border-radius: 50%;
+}
+.dot,
+.square{
+  height: 15px;
+	width: 15px;
+}
+.rectangle {
+  height: 15px;
+  width: 30px;
+}

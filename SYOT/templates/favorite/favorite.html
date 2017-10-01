@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block addcssjs %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/stylefav.css' %}">
+{% endblock %}
+
+{% block content %}
+
+    	<hr>
+      <div class="container">
+      <i id="heart" class="fa fa-heart fa-2x" aria-hidden="true"></i>
+      <pre id="text1">
+        FAVORITE
+      </pre>
+    <hr id="hr1">
+        <div class="row" id="test">
+          <div class="col-md-4" align="center">
+            <div class="product">
+              <img id="pic3" src="{% static 'images/pic6.jpg' %}">
+              <div class="row">
+                <div class="col-sm-9">
+                  <p>IRON MAN<br>3000 THB</p>
+                </div>
+                <div class="col-sm-3">
+                  <a class="nav-link" href="#">
+                    <i id="heart1" class="fa fa-heart" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" align="center">
+            <div class="product">
+              <img id="pic3" src="{% static 'images/pic6.jpg' %}">
+              <div class="row">
+                <div class="col-sm-9">
+                <p>IRON MAN<br>3000 THB</p>
+                </div>
+                <div class="col-sm-3">
+                  <a class="nav-link" href="#">
+                    <i id="heart1" class="fa fa-heart" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" align="center">
+            <div class="product">
+              <img id="pic3" src="{% static 'images/pic6.jpg' %}">
+              <div class="row">
+                <div class="col-sm-9">
+                  <p>IRON MAN<br>3000 THB</p>
+                </div>
+                <div class="col-sm-3">
+                  <a class="nav-link" href="#">
+                    <i id="heart1" class="fa fa-heart" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+{% endblock %}

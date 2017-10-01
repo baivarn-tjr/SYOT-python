@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <head>
+      {% load staticfiles %}
+    	<title>SYOT: The best online toys store</title>
+    	<!-- Boostrap -->
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    	<!-- Boostrap -->
+    	<!--Font Awesom import-->
+      	<script src="https://use.fontawesome.com/ef3af9c398.js"></script>
+      	<!-- Css file -->
+        {% block addcssjs %}
+        {% endblock %}
+        <link rel="stylesheet" type="text/css" href='{% static "css/header.css" %}' />
+        <link rel="stylesheet" type="text/css" href='{% static "css/footer.css" %}' />
+      	<!-- <link rel="stylesheet" type="text/css" href="css/styleyaya.css">
+        <link rel="stylesheet" type="text/css" href="css/header.css">
+        <link rel="stylesheet" type="text/css" href="css/footer.css"> -->
+
+    <link rel="stylesheet" type="text/css" href='{% static "css/style.css" %}' />
+    <meta charset="utf-8">
+    <!-- <title>yayaa</title> -->
+  </head>
+  <body>
+    <!-- Header section -->
+    <!-- {% url 'product' as product %} -->
+    <nav class="navbar navbar-expand-lg navbar-light" id="Header">
+      <a class="navbar-brand col-lg-3" href="{% url 'index' %}" id="Header"><img src='{% static "images/logo.png" %}' width="35" height="35" class="d-inline-block align-top" id="brand-name">SYOT</a>
+      <div class="collapse navbar-collapse col-lg-6 justify-content-center" id="navHeaderCenter">
+        <ul class="navbar-nav" id="centerTabHeader">
+          <li class="nav-item active" id="Left-Header">
+            <a class="nav-link" href="{% url 'index' %}" id="Header">Home</a>
+          </li>
+          <li class="nav-item" id="tabHeader">
+            <a class="nav-link" href="#" id="Header">Promotion</a>
+          </li>
+          <li class="nav-item" id="tabHeader">
+            <a class="nav-link" href="{% url 'product' %}" id="Header">Product</a>
+          </li>
+          <li class="nav-item" id="tabHeader">
+            <a class="nav-link" href="#" id="Header">About</a>
+          </li>
+          <li class="nav-item" id="tabHeader">
+            <a class="nav-link" href="#" id="Header">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <!--Header Homepage Right-->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="basket.html" id="Header"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="favorite.html" id="Header"><i class="fa fa-heart" aria-hidden="true"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="Header"><i class="fa fa-user-o" aria-hidden="true"></i>Sign Up</a>
+          </li>
+          <button class="btn btn-light" id="btn-login" data-toggle="modal" data-target="#myModal">
+            <i class="fa fa-sign-in" aria-hidden="true">Log in</i>
+          </button>
+        </ul>
+      </div>
+    </nav>
+    <hr>
+    <!-- Login Dialog Section-->
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h4 class="modal-title" id="myModalLabel">Log in</h4>
+          </div> <!-- /.modal-header -->
+
+          <div class="modal-body">
+            <form role="form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="uLogin" placeholder="Login">
+                  <label for="uLogin" class="input-group-addon fa fa-user"></label>
+                </div>
+              </div> <!-- /.form-group -->
+
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="password" class="form-control" id="uPassword" placeholder="Password">
+                  <label for="uPassword" class="input-group-addon fa fa-lock"></label>
+                </div> <!-- /.input-group -->
+              </div> <!-- /.form-group -->
+
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox"> Remember me
+                </label>
+              </div> <!-- /.checkbox -->
+            </form>
+
+          </div> <!-- /.modal-body -->
+
+          <div class="modal-footer">
+            <button class="form-control btn btn-outline-dark">Ok</button>
+
+            <div class="progress">
+              <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="100" style="width: 0%;">
+                <span class="sr-only">progress</span>
+              </div>
+            </div>
+          </div> <!-- /.modal-footer -->
+
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
+    {% block content %}
+    {% endblock %}
+
+    <footer class="footer">
+      <div class="footer-top-section">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col col-md-5">
+              <h6><font color="white">Our Office Location</font></h6>
+              <p id="footer"><font color="#565656">
+                Collins Street West Victoria 8007 Australia.<br>
+                1800 1234 56789 / 98532100987<br>
+                support@lexis.com
+                <br><br>
+                Copyright © 2015 Lexis Inc.<br>
+                All Rights Reserved.
+              </font></p>
+            </div>
+            <div class="footer-col col-md-4">
+              <h6><font color="white">Service We Offrer</font></h6>
+              <a href="#" id="navlink" class="nav-link">Digital Strategy</a>
+              <a href="#" id="navlink" class="nav-link">Websites</a>
+              <a href="#" id="navlink" class="nav-link">Videography</a>
+              <a href="#" id="navlink" class="nav-link">Social Media</a>
+              <a href="#" id="navlink" class="nav-link">User Experience</a>
+            </div>
+        <div class="footer-col col-md-3">
+            <h6><font color="white">Social Contact</font></h6>
+            <div class="row">
+                <div class="col-md-2">
+                    <a id="icon-footer" class="nav-link" href="https://twitter.com"><i class="fa fa-twitter-square fa-2x"  aria-hidden="true"></i></a>
+                </div>
+                <div class="col-md-2">
+                    <a id="icon-footer" class="nav-link" href="https://facebook.com"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+                </div>
+                <div class="col-md-2">
+                    <a id="icon-footer" class="nav-link" href="https://youtube.com"><i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i></a>
+                </div>
+                <div class="col-md-2">
+                        <a id="icon-footer" class="nav-link" href="https://instagram.com"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+                    </div>
+            </div>
+        </div>
+        </div>
+      </div>
+    </body>
+    </html>

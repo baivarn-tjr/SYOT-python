@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h1>register</h1>
+<!-- -->
+  <form action="{% url 'regis:register' %}" method="post">
+    {% csrf_token %}
+    <table>
+      {{ form.as_table }}
+    </table>
+    <input type="submit" class="btn btn-lg btn-primary" value="submit">
+  </form>
+
+{% endblock %}

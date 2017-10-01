@@ -1,0 +1,126 @@
+.main{
+  margin-top: 25px;
+  margin-bottom: 85px;
+}
+.container h1 {
+	padding-left: 20px;
+}
+
+.frame-sum {
+	padding: 0;
+	background-color: #3d3d3d;
+}
+
+.button {
+    background-color: #ff4f2c;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 1rem;
+}
+
+.button:hover {
+	color: white;
+	text-decoration: none;
+}
+
+#checkout {
+	margin: 5% 15%;
+}
+
+#delete {
+	margin-right: 70%;
+	padding: 3px 10px;
+}
+
+.sum {
+	padding: 0;
+	overflow: hidden;
+	color: white;
+	margin: 15px 15px 15px 15px;
+	background-color: #3d3d3d;
+}
+
+.sum hr {
+	margin-top: 0;
+	margin-bottom: 5px;
+	color: white;
+}
+
+.sum div div:nth-child(even) {
+	text-align: right;
+}
+
+.info h3 {
+	padding-top: 10px;
+	text-decoration: underline;
+}
+
+.info {
+	padding: 0;
+}
+
+.info2 {
+	text-align: right;
+	padding-right: 25px;
+}
+
+.item .col-lg-3 {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.item-img {
+
+}
+
+.item-img img {
+	width: 150px;
+	height: 200px;
+}
+
+.info > .col-lg-6 {
+	background-color: green;
+}
+
+/*-------------------------- quantity button --------------------------*/
+
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.qty-box {
+  border: 1px solid #000000;
+  display: block;
+  height: 30px;
+  width: 110px;
+}
+
+span {;
+  color: #000000;
+  font-family: sans-serif;
+  float: left;
+  line-height: 30px;
+  text-align: center;
+  width: calc(108px/3);
+  -webkit-font-smoothing: antialiased;
+}
+
+.dec,
+.inc {
+  height: 100%;
+  
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+/*-------------------------- quantity button --------------------------*/

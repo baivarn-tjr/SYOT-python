@@ -1,0 +1,5 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Hello {{ applicant }}</h1>
+<a href="{% url 'regis:logout' %}">Logout</a>
+{% endblock %}

@@ -1,0 +1,118 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block addcssjs %}
+    <link rel="stylesheet" type="text/css" href="{% static "css/product.css" %}">
+{% endblock %}
+
+{% block content %}
+<!-- <h1>{{ product.name }}</h1> -->
+  <hr>
+  <!-- Product section-->
+  <div class="container" id="product">
+  	<div class="row" id="product">
+  		<div class="col-md-6">
+  			<div class="row" id="picture-product">
+  				<div class="col-md-3" id="sub-model-picture">
+  					<img id="sub-model" src="images/babygroot3.jpg">
+  					<img id="sub-model" src="images/babygroot4.jpg">
+  					<img id="sub-model" src="images/babygroot6.jpg">
+  					<img id="sub-model" src="images/babygroot5.jpg">
+  				</div>
+  				<div class="col-md-6">
+  					<img id="front-model" src="images/babygroot.png">
+				</div>
+  			</div>
+  		</div>
+  		<div class="col-md-5" id="details-product">
+  			<h3><b> {{ getProduct.name }} </b></h3>
+  			<!-- <h6>GUARDIANS OF THE GALAXY</h6> -->
+          {% if getProduct.catagory %}
+            {% for catagory in getProduct.catagory.all %}
+              <h6><b>Catagory : {{ catagory.name }}</b></h6>
+            {% endfor %}
+          {% endif %}
+  			<br>
+  			<div class="row">
+  				<div class="col-md-6">
+  					<h4>{{ getProduct.cost }} USD</h4>
+  				</div>
+  				<div class="col-md-6">
+  					<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+  					<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+  					<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+  					<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+  					<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+  				</div>
+  			</div>
+  			<hr>
+  			<p id="details-product">
+          <br>
+          {{ getProduct.description}}
+  				<!-- “Groot!  Get out of the way, you’re gonna get hurt…Hi!”<br><br>
+  				Somebody has to look after him! Sideshow in partnership with Legacy Effects is proud to present the definitive Baby Groot Maquette, sprouting right from the work of the film-makers to your Marvel collection. <br><br>
+  				Expected to Ship : Jan 2018 - Feb 2018 -->
+  				<br>
+          <br>
+  				Product Size : {{ getProduct.height }}" H x {{ getProduct.width }}" W x {{ getProduct.length }}" L*<br>
+  				<!-- Product Weight : 2.50 lbs (1.13 kg)*<br>
+  				Dimensional Weight : TBD <br>
+  				Int'l Dim. Weight : TBD -->
+  			</p><br>
+  			<div class="row">
+  				<div class="col-md-5" id="div-icon-cart">
+  					<a id="icon-cart-product" class="nav-link" href="basket.html"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></a>
+  				</div>
+  				<div class="col-md-2" id="div-icon-fav">
+  					<a id="icon-fav-product" class="nav-link" href="#"><i class="fa fa-heart fa-2x" aria-hidden="true"></i></a>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  </div>
+  <!--Product Review section -->
+  <div class="row" id="review-section">
+  	<div class="col-md-2">
+  		<h3><b>REVIEW</b></h3>
+  	</div>
+  	<div class="col-md-2" style="padding-top:2px;">
+  		<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+  		<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+  		<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+  		<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+  		<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+  	</div>
+  </div>
+  <hr id="line-review-section">
+  <div class="row" id="commend-review">
+  	<div  id="picture-user-commend">
+  		<img id="pic-user-commend" src="images/logo-ironman.png">
+  	</div>
+  	<hr id="line-user-commend">
+
+  	<div id="text-review" class="col-md-6">
+  		<h7><b>TONY STARK</b></h7>
+  		<br>
+  		<p id="text-review">Good price, High quality, Good packaging and fast shipping.</p>
+  	</div>
+  	<div class="col-md-3" style="padding-top:20px">
+  		<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+  		<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+  		<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+  		<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+  		<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+  	</div>
+  </div>
+
+  <form>
+  	<div class="form-review">
+  		<textarea class="form-control" id="review"></textarea>
+  		<br>
+  		<button type="submit" class="btn btn-outline-dark">Submit</button>
+  	</div>
+  </form>
+
+
+
+
+{% endblock %}

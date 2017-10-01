@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block addcssjs %}
+    <link rel="stylesheet" type="text/css" href='{% static "css/styleyaya.css" %}' />
+{% endblock %}
+
+{% block content %}
+
+    <hr>
+    <img id="head" src="{% static 'images/pic4.jpg' %}">
+    <pre id="text1">
+      O U R  N E W
+      A R R I V A L S
+      A R E  H E R E !
+    </pre>
+    <a href='{% url 'product' %}'><button id="shop" type="button" class="btn btn-outline-dark" href='{% url 'product' %}'>SHOP NOW</button></a>
+    <!-- <div class="foo beige"></div> -->
+    <nav>
+  <a class="navbar-brand" href="Product-page.html">
+    <img id="pic1" src="{% static 'images/4.jpg' %}" alt="">
+  </a>
+</nav>
+
+    <!-- <img id="pic1" src="4.jpg"> -->
+    <div class="foo beige1"></div>
+    <pre id="text2">
+      P I C K  M E
+    </pre>
+    <hr id="hr1"/>
+    <pre id="text3">
+      Our top selling figure
+      are now on sale
+    </pre>
+    <nav>
+  <a class="navbar-brand" href="Product-page.html">
+    <img id="pic2" src="{% static 'images/5.jpg' %}">
+  </a>
+</nav>
+    <!-- <img id="pic2" src="5.jpg"> -->
+    <div class="foo beige2"></div>
+    <pre id="text4">
+      T H E  A V E N G E R
+      #B L A C K  W I D O W
+    </pre>
+    <pre id="text5">
+      Our popular model
+      Catch me if you can
+    </pre>
+    <hr id="hr2"/>
+    <nav>
+  <a class="navbar-brand" href="Product-page.html">
+    <img id="pic3" src="{% static 'images/pic6.jpg' %}">
+  </a>
+</nav>
+    <!-- <img id="pic3" src="pic6.jpg"> -->
+    <div class="foo beige3"></div>
+    <pre id="text6">
+        B A C K
+        I N}
+        S T O C K
+    </pre>
+    <pre id="text7">
+      Don't miss twice!
+    </pre>
+    <hr id="hr3"/>
+    <!-- <img id="head"src="pic2.jpg">
+    <img id="head" src="pic1.jpg"> -->
+    <!-- <img src="5.jpg"> -->
+{% endblock %}

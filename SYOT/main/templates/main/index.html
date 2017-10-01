@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row">
+  <div class="col-md-12">
+    <h1>Hello</h1>
+    login to use this website
+    {% if error_message %}
+      <div class="alert alert-danger">
+        {% if error_message == 'no-login' %}
+          please login before enter this website
+        {% endif %}
+        {% if error_message == 'wrong-password' %}
+          password or user didn't correct
+        {% endif %}
+        {% if error_message == 'invalid' %}
+          can't access because wrong forms
+        {% endif %}
+      </div>
+    {% endif %}
+    <form action="{% url 'regis:login' %}" method="post">
+      {% csrf_token %}
+      <table>
+        {{ login_form.as_table }}
+      </table>
+      <input class="btn btn-primary btn-lg" type="submit" value="sign in">
+    </form>
+     or new register </br>
+    <a class="btn btn-success btn-lg" href="{% url 'regis:register' %}">register</a>
+  </div>
+</div>
+{% endblock %}

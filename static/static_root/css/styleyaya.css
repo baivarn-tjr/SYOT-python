@@ -1,0 +1,190 @@
+#head {
+  width: 100%;
+  height: 700px;
+}
+body {
+    display: block;
+    margin: 0px;
+}
+#hr1 {
+    z-index: 9999;
+    display: block;
+    width: 500px;
+    height: 1px;
+    border: 0;
+    border-top: 5px solid #ccc;
+    margin: 18em 0;
+    padding: 0;
+    margin-left: 700px;
+    /*top: 70px;*/
+}
+#hr2 {
+  z-index: 9999;
+  display: block;
+  width: 500px;
+  height: 1px;
+  border: 0;
+  border-top: 5px solid #ccc;
+  margin: 15em 0;
+  padding: 0;
+  margin-left: 150px;
+  /*top: 70px;*/
+}
+#hr3 {
+  z-index: 9999;
+  display: block;
+  width: 500px;
+  height: 1px;
+  border: 0;
+  border-top: 5px solid #ccc;
+  margin: 25em 0;
+  padding: 0;
+  margin-left: 800px;
+  /*top: 70px;*/
+}
+#text1 {
+  z-index: 100;
+  position: absolute;
+  color: Black;
+  font-family: "Anton";
+  font-size: 50px;
+  font-weight: bold;
+  left: 200px;
+  top: 200px;
+  text-shadow: 4px 4px 4px #8c8c8c;
+}
+#text2 {
+  z-index: 100;
+  position: absolute;
+  color: Black;
+  font-family: "Anton";
+  font-size: 50px;
+  font-weight: bold;
+  left: 620px;
+  top: 950px;
+  /*text-shadow: 4px 4px 4px #8c8c8c;*/
+}
+#text3 {
+  z-index: 100;
+  position: absolute;
+  color: Black;
+  font-family: "Sukhumvit Set";
+  font-size: 20px;
+  font-weight: lighter;
+  left: 750px;
+  top: 1100px;
+  /*text-shadow: 4px 4px 4px #8c8c8c;*/
+}
+#text4 {
+  z-index: 100;
+  position: absolute;
+  color: Black;
+  font-family: "Anton";
+  font-size: 50px;
+  font-weight: bold;
+  left: 150px;
+  top: 1450px;
+  /*text-shadow: 4px 4px 4px #8c8c8c;*/
+}
+#text5 {
+  z-index: 100;
+  position: absolute;
+  color: Black;
+  font-family: "Sukhumvit Set";
+  font-size: 20px;
+  font-weight: lighter;
+  left: 300px;
+  top: 1700px;
+  /*text-shadow: 4px 4px 4px #8c8c8c;*/
+}
+#text6 {
+  z-index: 100;
+  position: absolute;
+  color: Black;
+  font-family: "Anton";
+  font-size: 45px;
+  font-weight: bold;
+  left: 770px;
+  top: 2100px;
+  /*text-shadow: 4px 4px 4px #8c8c8c;*/
+}
+#text7 {
+  z-index: 100;
+  position: absolute;
+  color: Black;
+  font-family: "Sukhumvit Set";
+  font-size: 20px;
+  font-weight: lighter;
+  left: 800px;
+  top: 2350px;
+  /*text-shadow: 4px 4px 4px #8c8c8c;*/
+}
+#shop {
+  z-index: 100;
+  position: absolute;
+  color: Black;
+  font-family: "Sukhumvit Set";
+  font-weight: lighter;
+  font-size: 30px;
+  left: 340px;
+  top: 450px;
+}
+
+#pic1 {
+  z-index: 100;
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  left: 200px;
+  top: 950px;
+}
+#pic2 {
+  z-index: 100;
+  position: absolute;
+  width: 500px;
+  height: 400px;
+  left: 726px;
+  top: 1500px;
+}
+#pic3 {
+  z-index: 100;
+  position: absolute;
+  width: 500px;
+  height: 400px;
+  left: 200px;
+  top: 2150px;
+}
+.foo {
+  /*z-index: 100;*/
+  position: absolute
+  float: left;
+  /*margin: 5px;*/
+  /*border: 1px solid rgba(0, 0, 0, .2);*/
+}
+.beige1 {
+  z-index: -100;
+  position: absolute;
+  background: #f8f8f8;
+  width: 400px;
+  height: 400px;
+  left: 400px;
+  top: 900px;
+}
+.beige2 {
+  z-index: -100;
+  position: absolute;
+  background: #f8f8f8;
+  width: 400px;
+  height: 400px;
+  left: 476px;
+  top: 1450px;
+}
+.beige3 {
+  z-index: -100;
+  position: absolute;
+  background: #f8f8f8;
+  width: 480px;
+  height: 400px;
+  left: 450px;
+  top: 2100px;
+}
