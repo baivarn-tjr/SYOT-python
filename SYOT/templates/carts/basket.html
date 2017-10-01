@@ -14,22 +14,38 @@
 			<hr>
 			<div class="frame row">
 				<div class="frame-item col-lg-8">
+
+					{% for item in usercart %}
+					{% for itemCart in carts %}
+					{% if itemCart.productID == item and itemCart.userId == user %}
 					<div class="item row">
 						<div class="item-img col-lg-3" align="center"><img src="{% static 'images/babygroot.jpg' %}"></div>
 						<div class="info col-lg-9">
 							<div class="row">
 								<div class="info1 col-lg-9">
-									<h3>BABYGROOT</h3>
-									<p>Good boy BABYGROOT!</p>
-									<div class="button" id="delete">DELETE</div>
+									<h3>{{ item.name }}</h3>
+									<p>{{ item.description }}</p>
+									<form action="{% url 'carts:delete' user.id item.id %}" method="post"> {% csrf_token %}
+										<input class="button" id="delete" value="DELETE" type="submit"/>
+									</form>
 								</div>
 								<div class="info2 col-lg-3">
-									<h5>3,000 THB</h5>
-									<div class="qty-box" data-reactid=".0"><span class="dec" data-reactid=".0.0">–</span><span class="qty" data-reactid=".0.1">1</span><span class="inc" data-reactid=".0.2">+</span></div>
+									<h5>{{ item.cost }}</h5>
+									<form action="{% url 'carts:addminusQuantity' user.id item.id %}" method="post"> {% csrf_token %}
+										<div class="qty-box" data-reactid=".0">
+											<input type="submit" class="dec" data-reactid=".0.0" type="submit" value='-' name="dec"/>
+											<span class="qty" data-reactid=".0.1">{{ itemCart.quantity }}</span>
+											<input type="submit" class="inc" data-reactid=".0.2" type="submit" value='+' name="inc"/>
+										</div>
+									</form>
 								</div>
 							</div>
 						</div>
 					</div>
+					</form>
+					{% endif %}
+					{% endfor %}
+					{% endfor %}
 				</div>
 				<div class="frame-sum col-lg-4">
 					<div class="sum">
@@ -37,15 +53,15 @@
 						<hr>
 						<div class="subtotal row">
 							<div class="col-sm-6"><h5>Subtotal</h5></div>
-							<div class="col-sm-6">3,000 THB</div>
+							<div class="col-sm-6">{{ money }} $</div>
 						</div>
 						<div class="shipping row">
 							<div class="col-sm-6"><h5>Shipping</h5></div>
-							<div class="col-sm-6">100 THB</div>
+							<div class="col-sm-6">{{ ship }} $</div>
 						</div>
 						<div class="total row">
 							<div class="col-sm-6"><h5>Total</h5></div>
-							<div class="col-sm-6">3,100 THB</div>
+							<div class="col-sm-6">{{ money|add:ship }} $</div>
 						</div>
 						<hr>
 						<a href="#" class="button" id="checkout">CHECK OUT</a>
@@ -54,5 +70,6 @@
 			</div>
 		</div>
 	</div>
+
 
 {% endblock %}

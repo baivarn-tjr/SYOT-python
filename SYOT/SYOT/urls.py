@@ -26,6 +26,6 @@ urlpatterns = [
     # url(r'^$', TemplateView.as_view(template_name='index.html')),
     # url(r'^products/$', products_views.product, name='product'),
     url(r'^catalog/',include('products.urls')),
-    url(r'^carts/$', carts_views.cart, name='cart'),
-    url(r'^favorite/$', favorite_views.favorite, name='favorite'),
+    url(r'^carts/', include('carts.urls')),
+    url(r'^favorite/', favorite_views.favorite, name='favorite'),
 ]

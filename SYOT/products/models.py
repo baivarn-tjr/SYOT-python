@@ -14,7 +14,12 @@ class Catagory(models.Model):
 
 class Product(models.Model):
 
+<<<<<<< HEAD
     id = models.AutoField(primary_key=True)
+=======
+    id = models.AutoField(primary_key=True,db_column='ProductID')
+    # idpro = models.DecimalField(max_digits = 13, decimal_places = 0, unique = True)
+>>>>>>> 15c185b00fdf2d2c4f52c5becef5a851dbf36bba
     name = models.CharField(max_length = 250)
     description = models.TextField(blank = True)
     catagory = models.ManyToManyField(Catagory)
