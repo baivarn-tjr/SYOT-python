@@ -30,7 +30,10 @@ def detail(request, product_id):
 def addtocart(request, user_id , product_id):
     user = User.objects.get(id=user_id)
     product = Product.objects.get(id=product_id)
-    Basket.objects.create(userId=user, productID=product)
+    try:
+        itemtocart = Basket.objects.get(userId=user, productID=product)
+    except (KeyError, Basket.DoesNotExist):
+        Basket.objects.create(userId=user, productID=product)
 
     product = Product.objects.get(id = product_id)
     quantityWarning = 20
