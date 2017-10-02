@@ -13,6 +13,9 @@
 				<div class="box-header">
 					<h2>Log In</h2>
 				</div>
+				{% if errorMess %}
+				<h3>Plese login again!</h3>
+				{% endif %}
 				<form  action="{% url 'acc:logincheck' %}" method="POST">
 					{% csrf_token %}
 					<label for="username">Username</label>

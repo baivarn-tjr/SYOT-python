@@ -3,7 +3,7 @@ from django.contrib.auth.hashers import make_password
 from django.contrib.auth.hashers import check_password as check_hashed_password
 
 class Applicant(models.Model):
-    prefix = models.CharField(      max_length = 15)
+
     username = models.CharField(    max_length=50,
                                     unique=True)
 
@@ -12,8 +12,7 @@ class Applicant(models.Model):
     hashed_password = models.CharField(    max_length = 130,
                                             blank=True)
     def __str__(self):
-        return "%s %s %s (%s)" % (   self.prefix,
-                                    self.username,
+        return "%s %s (%s)" % (    self.username,
                                     self.tel,
                                     self.email)
 

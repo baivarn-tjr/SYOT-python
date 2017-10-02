@@ -3,26 +3,43 @@ from django.http import HttpResponse
 from .models import Applicant
 
 def login(request):
-    # print("in")
     context = {
     }
     return render(request, 'login.html' , context)
 
-def test(request):
-    # print("in")
+def signup(request):
     context = {
     }
-    return render(request, 'start.html' , context)
+    return render(request, 'signup.html' , context)
+
+def create_applicant(form):
+    applicant = Applicant(
+                            username = form['user'],
+                            tel = form['tel'],
+                            email = form['email'])
+    applicant.set_password(form['pass'])
+    applicant.save()
+
+def signupCheck(request):
+    context = {
+    }
+    form = request.POST
+    create_applicant(form)
+    return render(request, 'index.html' , context)
 
 def loginCheck(request):
-    # print("in")
-    context = {
-    }
     form = request.POST
     username = form['user']
     password = form['pass']
     applicant = Applicant.find_by_username(username)
+
     if not applicant:
-        return HttpResponse("Not have username")
+        context = {
+            'errorMess' : 'worng',
+        }
+        return render(request, 'login.html' , context)
     else :
-        return HttpResponse("Hello, world. You're at the polls index.")
+        context = {
+            'loginConfirm' : 'yes',
+        }
+        return render(request, 'index.html' , context)
