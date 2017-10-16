@@ -9,168 +9,172 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 	<!-- Boostrap -->
 	<!--Font Awesom import-->
-  	<script src="https://use.fontawesome.com/ef3af9c398.js"></script>
+    <script src="https://use.fontawesome.com/ef3af9c398.js"></script>
     <script src="js/product-page.js" defer></script>
   	<!-- Css file -->
-  	<link rel="stylesheet" type="text/css" href="css/product.css">
+  	<link rel="stylesheet" type="text/css" href="css/product-page.css">
   	<link rel="stylesheet" type="text/css" href="css/header.css">
   	<link rel="stylesheet" type="text/css" href="css/footer.css">
 </head>
 <body>
-	<!-- Header section -->
-  <nav class="navbar navbar-expand-lg navbar-light" id="Header">
-      <a class="navbar-brand col-lg-3" href="index.html" id="Header"><img src="images/logo.png" width="35" height="35" class="d-inline-block align-top" id="brand-name">SYOT</a>
-      <div class="collapse navbar-collapse col-lg-6 justify-content-center" id="navHeaderCenter">
-          <ul class="navbar-nav" id="centerTabHeader">
-            <li class="nav-item active" id="Left-Header">
-                <a class="nav-link" href="index.html" id="Header">Home</a>
-            </li>
-            <li class="nav-item" id="tabHeader">
-                <a class="nav-link" href="#" id="Header">Promotion</a>
-            </li>
-            <li class="nav-item" id="tabHeader">
-                <a class="nav-link" href="product.html" id="Header">Product</a>
-            </li>
-            <li class="nav-item" id="tabHeader">
-                <a class="nav-link" href="#" id="Header">About</a>
-            </li>
-            <li class="nav-item" id="tabHeader">
-                <a class="nav-link" href="#" id="Header">Contact</a>
-            </li> 
-          </ul>
+	
+  <!-- Header section -->
+  <div class="headerSection">
+    <nav class="navbar navbar-expand-lg fixed-top" id="Header">
+      <div class="navbar-brand col-lg-1">
+          <a href="index.html" id="Header"><img src="images/logo.png" width="35" height="35" class="d-inline-block align-top" id="brand-name">SYOT</a>
       </div>
-    <!--Header Homepage Right-->
+        <!--searchBox-->
+      <div class="col-lg-3">
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-dark" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </form>
+      </div>
+      <div class="collapse navbar-collapse col-lg-4" id="navHeaderCenter">
+            <ul class="navbar-nav" id="centerTabHeader">
+              <li class="nav-item active" id="Left-Header">
+                  <a class="nav-link" href="index.html" id="Header">Home</a>
+              </li>
+              <li class="nav-item" id="tabHeader">
+                  <a class="nav-link" href="product.html" id="Header">Product</a>
+              </li>
+              <li class="nav-item" id="tabHeader">
+                  <a class="nav-link" href="#" id="Header">About</a>
+              </li> 
+            </ul>
+      </div>
+      <!--Header Homepage Right-->
       <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
           <ul class="navbar-nav">
-            <li class="nav-item">
+              <li class="nav-item">
                   <a class="nav-link" href="basket.html" id="Header"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="favorite.html" id="Header"><i class="fa fa-heart" aria-hidden="true"></i></a>
+                  <a class="nav-link" href="favorite.html" id="Header"><i class="fa fa-heart" aria-hidden="true"></i></a>
               </li>
-            <li class="nav-item">
-                <a class="nav-link" href="signup.html" id="Header"><i class="fa fa-user-o" aria-hidden="true"></i>Sign Up</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="login.html" id="Header"><i class="fa fa-sign-in" aria-hidden="true"></i>Sign In<ins></ins></a>
-           </li> 
+              <li class="nav-item">
+              <a class="nav-link" href="login.html" id="Header"><i class="fa fa-sign-in" aria-hidden="true"></i> Sign In<ins></ins></a>
+             </li> 
           </ul>
       </div>
-  </nav>
-  <hr>
-  
+    </nav>
+    <hr>
+  </div>
+
   <!-- Product section-->
-  <div class="container" id="product">
-  	<div class="row" id="product">
-  		<div class="col-md-6">
-  			<div class="row" id="picture-product">
-  				<div class="col-md-3" id="sub-model-picture">
-  					<img id="sub-model-1" src="images/babygroot3.jpg" alt="babygroot">
-  					<img id="sub-model-2" src="images/babygroot4.jpg" alt="babygroot">
-  					<img id="sub-model-3" src="images/babygroot6.jpg" alt="babygroot">
-  					<img id="sub-model-4" src="images/babygroot5.jpg" alt="babygroot">
+  <div class="productSection">
+    <div class="container" id="product">
+      <div class="row" id="product">
+        <div class="col-md-6">
+          <div class="row" id="picture-product">
+            <div class="col-xs-6 col-md-3" id="sub-model-picture">
+              <img id="sub-model-1" src="images/babygroot3.jpg" alt="babygroot">
+              <img id="sub-model-2" src="images/babygroot4.jpg" alt="babygroot">
+              <img id="sub-model-3" src="images/babygroot6.jpg" alt="babygroot">
+              <img id="sub-model-4" src="images/babygroot5.jpg" alt="babygroot">
+            </div>
+            <div class="col-md-6">
+              <img id="front-model" src="images/babygroot.png" alt="babygroot">
+            </div>
           </div>
-  				<div class="col-md-6">
-  					<img id="front-model" src="images/babygroot.png" alt="babygroot">
-				  </div>
-  			</div>
-  		  <!-- The Modal -->
-        <div id="myModal" class="modal">
-            <!-- The Close Button -->
-            <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
-            <!-- Modal Content (The Image) -->
-            <img class="modal-content" id="img01">
-            <!-- Modal Caption (Image Text) -->
-            <div id="caption"></div>
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+              <!-- The Close Button -->
+              <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+              <!-- Modal Content (The Image) -->
+              <img class="modal-content" id="img01">
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+          </div>
+        </div>
+
+        <div class="col-md-5" id="details-product">
+          <h3><b>BABY GROOT</b></h3>
+          <h6>GUARDIANS OF THE GALAXY</h6>
+          <br>
+          <div class="row">
+            <div class="col-md-6">
+              <h4>99 USD</h4>
+            </div>
+            <div class="col-md-6">
+              <i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+              <i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+              <i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+              <i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+              <i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+            </div>
+          </div>
+          <hr>
+          <p id="details-product">
+            “Groot!  Get out of the way, you’re gonna get hurt…Hi!”<br><br>
+            Somebody has to look after him! Sideshow in partnership with Legacy Effects is proud to present the definitive Baby Groot Maquette, sprouting right from the work of the film-makers to your Marvel collection. <br><br>
+            Expected to Ship : Jan 2018 - Feb 2018
+            <br>
+            Product Size : 11" H (279.4mm) x 7" W (177.8mm) x 7" L (177.8mm)*<br>
+            Product Weight : 2.50 lbs (1.13 kg)*<br>
+            Dimensional Weight : TBD <br>
+            Int'l Dim. Weight : TBD
+          </p><br>
+          <div class="row">
+            <div class="col-md-5" id="div-icon-cart">
+              <a id="icon-cart-product" class="nav-link" href="basket.html"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></a>
+            </div>
+            <div class="col-md-2" id="div-icon-fav">
+              <a id="icon-fav-product" class="nav-link" href="#"><i class="fa fa-heart fa-2x" aria-hidden="true"></i></a>
+            </div>
+          </div>  
         </div>
       </div>
+    </div>
+    <!--Product Review section -->
+    <div class="row" id="review-section">
+      <div class="col-md-2">
+        <h3><b>REVIEW</b></h3>  
+      </div>
+    </div>
+    <hr id="line-review-section">
+    <div class="row" id="commend-review">
+      <div  id="picture-user-commend">
+        <img id="pic-user-commend" src="images/logo-ironman.png">
+      </div>
+      <hr id="line-user-commend">
+      
+      <div id="text-review" class="col-md-6">
+        <h7><b>TONY STARK</b></h7>
+        <br>
+        <p id="text-review">Good price, High quality, Good packaging and fast shipping.</p>
+      </div>
+      <div class="col-md-3" style="padding-top:20px">
+        <i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+        <i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+        <i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+        <i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+        <i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+      </div>
+    </div>
 
-      <div class="col-md-5" id="details-product">
-  			<h3><b>BABY GROOT</b></h3>
-  			<h6>GUARDIANS OF THE GALAXY</h6>
-  			<br>
-  			<div class="row">
-  				<div class="col-md-6">
-  					<h4>99 USD</h4>
-  				</div>
-  				<div class="col-md-6">
-  					<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
-  					<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
-  					<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
-  					<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
-  					<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
-  				</div>
-  			</div>
-  			<hr>
-  			<p id="details-product">
-  				“Groot!  Get out of the way, you’re gonna get hurt…Hi!”<br><br>
-  				Somebody has to look after him! Sideshow in partnership with Legacy Effects is proud to present the definitive Baby Groot Maquette, sprouting right from the work of the film-makers to your Marvel collection. <br><br>
-  				Expected to Ship : Jan 2018 - Feb 2018
-  				<br>
-  				Product Size : 11" H (279.4mm) x 7" W (177.8mm) x 7" L (177.8mm)*<br>
-  				Product Weight : 2.50 lbs (1.13 kg)*<br>
-  				Dimensional Weight : TBD <br>
-  				Int'l Dim. Weight : TBD
-  			</p><br>
-  			<div class="row">
-  				<div class="col-md-5" id="div-icon-cart">
-  					<a id="icon-cart-product" class="nav-link" href="basket.html"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></a>
-  				</div>
-  				<div class="col-md-2" id="div-icon-fav">
-  					<a id="icon-fav-product" class="nav-link" href="#"><i class="fa fa-heart fa-2x" aria-hidden="true"></i></a>
-  				</div>
-  			</div>	
-  		</div>
-  	</div>
+    <form>
+      <div class="form-review">
+        <textarea class="form-control" id="review"></textarea>
+        <br>
+        <h6>GET STAR FOR MY PRODUCT</h6>
+        <fieldset class="rating">
+          <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+          
+          <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+          
+          <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+          
+          <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+          
+          <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+        </fieldset>
+        <button type="submit" class="btn btn-outline-dark">Submit</button>
+      </div>
+    </form>
+
   </div>
-  <!--Product Review section -->
-  <div class="row" id="review-section">
-  	<div class="col-md-2">
-  		<h3><b>REVIEW</b></h3>	
-  	</div>
-  	<div class="col-md-2" style="padding-top:2px;">
-  		<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
-  		<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
-  		<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
-  		<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
-  		<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
-  	</div>
-  </div>
-  <hr id="line-review-section">
-  <div class="row" id="commend-review">
-  	<div  id="picture-user-commend">
-  		<img id="pic-user-commend" src="images/logo-ironman.png">
-  	</div>
-  	<hr id="line-user-commend">
-  	
-  	<div id="text-review" class="col-md-6">
-  		<h7><b>TONY STARK</b></h7>
-  		<br>
-  		<p id="text-review">Good price, High quality, Good packaging and fast shipping.</p>
-  	</div>
-  	<div class="col-md-3" style="padding-top:20px">
-  		<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
-  		<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
-  		<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
-  		<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
-  		<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
-  	</div>
-  </div>
-
-  <form>
-  	<div class="form-review">
-  		<textarea class="form-control" id="review"></textarea>
-  		<br>
-  		<button type="submit" class="btn btn-outline-dark">Submit</button>
-  	</div>
-  </form>
-
-
-
-
-
-
-
 
   <!-- Footer section -->
   <footer class="footer">

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 
 <html>
   <head>
@@ -23,55 +23,57 @@
         <link rel="stylesheet" type="text/css" href="css/header.css">
         <link rel="stylesheet" type="text/css" href="css/footer.css">
         <link rel="stylesheet" type="text/css" href="css/index.css">
-
-
-    <meta charset="utf-8">
+        <meta charset="utf-8">
     <!-- <title>yayaa</title> -->
   </head>
   <body>
     <!-- Header section -->
-  <nav class="navbar navbar-expand-lg navbar-light" id="Header">
-      <a class="navbar-brand col-lg-3" href="index.html" id="Header"><img src="images/logo.png" width="35" height="35" class="d-inline-block align-top" id="brand-name">SYOT</a>
-      <div class="collapse navbar-collapse col-lg-6 justify-content-center" id="navHeaderCenter">
-          <ul class="navbar-nav" id="centerTabHeader">
-            <li class="nav-item active" id="Left-Header">
-                <a class="nav-link" href="index.html" id="Header">Home</a>
-            </li>
-            <li class="nav-item" id="tabHeader">
-                <a class="nav-link" href="#" id="Header">Promotion</a>
-            </li>
-            <li class="nav-item" id="tabHeader">
-                <a class="nav-link" href="product.html" id="Header">Product</a>
-            </li>
-            <li class="nav-item" id="tabHeader">
-                <a class="nav-link" href="#" id="Header">About</a>
-            </li>
-            <li class="nav-item" id="tabHeader">
-                <a class="nav-link" href="#" id="Header">Contact</a>
-            </li> 
-          </ul>
-      </div>
-    <!--Header Homepage Right-->
-      <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-                  <a class="nav-link" href="basket.html" id="Header"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="favorite.html" id="Header"><i class="fa fa-heart" aria-hidden="true"></i></a>
-              </li>
-            <li class="nav-item">
-                <a class="nav-link" href="signup.html" id="Header"><i class="fa fa-user-o" aria-hidden="true"></i>Sign Up</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="login.html" id="Header"><i class="fa fa-sign-in" aria-hidden="true"></i>Sign In<ins></ins></a>
-           </li> 
-          </ul>
-      </div>
-  </nav>
-  <hr>
+    <div class="headerSection">
+      <nav class="navbar navbar-expand-lg fixed-top" id="Header">
+        <div class="navbar-brand col-lg-1">
+            <a href="index.html" id="Header"><img src="images/logo.png" width="35" height="35" class="d-inline-block align-top" id="brand-name">SYOT</a>
+        </div>
+          <!--searchBox-->
+        <div class="col-lg-3">
+          <form class="form-inline">
+              <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-dark" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+          </form>
+        </div>
+        <div class="collapse navbar-collapse col-lg-4" id="navHeaderCenter">
+              <ul class="navbar-nav" id="centerTabHeader">
+                <li class="nav-item active" id="Left-Header">
+                    <a class="nav-link" href="index.html" id="Header">Home</a>
+                </li>
+                <li class="nav-item" id="tabHeader">
+                    <a class="nav-link" href="product.html" id="Header">Product</a>
+                </li>
+                <li class="nav-item" id="tabHeader">
+                    <a class="nav-link" href="#" id="Header">About</a>
+                </li> 
+              </ul>
+        </div>
+        <!--Header Homepage Right-->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="basket.html" id="Header"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="favorite.html" id="Header"><i class="fa fa-heart" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="login.html" id="Header"><i class="fa fa-sign-in" aria-hidden="true"></i> Sign In<ins></ins></a>
+               </li> 
+            </ul>
+        </div>
+      </nav>
+      <hr>
+    </div>
 
-      <div class="w3-content w3-display-container" style="max-width:100%;">
+    <!--index Section-->
+    <div class="indexSection">
+       <div class="w3-content w3-display-container" style="max-width:100%;">
         <div>
           <img class="mySlides w3-animate-fading" id="head" src="images/pic4.jpg" style="width:100%">
             <!-- <div class="w3-display-topleft w3-large w3-container" id="headtext1">
@@ -178,117 +180,118 @@
       }
       </script>
 
-  <!-- <a class="navbar-brand" href="#">
-    <img id="pic1" src="jocker.jpg" alt="">
-  </a> -->
-</nav>
-     <!-- <img id="pic1" src="4.jpg"> -->
-    <div class="foo beige1"></div>
-    <pre id="text2">
-        P I C K  M E
-    </pre>
-    <hr id="hr1"/>
-    <pre id="text3">
-        Our top selling figure
-        are now on sale
-    </pre>
-
-    <div class="foo beige"></div>
-    <nav>
-      <div class="w3-content w3-section" style="max-width:400px; max-hight:400px">
-        <a class="navbar-brand" href="#">
-          <img class="mySlides3 w3-animate-fading" id="pic2" src="images/jocker.jpg" alt="">
-        </a>
-        <a class="navbar-brand" href="#">
-          <img class="mySlides3 w3-animate-fading" id="pic2" src="images/pic5.jpg" alt="">
-        </a>
-        <a class="navbar-brand" href="#">
-          <img class="mySlides3 w3-animate-fading" id="pic2" src="images/pic7.jpg" alt="">
-        </a>
-      </div>
-
-      <script>
-      var myIndex3 = 0;
-      carousel3();
-
-      function carousel3() {
-          var i;
-          var x = document.getElementsByClassName("mySlides3");
-          for (i = 0; i < x.length; i++) {
-             x[i].style.display = "none";
-          }
-          myIndex3++;
-          if (myIndex3 > x.length) {myIndex3 = 1}
-          x[myIndex3-1].style.display = "block";
-          setTimeout(carousel3, 5000); // Change image every 2 seconds
-      }
-      </script>
-
     <!-- <a class="navbar-brand" href="#">
       <img id="pic1" src="jocker.jpg" alt="">
     </a> -->
     </nav>
+       <!-- <img id="pic1" src="4.jpg"> -->
+      <div class="foo beige1"></div>
+      <pre id="text2">
+          P I C K  M E
+      </pre>
+      <hr id="hr1"/>
+      <pre id="text3">
+          Our top selling figure
+          are now on sale
+      </pre>
 
-    <!-- <img id="pic2" src="5.jpg"> -->
-    <div class="foo beige2"></div>
-    <pre id="text4">
-                M O S T
-        P O P U L A R
-    </pre>
-    <pre id="text5">
-        Our popular model
-        Catch me if you can
-    </pre>
-    <hr id="hr2">
-    <nav>
-      <div class="w3-content w3-section" style="max-width:400px; max-hight:400px">
-        <a class="navbar-brand" href="#">
-          <img class="mySlides4 w3-animate-fading" id="pic3" src="images/jocker.jpg" alt="">
-        </a>
-        <a class="navbar-brand" href="#">
-          <img class="mySlides4 w3-animate-fading" id="pic3" src="images/pic5.jpg" alt="">
-        </a>
-        <a class="navbar-brand" href="#">
-          <img class="mySlides4 w3-animate-fading" id="pic3" src="images/pic6.jpg" alt="">
-        </a>
-      </div>
+      <div class="foo beige"></div>
+      <nav>
+        <div class="w3-content w3-section" style="max-width:400px; max-hight:400px">
+          <a class="navbar-brand" href="#">
+            <img class="mySlides3 w3-animate-fading" id="pic2" src="images/jocker.jpg" alt="">
+          </a>
+          <a class="navbar-brand" href="#">
+            <img class="mySlides3 w3-animate-fading" id="pic2" src="images/pic5.jpg" alt="">
+          </a>
+          <a class="navbar-brand" href="#">
+            <img class="mySlides3 w3-animate-fading" id="pic2" src="images/pic7.jpg" alt="">
+          </a>
+        </div>
 
-      <script>
-      var myIndex4 = 0;
-      carousel4();
+        <script>
+        var myIndex3 = 0;
+        carousel3();
 
-      function carousel4() {
-          var i;
-          var x = document.getElementsByClassName("mySlides4");
-          for (i = 0; i < x.length; i++) {
-             x[i].style.display = "none";
-          }
-          myIndex4++;
-          if (myIndex4 > x.length) {myIndex4 = 1}
-          x[myIndex4-1].style.display = "block";
-          setTimeout(carousel4, 5000); // Change image every 2 seconds
-      }
-      </script>
+        function carousel3() {
+            var i;
+            var x = document.getElementsByClassName("mySlides3");
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";
+            }
+            myIndex3++;
+            if (myIndex3 > x.length) {myIndex3 = 1}
+            x[myIndex3-1].style.display = "block";
+            setTimeout(carousel3, 5000); // Change image every 2 seconds
+        }
+        </script>
 
-  <!-- <a class="navbar-brand" href="#">
-    <img id="pic3" src="pic6.jpg">
-  </a> -->
-</nav>
-    <!-- <img id="pic3" src="pic6.jpg"> -->
-    <div class="foo beige3"></div>
-    <pre id="text6">
-        B A C K
-        I N
-        S T O C K
-    </pre>
-    <pre id="text7">
-        Don't miss twice!
-    </pre>
+      <!-- <a class="navbar-brand" href="#">
+        <img id="pic1" src="jocker.jpg" alt="">
+      </a> -->
+      </nav>
 
-    <hr id="hr3"/>
-    <!-- <img id="head"src="pic2.jpg">
-    <img id="head" src="pic1.jpg"> -->
-    <!-- <img src="5.jpg"> -->
+      <!-- <img id="pic2" src="5.jpg"> -->
+      <div class="foo beige2"></div>
+      <pre id="text4">
+                  M O S T
+          P O P U L A R
+      </pre>
+      <pre id="text5">
+          Our popular model
+          Catch me if you can
+      </pre>
+      <hr id="hr2">
+      <nav>
+        <div class="w3-content w3-section" style="max-width:400px; max-hight:400px">
+          <a class="navbar-brand" href="#">
+            <img class="mySlides4 w3-animate-fading" id="pic3" src="images/jocker.jpg" alt="">
+          </a>
+          <a class="navbar-brand" href="#">
+            <img class="mySlides4 w3-animate-fading" id="pic3" src="images/pic5.jpg" alt="">
+          </a>
+          <a class="navbar-brand" href="#">
+            <img class="mySlides4 w3-animate-fading" id="pic3" src="images/pic6.jpg" alt="">
+          </a>
+        </div>
+
+        <script>
+        var myIndex4 = 0;
+        carousel4();
+
+        function carousel4() {
+            var i;
+            var x = document.getElementsByClassName("mySlides4");
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";
+            }
+            myIndex4++;
+            if (myIndex4 > x.length) {myIndex4 = 1}
+            x[myIndex4-1].style.display = "block";
+            setTimeout(carousel4, 5000); // Change image every 2 seconds
+        }
+        </script>
+        <!-- <a class="navbar-brand" href="#">
+          <img id="pic3" src="pic6.jpg">
+        </a> -->
+      </nav>
+      <!-- <img id="pic3" src="pic6.jpg"> -->
+      <div class="foo beige3"></div>
+      <pre id="text6">
+          B A C K
+          I N
+          S T O C K
+      </pre>
+      <pre id="text7">
+          Don't miss twice!
+      </pre>
+
+      <hr id="hr3"/>
+      <!-- <img id="head"src="pic2.jpg">
+      <img id="head" src="pic1.jpg"> -->
+      <!-- <img src="5.jpg"> -->
+    </div>
+     
     <footer class="footer">
     <div class="footer-top-section">
       <div class="container">
