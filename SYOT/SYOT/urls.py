@@ -22,10 +22,12 @@ from django.conf.urls.static import static
 from products import views as products_views
 from carts import views as carts_views
 from favorite import views as favorite_views
+from SYOT import views
 
 urlpatterns = [
+    url(r'^$', views.index, name='index'),
     url(r'^admin/', admin.site.urls),
-    # url(r'^$', TemplateView.as_view(template_name='index.html')),
+    # url(r'^$', TemplateView.as_view(template_name='index.html'),name ='index'),
     # url(r'^products/$', products_views.product, name='product'),
     url(r'^account/',include('account.urls')),
     url(r'^catalog/',include('products.urls')),
