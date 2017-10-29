@@ -2,7 +2,7 @@
 {% load staticfiles %}
 
 {% block addcssjs %}
-    <link rel="stylesheet" type="text/css" href="{% static 'css/product.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/product-page.css' %}">
     <!-- <script src="{% static 'js/product-page.js' %}" defer></script> -->
 {% endblock %}
 
@@ -11,7 +11,6 @@
 .modalimg.hide{
     display: none;
 }
-
 .modalimg {
     display: block; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -25,9 +24,6 @@
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
-
-
-
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
 #caption {
     margin: auto;
@@ -53,123 +49,131 @@
 <!-- <h1>{{ product.name }}</h1> -->
   <hr>
   <!-- Product section-->
-  <div class="container" id="product">
-  	<div class="row" id="product">
-  		<div class="col-md-6">
-  			<div class="row" id="picture-product">
-  				<div class="col-md-3" id="sub-model-picture">
-  					<img id="sub-model-1" src="{{ getProduct.pictureUrl.url }}">
-  					<img id="sub-model-2" src="{{ getProduct.pictureUrl.url }}">
-  					<img id="sub-model-3" src="{{ getProduct.pictureUrl.url }}">
-  					<img id="sub-model-4" src="{{ getProduct.pictureUrl.url }}">
+  <div class="productSection">
+    <div class="container" id="product">
+    	<div class="row" id="product">
+    		<div class="col-md-6">
+    			<div class="row" id="picture-product">
+    				<div class="col-md-3" id="sub-model-picture">
+    					<img id="sub-model-1" src="{{ getProduct.pictureUrl.url }}">
+    					<img id="sub-model-2" src="{{ getProduct.pictureUrl.url }}">
+    					<img id="sub-model-3" src="{{ getProduct.pictureUrl.url }}">
+    					<img id="sub-model-4" src="{{ getProduct.pictureUrl.url }}">
+    				</div>
+    				<div class="col-md-6">
+    					<img id="front-model" src="{{ getProduct.pictureUrl.url }}">
   				</div>
-  				<div class="col-md-6">
-  					<img id="front-model" src="{{ getProduct.pictureUrl.url }}">
-				</div>
-        <!-- The Modal -->
-          <div id="myModalimg" class="modalimg hide">
-              <!-- The Close Button -->
-              <button class="close" id="closebtn">&times;</button>
-              <!-- Modal Content (The Image) -->
-              <img class="modal-content" id="img01">
-              <!-- Modal Caption (Image Text) -->
-              <div id="caption"></div>
-          </div>
-  			</div>
-  		</div>
-  		<div class="col-md-5" id="details-product">
-  			<h3><b> {{ getProduct.name }} </b></h3>
-  			<!-- <h6>GUARDIANS OF THE GALAXY</h6> -->
-          {% if getProduct.catagory %}
-            {% for catagory in getProduct.catagory.all %}
-              <h6><b>Catagory : {{ catagory.name }}</b></h6>
-            {% endfor %}
-          {% endif %}
-  			<br>
-  			<div class="row">
-  				<div class="col-md-6">
-  					<h4>{{ getProduct.cost }} USD</h4>
-  				</div>
-  				<div class="col-md-6">
-  					<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
-  					<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
-  					<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
-  					<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
-  					<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
-  				</div>
-  			</div>
-  			<hr>
-  			<p id="details-product">
-          <br>
-          {{ getProduct.description}}
-  				<!-- “Groot!  Get out of the way, you’re gonna get hurt…Hi!”<br><br>
-  				Somebody has to look after him! Sideshow in partnership with Legacy Effects is proud to present the definitive Baby Groot Maquette, sprouting right from the work of the film-makers to your Marvel collection. <br><br>
-  				Expected to Ship : Jan 2018 - Feb 2018 -->
-  				<br>
-          <br>
-  				Product Size : {{ getProduct.height }}" H x {{ getProduct.width }}" W x {{ getProduct.length }}" L*<br>
-  				<!-- Product Weight : 2.50 lbs (1.13 kg)*<br>
-  				Dimensional Weight : TBD <br>
-  				Int'l Dim. Weight : TBD -->
-  			</p><br>
-  			<div class="row">
-                {% with user=1 %}
-                <form id="cart-form" action="{% url 'addtocart' user getProduct.id %}" method="post"> {% csrf_token %}
-      				<div class="col-md-5" id="div-icon-cart">
-      					<a id="icon-cart-product" class="nav-link" href='#' onclick='document.forms["cart-form"].submit(); return false;'><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></a>
-      				</div>
-                </form>
-                <form id="fav-form" action="{% url 'addtofav' user getProduct.id %}" method="post"> {% csrf_token %}
-      				<div class="col-md-2" id="div-icon-fav">
-      					<a id="icon-fav-product" class="nav-link" href="#" onclick='document.forms["fav-form"].submit(); return false;'><i class="fa fa-heart fa-2x" aria-hidden="true"></i></a>
-      				</div>
-                </form>
-                {% endwith %}
-  			</div>
-  		</div>
-  	</div>
+          <!-- The Modal -->
+            <div id="myModalimg" class="modalimg hide">
+                <!-- The Close Button -->
+                <button class="close" id="closebtn">&times;</button>
+                <!-- Modal Content (The Image) -->
+                <img class="modal-content" id="img01">
+                <!-- Modal Caption (Image Text) -->
+                <div id="caption"></div>
+            </div>
+    			</div>
+    		</div>
+    		<div class="col-md-5" id="details-product">
+    			<h3><b> {{ getProduct.name }} </b></h3>
+    			<!-- <h6>GUARDIANS OF THE GALAXY</h6> -->
+            {% if getProduct.catagory %}
+              {% for catagory in getProduct.catagory.all %}
+                <h6><b>Catagory : {{ catagory.name }}</b></h6>
+              {% endfor %}
+            {% endif %}
+    			<br>
+    			<div class="row">
+    				<div class="col-md-6">
+    					<h4>{{ getProduct.cost }} USD</h4>
+    				</div>
+    				<div class="col-md-6">
+    					<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+    					<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+    					<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+    					<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+    					<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+    				</div>
+    			</div>
+    			<hr>
+    			<p id="details-product">
+            <br>
+            {{ getProduct.description}}
+    				<!-- “Groot!  Get out of the way, you’re gonna get hurt…Hi!”<br><br>
+    				Somebody has to look after him! Sideshow in partnership with Legacy Effects is proud to present the definitive Baby Groot Maquette, sprouting right from the work of the film-makers to your Marvel collection. <br><br>
+    				Expected to Ship : Jan 2018 - Feb 2018 -->
+    				<br>
+            <br>
+    				Product Size : {{ getProduct.height }}" H x {{ getProduct.width }}" W x {{ getProduct.length }}" L*<br>
+    				<!-- Product Weight : 2.50 lbs (1.13 kg)*<br>
+    				Dimensional Weight : TBD <br>
+    				Int'l Dim. Weight : TBD -->
+    			</p><br>
+    			<div class="row">
+                  {% with user=1 %}
+                  <form id="cart-form" action="{% url 'addtocart' user getProduct.id %}" method="post"> {% csrf_token %}
+        				<div class="col-md-5" id="div-icon-cart">
+        					<a id="icon-cart-product" class="nav-link" href='#' onclick='document.forms["cart-form"].submit(); return false;'><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></a>
+        				</div>
+                  </form>
+                  <form id="fav-form" action="{% url 'addtofav' user getProduct.id %}" method="post"> {% csrf_token %}
+        				<div class="col-md-2" id="div-icon-fav">
+        					<a id="icon-fav-product" class="nav-link" href="#" onclick='document.forms["fav-form"].submit(); return false;'><i class="fa fa-heart fa-2x" aria-hidden="true"></i></a>
+        				</div>
+                  </form>
+                  {% endwith %}
+    			</div>
+    		</div>
+    	</div>
+    </div>
   </div>
+
   <!--Product Review section -->
   <div class="row" id="review-section">
-  	<div class="col-md-2">
-  		<h3><b>REVIEW</b></h3>
-  	</div>
-  	<div class="col-md-2" style="padding-top:2px;">
-  		<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
-  		<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
-  		<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
-  		<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
-  		<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
-  	</div>
-  </div>
-  <hr id="line-review-section">
-  <div class="row" id="commend-review">
-  	<div  id="picture-user-commend">
-  		<img id="pic-user-commend" src="{% static 'images/logo-ironman.png' %}">
-  	</div>
-  	<hr id="line-user-commend">
+      <div class="col-md-2">
+        <h3><b>REVIEW</b></h3>
+      </div>
+    </div>
+    <hr id="line-review-section">
+    <div class="row" id="commend-review">
+      <div  id="picture-user-commend">
+        <img id="pic-user-commend" src="images/logo-ironman.png">
+      </div>
+      <hr id="line-user-commend">
 
-  	<div id="text-review" class="col-md-6">
-  		<h7><b>TONY STARK</b></h7>
-  		<br>
-  		<p id="text-review">Good price, High quality, Good packaging and fast shipping.</p>
-  	</div>
-  	<div class="col-md-3" style="padding-top:20px">
-  		<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
-  		<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
-  		<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
-  		<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
-  		<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
-  	</div>
-  </div>
+      <div id="text-review" class="col-md-6">
+        <h7><b>TONY STARK</b></h7>
+        <br>
+        <p id="text-review">Good price, High quality, Good packaging and fast shipping.</p>
+      </div>
+      <div class="col-md-3" style="padding-top:20px">
+        <i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+        <i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+        <i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+        <i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+        <i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+      </div>
+    </div>
 
-  <form>
-  	<div class="form-review">
-  		<textarea class="form-control" id="review"></textarea>
-  		<br>
-  		<button type="submit" class="btn btn-outline-dark">Submit</button>
-  	</div>
-  </form>
+    <form>
+      <div class="form-review">
+        <textarea class="form-control" id="review"></textarea>
+        <br>
+        <h6>GET STAR FOR MY PRODUCT</h6>
+        <fieldset class="rating">
+          <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+
+          <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+
+          <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+
+          <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+
+          <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+        </fieldset>
+        <button type="submit" class="btn btn-outline-dark">Submit</button>
+      </div>
+    </form>
 
 <script lang="javascript">
     // Get the modal
@@ -183,12 +187,10 @@
     var modalImg = $("#img01");
     var captionText = $("#caption");
     var closebtn = $('#closebtn');
-
     closebtn.on("click", function() {
         console.log("test");
         modal1.addClass("hide");
     });
-
     img.on("click", function() {
         console.log("test2");
         modal1.removeClass("hide");
@@ -197,25 +199,20 @@
         // modalImg.src = this.src;
         captionText.innerHTML = this.alt;
     });
-
     subImg1.on("click", function() {
         modal1.removeClass("hide");
         // modal.style.display = "block";
         modalImg.attr('src',$(this).attr('src'))
-
         // modalImg.src = this.src;
         captionText.innerHTML = this.alt;
     });
-
     subImg2.on("click", function() {
         modal1.removeClass("hide");
         // modal.style.display = "block";
-
         modalImg.attr('src',$(this).attr('src'))
         // modalImg.src = this.src;
         captionText.innerHTML = this.alt;
     });
-
     subImg3.on("click", function() {
         modal1.removeClass("hide");
         // modal.style.display = "block";
@@ -223,7 +220,6 @@
         // modalImg.src = this.src;
         captionText.innerHTML = this.alt;
     });
-
     subImg4.on("click", function() {
         modal1.removeClass("hide");
         // modal.style.display = "block";
@@ -231,10 +227,8 @@
         // modalImg.src = this.src;
         captionText.innerHTML = this.alt;
     });
-
     // Get the <span> element that closes the modal
     // var span = document.getElementsByClassName("close")[0];
-
     // // When the user clicks on <span> (x), close the modal
     // span.onclick = function() {
     //     modal.addClass("hide");
