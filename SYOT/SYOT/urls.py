@@ -27,6 +27,7 @@ from SYOT import views
 urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^admin/', admin.site.urls),
+    # url(r'^search/',views.searchCat , name = 'search_cat'),
     # url(r'^$', TemplateView.as_view(template_name='index.html'),name ='index'),
     # url(r'^products/$', products_views.product, name='product'),
     url(r'^account/',include('account.urls')),

@@ -2,30 +2,23 @@
 {% load staticfiles %}
 
 {% block addcssjs %}
-    <link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "css/product.css" %}">
 {% endblock %}
 
 {% block content %}
 
 
   	<!--product section-->
-	<div class="header bgimg">
-	</div>
-    <div class="main">
-		<span><h1>Product</h1></span>
-        <div id="search-box">
-        <form action="{% url 'search' %}" method="POST" class="form-inline my-2 my-lg-0">
-          {% csrf_token %}
-            <input id="id_name" type="text" name="search_name" maxlength="250" class="form-control mr-sm-2" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </div>
-        <br>
-        {% if Count %}
-        <h5>----- {{ Count }} found -----</h5>
-        {% else %}
-        <h5>----- Not found ! -----</h5>
-        {% endif %}
+    <div class="productSection">
+      <div class="main">
+  		<span><h1>Product</h1></span>
+          <br>
+          {% if Count %}
+          <h5>----- {{ Count }} found -----</h5>
+          {% else %}
+          <h5>----- Not found ! -----</h5>
+          {% endif %}
+      </div>
     </div>
     <br>
     <br>
