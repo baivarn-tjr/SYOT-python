@@ -45,3 +45,12 @@ p#footer{
 	color:#ce251c;
 	text-decoration: none;
 }
+
+.wrapper {
+   display: block;
+   margin-bottom: -280px; 
+}
+.footer {
+   height: 280px;
+   display: block;
+}

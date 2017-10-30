@@ -76,6 +76,23 @@ a#Header{
     color:white;
 }
 
-/*#search-box{
+/* SearchBox*/
+.clearable{
+  background: #fff url(http://i.stack.imgur.com/mJotv.gif) no-repeat right -20px center;
+  border-radius: 3px;
+  transition: background 0.4s;
+}
 
-}*/
+.clearable.x { 
+  background-position: right 5px center; 
+}
+
+.clearable.onX{ 
+  cursor: pointer;
+}          
+
+.clearable::-ms-clear{
+  display: none;
+  width:0; 
+  height:0;
+}
