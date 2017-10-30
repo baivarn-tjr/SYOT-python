@@ -34,6 +34,7 @@ urlpatterns = [
     url(r'^catalog/',include('products.urls')),
     url(r'^carts/', include('carts.urls')),
     url(r'^favorite/', include('favorite.urls')),
+    
 ]
 
 if settings.DEBUG:

@@ -33,13 +33,20 @@ def loginCheck(request):
     password = form['pass']
     applicant = Applicant.find_by_username(username)
 
-    if not applicant:
+
+    if not applicant :
         context = {
-            'errorMess' : 'worng',
+            'errorMess' : 'wornguser',
         }
         return render(request, 'login.html' , context)
-    else :
+
+    elif applicant.check_password(password) :
         context = {
             'loginConfirm' : 'yes',
-        }
+            }
         return render(request, 'index.html' , context)
+    else :
+        context = {
+            'errorMess' : 'worngpass',
+        }
+        return render(request, 'login.html' , context)

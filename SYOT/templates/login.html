@@ -14,7 +14,7 @@
 					<h2>Log In</h2>
 				</div>
 				{% if errorMess %}
-				<h3>Plese login again!</h3>
+				<h3>{{ errorMess }}</h3>
 				{% endif %}
 				<form  action="{% url 'acc:logincheck' %}" method="POST">
 					{% csrf_token %}
@@ -31,6 +31,7 @@
 				<button onclick="goBack()" id="back">Back</button>
 				<br/>
 				<a href="#"><p class="small">Forgot your password?</p></a>
+				<a href="{% url 'acc:signup' %}"><p class="small">sign up</p></a>
 			</div>
 		</div>
 		<script>
