@@ -32,21 +32,24 @@ def loginCheck(request):
     username = form['user']
     password = form['pass']
     applicant = Applicant.find_by_username(username)
+    user = Applicant.objects.get(username=username)
 
 
     if not applicant :
         context = {
-            'errorMess' : 'wornguser',
+            'errorMess' : 'wrong user',
         }
         return render(request, 'login.html' , context)
 
     elif applicant.check_password(password) :
         context = {
-            'loginConfirm' : 'yes',
+            # 'loginConfirm' : 'yes',
+            'appli' : applicant.username,
             }
+        request.session['user_id'] = user.id
         return render(request, 'index.html' , context)
     else :
         context = {
-            'errorMess' : 'worngpass',
+            'errorMess' : 'wrong pass',
         }
         return render(request, 'login.html' , context)
