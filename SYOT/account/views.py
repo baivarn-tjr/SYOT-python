@@ -57,6 +57,7 @@ def loginCheck(request):
             'appli' : applicant.username,
             }
         request.session['user_id'] = user.id
+        request.session['user_name'] = user.username
         return render(request, 'index.html' , context)
     else :
         context = {
