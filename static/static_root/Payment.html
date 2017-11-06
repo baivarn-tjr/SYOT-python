@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Payment</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/payment.css">
+</head>
+<body>
+	<div id="picture" class="col-sm-6" style="background-color:white ;">
+		<img src="images/credit.png">
+	</div>
+	<div id="text" class="col-sm-3" style="background-color:white ;">Payment Details
+	 	<div class="textinput">Name on Card <input type="text" class="card" placeholder="Name on Card"></div>
+	 	<div class="textinput">Card Number <input type="text" class="card" maxlength="16" placeholder="Card Number" onkeypress='return event.charCode >= 48 && event.charCode <= 57'/></div>
+	 	<div class="textinput">
+	 		<div>Valid Through &emsp; &emsp; &emsp;&emsp;CVV</div>
+	 		<input type="text" maxlength="7" class="cardvalid" placeholder="MM/YYYY" onkeypress='return event.charCode >= 48 &&  event.charCode== / && event.charCode <= 57'/>
+	 		<input type="text" maxlength="3" class="cardcvv" placeholder="CVV" onkeypress='return event.charCode >= 48 && event.charCode <= 57'/>
+	 	</div>
+	 	<div id="box"><input type="submit" value="Pay"/></div>
+	 	
+	</div>
+
+
+</body>
+</html>
