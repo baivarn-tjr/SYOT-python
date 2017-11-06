@@ -7,6 +7,16 @@ def login(request):
     }
     return render(request, 'login.html' , context)
 
+def logout(request):
+    context = {
+    }
+    try:
+        del request.session['user_id']
+    except KeyError:
+        pass
+    return render(request, 'index.html' , context)
+
+
 def signup(request):
     context = {
     }

@@ -62,10 +62,17 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'favorite' %}" id="Header"><i class="fa fa-heart" aria-hidden="true"></i></a>
                 </li>
-              {% endif %}
+                <li class = "nav-item">
+                  <a class="nav-link" href="{% url 'carts' %}"id="Header"><i class="fa fa-user" aria-hidden="true"></i> Hi {{ appli }} </a>
+                </li>
                 <li class="nav-item">
-                <a class="nav-link" href="{% url "acc:login" %}" id="Header"><i class="fa fa-sign-in" aria-hidden="true"></i> Sign In<ins></ins></a>
+                <a class="nav-link" href="{% url "acc:logout" %}" id="Header"><i class="fa fa-sign-in" aria-hidden="true"></i> SignOut<ins></ins></a>
                </li>
+              {% else %}
+                <li class="nav-item">
+                <a class="nav-link" href="{% url "acc:login" %}" id="Header"><i class="fa fa-sign-in" aria-hidden="true"></i> SignIn<ins></ins></a>
+               </li>
+              {% endif %}
             </ul>
         </div>
       </nav>
