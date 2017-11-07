@@ -1,6 +1,34 @@
-#blockSlide{
-	width: 1500px;
-	height: 500px;
-	margin-top: 52px;
-	background-color: black;
+div#first-promote{
+	margin: 52px 0px 0px 0px;
+	height: 448px;
+}
+
+div#promote{
+	height: 448px;
+}
+
+div#recommend{
+	height: 448px;
+}
+
+#blockRec{
+	padding-top: 20px;
+	display: block;
+	height: 350px;
+}
+
+#recImg{
+	width: 200px;
+	height: 250px;
+}
+#cardRec{
+	padding-left: 160px;
+}
+
+#details{
+	padding-top:20px;
+}
+
+#recImg:hover{
+	opacity: 0.80;
 }
