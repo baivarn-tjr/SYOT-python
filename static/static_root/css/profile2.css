@@ -1,0 +1,77 @@
+#profile-section{
+  padding-top: 70px;
+  padding-left: 70px;
+  max-height: 100%;
+}
+
+.userprofile {
+  width: 80px;
+  height: 80px;
+  background-color: #808080;
+  border-radius: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.box{
+  display: inline-block;float: left;
+  width: 710px;
+  height: 710px;
+  background-color: white;
+}
+.status{
+  padding-left: 20px;
+}
+
+.left{
+  border-right: 1px solid #808080;
+}
+
+.hr-left{
+  width: 80%;
+  margin-right: 0px;
+}
+
+.hr-right{
+  width: 80%;
+  margin-left: 0px;
+}
+
+.dot{
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #ff4f2c;
+  margin-top: 20px;
+  margin-left: 50px;
+  display: inline-block;
+}
+
+.ship{
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.profile{
+  padding-right: 20px;
+}
+
+.coin{
+  width: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+}
+
+.button {
+    background-color: #ff5757;
+    /*font-style: Sukhumvit set*/
+    color: white;
+    border-radius: 5px;
+    border: 3px solid #ff5757;
+}
+
+.button:hover {
+    background-color: #ff4f2c;
+    opacity: 0.9;
+    color: white;
+}

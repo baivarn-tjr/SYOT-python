@@ -23,22 +23,31 @@
   <div class="headerSection">
     <nav class="navbar navbar-expand-lg fixed-top" id="Header">
       <div class="navbar-brand col-lg-1">
-          <a href="index.html" id="Header"><img src="images/logo.png" width="35" height="35" class="d-inline-block align-top" id="brand-name">SYOT</a>
+          <a href="index.html" id="logo"><img src="images/logo.png" width="40" height="40" class="d-inline-block align-top" id="brand-name"></a>
       </div>
+      
         <!--searchBox-->
-      <div class="col-lg-3">
+      <div class="col-lg-3" >
         <form class="form-inline">
-            <input class="form-control mr-sm-2 clearable" type="search" placeholder="Search" aria-label="Search">
+            <input class="form-control mr-sm-2 clearable" type="search" placeholder="Search" aria-label="Search" id="searchBox">
             <button class="btn btn-outline-dark" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
         </form>
       </div>
+      
       <div class="collapse navbar-collapse col-lg-4" id="navHeaderCenter">
             <ul class="navbar-nav" id="centerTabHeader">
               <li class="nav-item active" id="Left-Header">
                   <a class="nav-link" href="index.html" id="Header">Home</a>
               </li>
-              <li class="nav-item" id="tabHeader">
-                  <a class="nav-link" href="product.html" id="Header">Product</a>
+              <li class="nav-item dropbtn" id="tabHeader">
+                  <div class="dropdown">
+                    <a class="nav-link " href="product.html" id="Header">Product</a>
+                      <div class="dropdown-content">
+                          <a href="#">Movie</a>
+                          <a href="#">Cartoon</a>
+                          <a href="#">Model</a>
+                      </div>
+                  </div>
               </li>
               <li class="nav-item" id="tabHeader">
                   <a class="nav-link" href="#" id="Header">About</a>
