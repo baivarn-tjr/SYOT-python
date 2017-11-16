@@ -6,7 +6,7 @@
 .box{
   display: inline-block;
   float: left;
-  width: 500px;
+  width: 40%;
   height: 630px;
   background-color: white;
 }

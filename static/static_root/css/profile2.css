@@ -14,7 +14,7 @@
 }
 .box{
   display: inline-block;float: left;
-  width: 710px;
+  width: 50%;
   height: 710px;
   background-color: white;
 }
@@ -27,8 +27,8 @@
 }
 
 .hr-left{
-  width: 100%;
-  margin-right: 0px;
+  width: 80%;
+  margin-left:138px;
 }
 
 .hr-right{
