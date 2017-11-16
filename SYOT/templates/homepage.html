@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block addcssjs %}
+    <link rel="stylesheet" type="text/css" href='{% static "css/homepage.css" %}' />
+{% endblock %}
+
+{% block content %}
+
+<!-- Header section -->
+  <div class="headerSection">
+    <nav class="navbar navbar-expand-lg fixed-top" id="Header">
+      <div class="navbar-brand col-lg-1">
+          <a href="index.html" id="logo"><img src="images/logo.png" width="40" height="40" class="d-inline-block align-top" id="brand-name"></a>
+      </div>
+        <!--searchBox-->
+      <div class="col-lg-3">
+          <form class="form-inline">
+              <input class="form-control mr-sm-2 clearable" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-dark" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+          </form>
+      </div>
+      <div class="collapse navbar-collapse col-lg-4" id="navHeaderCenter">
+            <ul class="navbar-nav" id="centerTabHeader">
+              <li class="nav-item active" id="Left-Header">
+                  <a class="nav-link" href="index.html" id="Header">Home</a>
+              </li>
+              <li class="nav-item" id="tabHeader">
+                  <a class="nav-link" href="product.html" id="Header">Product</a>
+              </li>
+              <li class="nav-item" id="tabHeader">
+                  <a class="nav-link" href="#" id="Header">About</a>
+              </li>
+            </ul>
+      </div>
+      <!--Header Homepage Right-->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+          <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a class="nav-link" href="basket.html" id="Header"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="favorite.html" id="Header"><i class="fa fa-heart" aria-hidden="true"></i></a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="login.html" id="Header"><i class="fa fa-sign-in" aria-hidden="true"></i> Sign In</a>
+             </li>
+          </ul>
+      </div>
+    </nav>
+    <hr>
+  </div>
+  <!-- Homepage Section -->
+<div id="first-promote" style="background-color: red">
+  <h1>First Paragraph</h1>
+</div>
+<div id="recommend">
+  <h1 style="margin-left: 680px;">Recommended</h1>
+  <div id="blockRec">
+    <div class="row">
+      <div class="col-lg-3" align="center">
+        <a href="#"><img src="images/babygroot.jpg" id="recImg"></a>
+        <div id="details">
+          <h5>Babygroot</h5>
+          <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+          <p>$99.00</p>
+        </div>
+      </div>
+      <div class="col-lg-3" align="center">
+        <a href="#"><img src="images/babygroot.jpg" id="recImg"></a>
+        <div id="details">
+          <h5>Babygroot</h5>
+          <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+          <p>$99.00</p>
+        </div>
+      </div>
+      <div class="col-lg-3" align="center">
+        <a href="#"><img src="images/babygroot.jpg" id="recImg"></a>
+        <div id="details">
+          <h5>Babygroot</h5>
+          <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+          <p>$99.00</p>
+        </div>
+      </div>
+      <div class="col-lg-3" align="center">
+        <a href="#"><img src="images/babygroot.jpg" id="recImg"></a>
+        <div id="details">
+          <h5>Babygroot</h5>
+          <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+          <p>$99.00</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="promote" style="background-color:green">
+  <h1>Second Paragraph</h1>
+</div>
+<div id="promote" style="background-color:yellow">
+  <h1>Third Paragraph</h1>
+</div>
+{% endblock %}
