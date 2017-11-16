@@ -5,6 +5,7 @@
     <head>
       {% load staticfiles %}
     	<title>SYOT: The best online toys store</title>
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
     	<!-- Boostrap -->
     	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -18,6 +19,11 @@
         {% endblock %}
         <link rel="stylesheet" type="text/css" href='{% static "css/header.css" %}' />
         <link rel="stylesheet" type="text/css" href='{% static "css/footer.css" %}' />
+        <style media="screen">
+          body {
+            font-family: 'Open Sans', sans-serif;
+          }
+        </style>
     <meta charset="utf-8">
     <!-- <title>yayaa</title> -->
   </head>
@@ -29,7 +35,7 @@
     <div class="headerSection">
       <nav class="navbar navbar-expand-lg fixed-top" id="Header">
         <div class="navbar-brand col-lg-1">
-            <a href="{% url 'index' %}" id="Header"><img src="{% static "images/logo.png" %}" width="35" height="35" class="d-inline-block align-top" id="brand-name">SYOT</a>
+            <a href="{% url 'index' %}" id="Header"><img src="{% static "images/logo.png" %}" width="35" height="35" class="d-inline-block align-top" id="brand-name"></a>
         </div>
           <!--searchBox-->
         <div class="col-lg-3">

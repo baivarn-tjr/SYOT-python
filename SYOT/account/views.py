@@ -14,7 +14,7 @@ def logout(request):
         del request.session['user_id']
     except KeyError:
         pass
-    return render(request, 'index.html' , context)
+    return render(request, 'homepage.html' , context)
 
 
 def signup(request):
@@ -35,7 +35,7 @@ def signupCheck(request):
     }
     form = request.POST
     create_applicant(form)
-    return render(request, 'index.html' , context)
+    return render(request, 'homepage.html' , context)
 
 def loginCheck(request):
     form = request.POST
@@ -58,7 +58,7 @@ def loginCheck(request):
             }
         request.session['user_id'] = user.id
         request.session['user_name'] = user.username
-        return render(request, 'index.html' , context)
+        return render(request, 'homepage.html' , context)
     else :
         context = {
             'errorMess' : 'wrong pass',
