@@ -7,17 +7,17 @@
   display: inline-block;
   float: left;
   width: 500px;
-  height: 680px;
+  height: 630px;
   background-color: white;
 }
 
 .box.left{
-	padding-right: 5px;
-	border-right: 1px solid /*#bfc0c1*/ black;
+	padding-right: 10px;
+	border-right: 1px solid #848484;
 }
 
 .box.right{
-	padding-left: 5px;
+	padding-left: 10px;
 }
 
 .contactUs{
@@ -85,5 +85,10 @@ textarea{
 }
 
 .hr-left,.hr-right{
-	background-color:black;
+  border-top: none;
+  border-bottom:1px solid #848484;
+}
+
+#fix-footer{
+  margin-top: 650px;
 }

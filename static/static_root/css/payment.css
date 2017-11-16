@@ -3,8 +3,7 @@
 	margin-left: 150px;
 }
 #text{
-	margin-top: 100px;
-	font-size: 35px;
+	font-size: 40px;
 }
 .textinput{
 	color: gray;
@@ -26,7 +25,7 @@
   transition: all 0.3s;
   padding: 13px;
   margin-bottom: 15px;
-  width:100%;
+  width:400px;
   box-sizing: border-box;
   outline:0;
 }
@@ -63,6 +62,11 @@
   box-sizing: border-box;
   outline:0;
 }
+
+#cvv{
+  margin-left: 43px;
+}
+
 .buy{
       width: 260px;
       height: 50px;
@@ -78,10 +82,10 @@
       cursor: pointer;
 
  }
- [type="submit"] {
+ #submit{
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   width: 100%;
-  background:#3399ff;
+  background:#ce251c;
   border-radius:5px;
   border:0;
   cursor:pointer;
@@ -93,4 +97,37 @@
   margin-top:-4px;
   font-weight:700;
 }
-[type="submit"]:hover { background:#99ccff; }
+#submit:hover { background:#ce251c; }
+
+#payment-section{
+  margin-top:100px;
+  padding-left: 250px;
+}
+
+.box{
+  display: inline-block;
+  float: left;
+  width: 410px;
+  height: 500px;
+  background-color: white;
+}
+
+.box.left{
+  margin-right: 80px;
+}
+
+.box.right{
+  margin-left: 100px;
+}
+
+#information{
+  margin-top: 42px;
+}
+
+.credit{
+  margin-top:130px;
+}
+
+#fix-footer{
+  margin-top: 700px;
+}

@@ -2,13 +2,77 @@
 <html>
 <head>
 	<title>Payment</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- Boostrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+	<!--Font Awesom import-->
+	<script src="https://use.fontawesome.com/ef3af9c398.js"></script>
+	<!-- CSS File-->
 	<link rel="stylesheet" type="text/css" href="css/payment.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
 </head>
 <body>
-	<div id="picture" class="col-sm-6" style="background-color:white ;">
+<!-- Header section -->
+  <div class="headerSection">
+    <nav class="navbar navbar-expand-lg fixed-top" id="Header">
+      <div class="navbar-brand col-lg-1">
+          <a href="index.html" id="logo"><img src="images/logo.png" width="40" height="40" class="d-inline-block align-top" id="brand-name"></a>
+      </div>
+      
+        <!--searchBox-->
+      <div class="col-lg-3" >
+        <form class="form-inline">
+            <input class="form-control mr-sm-2 clearable" type="search" placeholder="Search" aria-label="Search" id="searchBox">
+            <button class="btn btn-outline-dark" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </form>
+      </div>
+      
+      <div class="collapse navbar-collapse col-lg-4" id="navHeaderCenter">
+            <ul class="navbar-nav" id="centerTabHeader">
+              <li class="nav-item active" id="Left-Header">
+                  <a class="nav-link" href="index.html" id="Header">Home</a>
+              </li>
+              <li class="nav-item dropbtn" id="tabHeader">
+                  <div class="dropdown">
+                    <a class="nav-link " href="product.html" id="Header">Product</a>
+                      <div class="dropdown-content">
+                          <a href="#">Movie</a>
+                          <a href="#">Cartoon</a>
+                          <a href="#">Model</a>
+                      </div>
+                  </div>
+              </li>
+              <li class="nav-item" id="tabHeader">
+                  <a class="nav-link" href="about.html" id="Header">About</a>
+              </li> 
+            </ul>
+      </div>
+      <!--Header Homepage Right-->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+          <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a class="nav-link" href="basket.html" id="Header"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="favorite.html" id="Header"><i class="fa fa-heart" aria-hidden="true"></i></a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="login.html" id="Header"><i class="fa fa-sign-in" aria-hidden="true"></i> Sign In<ins></ins></a>
+             </li> 
+          </ul>
+      </div>
+    </nav>
+    <hr>
+  </div>
+
+<!--payment section-->
+	<!-- <div id="picture" class="col-sm-6" style="background-color:white ;">
 		<img src="images/credit.png">
 	</div>
+
 	<div id="text" class="col-sm-3" style="background-color:white ;">Payment Details
 	 	<div class="textinput">Name on Card <input type="text" class="card" placeholder="Name on Card"></div>
 	 	<div class="textinput">Card Number <input type="text" class="card" maxlength="16" placeholder="Card Number" onkeypress='return event.charCode >= 48 && event.charCode <= 57'/></div>
@@ -17,10 +81,86 @@
 	 		<input type="text" maxlength="7" class="cardvalid" placeholder="MM/YYYY" onkeypress='return event.charCode >= 48 &&  event.charCode== / && event.charCode <= 57'/>
 	 		<input type="text" maxlength="3" class="cardcvv" placeholder="CVV" onkeypress='return event.charCode >= 48 && event.charCode <= 57'/>
 	 	</div>
-	 	<div id="box"><input type="submit" value="Pay"/></div>
-	 	
-	</div>
+	 	<div id="box"><input id="submit" type="submit" value="Pay"/></div>
+	</div> -->
 
 
+	<div id="payment-section">
+	    <div class="box left">
+	        <div class="credit">
+	          <img src="images/credit.png">
+	        </div>
+	    </div>
+	      
+	    <div class="box right">
+	        <div class="details">
+	            <p style="font-family: Fjalla One; font-size:40px; text-align: center; margin-bottom:0px;">
+	            	Payment Details
+	            </p>
+	        	<div id="text">
+		          <div id="information" style="font-size: 20px;">
+		            <div class="textinput">Name on Card 
+		            	<input type="text" class="card" placeholder="Name on Card">
+		            </div>
+		 			<div class="textinput">Card Number
+		 				<input type="text" class="card" maxlength="16" placeholder="Card Number" onkeypress='return event.charCode >= 48 && event.charCode <= 57'/>
+		 			</div>
+		 			<div class="textinput">
+		 				<div>Valid Through &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;CVV</div>
+		 				<input type="text" maxlength="7" class="cardvalid" placeholder="MM/YYYY" onkeypress='return event.charCode >= 48 &&  event.charCode== / && event.charCode <= 57'/>
+		 				<input id="cvv" type="text" maxlength="3" class="cardcvv" placeholder="CVV" onkeypress='return event.charCode >= 48 && event.charCode <= 57'/>
+		          	</div>
+		          	<div id="box"><input id="submit" type="submit" value="Pay"/></div>
+		          </div>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+
+  	<!--Footer Section-->
+ 	<footer class="footer" id="fix-footer">
+	  <div class="footer-top-section">
+	    <div class="container">
+	      <div class="row">
+	        <div class="footer-col col-md-5">
+	          <h6><font color="white">Our Office Location</font></h6>
+		        <p id="footer"><font color="#565656"> 	
+		          	50 Thanon Ngam Wong Wan<br>
+		            Khwaeng Lat Yao, Khet Chatuchak<br>
+		            Krung Thep Maha Nakhon 10900
+		            <br><br>
+		            Copyright © 2017 SYOT Inc.<br>
+		            All Rights Reserved.  
+	        	</font></p>
+	        </div>
+	        <div class="footer-col col-md-4">
+	          <h6><font color="white">Service We Offrer</font></h6>
+	            <a href="#" id="navlink" class="nav-link">Digital Strategy</a>
+	            <a href="#" id="navlink" class="nav-link">Websites</a>
+	            <a href="#" id="navlink" class="nav-link">Videography</a>
+	            <a href="#" id="navlink" class="nav-link">Social Media</a>
+	            <a href="#" id="navlink" class="nav-link">User Experience</a>
+	        </div>
+		    <div class="footer-col col-md-3">
+		       	<h6><font color="white">Social Contact</font></h6>
+		       	<div class="row">
+		       		<div class="col-md-2">
+		       			<a id="icon-footer" class="nav-link" href="https://twitter.com"><i class="fa fa-twitter-square fa-2x"  aria-hidden="true"></i></a>
+		       		</div>
+		       		<div class="col-md-2">
+		       			<a id="icon-footer" class="nav-link" href="https://facebook.com"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+		       		</div>
+		       		<div class="col-md-2">
+		       			<a id="icon-footer" class="nav-link" href="https:youtube.com"><i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i></a>
+		       		</div>
+		       		<div class="col-md-2">
+	       				<a id="icon-footer" class="nav-link" href="https://instagram.com"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+	       			</div>
+		       	</div>
+		    </div>		
+	      </div>
+	    </div>
+	  </div>
+	  </footer>
 </body>
 </html>

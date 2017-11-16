@@ -27,7 +27,7 @@
 }
 
 .hr-left{
-  width: 80%;
+  width: 100%;
   margin-right: 0px;
 }
 
@@ -74,4 +74,8 @@
     background-color: #ff4f2c;
     opacity: 0.9;
     color: white;
+}
+
+#fix-footer{
+  margin-top:750px;
 }
