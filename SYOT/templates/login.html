@@ -2,6 +2,11 @@
 {% block addcssjs %}
 	    <!-- <link rel="stylesheet" href="{% static 'css/animate-login.css' %}"> -->
 			<link rel="stylesheet" href="{% static 'css/login.css' %}">
+			<style>
+				#signup{
+					background-color:#F9966B;
+				}
+			</style>
 {% endblock %}
 {% block content %}
 
@@ -28,10 +33,11 @@
 					<br/>
 					<button type="submit">Sign In</button>
 				</form>
-				<button onclick="goBack()" id="back">Back</button>
+				<button onclick="signUp()" id="signup">Sign Up</button>
+				<button onclick="goBack()" id="back">Back to index</button>
 				<br/>
 				<a href="#"><p class="small">Forgot your password?</p></a>
-				<a href="{% url 'acc:signup' %}"><p class="small">sign up</p></a>
+				<!-- <a href="{% url 'acc:signup' %}"><p class="small">sign up</p></a> -->
 			</div>
 		</div>
 		<script>
@@ -53,7 +59,11 @@
 			// });
 
 			function goBack() {
-					window.history.back();
+				location.href="{% url 'index' %}"
 			}
+			function signUp() {
+				location.href="{% url 'acc:signup' %}"
+			}
+
 		</script>
 {% endblock %}
