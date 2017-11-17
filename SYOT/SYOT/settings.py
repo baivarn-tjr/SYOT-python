@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'favorite',
     'mathfilters',
     'account',
+    'testuser',
 ]
 
 MIDDLEWARE = [
