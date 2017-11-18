@@ -18,19 +18,31 @@
 				<div class="box-header">
 					<h2>Log In</h2>
 				</div>
-				{% if errorMess %}
-				<h3>{{ errorMess }}</h3>
-				{% endif %}
+				{% if error_message %}
+		      <div class="alert alert-danger">
+		        {% if error_message == 'no-login' %}
+							<h3>please login before enter this website !!</h3>
+		        {% endif %}
+		        {% if error_message == 'wrong-password' %}
+							<h3>password or user didn't correct !!</h3>
+		        {% endif %}
+		        {% if error_message == 'invalid' %}
+							<h3>can't access because wrong forms</h3>
+		        {% endif %}
+		      </div>
+						<br>
+		    {% endif %}
 				<form  action="{% url 'acc:logincheck' %}" method="POST">
 					{% csrf_token %}
-					<label for="username">Username</label>
+					{{ login_form.as_table }}
+					<!-- <label for="username">Username</label>
 					<br/>
 					<input type="text" id="username" name="user" maxlength="50">
 					<br/>
 					<label for="password">Password</label>
 					<br/>
 					<input type="password" id="password" name="pass" maxlength="100">
-					<br/>
+					<br/> -->
 					<button type="submit">Sign In</button>
 				</form>
 				<button onclick="signUp()" id="signup">Sign Up</button>

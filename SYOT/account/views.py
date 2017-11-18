@@ -2,30 +2,32 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.http import HttpResponseRedirect
 from .models import Applicant
-from .forms import NameForm
+from .forms import LoginForm
 
-def get_name(request):
-    context = {
-    }
-    # if this is a POST request we need to process the form data
-    if request.method == 'POST':
-        # create a form instance and populate it with data from the request:
-        form = NameForm(request.POST)
-        # check whether it's valid:
-        if form.is_valid():
-            # process the data in form.cleaned_data as required
-            # ...
-            # redirect to a new URL:
-            return HttpResponseRedirect('/thanks/')
-
-    # if a GET (or any other method) we'll create a blank form
-    else:
-        form = NameForm()
-
-    return render(request, 'forgot-password.html' , context)
+# def get_name(request):
+#     context = {
+#     }
+#     # if this is a POST request we need to process the form data
+#     if request.method == 'POST':
+#         # create a form instance and populate it with data from the request:
+#         form = NameForm(request.POST)
+#         # check whether it's valid:
+#         if form.is_valid():
+#             # process the data in form.cleaned_data as required
+#             # ...
+#             # redirect to a new URL:
+#             return HttpResponseRedirect('/thanks/')
+#
+#     # if a GET (or any other method) we'll create a blank form
+#     else:
+#         form = NameForm()
+#
+#     return render(request, 'forgot-password.html' , context)
 
 def login(request):
+    login_form = LoginForm()
     context = {
+        'login_form' : login_form ,
     }
     return render(request, 'login.html' , context)
 
@@ -66,31 +68,76 @@ def signupCheck(request):
     return render(request, 'homepage.html' , context)
 
 def loginCheck(request):
-    form = request.POST
-    username = form['user']
-    password = form['pass']
-    applicant = Applicant.find_by_username(username)
-    
-    user = Applicant.objects.get(username=username)
+    if request.method != 'POST':
+        return HttpResponseForbidden()
+        # context = {
+        #     'error_message' : 'wrong-password',
+        # }
+        # return render(request, 'index.html' , context)
 
+    form = LoginForm(request.POST)
+    if form.is_valid():
+        username = form.cleaned_data['username']
+        password = form.cleaned_data['password']
+        applicant = Applicant.find_by_username(username)
+        if applicant:
+            user = Applicant.objects.get(username=username)
 
-    if not applicant :
-        context = {
-            'errorMess' : 'wrong user',
-        }
-        return render(request, 'login.html' , context)
-
-    elif applicant.check_password(password) :
-        context = {
-            # 'loginConfirm' : 'yes',
-            'appli' : applicant.username,
+        if not applicant :
+            login_form = LoginForm()
+            context = {
+                'error_message' : 'wrong-password',
+                'login_form' : login_form
             }
-        request.session['user_id'] = user.id
-        request.session['user_name'] = user.username
-        request.session.set_expiry(1800)
-        return render(request, 'homepage.html' , context)
-    else :
+            return render(request, 'login.html' , context)
+
+        if applicant.check_password(password) :
+            context = {
+                }
+            request.session['user_id'] = user.id
+            request.session['user_name'] = user.username
+            request.session.set_expiry(1800)
+            return render(request, 'homepage.html' , context)
+        else :
+            login_form = LoginForm()
+            context = {
+                'error_message' : 'wrong-password',
+                'login_form' : login_form
+            }
+            return render(request , 'login.html' , context)
+
+    else:
         context = {
-            'errorMess' : 'wrong pass',
+            'error_message' : 'invalid',
         }
         return render(request, 'login.html' , context)
+
+# def loginCheck(request):
+#     form = request.POST
+#     username = form['user']
+#     password = form['pass']
+#     applicant = Applicant.find_by_username(username)
+#
+#     user = Applicant.objects.get(username=username)
+#
+#
+#     if not applicant :
+#         context = {
+#             'errorMess' : 'wrong user',
+#         }
+#         return render(request, 'login.html' , context)
+#
+#     elif applicant.check_password(password) :
+#         context = {
+#             # 'loginConfirm' : 'yes',
+#             'appli' : applicant.username,
+#             }
+#         request.session['user_id'] = user.id
+#         request.session['user_name'] = user.username
+#         request.session.set_expiry(1800)
+#         return render(request, 'homepage.html' , context)
+#     else :
+#         context = {
+#             'errorMess' : 'wrong pass',
+#         }
+#         return render(request, 'login.html' , context)
