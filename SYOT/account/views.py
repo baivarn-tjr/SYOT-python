@@ -70,6 +70,7 @@ def loginCheck(request):
     username = form['user']
     password = form['pass']
     applicant = Applicant.find_by_username(username)
+    
     user = Applicant.objects.get(username=username)
 
 

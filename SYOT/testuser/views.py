@@ -28,8 +28,13 @@ def loginIndex(request):
                         })
 
 def login(request):
+
     if request.method != 'POST':
-        return HttpResponseForbidden()
+        # return HttpResponseForbidden()
+        context = {
+            'error_message' : 'wrong-password',
+        }
+        return render(request, 'index.html' , context)
 
     form = LoginForm(request.POST)
     if form.is_valid():
@@ -38,16 +43,19 @@ def login(request):
         # username = form['user']
         # password = form['pass']
         applicant = Applicant.find_by_username(username)
-        user = Applicant.objects.get(username=username)
+        if applicant:
+            user = Applicant.objects.get(username=username)
 
         # applicant = Applicant.find_by_username(username)
         if not applicant :
+            login_form = LoginForm()
             context = {
                 'error_message' : 'wrong-password',
+                'login_form' : login_form
             }
-            return render(request  + '?error=wrong-password', 'loginTest.html' , context)
+            return render(request, 'loginTest.html' , context)
 
-        elif applicant.check_password(password) :
+        if applicant.check_password(password) :
             context = {
                 # 'loginConfirm' : 'yes',
                 # 'appli' : applicant.username,
@@ -57,8 +65,10 @@ def login(request):
             request.session.set_expiry(1800)
             return render(request, 'homepage.html' , context)
         else :
+            login_form = LoginForm()
             context = {
                 'error_message' : 'wrong-password',
+                'login_form' : login_form
             }
             return render(request , 'loginTest.html' , context)
 
