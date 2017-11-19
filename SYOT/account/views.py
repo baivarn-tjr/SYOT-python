@@ -2,7 +2,13 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.http import HttpResponseRedirect
 from .models import Applicant
-from .forms import LoginForm
+from .forms import LoginForm , ForgotPasswordForm
+from .tokens import account_activation_token
+from django.core.mail import EmailMessage
+from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
+from django.utils.encoding import force_bytes, force_text
+from django.template.loader import render_to_string
+from django.contrib.auth.hashers import make_password
 
 # def get_name(request):
 #     context = {
@@ -46,8 +52,53 @@ def signup(request):
     }
     return render(request, 'signup.html' , context)
 
+def reset_password(request,uidb64,token):
+    return render(request,'reset_password.html',{})
+
+
 def forgot(request):
+    form = ForgotPasswordForm()
     context = {
+        'form' : form ,
+    }
+    return render(request, 'forgot-password.html' , context)
+
+def forgotCheck(request):
+    err = False
+    success = False
+    if request.method == 'POST':
+        form = ForgotPasswordForm(request.POST)
+        if form.is_valid():
+            # user = request.POST['email']
+            user = Applicant.objects.get(email=request.POST['email'])
+            token = account_activation_token.make_token(user)
+            user.token = token
+            domain = 'http://localhost:8000'
+            uid = urlsafe_base64_encode(force_bytes(user.pk))
+            message = render_to_string('reset_password_email.html', {
+                'user': user,
+                'domain': domain,
+                'uid': uid,
+                'token': token,
+            })
+            mail_subject = 'Reset your password'
+            to_email = request.POST['email']
+            email = EmailMessage(mail_subject, message, to=[to_email])
+            email.send()
+            success = 'Please check your email.'
+            form = ForgotPasswordForm()
+
+    else:
+        err = 'Please enter your email address to retrieve your password.'
+        form = ForgotPasswordForm()
+        context = {
+            'form' : form,
+            'err' : err,
+        }
+    context = {
+        'form' : form,
+        'err' : err,
+        'success' : success,
     }
     return render(request, 'forgot-password.html' , context)
 
@@ -70,10 +121,6 @@ def signupCheck(request):
 def loginCheck(request):
     if request.method != 'POST':
         return HttpResponseForbidden()
-        # context = {
-        #     'error_message' : 'wrong-password',
-        # }
-        # return render(request, 'index.html' , context)
 
     form = LoginForm(request.POST)
     if form.is_valid():

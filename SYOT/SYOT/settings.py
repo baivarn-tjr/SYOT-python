@@ -25,9 +25,18 @@ SECRET_KEY = 'dl^a_7ll2$ipi9^@p=ic!81t!y5cr#sbec9#3gh*aqrd+spt4p'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+EMAIL_HOST =  'smtp.gmail.com'
+EMAIL_HOST_USER = 'syotshopbkk@gmail.com'
+EMAIL_HOST_PASSWORD = 'syot12345'
+EMAIL_PORT = '587'
+EMAIL_USE_TLS = True
+
 # TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '0.0.0.0',
+    'localhost',
+]
 
 
 # Application definition

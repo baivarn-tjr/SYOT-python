@@ -23,6 +23,13 @@ class Applicant(models.Model):
             return applicant
         except Applicant.DoesNotExist:
             return None
+            
+    def find_by_email(email):
+        try:
+            applicant = Applicant.objects.get(email=email)
+            return applicant
+        except Applicant.DoesNotExist:
+            return None
 
     def set_password(self, password):
         self.hashed_password = make_password(password)
