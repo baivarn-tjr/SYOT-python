@@ -12,16 +12,14 @@
     <div class="productSection">
       <div class="main">
   		<span><h1>Product</h1></span>
-          <br>
           {% if Count %}
-          <h5>----- {{ Count }} found -----</h5>
+          <h1>Results for " {{ Name }} "</h1>
           {% else %}
-          <h5>----- Not found ! -----</h5>
+          <h1>Results for " {{ Name }} "</h1>
+          <br><br><br><br><br><br><br><br><br><br><br><br><br>
           {% endif %}
       </div>
     </div>
-    <br>
-    <br>
 		<div class="row">
       {% for product in toyPro %}
       {% if product %}

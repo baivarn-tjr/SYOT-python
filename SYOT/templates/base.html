@@ -41,7 +41,7 @@
         <div class="col-lg-3">
           <form action="{% url 'search' %}" method="POST" class="form-inline">
             {% csrf_token %}
-              <input id="id_name" type="text" name="search_name" maxlength="250" class="form-control mr-sm-2" placeholder="Search" aria-label="Search">
+              <input id="id_name" type="text" name="search_name" minlength="3" maxlength="250" class="form-control mr-sm-2" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-dark" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
           </form>
         </div>
