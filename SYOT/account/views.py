@@ -2,33 +2,13 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.http import HttpResponseRedirect
 from .models import Applicant
-from .forms import LoginForm , ForgotPasswordForm
+from .forms import LoginForm , ForgotPasswordForm , ResetPasswordForm
 from .tokens import account_activation_token
 from django.core.mail import EmailMessage
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 from django.utils.encoding import force_bytes, force_text
 from django.template.loader import render_to_string
 from django.contrib.auth.hashers import make_password
-
-# def get_name(request):
-#     context = {
-#     }
-#     # if this is a POST request we need to process the form data
-#     if request.method == 'POST':
-#         # create a form instance and populate it with data from the request:
-#         form = NameForm(request.POST)
-#         # check whether it's valid:
-#         if form.is_valid():
-#             # process the data in form.cleaned_data as required
-#             # ...
-#             # redirect to a new URL:
-#             return HttpResponseRedirect('/thanks/')
-#
-#     # if a GET (or any other method) we'll create a blank form
-#     else:
-#         form = NameForm()
-#
-#     return render(request, 'forgot-password.html' , context)
 
 def login(request):
     login_form = LoginForm()
@@ -53,7 +33,40 @@ def signup(request):
     return render(request, 'signup.html' , context)
 
 def reset_password(request,uidb64,token):
-    return render(request,'reset_password.html',{})
+    success = False
+    err = False
+    try:
+        uid = force_text(urlsafe_base64_decode(uidb64))
+        user = Applicant.objects.get(pk=uid)
+    except(TypeError, ValueError, OverflowError, User.DoesNotExist):
+        user = None
+
+    if user is not None and account_activation_token.check_token(user, token) and user.reset_password == 'RS':
+        user.is_activated = 'WT'
+        if request.method == 'POST':
+            form = ResetPasswordForm(request.POST)
+            if form.is_valid():
+                new_password = request.POST['new_password']
+                user.set_password(new_password)
+                # user.password = make_password(new_password)
+                user.is_activated = 'AC'
+                user.reset_password = 'CL'
+                user.save()
+                success = 'Reset password is complete.'
+        else:
+            form = ResetPasswordForm()
+            # context = {
+            # }
+            # return render(request, 'start.html' , context)
+    else:
+        form = ResetPasswordForm()
+        err = 'Activation link is invalid!'
+
+    return render(request, 'reset_password.html', {'form': form, 'uidb64': uidb64,
+                                                   'token': token, 'err': err, 'success': success})
+
+
+
 
 
 def forgot(request):
@@ -73,6 +86,8 @@ def forgotCheck(request):
             user = Applicant.objects.get(email=request.POST['email'])
             token = account_activation_token.make_token(user)
             user.token = token
+            user.reset_password = 'RS'
+            user.save()
             domain = 'http://localhost:8000'
             uid = urlsafe_base64_encode(force_bytes(user.pk))
             message = render_to_string('reset_password_email.html', {
@@ -95,6 +110,7 @@ def forgotCheck(request):
             'form' : form,
             'err' : err,
         }
+        return render(request, 'forgot-password.html' , context)
     context = {
         'form' : form,
         'err' : err,

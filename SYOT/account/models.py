@@ -3,7 +3,15 @@ from django.contrib.auth.hashers import make_password
 from django.contrib.auth.hashers import check_password as check_hashed_password
 
 class Applicant(models.Model):
-
+    ACTIVE_TYPE = (
+        ('AC', 'Active'),
+        ('CL', 'Closed'),
+        ('WT', 'Waiting'),
+    )
+    RESET_TYPE = (
+        ('RS', 'Reset'),
+        ('CL', 'Closed'),
+    )
     username = models.CharField(    max_length=50,
                                     unique=True)
 
@@ -11,6 +19,16 @@ class Applicant(models.Model):
     email = models.EmailField()
     hashed_password = models.CharField(    max_length = 130,
                                             blank=True)
+    is_activated = models.CharField(
+        max_length=2,
+        choices=ACTIVE_TYPE,
+        default='WT'
+    )
+    reset_password = models.CharField(
+        max_length=2,
+        choices=RESET_TYPE,
+        default='CL'
+    )
     def __str__(self):
         return "%s %s (%s)" % (    self.username,
                                     self.tel,
@@ -23,7 +41,7 @@ class Applicant(models.Model):
             return applicant
         except Applicant.DoesNotExist:
             return None
-            
+
     def find_by_email(email):
         try:
             applicant = Applicant.objects.get(email=email)
