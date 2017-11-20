@@ -4,8 +4,8 @@ from django.core.validators import RegexValidator
 
 
 class SignupForm(forms.Form):
-    username = forms.CharField(max_length=50)
-    email = forms.EmailField(required=True, max_length=128)
+    username = forms.CharField(max_length=50,widget=forms.TextInput(attrs={'placeholder': 'username'}))
+    email = forms.EmailField(required=True, max_length=128,widget=forms.TextInput(attrs={'placeholder': 'example@gmail.com'}))
     firstname = forms.CharField(required=True, max_length=128)
     lastname = forms.CharField(required=True, max_length=128)
     password = forms.CharField(

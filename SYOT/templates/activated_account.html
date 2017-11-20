@@ -1,0 +1,50 @@
+{% load staticfiles %}
+{% block addcssjs %}
+	    <!-- <link rel="stylesheet" href="{% static 'css/animate-login.css' %}"> -->
+			<link rel="stylesheet" href="{% static 'css/login.css' %}">
+			<style>
+				#signup{
+					background-color:#F9966B;
+				}
+			</style>
+{% endblock %}
+{% block content %}
+		<div class="container">
+			<div class="top">
+				<h1 id="title" class="hidden"><span id="logo">SYOT<br><span>Toys for us</span></span></h1>
+			</div>
+			<div class="login-box animated fadeInUp">
+				<div class="box-header">
+					<h2>Activated</h2>
+				</div>
+				{% if success %}
+					<h3>{{ success }}</h3>
+					<button onclick="goBackIndex()" id="back">Back to index</button>
+					<br/>
+					<br/>
+					<button onclick="goBack()" id="back">Back to Sign In</button>
+					<br/>
+				{% elif err %}
+					<h3>{{ err }}</h3>
+					<button onclick="goBackIndex()" id="back">Back to index</button>
+					<br/>
+					<br/>
+					<button onclick="goBack()" id="back">Back to Sign In</button>
+					<br/>
+				{% endif %}
+			</div>
+		</div>
+		<script>
+
+			function goBackIndex() {
+				location.href="{% url 'index' %}"
+			}
+			function goBack() {
+				location.href="{% url 'acc:login' %}"
+			}
+			function signUp() {
+				location.href="{% url 'acc:signup' %}"
+			}
+
+		</script>
+{% endblock %}

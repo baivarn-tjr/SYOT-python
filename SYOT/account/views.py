@@ -45,6 +45,24 @@ def signup(request):
             applicant.set_password(request.POST['password'])
             applicant.save()
             success = 'Please confirm your email address to complete the registration.'
+            user = Applicant.objects.get(email=request.POST['email'])
+            token = account_activation_token.make_token(user)
+            user.token = token
+            user.save()
+            domain = 'http://localhost:8000'
+            uid = urlsafe_base64_encode(force_bytes(user.pk))
+            message = render_to_string('activated_account_email.html', {
+                'user': user,
+                'domain': domain,
+                'uid': uid,
+                'token': token,
+            })
+            mail_subject = 'Activated your account'
+            to_email = request.POST['email']
+            email = EmailMessage(mail_subject, message, to=[to_email])
+            email.send()
+            # success = 'Please check your email.'
+            form = ForgotPasswordForm()
             return render(request,'signup.html', {'success': success})
 
     else:
@@ -54,6 +72,26 @@ def signup(request):
         'form' : form
     }
     return render(request, 'signup.html' , context)
+
+def activated_acc(request,uidb64,token):
+    success = False
+    err = False
+    try:
+        uid = force_text(urlsafe_base64_decode(uidb64))
+        user = Applicant.objects.get(pk=uid)
+    except(TypeError, ValueError, OverflowError, User.DoesNotExist):
+        user = None
+
+    if user is not None and account_activation_token.check_token(user, token):
+        user.is_activated = 'AC'
+        user.save()
+        success = 'Activated is complete !\nWelcome to SYOT.'
+
+    else:
+        err = 'Activation link is invalid!'
+
+    return render(request, 'activated_account.html', {'uidb64': uidb64,
+                                                   'token': token, 'err': err, 'success': success})
 
 def reset_password(request,uidb64,token):
     success = False
@@ -78,18 +116,13 @@ def reset_password(request,uidb64,token):
                 success = 'Reset password is complete.'
         else:
             form = ResetPasswordForm()
-            # context = {
-            # }
-            # return render(request, 'start.html' , context)
+
     else:
         form = ResetPasswordForm()
         err = 'Activation link is invalid!'
 
     return render(request, 'reset_password.html', {'form': form, 'uidb64': uidb64,
                                                    'token': token, 'err': err, 'success': success})
-
-
-
 
 
 def forgot(request):
@@ -141,22 +174,6 @@ def forgotCheck(request):
     }
     return render(request, 'forgot-password.html' , context)
 
-
-def create_applicant(form):
-    applicant = Applicant(
-                            username = form['user'],
-                            tel = form['tel'],
-                            email = form['email'])
-    applicant.set_password(form['pass'])
-    applicant.save()
-
-def signupCheck(request):
-    context = {
-    }
-    form = request.POST
-    create_applicant(form)
-    return render(request, 'homepage.html' , context)
-
 def loginCheck(request):
     if request.method != 'POST':
         return HttpResponseForbidden()
@@ -177,13 +194,21 @@ def loginCheck(request):
             }
             return render(request, 'login.html' , context)
 
-        if applicant.check_password(password) :
+        if applicant.check_password(password) and user.is_activated == 'AC':
             context = {
                 }
             request.session['user_id'] = user.id
             request.session['user_name'] = user.username
             request.session.set_expiry(1800)
             return render(request, 'homepage.html' , context)
+
+        elif applicant.check_password(password) and user.is_activated != 'AC':
+            login_form = LoginForm()
+            context = {
+                'error_message' : 'Please activated account',
+                'login_form' : login_form
+            }
+            return render(request, 'login.html' , context)
         else :
             login_form = LoginForm()
             context = {

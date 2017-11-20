@@ -1,0 +1,7 @@
+{% autoescape off %}
+Hi {{ user.firstname }} {{ user.lastname }},
+Please click on the link to activated your account.
+
+{{ domain }}{% url 'acc:activated_acc' uidb64=uid token=token %}
+
+{% endautoescape %}

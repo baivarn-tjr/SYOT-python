@@ -20,16 +20,6 @@ class Applicant(models.Model):
     # email = models.EmailField()
     # hashed_password = models.CharField(    max_length = 130,
     #                                         blank=True)
-    is_activated = models.CharField(
-        max_length=2,
-        choices=ACTIVE_TYPE,
-        default='WT'
-    )
-    reset_password = models.CharField(
-        max_length=2,
-        choices=RESET_TYPE,
-        default='CL'
-    )
     username = models.CharField(default=None,max_length=50,unique=True)
     email = models.EmailField(default=None, max_length=128,unique=True)
     firstname = models.CharField(default=None, max_length=128)
@@ -40,7 +30,16 @@ class Applicant(models.Model):
     city = models.CharField(max_length=128, default=None)
     state = models.CharField(max_length=128, default=None)
     zipcode = models.CharField(max_length=5, default=None)
-
+    is_activated = models.CharField(
+        max_length=2,
+        choices=ACTIVE_TYPE,
+        default='WT'
+    )
+    reset_password = models.CharField(
+        max_length=2,
+        choices=RESET_TYPE,
+        default='CL'
+    )
     # def __str__(self):
     #     return "%s %s (%s)" % (    self.username,
     #                                 self.tel,

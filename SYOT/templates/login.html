@@ -28,6 +28,9 @@
 		        {% endif %}
 		        {% if error_message == 'invalid' %}
 							<h3>can't access because wrong forms</h3>
+						{% endif %}
+						{% if error_message == 'Please activated account' %}
+							<h3>Please activated account</h3>
 		        {% endif %}
 		      </div>
 						<br>
