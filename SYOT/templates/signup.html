@@ -1,49 +1,61 @@
 {% load staticfiles %}
+{% load widget_tweaks %}
+
 {% block addcssjs %}
 	    <!-- <link rel="stylesheet" href="{% static 'css/animate-login.css' %}"> -->
 			<link rel="stylesheet" href="{% static 'css/signup.css' %}">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+			<style media="screen">
+				.form-group{
+					margin: 20px;
+				}
+			</style>
 {% endblock %}
 {% block content %}
-	<div class="container">
-		<div class="top">
-			<h1 id="title" class="hidden"><span id="logo">SYOT<br><span>Toys for us</span></span></h1>
-		</div>
-		<div class="login-box animated fadeInUp">
-			<div class="box-header">
-				<h2>SIGN UP</h2>
-			</div>
-			<form  action="{% url 'acc:signupcheck' %}" method="POST">
-				{% csrf_token %}
-					<label for="username">Username</label>
-					<br/>
-					<input type="text" id="username" name="user" maxlength="50">
-					<br/>
-					<label for="password">Password</label>
-					<br/>
-					<input type="password" id="password" name="pass" maxlength="100">
-					<br/>
-		      <label for="email">E-mail</label>
-					<br/>
-					<input type="text" id="e-mail" name="email" maxlength="100">
-					<br/>
-					<label for="tel">Tel</label>
-					<br/>
-					<input type="text" id="telo" name="tel" maxlength="11">
-					<br/>
-		      <!-- <label for="name">Name</label>
-					<br/>
-					<input type="text" id="Name" name="nameUser" maxlength="200">
-					<br/> -->
-					<button type="submit">Sign Up</button>
-			</form>
-			<button onclick="goBack()" id="back">Back</button>
-			<br/>
-			<!-- <a href="#"><p class="small">Forgot your password?</p></a> -->
-		</div>
-	</div>
-	<script>
-		function goBack() {
-				window.history.back();
-		}
-	</script>
+<div class="container">
+<div class="login-box">
+<form method="post" novalidate>
+  {% csrf_token %}
+
+  {% for hidden_field in form.hidden_fields %}
+    {{ hidden_field }}
+  {% endfor %}
+
+  {% if form.non_field_errors %}
+    <div class="alert alert-danger" role="alert">
+      {% for error in form.non_field_errors %}
+        {{ error }}
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  {% for field in form.visible_fields %}
+    <div class="form-group">
+      {{ field.label_tag }}
+
+      {% if form.is_bound %}
+        {% if field.errors %}
+          {% render_field field class="form-control is-invalid" %}
+          {% for error in field.errors %}
+            <div class="invalid-feedback">
+              {{ error }}
+            </div>
+          {% endfor %}
+        {% else %}
+          {% render_field field class="form-control is-valid" %}
+        {% endif %}
+      {% else %}
+        {% render_field field class="form-control" %}
+      {% endif %}
+
+      {% if field.help_text %}
+        <small class="form-text text-muted">{{ field.help_text }}</small>
+      {% endif %}
+    </div>
+  {% endfor %}
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+</div>
 	{% endblock %}

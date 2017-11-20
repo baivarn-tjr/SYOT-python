@@ -1,4 +1,5 @@
 from django.db import models
+from django.forms import ModelForm
 from django.contrib.auth.hashers import make_password
 from django.contrib.auth.hashers import check_password as check_hashed_password
 
@@ -12,13 +13,13 @@ class Applicant(models.Model):
         ('RS', 'Reset'),
         ('CL', 'Closed'),
     )
-    username = models.CharField(    max_length=50,
-                                    unique=True)
-
-    tel = models.CharField(         max_length = 15)
-    email = models.EmailField()
-    hashed_password = models.CharField(    max_length = 130,
-                                            blank=True)
+    # username = models.CharField(    max_length=50,
+    #                                 unique=True)
+    #
+    # tel = models.CharField(         max_length = 15)
+    # email = models.EmailField()
+    # hashed_password = models.CharField(    max_length = 130,
+    #                                         blank=True)
     is_activated = models.CharField(
         max_length=2,
         choices=ACTIVE_TYPE,
@@ -29,10 +30,21 @@ class Applicant(models.Model):
         choices=RESET_TYPE,
         default='CL'
     )
-    def __str__(self):
-        return "%s %s (%s)" % (    self.username,
-                                    self.tel,
-                                    self.email)
+    username = models.CharField(default=None,max_length=50,unique=True)
+    email = models.EmailField(default=None, max_length=128,unique=True)
+    firstname = models.CharField(default=None, max_length=128)
+    lastname = models.CharField(default=None, max_length=128)
+    hashed_password = models.CharField(default=None,max_length=128)
+    mobile = models.CharField(default=None,max_length=10)
+    address = models.CharField(max_length=512, default=None)
+    city = models.CharField(max_length=128, default=None)
+    state = models.CharField(max_length=128, default=None)
+    zipcode = models.CharField(max_length=5, default=None)
+
+    # def __str__(self):
+    #     return "%s %s (%s)" % (    self.username,
+    #                                 self.tel,
+    #                                 self.email)
 
     @staticmethod
     def find_by_username(username):

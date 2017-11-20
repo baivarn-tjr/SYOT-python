@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.http import HttpResponseRedirect
 from .models import Applicant
-from .forms import LoginForm , ForgotPasswordForm , ResetPasswordForm
+from .forms import LoginForm , ForgotPasswordForm , ResetPasswordForm , SignupForm
 from .tokens import account_activation_token
 from django.core.mail import EmailMessage
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
@@ -28,7 +28,30 @@ def logout(request):
 
 
 def signup(request):
+    form = False
+    if request.method == 'POST':
+        form = SignupForm(request.POST)
+        if form.is_valid():
+            applicant = Applicant(
+                                    username = request.POST['username'],
+                                    email = request.POST['email'],
+                                    firstname = request.POST['firstname'],
+                                    lastname = request.POST['lastname'],
+                                    mobile = request.POST['mobile'],
+                                    address = request.POST['address'],
+                                    city = request.POST['city'],
+                                    state = request.POST['state'],
+                                    zipcode = request.POST['zipcode'])
+            applicant.set_password(request.POST['password'])
+            applicant.save()
+            success = 'Please confirm your email address to complete the registration.'
+            return render(request,'signup.html', {'success': success})
+
+    else:
+        form = SignupForm()
+
     context = {
+        'form' : form
     }
     return render(request, 'signup.html' , context)
 
@@ -174,33 +197,3 @@ def loginCheck(request):
             'error_message' : 'invalid',
         }
         return render(request, 'login.html' , context)
-
-# def loginCheck(request):
-#     form = request.POST
-#     username = form['user']
-#     password = form['pass']
-#     applicant = Applicant.find_by_username(username)
-#
-#     user = Applicant.objects.get(username=username)
-#
-#
-#     if not applicant :
-#         context = {
-#             'errorMess' : 'wrong user',
-#         }
-#         return render(request, 'login.html' , context)
-#
-#     elif applicant.check_password(password) :
-#         context = {
-#             # 'loginConfirm' : 'yes',
-#             'appli' : applicant.username,
-#             }
-#         request.session['user_id'] = user.id
-#         request.session['user_name'] = user.username
-#         request.session.set_expiry(1800)
-#         return render(request, 'homepage.html' , context)
-#     else :
-#         context = {
-#             'errorMess' : 'wrong pass',
-#         }
-#         return render(request, 'login.html' , context)

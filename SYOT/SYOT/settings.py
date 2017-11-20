@@ -58,6 +58,8 @@ INSTALLED_APPS = [
     'mathfilters',
     'account',
     'testuser',
+    'bootstrapform',
+    'widget_tweaks',
 ]
 
 MIDDLEWARE = [
