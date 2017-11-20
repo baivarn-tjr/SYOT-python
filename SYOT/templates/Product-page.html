@@ -2,8 +2,8 @@
 {% load staticfiles %}
 
 {% block addcssjs %}
+
     <link rel="stylesheet" type="text/css" href="{% static 'css/product-page.css' %}">
-    <!-- <script src="{% static 'js/product-page.js' %}" defer></script> -->
 {% endblock %}
 
 {% block content %}
@@ -12,6 +12,7 @@
     display: none;
 }
 .modalimg {
+    margin-top: 50px;
     display: block; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -24,19 +25,10 @@
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
-#caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
-}
+
 /* The Close Button */
 .closebtn {
+    margin-top: inherit;
     position: absolute;
     top: 15px;
     right: 35px;
@@ -187,6 +179,15 @@
     var modalImg = $("#img01");
     var captionText = $("#caption");
     var closebtn = $('#closebtn');
+    $(document).click(function (e) {
+      console.log("testclick");
+    if ($(e.target).is('#img01')) {
+        modal1.style.display = "none";
+    }
+    if($(e.target).is('#myModal')){
+        modal1.style.display = "none";
+    }
+  });
     closebtn.on("click", function() {
         console.log("test");
         modal1.addClass("hide");
@@ -227,6 +228,11 @@
         // modalImg.src = this.src;
         captionText.innerHTML = this.alt;
     });
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      $('#Header').addClass("fixed-top");
+      modal.style.display = "none";
+    }
     // Get the <span> element that closes the modal
     // var span = document.getElementsByClassName("close")[0];
     // // When the user clicks on <span> (x), close the modal

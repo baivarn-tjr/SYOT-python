@@ -13,13 +13,6 @@ class Applicant(models.Model):
         ('RS', 'Reset'),
         ('CL', 'Closed'),
     )
-    # username = models.CharField(    max_length=50,
-    #                                 unique=True)
-    #
-    # tel = models.CharField(         max_length = 15)
-    # email = models.EmailField()
-    # hashed_password = models.CharField(    max_length = 130,
-    #                                         blank=True)
     username = models.CharField(default=None,max_length=50,unique=True)
     email = models.EmailField(default=None, max_length=128,unique=True)
     firstname = models.CharField(default=None, max_length=128)
