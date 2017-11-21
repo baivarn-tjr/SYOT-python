@@ -80,11 +80,21 @@
     					<h4>{{ getProduct.cost }} USD</h4>
     				</div>
     				<div class="col-md-6">
+              {% if getProduct.point > 4 %}
     					<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+              {% endif %}
+              {% if getProduct.point > 3 %}
     					<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+              {% endif %}
+              {% if getProduct.point > 2 %}
     					<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+              {% endif %}
+              {% if getProduct.point > 1 %}
     					<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+              {% endif %}
+              {% if getProduct.point > 0 %}
     					<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+              {% endif %}
     				</div>
     			</div>
     			<hr>

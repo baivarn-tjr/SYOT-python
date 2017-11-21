@@ -25,17 +25,26 @@ class Product(models.Model):
     length = models.FloatField()
     pictureUrl = models.ImageField(upload_to = get_product_image_path, blank = True, null = True)
     count = models.PositiveIntegerField(default = 0)
-    point = models.PositiveIntegerField(default=None, null = True)
+    point = models.PositiveIntegerField(default=0, null = True)
 
     def __str__(self):
         return self.name
 
 class ReviewProduct(models.Model):
+    # CHECK_TYPE = (
+    #     ('PS', 'Pass'),
+    #     ('NP', 'NotPass'),
+    # )
     proId = models.PositiveIntegerField(default=None, null = True)
     userId = models.PositiveIntegerField(default=None, null = True)
     userName = models.CharField(max_length=100, null = True)
     comment = models.CharField(blank = True,max_length=250, null = True)
     point = models.PositiveIntegerField(default=None, null = True)
+    # checkPoint = models.CharField(
+    #     max_length=2,
+    #     choices=CHECK_TYPE,
+    #     default='NP'
+    # )
 
 
     def set_by_id(self,userId):

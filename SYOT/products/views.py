@@ -24,6 +24,7 @@ def catalog(request):
 #
 def detail(request, product_id):
     count = 0
+    pointPro = 0
     err = False
     data = request.POST
     rev = ReviewProduct.objects.all()
@@ -55,7 +56,11 @@ def detail(request, product_id):
 
     for i in rev:
         count += 1
+        pointPro += i.point
 
+    if count != 0:
+        product.point = pointPro/count
+        product.save()
 
     context = {
         'err' : err,
