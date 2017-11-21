@@ -27,3 +27,13 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+class ReviewProduct(models.Model):
+    proId = models.PositiveIntegerField(default=None)
+    userId = models.PositiveIntegerField(default=None)
+    userName = models.CharField(max_length=100)
+    comment = models.CharField(blank = True,max_length=250)
+    point = models.PositiveIntegerField(default=None)
+
+    def __str__(self):
+        return self.name
