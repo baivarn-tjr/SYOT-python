@@ -1,10 +1,14 @@
 from django.shortcuts import render, get_object_or_404
-from django.http import HttpResponse, Http404
+from django.http import HttpResponse, Http404, HttpResponseRedirect
+from django.core.urlresolvers import reverse
 from .models import Product, Catagory, ReviewProduct
-from carts.models import User,Basket
+from carts.models import Basket
 from favorite.models import Account,Favorite
 from account.models import Applicant
 from django import forms
+from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
+from django.utils.encoding import force_bytes, force_text
+
 
 import django.contrib.postgres.search
 
@@ -91,20 +95,21 @@ def search(request):
     return render(request, 'product_search.html' ,context)
 
 def addtocart(request, user_id , product_id):
-    user = User.objects.get(id=user_id)
+    try:
+        # uid = force_text(urlsafe_base64_decode(user_id))
+        user = Applicant.objects.get(pk=user_id)
+    except(TypeError, ValueError, OverflowError, Applicant.DoesNotExist):
+        user = None
     product = Product.objects.get(id=product_id)
     try:
         itemtocart = Basket.objects.get(userId=user, productID=product)
     except (KeyError, Basket.DoesNotExist):
         Basket.objects.create(userId=user, productID=product)
 
-    product = Product.objects.get(id = product_id)
+    product = Product.objects.get(id=product_id)
     quantityWarning = 20
-    context = {
-        'getProduct' : product,
-        'quantityWarning' : quantityWarning,
-    }
-    return render(request, 'Product-page.html', context)
+    return HttpResponseRedirect(reverse('detail'))
+
 
 
 

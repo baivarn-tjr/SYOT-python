@@ -63,13 +63,13 @@
             <ul class="navbar-nav">
               {% if request.session.user_id %}
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'carts' %}"id="Header"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                    <a class="nav-link" href="{% url 'carts' request.session.user_id %}"id="Header"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'favorite' %}" id="Header"><i class="fa fa-heart" aria-hidden="true"></i></a>
                 </li>
                 <li class = "nav-item">
-                  <a class="nav-link" href="{% url 'carts' %}"id="Header"><i class="fa fa-user" aria-hidden="true"></i> Hi {{ request.session.user_name }} </a>
+                  <a class="nav-link" href="{% url 'carts' request.session.user_id %}"id="Header"><i class="fa fa-user" aria-hidden="true"></i> Hi {{ request.session.user_name }} </a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" href="{% url "acc:logout" %}" id="Header"><i class="fa fa-sign-in" aria-hidden="true"></i> SignOut<ins></ins></a>

@@ -3,6 +3,9 @@ from django.forms import ModelForm
 from django.contrib.auth.hashers import make_password
 from django.contrib.auth.hashers import check_password as check_hashed_password
 
+# from carts.models import Basket
+# from products.models import Product
+
 class Applicant(models.Model):
     ACTIVE_TYPE = (
         ('AC', 'Active'),
@@ -33,6 +36,8 @@ class Applicant(models.Model):
         choices=RESET_TYPE,
         default='CL'
     )
+    myBasket = models.ManyToManyField('products.Product',through='carts.Basket')
+
     # def __str__(self):
     #     return "%s %s (%s)" % (    self.username,
     #                                 self.tel,
