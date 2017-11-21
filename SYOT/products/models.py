@@ -1,4 +1,5 @@
 from django.db import models
+from account.models import Applicant
 import os
 
 def get_product_image_path(instance, filename):
@@ -35,5 +36,8 @@ class ReviewProduct(models.Model):
     comment = models.CharField(blank = True,max_length=250)
     point = models.PositiveIntegerField(default=None)
 
-    def __str__(self):
-        return self.name
+
+    def set_by_id(self,userId):
+        applicant = Applicant.objects.get(id=userId)
+        self.userId = applicant.id
+        self.userName = applicant.username

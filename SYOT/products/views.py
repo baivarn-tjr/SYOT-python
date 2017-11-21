@@ -1,8 +1,9 @@
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse, Http404
-from .models import Product, Catagory
+from .models import Product, Catagory, ReviewProduct
 from carts.models import User,Basket
 from favorite.models import Account,Favorite
+from account.models import Applicant
 
 import django.contrib.postgres.search
 
@@ -22,9 +23,23 @@ def catalog(request):
 
 #
 def detail(request, product_id):
+    data = request.POST
+    if data:
+        reviews = ReviewProduct(
+            proId = product_id,
+            comment = data['review'],
+            point = 10
+        )
+        uid = request.session['user_id']
+        reviews.set_by_id(uid)
+        reviews.save()
+
+
+    rev = ReviewProduct.objects.all()
     product = Product.objects.get(id = product_id)
     quantityWarning = 20
     context = {
+        'reviews' : rev,
         'getProduct' : product,
         'quantityWarning' : quantityWarning,
     }

@@ -121,11 +121,13 @@
   </div>
 
   <!--Product Review section -->
+
   <div class="row" id="review-section">
       <div class="col-md-2">
         <h3><b>REVIEW</b></h3>
       </div>
     </div>
+    {% for rev in reviews %}
     <hr id="line-review-section">
     <div class="row" id="commend-review">
       <div  id="picture-user-commend">
@@ -146,10 +148,12 @@
         <i class="fa fa-star" id="review-star" aria-hidden="true"></i>
       </div>
     </div>
+    {% endfor %}
 
-    <form>
+    <form action="{% url 'detail' getProduct.id %}" method="POST">
+      {% csrf_token %}
       <div class="form-review">
-        <textarea class="form-control" id="review"></textarea>
+        <textarea class="form-control" id="review" name="review"></textarea>
         <br>
         <h6>GET STAR FOR MY PRODUCT</h6>
         <fieldset class="rating">
