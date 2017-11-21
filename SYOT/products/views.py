@@ -4,6 +4,7 @@ from .models import Product, Catagory, ReviewProduct
 from carts.models import User,Basket
 from favorite.models import Account,Favorite
 from account.models import Applicant
+from django import forms
 
 import django.contrib.postgres.search
 
@@ -45,9 +46,9 @@ def detail(request, product_id):
 
         try:
             reviews = ReviewProduct(
-            proId = product_id,
-            comment = data['review'],
-            point = int(data['rating'])
+                proId = product_id,
+                comment = data['review'],
+                point = int(data['rating'])
             )
             reviews.set_by_id(uid)
             reviews.save()
@@ -55,8 +56,9 @@ def detail(request, product_id):
             err = "Please rate product!"
 
     for i in rev:
-        count += 1
-        pointPro += i.point
+        if(product_id == i.proId):
+            count += 1
+            pointPro += i.point
 
     if count != 0:
         product.point = pointPro/count
