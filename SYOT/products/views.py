@@ -23,22 +23,42 @@ def catalog(request):
 
 #
 def detail(request, product_id):
+    count = 0
+    err = False
     data = request.POST
-    if data:
-        reviews = ReviewProduct(
-            proId = product_id,
-            comment = data['review'],
-            point = 10
-        )
-        uid = request.session['user_id']
-        reviews.set_by_id(uid)
-        reviews.save()
-
-
     rev = ReviewProduct.objects.all()
     product = Product.objects.get(id = product_id)
     quantityWarning = 20
+    if request.method == 'POST':
+        try:
+            uid = request.session['user_id']
+        except KeyError:
+            err = "please login before comment!"
+            context = {
+                'err' : err,
+                'reviews' : rev,
+                'getProduct' : product,
+                'quantityWarning' : quantityWarning,
+            }
+            return render(request, 'Product-page.html', context)
+
+        try:
+            reviews = ReviewProduct(
+            proId = product_id,
+            comment = data['review'],
+            point = int(data['rating'])
+            )
+            reviews.set_by_id(uid)
+            reviews.save()
+        except KeyError:
+            err = "Please rate product!"
+
+    for i in rev:
+        count += 1
+
+
     context = {
+        'err' : err,
         'reviews' : rev,
         'getProduct' : product,
         'quantityWarning' : quantityWarning,

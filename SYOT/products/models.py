@@ -25,16 +25,17 @@ class Product(models.Model):
     length = models.FloatField()
     pictureUrl = models.ImageField(upload_to = get_product_image_path, blank = True, null = True)
     count = models.PositiveIntegerField(default = 0)
+    point = models.PositiveIntegerField(default=None, null = True)
 
     def __str__(self):
         return self.name
 
 class ReviewProduct(models.Model):
-    proId = models.PositiveIntegerField(default=None)
-    userId = models.PositiveIntegerField(default=None)
-    userName = models.CharField(max_length=100)
-    comment = models.CharField(blank = True,max_length=250)
-    point = models.PositiveIntegerField(default=None)
+    proId = models.PositiveIntegerField(default=None, null = True)
+    userId = models.PositiveIntegerField(default=None, null = True)
+    userName = models.CharField(max_length=100, null = True)
+    comment = models.CharField(blank = True,max_length=250, null = True)
+    point = models.PositiveIntegerField(default=None, null = True)
 
 
     def set_by_id(self,userId):

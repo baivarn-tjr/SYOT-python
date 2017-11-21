@@ -127,30 +127,42 @@
         <h3><b>REVIEW</b></h3>
       </div>
     </div>
+
     {% for rev in reviews %}
+    {% if rev.proId == getProduct.id %}
     <hr id="line-review-section">
     <div class="row" id="commend-review">
-      <div  id="picture-user-commend">
-        <img id="pic-user-commend" src="images/logo-ironman.png">
-      </div>
-      <hr id="line-user-commend">
 
       <div id="text-review" class="col-md-6">
-        <h7><b>TONY STARK</b></h7>
+        <h7><b>{{ rev.userName }}</b></h7>
         <br>
-        <p id="text-review">Good price, High quality, Good packaging and fast shipping.</p>
+        <p id="text-review">{{ rev.comment }}</p>
       </div>
       <div class="col-md-3" style="padding-top:20px">
+        {% if rev.point > 4 %}
         <i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+        {% endif %}
+        {% if rev.point > 3 %}
         <i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+        {% endif %}
+        {% if rev.point > 2 %}
         <i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+        {% endif %}
+        {% if rev.point > 1 %}
         <i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+        {% endif %}
+        {% if rev.point > 0 %}
         <i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+        {% endif %}
       </div>
     </div>
+    {% endif %}
     {% endfor %}
 
     <form action="{% url 'detail' getProduct.id %}" method="POST">
+      {% if err %}
+        <h3>{{err}}</h3>
+      {% endif %}
       {% csrf_token %}
       <div class="form-review">
         <textarea class="form-control" id="review" name="review"></textarea>
