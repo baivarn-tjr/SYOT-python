@@ -9,43 +9,51 @@ $('#icon-fav-product').on('click',function(event){
 
 
 function addtoCart() {
-    console.log($('#cart-form').attr("cart-url"));
-    // console.log("create post is working!") // sanity check
-    $.ajax({
-        url : $('#cart-form').attr("cart-url"), // the endpoint
-        type : "POST", // http method
-        dataType: 'json',
-        data : { user_id : $('#cart-form').attr("user_id"), product_id : $('#cart-form').attr("product_id") }, // data sent with the post request
-        // handle a successful response
-        success : function(json) {
-            console.log("success"); // another sanity check
-        },
-        // handle a non-successful response
-        error : function(xhr,errmsg,err) {
-            console.log("errrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr");
-            // console.log(xhr.status + ": " + xhr.responseText); // provide a bit more info about the error to the console
-        }
-    });
+    if($('#cart-form').attr("user_id") == '' || !$('#cart-form').attr("user_id")){
+        alert('please log in');
+    }
+    else{
+        console.log($('#cart-form').attr("cart-url"));
+        $.ajax({
+            url : $('#cart-form').attr("cart-url"), // the endpoint
+            type : "POST", // http method
+            dataType: 'json',
+            data : { user_id : $('#cart-form').attr("user_id"), product_id : $('#cart-form').attr("product_id") }, // data sent with the post request
+            // handle a successful response
+            success : function(json) {
+                console.log("success"); // another sanity check
+            },
+            // handle a non-successful response
+            error : function(xhr,errmsg,err) {
+                console.log("errrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr");
+                // console.log(xhr.status + ": " + xhr.responseText); // provide a bit more info about the error to the console
+            }
+        });
+    }
 };
 
 function addtoFav() {
-    console.log($('#fav-form').attr("fav-url"));
-    // console.log("create post is working!") // sanity check
-    $.ajax({
-        url : $('#fav-form').attr("fav-url"), // the endpoint
-        type : "POST", // http method
-        dataType: 'json',
-        data : { user_id : $('#fav-form').attr("user_id"), product_id : $('#fav-form').attr("product_id") }, // data sent with the post request
-        // handle a successful response
-        success : function(json) {
-            console.log("success"); // another sanity check
-        },
-        // handle a non-successful response
-        error : function(xhr,errmsg,err) {
-            console.log("errrrrrrrfffffffffffffffffffffffffffffffffffffffffff");
-            // console.log(xhr.status + ": " + xhr.responseText); // provide a bit more info about the error to the console
-        }
-    });
+    if($('#cart-form').attr("user_id") == '' || !$('#cart-form').attr("user_id")){
+        alert('please log in');
+    }
+    else{
+        console.log($('#fav-form').attr("fav-url"));
+        $.ajax({
+            url : $('#fav-form').attr("fav-url"), // the endpoint
+            type : "POST", // http method
+            dataType: 'json',
+            data : { user_id : $('#fav-form').attr("user_id"), product_id : $('#fav-form').attr("product_id") }, // data sent with the post request
+            // handle a successful response
+            success : function(json) {
+                console.log("success"); // another sanity check
+            },
+            // handle a non-successful response
+            error : function(xhr,errmsg,err) {
+                console.log("errrrrrrrfffffffffffffffffffffffffffffffffffffffffff");
+                // console.log(xhr.status + ": " + xhr.responseText); // provide a bit more info about the error to the console
+            }
+        });
+    }
 };
 // using jQuery
 function getCookie(name) {
