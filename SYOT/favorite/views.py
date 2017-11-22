@@ -4,10 +4,11 @@ from django.core.urlresolvers import reverse
 
 from products.models import Product
 
-from .models import Favorite,Account
+from .models import Favorite
+from account.models import Applicant
 
-def favorite(request):
-    userr = Account.objects.get(id=1)
+def favorite(request,user_id):
+    userr = Applicant.objects.get(id=user_id)
     userFav = userr.myFav.all()
     # allFav = Favorite.objects.all()
     context = {
@@ -19,12 +20,12 @@ def favorite(request):
     return render(request,template,context)
 
 def deletefav(request, user_id, product_id):
-    user = Account.objects.get(id=user_id)
+    user = Applicant.objects.get(id=user_id)
     product = Product.objects.get(id=product_id)
     item = get_object_or_404(Favorite, userId=user, productID=product)
     item.delete()
 
-    userr = Account.objects.get(id=1)
+    userr = Applicant.objects.get(id=user_id)
     userFav = userr.myFav.all()
     # allFav = Favorite.objects.all()
     context = {

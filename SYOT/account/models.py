@@ -36,7 +36,8 @@ class Applicant(models.Model):
         choices=RESET_TYPE,
         default='CL'
     )
-    myBasket = models.ManyToManyField('products.Product',through='carts.Basket')
+    myBasket = models.ManyToManyField('products.Product',through='carts.Basket',related_name="BasketProduct")
+    myFav = models.ManyToManyField('products.Product', through='favorite.Favorite', related_name="FavProduct")
 
     # def __str__(self):
     #     return "%s %s (%s)" % (    self.username,
