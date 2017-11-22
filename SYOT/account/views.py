@@ -34,6 +34,8 @@ def profile(request):
         pass
     user = Applicant.objects.get(id=uid)
     context = {
+        'firstN' : user.firstname,
+        'lastN' :  user.lastname,
         'username' : user.username,
         'email' : user.email,
         'mobile' : user.mobile,
