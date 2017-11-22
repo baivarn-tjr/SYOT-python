@@ -22,7 +22,7 @@ def catalog(request):
     template = 'product.html'
     return render(request, template , context)
 
-#
+
 def detail(request, product_id):
     count = 0
     pointPro = 0
@@ -124,19 +124,3 @@ def addtofav(request, user_id , product_id):
         'quantityWarning' : quantityWarning,
     }
     return render(request, 'Product-page.html', context)
-
-# def product(request):
-#     context = locals()
-#     template = 'start.html'
-#     return render(request, template , context)
-
-# def product(request):
-#     return HttpResponse("<h1></>")
-# def catagory(request):
-#     # catagory = Catagory.objects.get(id = int(catagory_id))
-#     products = Product.objects.all
-#     context = {
-#         # 'catagory' : catagory,
-#         'products' : products,
-#     }
-#     return render(request, 'product.html', context)

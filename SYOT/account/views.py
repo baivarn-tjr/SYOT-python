@@ -27,6 +27,23 @@ def logout(request):
     return render(request, 'homepage.html' , context)
 
 
+def profile(request):
+    try:
+        uid = request.session['user_id']
+    except KeyError:
+        pass
+    user = Applicant.objects.get(id=uid)
+    context = {
+        'username' : user.username,
+        'email' : user.email,
+        'mobile' : user.mobile,
+        'address' : user.address,
+        'city' : user.city,
+        'state' : user.state,
+        'zip' : user.zipcode,
+    }
+    return render(request,'profile.html',context)
+
 def signup(request):
     form = False
     if request.method == 'POST':

@@ -8,6 +8,7 @@ urlpatterns = [
     url(r'^login/$',views.login, name = 'login'),
     url(r'^signUp/$',views.signup, name = 'signup'),
     url(r'^forgotPass/$',views.forgot, name = 'forgot'),
+    url(r'^profile/$',views.profile, name = 'profile'),
     url(r'^login_check/$',views.loginCheck, name = 'logincheck'),
     url(r'^forgot_check/$',views.forgotCheck, name = 'forgotcheck'),
     url(r'^reset_password/(?P<uidb64>[0-9A-Za-z_\-]+)/(?P<token>[0-9A-Za-z]{1,13}-[0-9A-Za-z]{1,20})/$', views.reset_password, name='reset_password'),
