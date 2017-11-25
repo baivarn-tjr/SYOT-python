@@ -48,24 +48,26 @@
 					{% endfor %}
 				</div>
 				<div class="frame-sum col-lg-4">
-					<div class="sum">
-						<h1>TOTAL</h1>
-						<hr>
-						<div class="subtotal row">
-							<div class="col-sm-6"><h5>Subtotal</h5></div>
-							<div class="col-sm-6">{{ money }} $</div>
+					<form action="{% url 'checkout' request.session.user_id money|add:ship %}" method="post"> {% csrf_token %}
+						<div class="sum">
+							<h1>TOTAL</h1>
+							<hr>
+							<div class="subtotal row">
+								<div class="col-sm-6"><h5>Subtotal</h5></div>
+								<div class="col-sm-6">{{ money }} $</div>
+							</div>
+							<div class="shipping row">
+								<div class="col-sm-6"><h5>Shipping</h5></div>
+								<div class="col-sm-6">{{ ship }} $</div>
+							</div>
+							<div class="total row">
+								<div class="col-sm-6"><h5>Total</h5></div>
+								<div class="col-sm-6" id="total-money">{{ money|add:ship }} $</div>
+							</div>
+							<hr>
+							<a href="#" class="button" id="checkout" >CHECK OUT</a>
 						</div>
-						<div class="shipping row">
-							<div class="col-sm-6"><h5>Shipping</h5></div>
-							<div class="col-sm-6">{{ ship }} $</div>
-						</div>
-						<div class="total row">
-							<div class="col-sm-6"><h5>Total</h5></div>
-							<div class="col-sm-6">{{ money|add:ship }} $</div>
-						</div>
-						<hr>
-						<a href="#" class="button" id="checkout">CHECK OUT</a>
-					</div>
+					</form>
 				</div>
 			</div>
 		</div>

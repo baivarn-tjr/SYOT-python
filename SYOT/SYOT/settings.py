@@ -98,26 +98,26 @@ WSGI_APPLICATION = 'SYOT.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
-
 # DATABASES = {
 #     'default': {
-#         'NAME': 'syot_database',
-#         'ENGINE': 'django.db.backends.mysql',
-#         'USER': 'ubuntu',
-#         'PASSWORD': '',
-#         'HOST': 'ec2-54-169-223-248.ap-southeast-1.compute.amazonaws.com',
-#         'PORT': '3306',
-#         'OPTIONS': {
-#             'read_default_file': '/static/my.ini',
-#         },
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 #     }
 # }
+
+DATABASES = {
+    'default': {
+        'NAME': 'syot_database',
+        'ENGINE': 'django.db.backends.mysql',
+        'USER': 'ubuntu',
+        'PASSWORD': '1q2w3e4rsyot',
+        'HOST': 'ec2-54-169-223-248.ap-southeast-1.compute.amazonaws.com',
+        'PORT': '3306',
+        'OPTIONS': {
+            'read_default_file': '/static/my.ini',
+        },
+    }
+}
 
 #
 # # my.cnf
@@ -183,3 +183,6 @@ if DEBUG :
     ]
     MEDIA_URL = '/static/media/'
     MEDIA_ROOT = os.path.join(BASE_DIR, "static", "media")
+
+STRIPE_PUBLISHABLE_KEY = 'pk_test_Mrdcgrtz1ddf7X3bIyLazfkQ'
+STRIPE_SECRET_KEY = 'sk_test_w3jUVRVlbpFAdN96xBpdf99A'
