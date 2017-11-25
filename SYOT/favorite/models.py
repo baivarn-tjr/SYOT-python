@@ -5,6 +5,8 @@ from django.utils.encoding import python_2_unicode_compatible
 
 # Create your models here.
 from products.models import Product
+from account.models import Applicant
+
 
 # class CartItem(models.Model):
 #     cart = models.ForeignKey('Basket')
@@ -17,15 +19,15 @@ from products.models import Product
 #             return self.product.title
 
 #temp database
-class Account(models.Model):
-    username = models.CharField(max_length=13)
-    myFav = models.ManyToManyField(Product, through='Favorite')
-    def __str__(self):
-        return str(self.username)
+# class Account(models.Model):
+#     username = models.CharField(max_length=13)
+#     myFav = models.ManyToManyField(Product, through='Favorite')
+#     def __str__(self):
+#         return str(self.username)
 
 class Favorite(models.Model):
     time = models.DateTimeField(auto_now_add=True, auto_now=False)
-    userId = models.ForeignKey(Account, on_delete=models.CASCADE)
+    userId = models.ForeignKey('account.Applicant', on_delete=models.CASCADE)
     productID = models.ForeignKey(Product, db_column='ProductID')
     def __str__(self):
         return str(self.id)

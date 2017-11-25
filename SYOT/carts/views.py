@@ -4,7 +4,8 @@ from django.core.urlresolvers import reverse
 
 from products.models import Product
 
-from .models import Basket,User
+from .models import Basket
+from account.models import Applicant
 
 def calMoney(userBasket,usercart,carts):
     money = 0
@@ -21,8 +22,8 @@ def calShipping(userBasket,usercart,carts):
     ship -= 3
     return ship
 
-def cart(request):
-    userBasket = User.objects.get(id=1)
+def cart(request,user_id):
+    userBasket = Applicant.objects.get(id=user_id)
     usercart = userBasket.myBasket.all()
     carts = Basket.objects.all()
     money = calMoney(userBasket,usercart,carts)
@@ -38,12 +39,12 @@ def cart(request):
     return render(request,template,context)
 
 def delete(request, user_id, product_id):
-    user = User.objects.get(id=user_id)
+    user = Applicant.objects.get(id=user_id)
     product = Product.objects.get(id=product_id)
     item = get_object_or_404(Basket, userId=user, productID=product)
     item.delete()
 
-    userBasket = User.objects.get(id=1)
+    userBasket = Applicant.objects.get(id=user_id)
     usercart = userBasket.myBasket.all()
     carts = Basket.objects.all()
     money = calMoney(userBasket,usercart,carts)
@@ -59,7 +60,7 @@ def delete(request, user_id, product_id):
     return render(request,template,context)
 
 def addminusQuantity(request, user_id , product_id):
-    user = User.objects.get(id=user_id)
+    user = Applicant.objects.get(id=user_id)
     product = Product.objects.get(id=product_id)
     item = get_object_or_404(Basket, userId=user, productID=product)
 
@@ -69,7 +70,7 @@ def addminusQuantity(request, user_id , product_id):
         item.quantity -= 1
     item.save()
 
-    userBasket = User.objects.get(id=1)
+    userBasket = Applicant.objects.get(id=user_id)
     usercart = userBasket.myBasket.all()
     carts = Basket.objects.all()
     money = calMoney(userBasket,usercart,carts)
