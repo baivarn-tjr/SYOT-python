@@ -61,7 +61,7 @@ def detail(request, product_id):
             err = "Please rate product!"
 
     for i in rev:
-        if(product_id == i.proId):
+        if(i.proId == product.id):
             count += 1
             pointPro += i.point
 
@@ -74,6 +74,7 @@ def detail(request, product_id):
         'reviews' : rev,
         'getProduct' : product,
         'quantityWarning' : quantityWarning,
+        'count' : count,
     }
     return render(request, 'Product-page.html', context)
 
@@ -95,42 +96,42 @@ def search(request):
     }
     return render(request, 'product_search.html' ,context)
 
-<<<<<<< HEAD
-def addtocart(request, user_id , product_id):
-    user = User.objects.get(id=user_id)
-    product = Product.objects.get(id=product_id)
-    try:
-        itemtocart = Basket.objects.get(userId=user, productID=product)
-    except (KeyError, Basket.DoesNotExist):
-        Basket.objects.create(userId=user, productID=product)
-
-    product = Product.objects.get(id = product_id)
-    quantityWarning = 20
-    context = {
-        'getProduct' : product,
-        'quantityWarning' : quantityWarning,
-    }
-    return render(request, 'Product-page.html', context)
-
-
-
-
-def addtofav(request, user_id , product_id):
-    user = Account.objects.get(id=user_id)
-    product = Product.objects.get(id=product_id)
-    try:
-        itemtocart = Favorite.objects.get(userId=user, productID=product)
-    except (KeyError, Favorite.DoesNotExist):
-        Favorite.objects.create(userId=user, productID=product)
-
-    product = Product.objects.get(id = product_id)
-    quantityWarning = 20
-    context = {
-        'getProduct' : product,
-        'quantityWarning' : quantityWarning,
-    }
-    return render(request, 'Product-page.html', context)
-=======
+# <<<<<<< HEAD
+# def addtocart(request, user_id , product_id):
+#     user = User.objects.get(id=user_id)
+#     product = Product.objects.get(id=product_id)
+#     try:
+#         itemtocart = Basket.objects.get(userId=user, productID=product)
+#     except (KeyError, Basket.DoesNotExist):
+#         Basket.objects.create(userId=user, productID=product)
+#
+#     product = Product.objects.get(id = product_id)
+#     quantityWarning = 20
+#     context = {
+#         'getProduct' : product,
+#         'quantityWarning' : quantityWarning,
+#     }
+#     return render(request, 'Product-page.html', context)
+#
+#
+#
+#
+# def addtofav(request, user_id , product_id):
+#     user = Account.objects.get(id=user_id)
+#     product = Product.objects.get(id=product_id)
+#     try:
+#         itemtocart = Favorite.objects.get(userId=user, productID=product)
+#     except (KeyError, Favorite.DoesNotExist):
+#         Favorite.objects.create(userId=user, productID=product)
+#
+#     product = Product.objects.get(id = product_id)
+#     quantityWarning = 20
+#     context = {
+#         'getProduct' : product,
+#         'quantityWarning' : quantityWarning,
+#     }
+#     return render(request, 'Product-page.html', context)
+# =======
 def addtocart(request):
 # def addtocart(request, user_id , product_id):
     if request.method == 'POST':
@@ -192,4 +193,4 @@ def addtofav(request):
 #         'products' : products,
 #     }
 #     return render(request, 'product.html', context)
->>>>>>> 84f367cc1a08513d86b121aef20e0a1e4c70e148
+# >>>>>>> 84f367cc1a08513d86b121aef20e0a1e4c70e148

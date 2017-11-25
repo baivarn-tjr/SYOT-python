@@ -97,23 +97,23 @@ WSGI_APPLICATION = 'SYOT.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'HOST':'ubuntu@ec2-54-169-223-248.ap-southeast-1.compute.amazonaws.com',
-        'PORT':'22',
-        'OPTIONS': {
-            'read_default_file': '/path/to/my.cnf',
-        },
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'HOST':'ubuntu@ec2-54-169-223-248.ap-southeast-1.compute.amazonaws.com',
+#         'PORT':'22',
+#         'OPTIONS': {
+#             'read_default_file': '/path/to/my.cnf',
+#         },
+#     }
+# }
 
 #
 # # my.cnf
