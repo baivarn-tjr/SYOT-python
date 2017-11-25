@@ -1,21 +1,19 @@
 // renderFavList()
-$('#unfav-btn').on('click',function(event){
-    event.preventDefault();
-    unfav();
-});
 
-function unfav(){
-    var productid = $('#fav-form').attr("product_id");
+function unfav(userid,productid,urlfav){
+    // var productid = $(this).attr("product_id");
+    // var userid = $(this).attr("user_id")
     console.log("check");
+    console.log(productid+'  '+userid);
     $.ajax({
         url : $('#fav-form').attr("fav-url"), // the endpoint
         type : "POST", // http method
         dataType: 'json',
-        data : { user_id : $('#fav-form').attr("user_id"), product_id : productid }, // data sent with the post request
+        data : { user_id : userid, product_id : productid }, // data sent with the post request
         // handle a successful response
         success : function(json) {
             console.log("success");
-            $('#item-in-fav').removeChild($('div[product_id='+productid+']'));
+            $('li[product_id='+productid+']').remove();
             // renderFavList()
              // another sanity check
         },
@@ -26,8 +24,13 @@ function unfav(){
         }
     });
 
-    // $.post('link', {}, function(data) {
-    //
+    // $.post($(this).attr("fav-url"), {user_id: userid , product_id: productid}, function(data) {
+    //     if(data.status == 'success'){
+    //         console.log("success");
+    //         $('#item-in-fav').removeChild($('div[product_id='+productid+']'));
+    //     } else{
+    //         console.log("error");
+    //     }
     // });
 }
 //
