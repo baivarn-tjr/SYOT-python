@@ -1,3 +1,7 @@
+ul li{
+    list-style: none;
+    display: inline-block;
+}
 #text1 {
   color: Black;
   font-family: "Anton";

@@ -14,6 +14,8 @@
     	<!-- Boostrap -->
     	<!--Font Awesom import-->
       	<script src="https://use.fontawesome.com/ef3af9c398.js"></script>
+        <script src='{% static "js/csrf.js" %}'></script>
+        <meta name="csrf-token" content="{{ csrf_token }}">
       	<!-- Css file -->
         {% block addcssjs %}
         {% endblock %}
