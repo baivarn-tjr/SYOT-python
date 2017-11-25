@@ -25,7 +25,7 @@ from account.models import Applicant
 
 class Basket(models.Model):
     time = models.DateTimeField(auto_now_add=True, auto_now=False)
-    userId = models.ForeignKey('account.Applicant', on_delete=models.CASCADE)
+    userId = models.ForeignKey(Applicant, on_delete=models.CASCADE)
     productID = models.ForeignKey(Product, db_column='ProductID')
     quantity = models.IntegerField( null=False,default=1)
     def __str__(self):

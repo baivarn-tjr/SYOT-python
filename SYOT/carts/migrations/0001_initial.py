@@ -11,7 +11,10 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
+        # ('carts','__first__'),
         ('products', '0001_initial'),
+        ('account', '0001_initial'),
+        # ('account','__first__')
     ]
 
     operations = [

@@ -104,10 +104,10 @@ WSGI_APPLICATION = 'SYOT.wsgi.application'
 #         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 #     }
 # }
-
+#
 DATABASES = {
     'default': {
-        'NAME': 'syot_database',
+        'NAME': 'swe_syot',
         'ENGINE': 'django.db.backends.mysql',
         'USER': 'ubuntu',
         'PASSWORD': '1q2w3e4rsyot',
