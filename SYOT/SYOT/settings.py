@@ -61,6 +61,7 @@ INSTALLED_APPS = [
     'testuser',
     'bootstrapform',
     'widget_tweaks',
+    'stripe'
 ]
 
 MIDDLEWARE = [
@@ -99,8 +100,20 @@ WSGI_APPLICATION = 'SYOT.wsgi.application'
 
 DATABASES = {
     'default': {
+<<<<<<< HEAD
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+=======
+        'NAME': 'syot_database',
+        'ENGINE': 'django.db.backends.mysql',
+        'USER': 'ubuntu',
+        'PASSWORD': '1q2w3e4rsyot',
+        'HOST': 'ec2-54-169-223-248.ap-southeast-1.compute.amazonaws.com',
+        'PORT': '3306',
+        'OPTIONS': {
+            'read_default_file': '/static/my.ini',
+        },
+>>>>>>> 0a115e17e50529bccffd7d5fae9963954e5f4e60
     }
 }
 
@@ -118,10 +131,15 @@ DATABASES = {
 #
 # # my.cnf
 # [client]
-# database = NAME
-# user = USER
-# password = PASSWORD
+# database = syot_database
+# user = 'ubuntu'
+# password = ''
 # default-character-set = utf8
+
+# [mysqld]
+# port = '3306'
+# bind-address = '0.0.0.0'
+
 
 
 # Password validation
@@ -174,3 +192,6 @@ if DEBUG :
     ]
     MEDIA_URL = '/static/media/'
     MEDIA_ROOT = os.path.join(BASE_DIR, "static", "media")
+
+STRIPE_PUBLISHABLE_KEY = 'pk_test_Mrdcgrtz1ddf7X3bIyLazfkQ'
+STRIPE_SECRET_KEY = 'sk_test_w3jUVRVlbpFAdN96xBpdf99A'

@@ -38,6 +38,16 @@ def cart(request,user_id):
     template = 'carts/basket.html'
     return render(request,template,context)
 
+def checkout():
+    totalmoney = request.POST.get('totalmoney')
+    user_id = request.POST.get('user_id')
+    context = {
+        'totalmoney' : totalmoney,
+        'user_id' : user_id,
+    }
+    template = 'payment.html'
+    return render(request,template,context)
+
 def delete(request, user_id, product_id):
     user = Applicant.objects.get(id=user_id)
     product = Product.objects.get(id=product_id)
