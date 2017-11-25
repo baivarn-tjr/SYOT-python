@@ -35,6 +35,8 @@ urlpatterns = [
     url(r'^carts/', include('carts.urls')),
     url(r'^favorite/', include('favorite.urls')),
     url(r'^testuser/',include('testuser.urls')),
+    url(r'^profiles/',include('profiles.urls')),
+
 
 ]
 

@@ -39,10 +39,8 @@ class Applicant(models.Model):
     myBasket = models.ManyToManyField('products.Product',through='carts.Basket',related_name="BasketProduct")
     myFav = models.ManyToManyField('products.Product', through='favorite.Favorite', related_name="FavProduct")
 
-    # def __str__(self):
-    #     return "%s %s (%s)" % (    self.username,
-    #                                 self.tel,
-    #                                 self.email)
+    def __str__(self):
+         return "%s " % (    self.username,)
 
     @staticmethod
     def find_by_username(username):

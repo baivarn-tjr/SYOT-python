@@ -1,0 +1,19 @@
+<h1>{{ profile.username }}</h1>
+<ul>
+{% for shipping in profile.shipping_set.all %}
+    <li>
+      <a1 style="font-size:140%;">{{ shipping.product_name }}</a1>
+      &nbsp;&nbsp;
+      <a1 style="font-size:140%;">------></a1>
+      &nbsp;&nbsp;
+      <a1 style="font-size:140%;">{{ shipping.status }}</a1>
+      <a1 style="font-size:140%;">------></a1>
+      &nbsp;&nbsp;
+      <a1 style="font-size:140%;">{{ shipping.pub_date }}</a1>
+      &nbsp;&nbsp;
+      {% if shipping.status == 'received' %}
+        <button type="submit">confirm</button>
+      {% endif %}
+    </li>
+{% endfor %}
+</ul>

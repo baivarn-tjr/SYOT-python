@@ -49,10 +49,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.postgres.search',
-    # 'django.contrib.postgres'
+    # 'django.contrib.postgres',
     # 'django.contrib.postgresproducts',
     ####
     'products',
+    'profiles',
     'carts',
     'favorite',
     'mathfilters',
