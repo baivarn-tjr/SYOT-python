@@ -100,10 +100,10 @@ WSGI_APPLICATION = 'SYOT.wsgi.application'
 
 DATABASES = {
     'default': {
-<<<<<<< HEAD
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-=======
+# <<<<<<< HEAD
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+# =======
         'NAME': 'syot_database',
         'ENGINE': 'django.db.backends.mysql',
         'USER': 'ubuntu',
@@ -113,7 +113,7 @@ DATABASES = {
         'OPTIONS': {
             'read_default_file': '/static/my.ini',
         },
->>>>>>> 0a115e17e50529bccffd7d5fae9963954e5f4e60
+# >>>>>>> 0a115e17e50529bccffd7d5fae9963954e5f4e60
     }
 }
 
