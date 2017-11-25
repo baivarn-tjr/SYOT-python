@@ -9,6 +9,8 @@ from django import forms
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 from django.utils.encoding import force_bytes, force_text
 import simplejson as json
+from datetime import datetime
+from django.db.models.functions import Lower
 
 
 import django.contrib.postgres.search
@@ -20,7 +22,7 @@ def index(request):
     return render(request, template , context)
 
 def catalog(request):
-    products = Product.objects.all()
+    products = Product.objects.all().order_by('date_modified').reverse()
     context = {
             'products' : products,
         }

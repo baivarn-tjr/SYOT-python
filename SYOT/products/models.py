@@ -1,6 +1,7 @@
 from django.db import models
 from account.models import Applicant
 import os
+from datetime import datetime, timedelta
 
 def get_product_image_path(instance, filename):
     return os.path.join('product_image', str(instance.id), filename)
@@ -26,6 +27,7 @@ class Product(models.Model):
     pictureUrl = models.ImageField(upload_to = get_product_image_path, blank = True, null = True)
     count = models.PositiveIntegerField(default = 0)
     point = models.PositiveIntegerField(default=0, null = True)
+    date_modified = models.DateTimeField(default=datetime.now()+timedelta(days=30))
 
     def __str__(self):
         return self.name
