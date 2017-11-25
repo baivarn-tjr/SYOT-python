@@ -10,6 +10,9 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
+        # ('carts','__latest__'),
+        # ('favorite','__latest__'),
+        # ('products','__latest__')
     ]
 
     operations = [
