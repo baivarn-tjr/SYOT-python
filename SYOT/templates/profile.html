@@ -11,11 +11,11 @@
   <!--Profile Section-->
     <div id="profile-section">
       <div class="userprofile">
-        <p style="text-align:center; padding-top: 22px; color: white; font-family: Fjalla One; font-size: 30px;">
-          AD
+        <p style="text-align:center; padding-top: 22px; color: white; font-size: 30px;">
+          {{ firstN|make_list|first }}{{ lastN|make_list|first }}
         </p>
       </div>
-      <p style="text-align:center; text-transform: uppercase; font-size: 30px;">
+      <p style="text-align:center; padding-top: 10px; text-transform: uppercase; font-size: 30px;">
         {{ firstN }}  {{ lastN }}
       </p>
       <div style="text-align:center;">
@@ -37,9 +37,6 @@
             <h6>ADDRESS</h6>
             <h6>STATUS</h6>
           </pre>
-          <div style="text-align:right">
-            <button type="button" class="button" id"edit">EDIT PROFILE</button>
-          </div>
         </div>
       </div>
       <div class="box right">
@@ -57,12 +54,9 @@
           </pre>
         </div>
       </div>
+      <div style="text-align:center">
+        <button type="button" class="button" id="edit">EDIT PROFILE</button>
+      </div>
     </div>
 
-
-
-<!--Footer Section-->
-
-</body>
-</html>
 {% endblock %}

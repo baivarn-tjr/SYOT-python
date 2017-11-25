@@ -1,6 +1,5 @@
 #profile-section{
   margin-top: 70px;
-  margin-left: 70px;
   height: 150px;
 }
 
@@ -16,7 +15,7 @@
   display: inline-block;
   float: left;
   width: 50%;
-  height: 710px;
+  height: auto;
   background-color: white;
 }
 .status{
@@ -62,6 +61,7 @@
 }
 
 .button {
+    margin-top: auto;
     background-color: #ff5757;
     /*font-style: Sukhumvit set*/
     color: white;
