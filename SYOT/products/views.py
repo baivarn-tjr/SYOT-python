@@ -22,6 +22,7 @@ def index(request):
     return render(request, template , context)
 
 def catalog(request):
+    # products = Product.objects.all().order_by('?')[:100]
     products = Product.objects.all().order_by('date_modified').reverse()
     context = {
             'products' : products,
