@@ -21,7 +21,8 @@ function addtoCart() {
             data : { user_id : $('#div-icon-cart').attr("user_id"), product_id : $('#div-icon-cart').attr("product_id") }, // data sent with the post request
             // handle a successful response
             success : function(json) {
-                console.log("success"); // another sanity check
+                console.log("success");
+                alert('finish adding to cart')// another sanity check
             },
             // handle a non-successful response
             error : function(xhr,errmsg,err) {
@@ -45,7 +46,8 @@ function addtoFav() {
             data : { user_id : $('#div-icon-fav').attr("user_id"), product_id : $('#div-icon-fav').attr("product_id") }, // data sent with the post request
             // handle a successful response
             success : function(json) {
-                console.log("success"); // another sanity check
+                console.log("success");
+                alert('finish adding to favorite') // another sanity check
             },
             // handle a non-successful response
             error : function(xhr,errmsg,err) {

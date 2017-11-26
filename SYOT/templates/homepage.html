@@ -3,6 +3,9 @@
 
 {% block addcssjs %}
     <link rel="stylesheet" type="text/css" href='{% static "css/homepage.css" %}' />
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Teko:600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
     <style media="screen">
     div#recommend{
     	height: 610px;
@@ -99,16 +102,54 @@
         margin-left: 90%;
         margin-bottom: 50px;
       }
+      #theFlash{
+	color: white;
+	padding-top:150px;
+	padding-left:50px;
+}
+
+#skywalker{
+	text-align: right;
+	color: black;
+	padding-top: 80px;
+	padding-right:40px;
+}
+
+#batman{
+	color: white;
+	padding-top:150px;
+	padding-left:50px;
+}
+
+#leftBut{
+	margin-left: 95px;
+}
+
+#leftBut2{
+	margin-left: 125px;
+}
+
+#rightBut{
+	margin-right: 125px;
+}
     </style>
 {% endblock %}
 
 {% block content %}
   <!-- Homepage Section -->
   <div id="first-promote" style="background-image: url({% static 'images/flash-homepage.jpg' %}); background-size: 100% 100%;">
-    <h1>Kanoktat</h1>
+    <div id="theFlash">
+       <h2 style="font-family: 'Anton', sans-serif;">The Fastest Man Alive!</h2><br>
+       <h6 style="font-family: 'Anton', sans-serif;">The Flash collectible figure prior to the movie release.</h6><br>
+       <button onclick="flash()" type="button" class="btn btn-outline-light btn-lg" id="leftBut" style="font-family: 'Anton', sans-serif;">SHOP NOW</button>
+   </div>
    	</div>
     <div id="promote" style="background-image: url({% static 'images/luke-homepage.jpg' %}); background-size: 100% 100%;">
-      <h1>Second Paragraph</h1>
+      <div id="skywalker">
+      <h2 style="font-family: 'Cinzel', serif;">Welcome To The Light Side!</h2><br>
+      <h6 style="padding-right:80px; font-family: 'Cinzel', serif;">May the force be with you</h6><br>
+      <button onclick="luke()" type="button" class="btn btn-outline-dark btn-mg" id="rightBut" style="font-family: 'Cinzel', serif;">SHOP NOW</button>
+    </div>
     </div>
     <div id="recommend">
       <h1 style="text-align: center; margin-bottom: 50px; margin-top: 40px; text-transform: uppercase;">Recommended</h1>
@@ -126,8 +167,24 @@
       </div>
   </div>
   <div id="first-promote" style="background-image: url({% static 'images/batman-homepage.png' %}); background-size: 100% 100%;">
-    <h1>Kanoktat</h1>
+    <div id="batman">
+        <h2 style="font-family: 'Teko', sans-serif; font-size: 60px;">The Dark Knight!</h2><br>
+        <h6 style="font-family: 'Teko', sans-serif; font-size: 20px;">It's not who I am underneath, But what I do that defines me.</h6><br>
+        <button onclick="batman()" type="button" class="btn btn-outline-secondary btn-lg" id="leftBut2" style="font-family: 'Teko', sans-serif;">SHOP NOW</button>
     </div>
+    </div>
+    <script>
+    function flash() {
+    	location.href="{% url 'detail' '37' %}"
+    }
+    function luke() {
+    	location.href="{% url 'detail' '16' %}"
+    }
+    function batman() {
+    	location.href="{% url 'detail' '36' %}"
+    }
+
+    </script>
     <!-- <div id="first-promote" style="background-image: url({% static 'images/iron-homepage.jpg' %}); background-size: 100% 100%;">
       <h1>Kanoktat</h1>
       </div> -->
