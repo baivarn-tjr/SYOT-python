@@ -32,7 +32,7 @@
 								<div class="info2 col-lg-3">
 									<h5>{{ item.cost }}</h5>
 									<form action="{% url 'addminusQuantity' user.id item.id %}" method="post"> {% csrf_token %}
-										<div class="qty-box" data-reactid=".0">
+										<div class="qty-box" id="add-minus" addminusUrl="{% url 'addminusQuantity' user.id item.id %}" data-reactid=".0">
 											<input type="submit" class="dec" data-reactid=".0.0" type="submit" value='-' name="dec"/>
 											<span class="qty" data-reactid=".0.1">{{ itemCart.quantity }}</span>
 											<input type="submit" class="inc" data-reactid=".0.2" type="submit" value='+' name="inc"/>
@@ -54,7 +54,7 @@
 							<hr>
 							<div class="subtotal row">
 								<div class="col-sm-6"><h5>Subtotal</h5></div>
-								<div class="col-sm-6">{{ money }} $</div>
+								<div id="money-div" class="col-sm-6">{{ money }} $</div>
 							</div>
 							<div class="shipping row">
 								<div class="col-sm-6"><h5>Shipping</h5></div>
@@ -62,7 +62,7 @@
 							</div>
 							<div class="total row">
 								<div class="col-sm-6"><h5>Total</h5></div>
-								<div class="col-sm-6" id="total-money">{{ money|add:ship }} $</div>
+								<div id="total-money" class="col-sm-6" id="total-money">{{ money|add:ship }} $</div>
 							</div>
 							<hr>
 							<a href="#" class="button" id="checkout" onclick='document.forms["payment-form"].submit(); return false;' >CHECK OUT</a>
@@ -72,6 +72,6 @@
 			</div>
 		</div>
 	</div>
-
+	<script src="{% static 'js/basket.js' %}"></script>
 
 {% endblock %}

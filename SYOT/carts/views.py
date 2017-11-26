@@ -4,7 +4,7 @@ from django.core.urlresolvers import reverse
 import json
 from products.models import Product
 
-from .models import Basket, CompanyMoney
+from .models import Basket, CompanyMoney, PaymentHistory
 from account.models import Applicant
 
 
@@ -78,12 +78,16 @@ def payment(request, user_id ,totalmoney):
     item = get_object_or_404(CompanyMoney, pk=1)
     item.money += float(totalmoney)
     item.save()
+
     # user = Applicant.objects.get(id=user_id)
     userr = Applicant.objects.get(id=user_id)
+    PaymentHistory.objects.create(userId=userr, money=float(totalmoney))
     pointget = round((float(totalmoney)/10)*100)
     userr.point += pointget
     userr.save()
     userBasket = userr.myBasket.all()
+
+
     for product in userBasket:
         a = Basket.objects.get(userId=userr, productID=product)
         a.delete()
