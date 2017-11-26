@@ -6,15 +6,15 @@ from django.core.serializers.json import DjangoJSONEncoder
 from products.models import Product
 from django.forms.models import model_to_dict
 
-from .models import Favorite
+from .models import FavoriteItem
 from account.models import Applicant
 
 from rest_framework import serializers
 
-class FavSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Favorite
-        fields = '__all__'
+# class FavSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = FavoriteItem
+#         fields = '__all__'
 
 def favorite(request,user_id):
     userr = Applicant.objects.get(id=user_id)
@@ -39,7 +39,7 @@ def deletefav(request):
         product_id = request.POST.get('product_id')
         user = Applicant.objects.get(id=user_id)
         product = Product.objects.get(id=product_id)
-        item = get_object_or_404(Favorite, userId=user, productID=product)
+        item = get_object_or_404(FavoriteItem, userId=user, productID=product)
         item.delete()
         userr = Applicant.objects.get(id=user_id)
         userFav = userr.myFav.all()

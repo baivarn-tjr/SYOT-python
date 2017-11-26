@@ -25,7 +25,7 @@ from account.models import Applicant
 #     def __str__(self):
 #         return str(self.username)
 
-class Favorite(models.Model):
+class FavoriteItem(models.Model):
     time = models.DateTimeField(auto_now_add=True, auto_now=False)
     userId = models.ForeignKey(Applicant, on_delete=models.CASCADE)
     productID = models.ForeignKey(Product, db_column='ProductID')
