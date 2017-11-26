@@ -35,7 +35,7 @@ hr{
   border-radius: 5px;
   line-height: 22px;
   background-color: transparent;
-  border:2px solid #ce251c;
+  border:2px solid #ff4f2c;
   transition: all 0.3s;
   padding: 13px;
   margin-top: 20px;
@@ -58,7 +58,7 @@ textarea{
 #submit{
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   width:400px;
-  background:#ce251c;
+  background:#ff4f2c;
   border-radius:5px;
   border:0;
   cursor:pointer;
