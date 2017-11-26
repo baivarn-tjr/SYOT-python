@@ -1,11 +1,12 @@
 from django.shortcuts import get_object_or_404,render
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 from django.core.urlresolvers import reverse
-
+import json
 from products.models import Product
 
-from .models import Basket
+from .models import Basket, CompanyMoney
 from account.models import Applicant
+
 
 def calMoney(userBasket,usercart,carts):
     money = 0
@@ -41,16 +42,57 @@ def cart(request,user_id):
 def checkout(request, user_id, totalmoney):
     # totalmoney = request.POST.get('totalmoney')
     # user_id = request.POST.get('user_id')
+    user = Applicant.objects.get(id=user_id)
     context = {
         'totalmoney' : totalmoney,
         'user_id' : user_id,
+        'point' : user.point,
     }
     template = 'payment.html'
     return render(request,template,context)
 
-def payment(request):
-    context = {
+def usepoint(request, user_id):
+    pointused = request.POST.get('pointuse')
+    response_data = { }
+    user = Applicant.objects.get(id=user_id)
+    user.point = pointused
+    user.save()
+    print(pointused)
+    return HttpResponse(
+        json.dumps(response_data),
+        content_type="application/json")
 
+def paymentbypoint(request, user_id ,totalmoney):
+    # user = Applicant.objects.get(id=user_id)
+    userr = Applicant.objects.get(id=user_id)
+    userBasket = userr.myBasket.all()
+    for product in userBasket:
+        a = Basket.objects.get(userId=userr, productID=product)
+        a.delete()
+    context = {
+    }
+    template = 'thankyou.html'
+    return render(request,template,context)
+
+def payment(request, user_id ,totalmoney):
+    item = get_object_or_404(CompanyMoney, pk=1)
+    item.money += float(totalmoney)
+    item.save()
+    # user = Applicant.objects.get(id=user_id)
+    userr = Applicant.objects.get(id=user_id)
+    pointget = round((float(totalmoney)/10)*100)
+    userr.point += pointget
+    userr.save()
+    userBasket = userr.myBasket.all()
+    for product in userBasket:
+        a = Basket.objects.get(userId=userr, productID=product)
+        a.delete()
+    # itemfav = get_object_or_404(FavoriteItem, userId=user)
+    # itemfav.delete()
+    # print(FavoriteItem.objects.filter(userId=user))
+    # FavoriteItem.objects.filter(userId=user).delete()
+    # user.myFav.all().delete()
+    context = {
     }
     template = 'thankyou.html'
     return render(request,template,context)

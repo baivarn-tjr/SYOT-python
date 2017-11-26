@@ -34,4 +34,4 @@ class Basket(models.Model):
 class CompanyMoney(models.Model):
     money = models.FloatField(null=False)
     def __str__(self):
-        return str(self.money)
+        return str(self.id)

@@ -37,7 +37,7 @@ p#footer{
 #navlink.nav-link{
 	padding:2px 0px 2px 0px;
 	color:#565656;
-	width: 115px;
+	width: 120px;
 	height: 28px;
 }
 
@@ -45,3 +45,15 @@ p#footer{
 	color:#ce251c;
 	text-decoration: none;
 }
+<<<<<<< HEAD
+=======
+
+.wrapper {
+   display: block;
+   margin-bottom: -280px; 
+}
+.footer {
+   height: 280px;
+   display: block;
+}
+>>>>>>> f6a0b0062c2cbe1ddde8605a56f5f1c84f569e57

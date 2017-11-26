@@ -1,5 +1,9 @@
 #profile-section{
   margin-top: 70px;
+<<<<<<< HEAD
+=======
+  margin-left: 70px;
+>>>>>>> f6a0b0062c2cbe1ddde8605a56f5f1c84f569e57
   height: 150px;
 }
 
@@ -10,6 +14,7 @@
   border-radius: 100%;
   margin-left: auto;
   margin-right: auto;
+<<<<<<< HEAD
 }
 .box{
   display: inline-block;
@@ -53,6 +58,38 @@
   padding-right: 20px;
 }
 
+=======
+}
+
+.hr-left{
+  width: 80%;
+  margin-left:138px;
+}
+
+.hr-right{
+  width: 80%;
+  margin-left: 0px;
+}
+
+.dot{
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #ff4f2c;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.ship{
+  display: inline-block;
+  margin-left: 20px;
+}
+
+/*.profile{
+  padding-right: 20px;
+}*/
+
+>>>>>>> f6a0b0062c2cbe1ddde8605a56f5f1c84f569e57
 .coin{
   width: 20px;
   margin-left: auto;
@@ -82,3 +119,10 @@
 #Header{
   padding-top: 0px;
 }
+<<<<<<< HEAD
+=======
+
+.left{
+  border-right:1px solid black;
+}
+>>>>>>> f6a0b0062c2cbe1ddde8605a56f5f1c84f569e57

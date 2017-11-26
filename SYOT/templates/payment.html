@@ -4,6 +4,7 @@
 {% block addcssjs %}
 
     <link rel="stylesheet" type="text/css" href="{% static 'css/payment.css' %}">
+
 {% endblock %}
 
 {% block content %}
@@ -24,20 +25,33 @@
 	 	<div id="box"><input id="submit" type="submit" value="Pay"/></div>
 	</div> -->
 
+  <div id="payment-section">
+      <div class="box left">
+          <div class="credit">
+            <img src="{% static 'images/credit.png' %}">
+          </div>
+          <div>
+            <p class="total" id="payment-point" payment-url="{% url 'paymentbypoint' request.session.user_id totalmoney %}" style="margin-top:20px; font-size: 30px;font-family: Fjalla One;">
+              TOTAL
+            </p>
+			<p class="total" id="total-money" money-value="{{ totalmoney }}" style="margin-left:30px; font-size: 30px;font-family: Fjalla One;">
+				{{ totalmoney }} $
+			</p>
+			<br/>
+            <p class="total" id="total-point" point-value="{{ point }}" style="margin-left:30px; font-size: 30px;font-family: Fjalla One;">
+              {{ point }}
+            </p>
+            <div class="total" id="use-point-div" url-point="{% url 'usepoint' request.session.user_id %}" style="margin-left: 150px;"><input id="use-point" class="point" type="submit" value="USE POINT"/></div>
+        </div>
+      </div>
 
-	<div id="payment-section">
-	    <div class="box left">
-	        <div class="credit">
-	          <img src="images/credit.png">
-	        </div>
-	    </div>
 
 	    <div class="box right">
 	        <div class="details">
 	            <p style="font-family: Fjalla One; font-size:40px; text-align: center; margin-bottom:0px;">
 	            	Payment Details
 	            </p>
-				<form class='form' action="{% url 'payment' %}" method="post" id="payment-form"> {% csrf_token %}
+				<form class='form' payment-url="{% url 'payment' request.session.user_id totalmoney %}" action="{% url 'payment' request.session.user_id totalmoney %}" method="post" id="payment-form"> {% csrf_token %}
 	        	<div id="text">
 		          <div id="information" style="font-size: 20px;">
 		            <div class="textinput">Name on Card
@@ -59,5 +73,6 @@
   		</div>
   	</div>
 
+	<script src="{% static 'js/usepoint.js' %}"></script>
 
 	{% endblock %}

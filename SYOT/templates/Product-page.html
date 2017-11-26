@@ -144,7 +144,6 @@
     				Int'l Dim. Weight : TBD -->
     			</p><br>
     			<div class="row">
-
                   <form id="cart-form" cart-url="{% url 'addtocart' %}" product_id="{{ getProduct.id }}" user_id="{{  request.session.user_id }}" method="post"> {% csrf_token %}
                 		<div class="col-md-5" id="div-icon-cart">
         					<a id="icon-cart-product" class="nav-link" href='#' onclick='document.forms["cart-form"].submit(); return false;'><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></a>
@@ -170,7 +169,6 @@
     <strong>Warning!</strong> {{ err }}
     <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
   </div>
-    <!-- <h3 tyle="text-align: center;"></h3> -->
   {% endif %}
 
   <div class="row" id="review-section">

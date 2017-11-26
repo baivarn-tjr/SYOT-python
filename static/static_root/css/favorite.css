@@ -11,8 +11,8 @@ ul li{
   margin-top: 10px;
   /*padding: 20px 0 0 260px;*/
 }
-.container{
-
+div.favoriteSection{
+  margin-top: 80px;
 }
 .col-md-4{
   /*padding-bottom: 120px;
@@ -184,11 +184,3 @@ html, body {
 .card-description > p {
 	margin: 0;
 }
-
-.containerr {
-    width: 250px;
-    height: 250px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-}​

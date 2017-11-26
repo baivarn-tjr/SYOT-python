@@ -1,3 +1,8 @@
+input[type="submit"]:disabled{
+	background-color: #dedede;
+	cursor: default;
+}
+
 #picture{
 	margin-top: 200px;
 	margin-left: 150px;
@@ -82,10 +87,26 @@
       cursor: pointer;
 
  }
+
+ .point{
+	 width: 100%;
+   background:#ff4f2c;
+   border-radius:5px;
+   border:0;
+   cursor:pointer;
+   color:white;
+   font-size:15px;
+   padding-top:10px;
+   padding-bottom:10px;
+   transition: all 0.3s;
+   margin-top:-4px;
+   font-weight:700;
+ }
+
  #submit{
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   width: 100%;
-  background:#ce251c;
+  background:#ff4f2c;
   border-radius:5px;
   border:0;
   cursor:pointer;
@@ -125,9 +146,13 @@
 }
 
 .credit{
-  margin-top:130px;
+  margin-top:100px;
 }
 
 #fix-footer{
   margin-top: 700px;
+}
+
+.total{
+	display: inline-block;
 }

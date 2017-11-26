@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+  <!-- Boostrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  <!--Font Awesom import-->
+  <script src="https://use.fontawesome.com/ef3af9c398.js"></script>
+  <!-- CSS File-->
+  <link rel="stylesheet" type="text/css" href="css/about.css">
+  <link rel="stylesheet" type="text/css" href="css/header.css">
+  <link rel="stylesheet" type="text/css" href="css/footer.css">
+</head>
+<body>
+<!-- Header section -->
+  <div class="headerSection">
+    <nav class="navbar navbar-expand-lg fixed-top" id="Header">
+      <div class="navbar-brand col-lg-1">
+          <a href="index.html" id="logo"><img src="images/logo.png" width="40" height="40" class="d-inline-block align-top" id="brand-name"></a>
+      </div>
+
+        <!--searchBox-->
+      <div class="col-lg-3" >
+        <form class="form-inline">
+            <input class="form-control mr-sm-2 clearable" type="search" placeholder="Search" aria-label="Search" id="searchBox">
+            <button class="btn btn-outline-dark" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </form>
+      </div>
+
+      <div class="collapse navbar-collapse col-lg-4" id="navHeaderCenter">
+            <ul class="navbar-nav" id="centerTabHeader">
+              <li class="nav-item active" id="Left-Header">
+                  <a class="nav-link" href="index.html" id="Header">Home</a>
+              </li>
+              <li class="nav-item dropbtn" id="tabHeader">
+                  <div class="dropdown">
+                    <a class="nav-link " href="product.html" id="Header">Product</a>
+                      <div class="dropdown-content">
+                          <a href="#">Movie</a>
+                          <a href="#">Cartoon</a>
+                          <a href="#">Model</a>
+                          <a href="#">Vehicles</a>
+                          <a href="#">Cartoon</a>
+                      </div>
+                  </div>
+              </li>
+              <li class="nav-item" id="tabHeader">
+                  <a class="nav-link" href="about.html" id="Header">About</a>
+              </li>
+            </ul>
+      </div>
+      <!--Header Homepage Right-->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+          <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a class="nav-link" href="basket.html" id="Header"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="favorite.html" id="Header"><i class="fa fa-heart" aria-hidden="true"></i></a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="login.html" id="Header"><i class="fa fa-sign-in" aria-hidden="true"></i> Sign In<ins></ins></a>
+             </li>
+          </ul>
+      </div>
+    </nav>
+    <hr>
+  </div>
+<!--About Contact Us Section-->
+<div class="header">
+<div class="row"  >
+	<div class="col-lg-6" id="left"><h1 >CONTACT US</h1>
+		<hr></hr>
+		<input name="name" type="text" class="feedback-input" placeholder="Name"><br>
+	              	<input name="email" type="email" class="feedback-input" placeholder="Email"><br>
+	              	<input name="subject" type="text" class="feedback-input" placeholder="Subject"><br>
+	              	<textarea name="text" class="feedback-input" placeholder="Comment"></textarea><br>
+	              	<div class="submit">
+	                	<input id="submit" type="submit" value="SUBMIT"></div>
+	</div>
+	<div class="col-lg-6" id="right"><h1>INFORMATION</h1>
+		<hr></hr>
+		<p id="infor">
+              Address: 50 Ngam Wong Wan Road <br>Ladyaow Chatuchak Bangkok 10230<br>
+              Email: SYOT@gmail.com<br>
+              Facebook: SYOT-The best online toys store<br>
+              Tel: 02-9428200<br>
+              <div id="map"></div>
+              <script>
+                function initMap() {
+                  var uluru = {lat: 13.8463613, lng:100.5711059};
+                  var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom:16,
+                    center: uluru
+                  });
+                  var marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map
+                  });
+                }
+              </script>
+              <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD30SRcIi_ElHjWrV0sd4m6A-YiTKfM4WM&callback=initMap">
+              </script>
+    </p>
+	</div>
+</div>
+</div>
+
+<footer class="footer" id="fix-footer">
+		<div class="footer-top-section">
+			<div class="container">
+				<div class="row">
+					<div class="footer-col col-md-2">
+
+					</div>
+					<div class="footer-col col-md-3">
+						<h6><font color="white">Our Office Location</font></h6>
+						<p id="footer"><font color="#565656">
+									50 Thanon Ngam Wong Wan<br>
+									Khwaeng Lat Yao, Khet Chatuchak<br>
+									Krung Thep Maha Nakhon 10900
+									<br><br>
+									Copyright © 2017 SYOT Inc.<br>
+									All Rights Reserved.
+						</font></p>
+					</div>
+				<div class="footer-col col-md-2">
+
+				</div>
+				<div class="footer-col col-md-3">
+						<h6><font color="white">Social Contact</font></h6>
+						<div class="row">
+							<div class="col-md-2">
+								<a id="icon-footer" class="nav-link" href="https://twitter.com"><i class="fa fa-twitter-square fa-2x"  aria-hidden="true"></i></a>
+							</div>
+							<div class="col-md-2">
+								<a id="icon-footer" class="nav-link" href="https://facebook.com"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+							</div>
+							<div class="col-md-2">
+								<a id="icon-footer" class="nav-link" href="https:youtube.com"><i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i></a>
+							</div>
+							<div class="col-md-2">
+								<a id="icon-footer" class="nav-link" href="https://instagram.com"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+							</div>
+						</div>
+				</div>
+				<div class="footer-col col-md-2 ">
+
+				</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
