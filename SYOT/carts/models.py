@@ -35,3 +35,8 @@ class CompanyMoney(models.Model):
     money = models.FloatField(null=False)
     def __str__(self):
         return str(self.id)
+
+class PaymentHistory(models.Model):
+    time = models.DateTimeField(auto_now_add=True, auto_now=False)
+    userId = models.ForeignKey(Applicant, on_delete=models.CASCADE)
+    money = models.IntegerField( null=False,default=1)
