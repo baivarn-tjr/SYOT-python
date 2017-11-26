@@ -1,0 +1,133 @@
+#picture{
+	margin-top: 200px;
+	margin-left: 150px;
+}
+#text{
+	font-size: 40px;
+}
+.textinput{
+	color: gray;
+	margin-top: 20px;
+	font-size: 15px;
+}
+#box{
+	margin-top: 20px;
+}
+.card{
+  color:black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid gray;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:400px;
+  box-sizing: border-box;
+  outline:0;
+}
+.cardvalid{
+	color:black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid gray;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:35%;
+  box-sizing: border-box;
+  outline:0;
+}
+.cardcvv{
+	margin-left: 35px;
+	color:black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid gray;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:20%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+#cvv{
+  margin-left: 43px;
+}
+
+.buy{
+      width: 260px;
+      height: 50px;
+      position: relative;
+      display: block;
+      margin: 20px auto;
+      border-radius: 10px;
+      border: none;
+      background: #42C2DF;
+      color: white;
+      font-size: 20px;
+      transition: background 0.4s;
+      cursor: pointer;
+
+ }
+ #submit{
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#ce251c;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+#submit:hover { background:#ce251c; }
+
+#payment-section{
+  margin-top:100px;
+  padding-left: 250px;
+}
+
+.box{
+  display: inline-block;
+  float: left;
+  width: 410px;
+  height: 500px;
+  background-color: white;
+}
+
+.box.left{
+  margin-right: 80px;
+}
+
+.box.right{
+  margin-left: 100px;
+}
+
+#information{
+  margin-top: 42px;
+}
+
+.credit{
+  margin-top:130px;
+}
+
+#fix-footer{
+  margin-top: 700px;
+}
