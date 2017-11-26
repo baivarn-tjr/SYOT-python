@@ -36,10 +36,9 @@
             <h6>MOBILE</h6>
             <h6>ADDRESS</h6>
             <h6>STATUS</h6>
-            {% for shipping in shipping_list %}
-            <h6>{{ shipping.name }}</h6>
+            {% for product in product_list %}
+            <h6>{{ product.name }}</h6>
             {% endfor %}
-            <h6>end</h6>
           </pre>
         </div>
       </div>
@@ -55,8 +54,12 @@
             <h6>{{ mobile }}</h6>
             <h6>{{ address }} {{ city }} {{ state }} {{ zip }}</h6>
             <div class="dot"><h6>   shiping</h6></div>
-            {% for shipping in shipping_status %}
-            <div class="dot"><h6>{{ shipping.status }}</h6>
+            {% for product in product_list %}
+            {% for shipping in shipping_list %}
+            {% if shipping.productID == product and shipping.userId == user %}
+            <a1>{{ shipping.status }}</a1>
+            {% endif %}
+            {% endfor %}
             {% endfor %}
           </pre>
         </div>

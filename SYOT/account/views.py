@@ -34,11 +34,11 @@ def profile(request):
     except KeyError:
         pass
     user = Applicant.objects.get(id=uid)
-    shipping_list = user.myShipping.all()
-    shipping_status = Shipping.objects.all()
+    product_list = user.myShipping.all()
+    shipping_list = Shipping.objects.all()
     context = {
         'user' : user,
-        'shipping_status' : shipping_status,
+        'product_list' : product_list,
         'shipping_list' : shipping_list,
         'firstN' : user.firstname,
         'lastN' :  user.lastname,
