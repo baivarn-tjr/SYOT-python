@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.http import HttpResponseRedirect
-from .models import Applicant
+from .models import Applicant, Shipping
 from .forms import LoginForm , ForgotPasswordForm , ResetPasswordForm , SignupForm
 from .tokens import account_activation_token
 from django.core.mail import EmailMessage
@@ -9,6 +9,7 @@ from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 from django.utils.encoding import force_bytes, force_text
 from django.template.loader import render_to_string
 from django.contrib.auth.hashers import make_password
+
 
 def login(request):
     login_form = LoginForm()
@@ -34,6 +35,7 @@ def profile(request):
         pass
     user = Applicant.objects.get(id=uid)
     context = {
+        'user' : user,
         'firstN' : user.firstname,
         'lastN' :  user.lastname,
         'username' : user.username,
