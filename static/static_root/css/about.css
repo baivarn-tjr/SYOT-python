@@ -1,27 +1,30 @@
-#about-section{
-  padding-top: 80px;
-  padding-left: 300px;
-}
 
-.box{
-  display: inline-block;
-  float: left;
-  width: 40%;
-  height: 630px;
-  background-color: white;
+#textL{
+  margin-left: 80px;
 }
-
-.box.left{
-	padding-right: 10px;
-	border-right: 1px solid #848484;
+#left{
+    padding-left: 17%;
+    text-align: center;
 }
-
-.box.right{
-	padding-left: 10px;
+#right{
+    padding-left: 5%;
+    padding-right: 15%;
+    text-align: center;
 }
+hr{
 
-.contactUs{
-	padding-top: 30px;
+  padding-left: 25%;
+  border-bottom:1px solid #848484;
+  width: 70%;
+
+}
+#infor{
+  text-align: center;
+  padding-top: 20px;
+  font-size: 20px;
+}
+.header{
+  margin-top: 100px;
 }
 
 .feedback-input {
@@ -48,7 +51,7 @@ textarea{
 	margin-bottom:20px;
 }
 
-.feedback-input:focus { 
+.feedback-input:focus {
 	border:2px solid #ce251c;
 }
 
@@ -68,7 +71,7 @@ textarea{
   font-weight:700;
 }
 
-#submit:hover{ 
+#submit:hover{
 	background:#ce251c;
 }
 
@@ -82,7 +85,11 @@ textarea{
 
 #map{
 	margin-top:30px;
+  margin-left: 40px;
+  width:400px;
+  height: 280px; 
 }
+
 
 .hr-left,.hr-right{
   border-top: none;
@@ -90,5 +97,5 @@ textarea{
 }
 
 #fix-footer{
-  margin-top: 650px;
+  margin-top: 100px;
 }

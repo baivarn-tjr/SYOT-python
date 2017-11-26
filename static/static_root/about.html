@@ -13,8 +13,6 @@
   <link rel="stylesheet" type="text/css" href="css/about.css">
   <link rel="stylesheet" type="text/css" href="css/header.css">
   <link rel="stylesheet" type="text/css" href="css/footer.css">
-
-
 </head>
 <body>
 <!-- Header section -->
@@ -23,7 +21,7 @@
       <div class="navbar-brand col-lg-1">
           <a href="index.html" id="logo"><img src="images/logo.png" width="40" height="40" class="d-inline-block align-top" id="brand-name"></a>
       </div>
-      
+
         <!--searchBox-->
       <div class="col-lg-3" >
         <form class="form-inline">
@@ -31,7 +29,7 @@
             <button class="btn btn-outline-dark" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
         </form>
       </div>
-      
+
       <div class="collapse navbar-collapse col-lg-4" id="navHeaderCenter">
             <ul class="navbar-nav" id="centerTabHeader">
               <li class="nav-item active" id="Left-Header">
@@ -42,16 +40,14 @@
                     <a class="nav-link " href="product.html" id="Header">Product</a>
                       <div class="dropdown-content">
                           <a href="#">Movie</a>
-                          <a href="#">Kids</a>
-                          <a href="#">Girls</a>
-                          <a href="#">Vehicles</a>
                           <a href="#">Cartoon</a>
+                          <a href="#">Model</a>
                       </div>
                   </div>
               </li>
               <li class="nav-item" id="tabHeader">
                   <a class="nav-link" href="about.html" id="Header">About</a>
-              </li> 
+              </li>
             </ul>
       </div>
       <!--Header Homepage Right-->
@@ -65,98 +61,97 @@
               </li>
               <li class="nav-item">
               <a class="nav-link" href="login.html" id="Header"><i class="fa fa-sign-in" aria-hidden="true"></i> Sign In<ins></ins></a>
-             </li> 
+             </li>
           </ul>
       </div>
     </nav>
     <hr>
   </div>
 <!--About Contact Us Section-->
-  <div id="about-section">
-    <div class="box left">
-        <div class="profile">
-          <p style="font-family: Fjalla One; font-size: 25px; text-align: center;">
-            CONTACT US
-          </p>
-          <hr class="hr-left">
-          <div class="contactUs">
-            <form style="text-align: center;">      
-              <input name="name" type="text" class="feedback-input" placeholder="Name"><br>  
-              <input name="email" type="email" class="feedback-input" placeholder="Email"><br>
-              <input name="subject" type="text" class="feedback-input" placeholder="Subject"><br>
-              <textarea name="text" class="feedback-input" placeholder="Comment"></textarea><br>
-              <div class="submit">
-                <input id="submit" type="submit" value="SUBMIT">
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-      
-      <div class="box right">
-        <div class="status">
-          <p style="font-family: Fjalla One; font-size: 25px; text-align: center;">
-            INFORMATION
-          </p>
-          <hr class="hr-right">
-          <div id="information" style="font-size: 20px; text-align: center">
-            <p>
+<div class="header">
+<div class="row"  >
+	<div class="col-lg-6" id="left"><h1 >CONTACT US</h1>
+		<hr></hr>
+		<input name="name" type="text" class="feedback-input" placeholder="Name"><br>
+	              	<input name="email" type="email" class="feedback-input" placeholder="Email"><br>
+	              	<input name="subject" type="text" class="feedback-input" placeholder="Subject"><br>
+	              	<textarea name="text" class="feedback-input" placeholder="Comment"></textarea><br>
+	              	<div class="submit">
+	                	<input id="submit" type="submit" value="SUBMIT"></div>
+	</div>
+	<div class="col-lg-6" id="right"><h1>INFORMATION</h1>
+		<hr></hr>
+		<p id="infor">
               Address: 50 Ngam Wong Wan Road <br>Ladyaow Chatuchak Bangkok 10230<br>
               Email: SYOT@gmail.com<br>
               Facebook: SYOT-The best online toys store<br>
               Tel: 02-9428200<br>
-              <img id="map" src="images/map.png" width="400" height="280">
-            </p>
-          </div>
-        </div>
-      </div>
-  </div>
+              <div id="map"></div>
+              <script>
+                function initMap() {
+                  var uluru = {lat: 13.8463613, lng:100.5711059};
+                  var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom:16,
+                    center: uluru
+                  });
+                  var marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map
+                  });
+                }
+              </script>
+              <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD30SRcIi_ElHjWrV0sd4m6A-YiTKfM4WM&callback=initMap">
+              </script>
+    </p>
+	</div>
+</div>
+</div>
 
-  <!--Footer Section-->
-  <footer class="footer" id="fix-footer">
-      <div class="footer-top-section">
-        <div class="container">
-          <div class="row">
-            <div class="footer-col col-md-2">
-              
-            </div>
-            <div class="footer-col col-md-3">
-              <h6><font color="white">Our Office Location</font></h6>
-              <p id="footer"><font color="#565656">   
-                    50 Thanon Ngam Wong Wan<br>
-                    Khwaeng Lat Yao, Khet Chatuchak<br>
-                    Krung Thep Maha Nakhon 10900
-                    <br><br>
-                    Copyright © 2017 SYOT Inc.<br>
-                    All Rights Reserved. 
-              </font></p>
-            </div>
-          <div class="footer-col col-md-2">
-              
-          </div>  
-          <div class="footer-col col-md-3">
-              <h6><font color="white">Social Contact</font></h6>
-              <div class="row">
-                <div class="col-md-2">
-                  <a id="icon-footer" class="nav-link" href="https://twitter.com"><i class="fa fa-twitter-square fa-2x"  aria-hidden="true"></i></a>
-                </div>
-                <div class="col-md-2">
-                  <a id="icon-footer" class="nav-link" href="https://facebook.com"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
-                </div>
-                <div class="col-md-2">
-                  <a id="icon-footer" class="nav-link" href="https:youtube.com"><i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i></a>
-                </div>
-                <div class="col-md-2">
-                  <a id="icon-footer" class="nav-link" href="https://instagram.com"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
-                </div>
-              </div>
-          </div>
-          <div class="footer-col col-md-2 ">
-              
-          </div>    
-          </div>
-        </div>
-      </div>
-    </footer>
+<footer class="footer" id="fix-footer">
+		<div class="footer-top-section">
+			<div class="container">
+				<div class="row">
+					<div class="footer-col col-md-2">
+
+					</div>
+					<div class="footer-col col-md-3">
+						<h6><font color="white">Our Office Location</font></h6>
+						<p id="footer"><font color="#565656">
+									50 Thanon Ngam Wong Wan<br>
+									Khwaeng Lat Yao, Khet Chatuchak<br>
+									Krung Thep Maha Nakhon 10900
+									<br><br>
+									Copyright © 2017 SYOT Inc.<br>
+									All Rights Reserved.
+						</font></p>
+					</div>
+				<div class="footer-col col-md-2">
+
+				</div>
+				<div class="footer-col col-md-3">
+						<h6><font color="white">Social Contact</font></h6>
+						<div class="row">
+							<div class="col-md-2">
+								<a id="icon-footer" class="nav-link" href="https://twitter.com"><i class="fa fa-twitter-square fa-2x"  aria-hidden="true"></i></a>
+							</div>
+							<div class="col-md-2">
+								<a id="icon-footer" class="nav-link" href="https://facebook.com"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+							</div>
+							<div class="col-md-2">
+								<a id="icon-footer" class="nav-link" href="https:youtube.com"><i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i></a>
+							</div>
+							<div class="col-md-2">
+								<a id="icon-footer" class="nav-link" href="https://instagram.com"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+							</div>
+						</div>
+				</div>
+				<div class="footer-col col-md-2 ">
+
+				</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
