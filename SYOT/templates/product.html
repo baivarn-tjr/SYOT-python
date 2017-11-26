@@ -29,9 +29,10 @@
 				    <button class="btn btn-outline-dark dropdown-toggle" type="button" id="filter" data-toggle="dropdown">SORT BY:
 				    <span class="caret"></span></button>
 				    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-				      <!-- <a class="nav-link" href="{% url 'filter' newest %}" id="Header">Newest</a> -->
-				      <a class="nav-link" href="#" id="Header">Highest Rated</a>
-				      <a class="nav-link" href="#" id="Header">Price High-Low</a>
+              <a class="nav-link" href="{% url 'filter' 'name' %}" id="Header">Name</a>
+				      <a class="nav-link" href="{% url 'filter' 'newest' %}" id="Header">Newest</a>
+				      <a class="nav-link" href="{% url 'filter' 'point' %}" id="Header">Highest Rated</a>
+				      <a class="nav-link" href="{% url 'filter' 'priceHighLow' %}" id="Header">Price High-Low</a>
 				      <a class="nav-link" href="#" id="Header">Price Low-High</a>
 				    </ul>
 				</div>
