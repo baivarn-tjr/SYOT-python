@@ -42,7 +42,7 @@ class Applicant(models.Model):
         default='CL'
     )
     myBasket = models.ManyToManyField('products.Product',through='carts.Basket',related_name="BasketProduct")
-    myFav = models.ManyToManyField('products.Product', through='favorite.Favorite', related_name="FavProduct")
+    myFav = models.ManyToManyField('products.Product', through='favorite.FavoriteItem', related_name="FavProduct")
     myShipping = models.ManyToManyField('products.Product', through='Shipping', related_name="ShippingProduct")
     # def __str__(self):
     #     return "%s %s (%s)" % (    self.username,

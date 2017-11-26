@@ -74,7 +74,7 @@
 <!-- <<<<<<< HEAD
                   <a class="nav-link" href="{% url 'acc:profile' %}"id="Header"><i class="fa fa-user" aria-hidden="true"></i> Hi {{ request.session.user_name }} </a>
 ======= -->
-                  <a class="nav-link" href="{% url 'carts' request.session.user_id %}"id="Header"><i class="fa fa-user" aria-hidden="true"></i> Hi {{ request.session.user_name }} </a>
+                  <a class="nav-link" href="{% url 'acc:profile' %}"id="Header"><i class="fa fa-user" aria-hidden="true"></i> Hi {{ request.session.user_name }} </a>
 <!-- >>>>>>> 84f367cc1a08513d86b121aef20e0a1e4c70e148 -->
                 </li>
                 <li class="nav-item">
@@ -187,5 +187,11 @@
         </div>
         </div>
       </div>
+      <script>
+        $(document).ready(function(){
+            {% block jquery %}
+            {% endblock %}
+        });
+        </script>
     </body>
     </html>

@@ -48,7 +48,7 @@
 					{% endfor %}
 				</div>
 				<div class="frame-sum col-lg-4">
-					<form action="{% url 'checkout' request.session.user_id money|add:ship %}" method="post"> {% csrf_token %}
+					<form id="payment-form" action="{% url 'checkout' request.session.user_id money|add:ship %}" method="post"> {% csrf_token %}
 						<div class="sum">
 							<h1>TOTAL</h1>
 							<hr>
@@ -65,7 +65,7 @@
 								<div class="col-sm-6" id="total-money">{{ money|add:ship }} $</div>
 							</div>
 							<hr>
-							<a href="#" class="button" id="checkout" >CHECK OUT</a>
+							<a href="#" class="button" id="checkout" onclick='document.forms["payment-form"].submit(); return false;' >CHECK OUT</a>
 						</div>
 					</form>
 				</div>
