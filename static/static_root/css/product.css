@@ -67,6 +67,10 @@ div.productSection{
 	box-shadow: 0 0 20px #ccc;
 }
 	
-	.product-img img:hover {
+	.product-img img:hover{
 		opacity: 0.80;
 	}
+
+#filter{
+	margin-left: 396%;
+}

@@ -31,9 +31,15 @@ a#Header{
 }
 
 #navHeaderCenter{
-	margin-left:50px;
-	margin-right:50px;
+	margin-left:4%;
+	margin-right:4%;
 }
+
+#rightHeader{
+  margin-left: 14%;
+  padding-left: 0px;
+}
+
 /*@media screen and (max-width: 600px) {
   #Header a:not(:first-child) {display: none;}
   #Header a.icon {
