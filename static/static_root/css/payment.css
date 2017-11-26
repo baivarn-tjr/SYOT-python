@@ -5,16 +5,23 @@
 #text{
 	font-size: 40px;
 }
-.textinput{
-	color: gray;
-	margin-top: 20px;
+
+.textinput {
+	color: grey;
 	font-size: 15px;
 }
+
 #box{
+  display: block;
 	margin-top: 20px;
+  padding-left: 20%;
+  padding-right: 20%;
 }
-.card{
-  color:black;
+
+.card {
+  display: block;
+  margin: auto;
+  color: black;
   font-family: Helvetica, Arial, sans-serif;
   font-weight:500;
   font-size: 18px;
@@ -25,7 +32,7 @@
   transition: all 0.3s;
   padding: 13px;
   margin-bottom: 15px;
-  width:400px;
+  min-width: 60%;
   box-sizing: border-box;
   outline:0;
 }
@@ -46,7 +53,7 @@
   outline:0;
 }
 .cardcvv{
-	margin-left: 35px;
+	/*margin-left: 35px;*/
 	color:black;
   font-family: Helvetica, Arial, sans-serif;
   font-weight:500;
@@ -57,14 +64,14 @@
   border:2px solid gray;
   transition: all 0.3s;
   padding: 13px;
-  margin-bottom: 15px;
+  /*margin-bottom: 15px;*/
   width:20%;
   box-sizing: border-box;
   outline:0;
 }
 
 #cvv{
-  margin-left: 43px;
+  margin-left: 25px;
 }
 
 .buy{
@@ -124,10 +131,30 @@
   margin-top: 42px;
 }
 
-.credit{
-  margin-top:130px;
+#fix-footer{
+  margin-top: 100px;
 }
 
-#fix-footer{
-  margin-top: 700px;
+#test{
+  margin-top: 100px;
+}
+
+.headerSection {
+  padding-bottom: 57px;
+}
+
+.credit {
+  padding-left: 20%;
+  padding-top: 5%;
+}
+
+#credit-card {
+  display: block;
+  margin: auto;
+}
+
+.details {
+  display: block;
+  text-align: center;
+  padding-right: 30%;
 }
