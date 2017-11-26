@@ -3,7 +3,7 @@ from django.http import HttpResponse, Http404, HttpResponseRedirect, JsonRespons
 from django.core.urlresolvers import reverse
 from .models import Product, Catagory, ReviewProduct
 from carts.models import Basket
-from favorite.models import Favorite
+from favorite.models import FavoriteItem
 from account.models import Applicant
 from django import forms
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
@@ -208,9 +208,9 @@ def addtofav(request):
             user = None
         product = Product.objects.get(id=product_id)
         try:
-            itemtocart = Favorite.objects.get(userId=user, productID=product)
-        except (KeyError, Favorite.DoesNotExist):
-            Favorite.objects.create(userId=user, productID=product)
+            itemtocart = FavoriteItem.objects.get(userId=user, productID=product)
+        except (KeyError, FavoriteItem.DoesNotExist):
+            FavoriteItem.objects.create(userId=user, productID=product)
         # product = Product.objects.get(id=product_id)
         # quantityWarning = 20
         return HttpResponse(
