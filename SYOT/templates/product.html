@@ -121,7 +121,34 @@
             <div>
               <h5>{{ product.name }}</h5>
               <!-- <p>This is an awesome Batman model</p> -->
+              <div style="color:red;">
+                {% if product.point > 4 %}
+                <i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+                {% endif %}
+                {% if product.point > 3 %}
+                <i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+                {% endif %}
+                {% if product.point > 2 %}
+                <i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+                {% endif %}
+                {% if product.point > 1 %}
+                <i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+                {% endif %}
+                {% if product.point > 0 %}
+                <i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+                {% endif %}
+                {% if product.point == 0 %}
+                <div style="color:black; opacity:0.1;">
+                  <i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+                </div>
+                {% endif %}
+              </div>
               <p>{{ product.cost }} USD</p>
+
             </div>
           </div>
           {% endfor %}

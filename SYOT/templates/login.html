@@ -9,6 +9,26 @@
 				.login-box{
 					margin-top: 250px;
 				}
+				.alert {
+				    /*padding: 20px;*/
+				    background-color: #f44336;
+				    color: white;
+				}
+
+				.closebtn {
+				    margin-left: 15px;
+				    color: white;
+				    font-weight: bold;
+				    float: right;
+				    font-size: 22px;
+				    line-height: 20px;
+				    cursor: pointer;
+				    transition: 0.3s;
+				}
+
+				.closebtn:hover {
+				    color: black;
+				}
 			</style>
 {% endblock %}
 {% block content %}
@@ -22,16 +42,32 @@
 				{% if error_message %}
 		      <div class="alert alert-danger">
 		        {% if error_message == 'no-login' %}
-							<h3>please login before enter this website !!</h3>
+						<div class="alert">
+							<strong>Warning!</strong> please login before enter this website !!
+							<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+						</div>
+							<!-- <h3>please login before enter this website !!</h3> -->
 		        {% endif %}
 		        {% if error_message == 'wrong-password' %}
-							<h3>password or user didn't correct !!</h3>
+						<div class="alert">
+							<strong>Warning!</strong> password or user didn't correct !!
+							<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+						</div>
+							<!-- <h3></h3> -->
 		        {% endif %}
 		        {% if error_message == 'invalid' %}
-							<h3>can't access because wrong forms</h3>
+						<div class="alert">
+							<strong>Warning!</strong> can't access because wrong forms.
+							<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+						</div>
+							<!-- <h3>can't access because wrong forms</h3> -->
 						{% endif %}
 						{% if error_message == 'Please activated account' %}
-							<h3>Please activated account</h3>
+						<div class="alert">
+							<strong>Warning!</strong>Please activated account.
+							<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+						</div>
+							<!-- <h3>Please activated account</h3> -->
 		        {% endif %}
 		      </div>
 						<br>
