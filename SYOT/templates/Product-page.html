@@ -144,7 +144,6 @@
     				Int'l Dim. Weight : TBD -->
     			</p><br>
     			<div class="row">
-<<<<<<< HEAD
 
                   <!-- <form id="cart-form" cart-url="{% url 'addtocart' %}" product_id="{{ getProduct.id }}" user_id="{{  request.session.user_id }}" method="post"> {% csrf_token %} -->
                 		<div cart-url="{% url 'addtocart' %}" product_id="{{ getProduct.id }}" user_id="{{  request.session.user_id }}" class="col-md-5" id="div-icon-cart">
@@ -159,19 +158,7 @@
                              <!-- onclick='document.forms["fav-form"].submit(); return false;' -->
                         </div>
                   <!-- </form> -->
-=======
-                  <form id="cart-form" cart-url="{% url 'addtocart' %}" product_id="{{ getProduct.id }}" user_id="{{  request.session.user_id }}" method="post"> {% csrf_token %}
-                		<div class="col-md-5" id="div-icon-cart">
-        					<a id="icon-cart-product" class="nav-link" href='#' onclick='document.forms["cart-form"].submit(); return false;'><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></a>
-        				</div>
-                  </form>
 
-                  <form id="fav-form" fav-url="{% url 'addtofav' %}" product_id="{{ getProduct.id }}" user_id="{{  request.session.user_id }}" method="post"> {% csrf_token %}
-                    	<div class="col-md-2" id="div-icon-fav">
-        					<a id="icon-fav-product" class="nav-link" href="#" onclick='document.forms["fav-form"].submit(); return false;'><i class="fa fa-heart fa-2x" aria-hidden="true"></i></a>
-        				</div>
-                  </form>
->>>>>>> 68a94cddec58d2d5e6c245ff3004823fa2955e55
     			</div>
     		</div>
     	</div>
@@ -245,7 +232,7 @@
     </form>
 <script src="{% static 'js/addto.js' %}"></script>
 <script src="{% static 'js/clicktozoom.js' %}"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 

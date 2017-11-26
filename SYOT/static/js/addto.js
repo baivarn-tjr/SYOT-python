@@ -53,7 +53,7 @@ function addtoFav() {
                 // console.log(xhr.status + ": " + xhr.responseText); // provide a bit more info about the error to the console
             }
         });
-};
+    }
 }
 // using jQuery
 function getCookie(name) {
