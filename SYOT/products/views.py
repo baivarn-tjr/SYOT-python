@@ -29,15 +29,35 @@ def catalog(request):
     template = 'product.html'
     return render(request, template , context)
 
-# def filter(request,type):
-#     if type == "newest":
-#
-#     products = Product.objects.all().order_by('date_modified').reverse()
-#     context = {
-#             'products' : products,
-#         }
-#     template = 'product.html'
-#     return render(request, template , context)
+def filter(request,type):
+    if type == "newest":
+            products = Product.objects.all().order_by('date_modified').reverse()
+            context = {
+                    'products' : products,
+                }
+            template = 'product.html'
+            return render(request, template , context)
+    elif type == "point":
+            products = Product.objects.all().order_by('point').reverse()
+            context = {
+                    'products' : products,
+                }
+            template = 'product.html'
+            return render(request, template , context)
+    elif type == "name":
+            products = Product.objects.all().order_by('name')
+            context = {
+                    'products' : products,
+                }
+            template = 'product.html'
+            return render(request, template , context)
+    elif type == "priceHighLow":
+            products = Product.objects.all().order_by('cost').reverse()
+            context = {
+                    'products' : products,
+                }
+            template = 'product.html'
+            return render(request, template , context)
 
 
 def detail(request, product_id):
