@@ -9,16 +9,16 @@ $('#icon-fav-product').on('click',function(event){
 
 
 function addtoCart() {
-    if($('#cart-form').attr("user_id") == '' || !$('#cart-form').attr("user_id")){
+    if($('#div-icon-cart').attr("user_id") == '' || !$('#div-icon-cart').attr("user_id")){
         alert('please log in');
     }
     else{
-        console.log($('#cart-form').attr("cart-url"));
+        // console.log($('#div-icon-cart').attr("cart-url"));
         $.ajax({
-            url : $('#cart-form').attr("cart-url"), // the endpoint
+            url : $('#div-icon-cart').attr("cart-url"), // the endpoint
             type : "POST", // http method
             dataType: 'json',
-            data : { user_id : $('#cart-form').attr("user_id"), product_id : $('#cart-form').attr("product_id") }, // data sent with the post request
+            data : { user_id : $('#div-icon-cart').attr("user_id"), product_id : $('#div-icon-cart').attr("product_id") }, // data sent with the post request
             // handle a successful response
             success : function(json) {
                 console.log("success"); // another sanity check
@@ -33,16 +33,16 @@ function addtoCart() {
 };
 
 function addtoFav() {
-    if($('#cart-form').attr("user_id") == '' || !$('#cart-form').attr("user_id")){
+    if($('#div-icon-fav').attr("user_id") == '' || !$('#div-icon-fav').attr("user_id")){
         alert('please log in');
     }
     else{
-        console.log($('#fav-form').attr("fav-url"));
+        // console.log($('#fav-form').attr("fav-url"));
         $.ajax({
-            url : $('#fav-form').attr("fav-url"), // the endpoint
+            url : $('#div-icon-fav').attr("fav-url"), // the endpoint
             type : "POST", // http method
             dataType: 'json',
-            data : { user_id : $('#fav-form').attr("user_id"), product_id : $('#fav-form').attr("product_id") }, // data sent with the post request
+            data : { user_id : $('#div-icon-fav').attr("user_id"), product_id : $('#div-icon-fav').attr("product_id") }, // data sent with the post request
             // handle a successful response
             success : function(json) {
                 console.log("success"); // another sanity check
@@ -53,8 +53,8 @@ function addtoFav() {
                 // console.log(xhr.status + ": " + xhr.responseText); // provide a bit more info about the error to the console
             }
         });
-    }
 };
+}
 // using jQuery
 function getCookie(name) {
     var cookieValue = null;
