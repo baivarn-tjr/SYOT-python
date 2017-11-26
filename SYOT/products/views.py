@@ -77,7 +77,7 @@ def detail(request, product_id):
     product = Product.objects.get(id = product_id)
     quantityWarning = 20
     if request.method == 'POST':
-        try:
+        try: 
             uid = request.session['user_id']
         except KeyError:
             err = "please login before comment!"

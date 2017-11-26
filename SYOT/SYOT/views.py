@@ -12,6 +12,16 @@ def index(request):
     return render(request, 'homepage.html' , context)
 
 def about(request):
+    try:
+        data = request.POST
+        name = data['name']
+        email = data['email']
+        sub = data['subject']
+        comment = data['text']
+        
+    except KeyError:
+        pass
+
     context = {
 
     }

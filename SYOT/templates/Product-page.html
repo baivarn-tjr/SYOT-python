@@ -90,7 +90,7 @@
     			</div>
     		</div>
     		<div class="col-md-5" id="details-product">
-    			<h3><b> {{ getProduct.name }} </b></h3>
+    			<h3><b>{{ getProduct.name }} </b></h3>
     			<!-- <h6>GUARDIANS OF THE GALAXY</h6> -->
             {% if getProduct.catagory %}
               {% for catagory in getProduct.catagory.all %}
@@ -117,6 +117,15 @@
               {% endif %}
               {% if getProduct.point > 0.5 %}
     					<i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+              {% endif %}
+              {% if getProduct.point <= 0.5 %}
+              <div style="color:black; opacity:0.2;">
+                <i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+                <i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+                <i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+                <i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+                <i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+              </div>
               {% endif %}
     				</div>
     			</div>
