@@ -109,6 +109,8 @@ DATABASES = {
         'PORT': '3306',
         'OPTIONS': {
             'read_default_file': '/static/my.ini',
+            "init_command": "SET foreign_key_checks = 0;",
+
         },
     }
 }

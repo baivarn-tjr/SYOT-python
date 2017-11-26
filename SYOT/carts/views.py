@@ -48,6 +48,13 @@ def checkout(request, user_id, totalmoney):
     template = 'payment.html'
     return render(request,template,context)
 
+def payment(request):
+    context = {
+
+    }
+    template = 'thankyou.html'
+    return render(request,template,context)
+
 def delete(request, user_id, product_id):
     user = Applicant.objects.get(id=user_id)
     product = Product.objects.get(id=product_id)

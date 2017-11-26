@@ -4,31 +4,6 @@
 {% block addcssjs %}
 
     <link rel="stylesheet" type="text/css" href="{% static 'css/payment.css' %}">
-	<script type="text/javascript">
-        Stripe.setPublishableKey('{{ publishKey }}');
-        function stripeResponseHandler(status, response){
-            var $form = $('#payment-form');
-            if(response.error) {
-                $form.find('.payment-errors').text(response.error.message);
-                $form.find('.submit').prop('disabled',false);
-            } else{
-                var token = response.id;
-                $form.append($('<input type="hidden" name="stripeToken">').val(token));
-                $form.get(0).submit();
-            }
-        };
-    </script>
-{% endblock %}
-
-{% block jquery %}
-    $(function(){
-    var $form = $('#payment-form');
-    $form.submit(function(event){
-        $form.find('.submit').prop('disabled',true);
-        Stripe.card.createToken($form,stripeResponseHandler);
-        return false;
-    });
-});
 {% endblock %}
 
 {% block content %}
@@ -62,7 +37,7 @@
 	            <p style="font-family: Fjalla One; font-size:40px; text-align: center; margin-bottom:0px;">
 	            	Payment Details
 	            </p>
-				<form class='form' action="" method="post" id="payment-form"> {% csrf_token %}
+				<form class='form' action="{% url 'payment' %}" method="post" id="payment-form"> {% csrf_token %}
 	        	<div id="text">
 		          <div id="information" style="font-size: 20px;">
 		            <div class="textinput">Name on Card
