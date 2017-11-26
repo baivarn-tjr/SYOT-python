@@ -23,31 +23,51 @@ div#picture-product{
 img#sub-model-1{
 	width:80px;
 	height: 100px;
+<<<<<<< HEAD
 	padding: 5px 5px 0px 5px;
+=======
+	padding: 5px 5px 0px 5px;	
+>>>>>>> 257f3058b6350ff90c2074b53d6e3abfee0c8527
 }
 
 img#sub-model-2{
 	width:80px;
 	height: 100px;
+<<<<<<< HEAD
 	padding: 5px 5px 0px 5px;
+=======
+	padding: 5px 5px 0px 5px;	
+>>>>>>> 257f3058b6350ff90c2074b53d6e3abfee0c8527
 }
 
 img#sub-model-3{
 	width:80px;
 	height: 100px;
+<<<<<<< HEAD
 	padding: 5px 5px 0px 5px;
+=======
+	padding: 5px 5px 0px 5px;	
+>>>>>>> 257f3058b6350ff90c2074b53d6e3abfee0c8527
 }
 
 img#sub-model-4{
 	width:80px;
 	height: 100px;
+<<<<<<< HEAD
 	padding: 5px 5px 0px 5px;
+=======
+	padding: 5px 5px 0px 5px;	
+>>>>>>> 257f3058b6350ff90c2074b53d6e3abfee0c8527
 }
 
 
 #sub-model-picture.col-md-3{
 	padding-top: 50px;
+<<<<<<< HEAD
 	padding-left: 25px;
+=======
+	padding-left: 25px;		
+>>>>>>> 257f3058b6350ff90c2074b53d6e3abfee0c8527
 }
 
 div#details-product{
@@ -118,7 +138,11 @@ hr#line-user-commend{
 }
 
 /*
+<<<<<<< HEAD
 @media screen and (max-width: 1400px) {
+=======
+@media screen and (max-width: 1400px) { 
+>>>>>>> 257f3058b6350ff90c2074b53d6e3abfee0c8527
 body{
 }*/
 
@@ -128,7 +152,11 @@ p#text-review{
 
 textarea#review{
 	width:500px;
+<<<<<<< HEAD
 	height: 100px;
+=======
+	height: 100px;	
+>>>>>>> 257f3058b6350ff90c2074b53d6e3abfee0c8527
 }
 
 div.form-review{
@@ -146,15 +174,24 @@ h1 { font-size: 1.5em; margin: 10px; }
 
 /****** Style Star Rating Widget *****/
 
+<<<<<<< HEAD
 .rating {
+=======
+.rating { 
+>>>>>>> 257f3058b6350ff90c2074b53d6e3abfee0c8527
   border: none;
   float: left;
   margin-right:243px;
   margin-left:38px;
 }
 
+<<<<<<< HEAD
 .rating > input { display: none; }
 .rating > label:before {
+=======
+.rating > input { display: none; } 
+.rating > label:before { 
+>>>>>>> 257f3058b6350ff90c2074b53d6e3abfee0c8527
   margin: 5px;
   font-size: 1.25em;
   font-family: FontAwesome;
@@ -162,14 +199,24 @@ h1 { font-size: 1.5em; margin: 10px; }
   content: "\f005";
 }
 
+<<<<<<< HEAD
 .rating > .half:before {
+=======
+.rating > .half:before { 
+>>>>>>> 257f3058b6350ff90c2074b53d6e3abfee0c8527
   content: "\f089";
   position: absolute;
 }
 
+<<<<<<< HEAD
 .rating > label {
   color: #ddd;
  float: right;
+=======
+.rating > label { 
+  color: #ddd; 
+ float: right; 
+>>>>>>> 257f3058b6350ff90c2074b53d6e3abfee0c8527
 }
 
 /***** CSS Magic to Highlight Stars on Hover *****/
@@ -181,7 +228,11 @@ h1 { font-size: 1.5em; margin: 10px; }
 .rating > input:checked + label:hover, /* hover current star when changing rating */
 .rating > input:checked ~ label:hover,
 .rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+<<<<<<< HEAD
 .rating > input:checked ~ label:hover ~ label { color: #ce251c;  }
+=======
+.rating > input:checked ~ label:hover ~ label { color: #ce251c;  } 
+>>>>>>> 257f3058b6350ff90c2074b53d6e3abfee0c8527
 /*---------------------------------------------------------------------------------*/
 
 
@@ -269,7 +320,11 @@ h1 { font-size: 1.5em; margin: 10px; }
 }
 
 /* Add Animation - Zoom in the Modal */
+<<<<<<< HEAD
 .modal-content, #caption {
+=======
+.modal-content, #caption { 
+>>>>>>> 257f3058b6350ff90c2074b53d6e3abfee0c8527
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
     animation-name: zoom;
@@ -277,12 +332,20 @@ h1 { font-size: 1.5em; margin: 10px; }
 }
 
 @-webkit-keyframes zoom {
+<<<<<<< HEAD
     from {-webkit-transform:scale(0)}
+=======
+    from {-webkit-transform:scale(0)} 
+>>>>>>> 257f3058b6350ff90c2074b53d6e3abfee0c8527
     to {-webkit-transform:scale(1)}
 }
 
 @keyframes zoom {
+<<<<<<< HEAD
     from {transform:scale(0)}
+=======
+    from {transform:scale(0)} 
+>>>>>>> 257f3058b6350ff90c2074b53d6e3abfee0c8527
     to {transform:scale(1)}
 }
 
