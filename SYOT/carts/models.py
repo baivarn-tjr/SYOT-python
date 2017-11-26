@@ -30,3 +30,8 @@ class Basket(models.Model):
     quantity = models.IntegerField( null=False,default=1)
     def __str__(self):
         return str(self.id)
+
+class CompanyMoney(models.Model):
+    money = models.FloatField(null=False)
+    def __str__(self):
+        return str(self.money)

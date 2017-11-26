@@ -184,3 +184,11 @@ html, body {
 .card-description > p {
 	margin: 0;
 }
+
+.container {
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}​
