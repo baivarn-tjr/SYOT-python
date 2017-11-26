@@ -1,5 +1,5 @@
 body {
-background: url("../images/bg-login.jpg") no-repeat center center fixed;
+background: url("../images/bg-signup.jpg") no-repeat center center fixed;
 background-size: cover;
 font-size: 16px;
 font-family: 'Lato', sans-serif;
@@ -13,7 +13,7 @@ h1#title {
 font-family: 'Roboto Slab', serif;
 font-weight: 300;
 font-size: 3.2em;
-color: black;
+color: white;
 text-shadow: 0 0 10px rgba(0,0,0,0.8);
 margin: 0 auto;
 padding-top: 50px;

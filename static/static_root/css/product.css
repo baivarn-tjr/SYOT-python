@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 /*product css*/
 img#front-model{
@@ -44,89 +45,95 @@ img#sub-model-4{
 #sub-model-picture.col-md-3{
 	padding-top: 50px;
 	padding-left: 25px;
+=======
+body, html {
+	height: 100%;
+>>>>>>> 257f3058b6350ff90c2074b53d6e3abfee0c8527
 }
 
-div#details-product{
-	margin-top:20px;
-	margin-left: 45px;
+div.productSection{
+	margin-top: 50px;
 }
 
-i#review-star{
-	margin-top: 6px;
-	color: #ce251c;
+#input-search-box{
+	width: 300px;
 }
 
-p#details-product{
-	padding:5px 2px 0px 2px;
-	font-size: 13px;
+#search-box{
+	margin-left: 38%;
+	margin-bottom: 50px;
 }
 
-#icon-cart-product{
-	color: black;
+.bgimg {
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+	background-image: url(../images/batman.jpg);
+	min-height: 100%;
 }
 
-#icon-cart-product:hover{
-	color: #ce251c;
+.main {
+	padding-top: 40px;
 }
 
-div#div-icon-cart{
-	width: 0px;
-	margin: 0 0 0 0;
-	padding-left: 110px;
+.main h1 {
+	margin-bottom: 50px;
+	text-align: center;
 }
 
-#icon-fav-product{
-	color: black;
+.product {
+	margin-bottom: 30px;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
-#icon-fav-product:hover{
-	color: #ce251c;
+.product p {
+	margin-bottom: 2px;
 }
 
-div#review-section.row{
-	padding-left: 345px;
-	padding-right: 50px;
-	padding-bottom: 5px;
+.product h5 {
+	margin-top: 10px;
+	margin-bottom: 2px;
 }
 
-hr#line-review-section{
-	margin-left:300px;
-	margin-right: 200px;
-	border-bottom:  1px solid #c6c6c6;
+.product-img {
+	margin-bottom: 5px;
 }
 
-div#commend-review{
-	padding-left: 358px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
-
-img#pic-user-commend{
-	width:70px;
-	height:70px;
-}
-
-hr#line-user-commend{
-	padding-left: 200px
-	width:50px;
-	height: 70px;
-	border-left: 1px solid #c6c6c6;
-}
-
+<<<<<<< HEAD
 /*
 @media screen and (max-width: 1400px) {
 body{
 }*/
+=======
+.product-img img {
+	max-height: 415px;
+	max-width: 350px;
+>>>>>>> 257f3058b6350ff90c2074b53d6e3abfee0c8527
 
-p#text-review{
-	padding: 0 0 0 0;
-}
+	-webkit-transition: opacity 0.5s ease-in-out;
+  	-moz-transition: opacity 0.5s ease-in-out;
+  	-o-transition: opacity 0.5s ease-in-out;
+  	transition: opacity 0.5s ease-in-out;
 
+<<<<<<< HEAD
 textarea#review{
 	width:500px;
 	height: 100px;
+=======
+  	-moz-box-shadow: 0 0 10px #ccc;
+	-webkit-box-shadow: 0 0 10px #ccc;
+	box-shadow: 0 0 20px #ccc;
+>>>>>>> 257f3058b6350ff90c2074b53d6e3abfee0c8527
 }
+	
+	.product-img img:hover{
+		opacity: 0.80;
+	}
 
+<<<<<<< HEAD
 div.form-review{
 	margin-top:20px;
 	margin-left:450px;
@@ -257,3 +264,8 @@ div.form-review{
         width: 100%;
     }
 }
+=======
+#filter{
+	margin-left: 396%;
+}
+>>>>>>> 257f3058b6350ff90c2074b53d6e3abfee0c8527

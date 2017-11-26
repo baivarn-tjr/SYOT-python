@@ -11,8 +11,8 @@ ul li{
   margin-top: 10px;
   /*padding: 20px 0 0 260px;*/
 }
-.container{
-
+div.favoriteSection{
+  margin-top: 80px;
 }
 .col-md-4{
   /*padding-bottom: 120px;
