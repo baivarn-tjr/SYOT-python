@@ -143,7 +143,7 @@ a#Header{
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
-    width: 80px;
+    width: 85px;
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
