@@ -9,38 +9,39 @@
 
 {% block content %}
 
-    	<hr>
-      <div class="container">
-      <i id="heart" class="fa fa-heart fa-2x" aria-hidden="true"></i>
-      <pre id="text1">
-        FAVORITE
-      </pre>
-    <hr id="hr1">
-        <div class="row" id="test">
-        <ul class="item-in-fav" id="item-in-fav">
-        {% for item in userfav %}
-        <li class="fav-parent" product_id="{{ item.id }}">
-          <div class="col-md-4" align="center">
-            <div class="product">
-              <div class="containerr"   style='background-image:url("{{ item.pictureUrl.url }}")'>
-              </div>
-              <div class="row">
-                <div class="col-sm-9">
-                  <p>{{ item.name }}<br>{{ item.cost }} $</p>
+      	<hr></hr>
+        <div class="container">
+        <i id="heart" class="fa fa-heart fa-2x" aria-hidden="true"></i>
+        <pre id="text1" style="margin-top: 100px;">
+          FAVORITE
+        </pre>
+      <hr id="hr1">
+          <div class="row" id="test">
+          <ul class="item-in-fav" id="item-in-fav">
+          {% for item in userfav %}
+          <li class="fav-parent" product_id="{{ item.id }}">
+            <div class="col-md-4" align="center">
+              <div class="product">
+                <div class="containerr"   style='background-image:url("{{ item.pictureUrl.url }}")'>
                 </div>
-                <!-- <form > {% csrf_token %} -->
-                    <div class="col-sm-3" id="fav-form" fav-url="{% url 'deletefav' %}">
-                      <a class="nav-link" id="unfav-btn" href="#" onclick="unfav({{ user.id }},{{ item.id }});">
-                      <!-- onclick='document.forms["fav-form"].submit(); return false;'> -->
-                        <i id="heart1" class="fa fa-heart" aria-hidden="true"></i>
-                      </a>
-                    </div>
-                <!-- </form> -->
+                <div class="row">
+                  <div class="col-sm-9">
+                    <p>{{ item.name }}<br>{{ item.cost }} $</p>
+                  </div>
+                  <!-- <form > {% csrf_token %} -->
+                      <div class="col-sm-3" id="fav-form" fav-url="{% url 'deletefav' %}">
+                        <a class="nav-link" id="unfav-btn" href="#" onclick="unfav({{ user.id }},{{ item.id }});">
+                        <!-- onclick='document.forms["fav-form"].submit(); return false;'> -->
+                          <i id="heart1" class="fa fa-heart" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                  <!-- </form> -->
+                </div>
               </div>
             </div>
+          </li>
+           {% endfor %}
+            </ul>
           </div>
-        </li>
-         {% endfor %}
-          </ul>
-    </div>
+
 {% endblock %}

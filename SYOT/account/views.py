@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.http import HttpResponseRedirect
 from .models import Applicant, Shipping
-from .forms import LoginForm , ForgotPasswordForm , ResetPasswordForm , SignupForm
+from .forms import LoginForm , ForgotPasswordForm , ResetPasswordForm , SignupForm , EditForm
 from .tokens import account_activation_token
 from django.core.mail import EmailMessage
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
@@ -49,8 +49,35 @@ def profile(request):
         'city' : user.city,
         'state' : user.state,
         'zip' : user.zipcode,
+        'point' : user.point,
     }
     return render(request,'profile.html',context)
+
+def edit(request):
+    form = False
+    if request.method == 'POST':
+        form = EditForm(request.POST)
+        if form.is_valid():
+            user = Applicant.objects.get(id=request.session['user_id'])
+            user.firstname = request.POST['firstname']
+            user.lastname = request.POST['lastname']
+            user.mobile = request.POST['mobile']
+            user.address = request.POST['address']
+            user.city = request.POST['city']
+            user.state = request.POST['state']
+            user.zipcode = request.POST['zipcode']
+            user.save()
+            success = "success!"
+            # form = ForgotPasswordForm()
+            return render(request,'edit.html', {'success': success})
+
+    else:
+        form = EditForm()
+
+    context = {
+        'form' : form
+    }
+    return render(request, 'edit.html' , context)
 
 def signup(request):
     form = False

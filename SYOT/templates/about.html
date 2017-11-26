@@ -109,6 +109,9 @@
 <div class="row"  >
 <div class="col-lg-6" id="left"><h1 >CONTACT US</h1>
 	<hr></hr>
+	{% if suc %}
+		<h3>{{ suc }}</h3>
+	{% endif %}
 	<form method="post">
 		{% csrf_token %}
 		<input name="name" type="text" class="feedback-input" placeholder="Name"><br>
