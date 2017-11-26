@@ -3,6 +3,11 @@
 
 {% block addcssjs %}
     <link rel="stylesheet" type="text/css" href="{% static "css/product.css" %}">
+    <style media="screen">
+    #filter{
+    	margin-left: 90%;
+    }
+    </style>
 {% endblock %}
 
 {% block content %}
@@ -19,6 +24,18 @@
           <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" id="input-search-box">
           <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
         </form> -->
+        <form method="post">
+          <div class="Filter">
+				    <button class="btn btn-outline-dark dropdown-toggle" type="button" id="filter" data-toggle="dropdown">SORT BY:
+				    <span class="caret"></span></button>
+				    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+				      <!-- <a class="nav-link" href="{% url 'filter' newest %}" id="Header">Newest</a> -->
+				      <a class="nav-link" href="#" id="Header">Highest Rated</a>
+				      <a class="nav-link" href="#" id="Header">Price High-Low</a>
+				      <a class="nav-link" href="#" id="Header">Price Low-High</a>
+				    </ul>
+				</div>
+        </form>
         <div class="row">
           {% for product in products %}
           <div class="product col-lg-3" align="center">
