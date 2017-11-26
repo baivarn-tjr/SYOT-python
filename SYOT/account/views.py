@@ -35,8 +35,10 @@ def profile(request):
         pass
     user = Applicant.objects.get(id=uid)
     shipping_list = user.myShipping.all()
+    shipping_status = Shipping.objects.all()
     context = {
         'user' : user,
+        'shipping_status' : shipping_status,
         'shipping_list' : shipping_list,
         'firstN' : user.firstname,
         'lastN' :  user.lastname,
