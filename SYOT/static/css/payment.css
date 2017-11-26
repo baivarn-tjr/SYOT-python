@@ -83,7 +83,7 @@
 
  }
 
- #point{
+ .point{
 	 width: 100%;
    background:#ff4f2c;
    border-radius:5px;
@@ -148,6 +148,6 @@
   margin-top: 700px;
 }
 
-#total{
+.total{
 	display: inline-block;
 }

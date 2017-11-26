@@ -42,9 +42,11 @@ def cart(request,user_id):
 def checkout(request, user_id, totalmoney):
     # totalmoney = request.POST.get('totalmoney')
     # user_id = request.POST.get('user_id')
+    user = Applicant.objects.get(id=user_id)
     context = {
         'totalmoney' : totalmoney,
         'user_id' : user_id,
+        'point' : user.point,
     }
     template = 'payment.html'
     return render(request,template,context)

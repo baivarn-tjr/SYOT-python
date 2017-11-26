@@ -32,13 +32,13 @@
             <img src="{% static 'images/credit.png' %}">
           </div>
           <div>
-            <p id="total" style="margin-top:20px; font-size: 30px;font-family: Fjalla One;">
+            <p class"total" style="margin-top:20px; font-size: 30px;font-family: Fjalla One;">
               TOTAL
             </p>
-            <p id="total-point" style="margin-left:30px; font-size: 30px;font-family: Fjalla One;">
-              200 US
+            <p class="total" id="total-point" point-value="{{ point }}" style="margin-left:30px; font-size: 30px;font-family: Fjalla One;">
+              {{ point }}
             </p>
-            <div id="total" style="margin-left: 150px;"><input id="point" type="submit" value="USE POINT"/></div>
+            <div class="total" style="margin-left: 150px;"><input id="use-point" class="point" type="submit" value="USE POINT"/></div>
         </div>
       </div>
 

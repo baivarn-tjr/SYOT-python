@@ -31,6 +31,7 @@ class Applicant(models.Model):
     city = models.CharField(max_length=128, default=None)
     state = models.CharField(max_length=128, default=None)
     zipcode = models.CharField(max_length=5, default=None)
+    point = models.IntegerField(default=0)
     is_activated = models.CharField(
         max_length=2,
         choices=ACTIVE_TYPE,
