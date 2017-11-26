@@ -22,6 +22,7 @@ def index(request):
     return render(request, template , context)
 
 def catalog(request):
+    # products = Product.objects.all().order_by('?')[:100]
     products = Product.objects.all().order_by('date_modified').reverse()
     context = {
             'products' : products,
@@ -58,6 +59,13 @@ def filter(request,type):
                 }
             template = 'product.html'
             return render(request, template , context)
+    elif type == "priceLowHigh":
+            products = Product.objects.all().order_by('cost')
+            context = {
+                    'products' : products,
+                }
+            template = 'product.html'
+            return render(request, template , context)
 
 
 def detail(request, product_id):
@@ -69,7 +77,7 @@ def detail(request, product_id):
     product = Product.objects.get(id = product_id)
     quantityWarning = 20
     if request.method == 'POST':
-        try:
+        try: 
             uid = request.session['user_id']
         except KeyError:
             err = "please login before comment!"
@@ -116,7 +124,7 @@ def search(request):
     name = data['search_name']
     count = 0
 
-    toys = Product.objects.filter(name__contains = name)
+    toys = Product.objects.filter(name__icontains = name)
 
     for i in toys:
         count = count + 1

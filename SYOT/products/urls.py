@@ -12,7 +12,7 @@ urlpatterns = [
     url(r'^products/search/',views.search, name='search'),
     url(r'^addtocart/$', views.addtocart, name='addtocart'),
     url(r'^addtofav/$', views.addtofav, name='addtofav'),
-    url(r'^products/(?P<type>[0-9A-Za-z_\-]+)$',views.filter, name='filter'),
+    url(r'^filter/(?P<type>[0-9A-Za-z_\-]+)$',views.filter, name='filter'),
     # url(r'^addtocart/(?P<user_id>[0-9]+)/(?P<product_id>[0-9]+)/$', views.addtocart, name='addtocart'),
     # url(r'^addtofav/(?P<user_id>[0-9]+)/(?P<product_id>[0-9]+)/$', views.addtofav, name='addtofav'),
 

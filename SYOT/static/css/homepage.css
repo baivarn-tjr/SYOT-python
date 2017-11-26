@@ -1,20 +1,11 @@
-div#first-promote{
-	margin: 52px 0px 0px 0px;
-	height: 448px;
-}
 
-div#promote{
-	height: 448px;
-}
 
-div#recommend{
-	height: 448px;
-}
+
 
 #blockRec{
 	padding-top: 20px;
 	display: block;
-	height: 350px;
+	height: 500px;
 }
 
 #recImg{

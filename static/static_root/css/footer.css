@@ -19,7 +19,7 @@ a#icon-footer.nav-link:visited
    	text-decoration: none;
    	width: 15px;
 	height: 30px;
-	padding: 5px 5px 5px 5px;	
+	padding: 5px 5px 5px 5px;
 }
 
 a#icon-footer.nav-link:hover
@@ -45,6 +45,8 @@ p#footer{
 	color:#ce251c;
 	text-decoration: none;
 }
+<<<<<<< HEAD
+=======
 
 .wrapper {
    display: block;
@@ -54,3 +56,4 @@ p#footer{
    height: 280px;
    display: block;
 }
+>>>>>>> f6a0b0062c2cbe1ddde8605a56f5f1c84f569e57

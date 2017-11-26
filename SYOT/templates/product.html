@@ -2,11 +2,87 @@
 {% load staticfiles %}
 
 {% block addcssjs %}
-    <link rel="stylesheet" type="text/css" href="{% static "css/product.css" %}">
+    <!-- <link rel="stylesheet" type="text/css" href="{% static "css/product.css" %}"> -->
     <style media="screen">
-    #filter{
-    	margin-left: 90%;
+    body, html {
+      height: 100%;
     }
+
+    div.productSection{
+      margin-top: 50px;
+    }
+
+    #input-search-box{
+      width: 300px;
+    }
+
+    #search-box{
+      margin-left: 38%;
+      margin-bottom: 50px;
+    }
+
+    .bgimg {
+      background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+      background-image: url(../images/batman.jpg);
+      min-height: 100%;
+    }
+
+    .main {
+      padding-top: 40px;
+    }
+
+    .main h1 {
+      margin-bottom: 50px;
+      text-align: center;
+    }
+
+    .product {
+      margin-bottom: 30px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .product p {
+      margin-bottom: 2px;
+    }
+
+    .product h5 {
+      margin-top: 10px;
+      margin-bottom: 2px;
+    }
+
+    .product-img {
+      margin-bottom: 5px;
+    }
+
+    #images{
+      height: 415px;
+      width: 283px;
+    }
+
+    .product-img img {
+
+      -webkit-transition: opacity 0.5s ease-in-out;
+        -moz-transition: opacity 0.5s ease-in-out;
+        -o-transition: opacity 0.5s ease-in-out;
+        transition: opacity 0.5s ease-in-out;
+
+        -moz-box-shadow: 0 0 10px #ccc;
+      -webkit-box-shadow: 0 0 10px #ccc;
+      box-shadow: 0 0 20px #ccc;
+    }
+
+      .product-img img:hover {
+        opacity: 0.80;
+      }
+      #filter{
+      	margin-left: 90%;
+        margin-bottom: 50px;
+      }
     </style>
 {% endblock %}
 
@@ -33,18 +109,46 @@
 				      <a class="nav-link" href="{% url 'filter' 'newest' %}" id="Header">Newest</a>
 				      <a class="nav-link" href="{% url 'filter' 'point' %}" id="Header">Highest Rated</a>
 				      <a class="nav-link" href="{% url 'filter' 'priceHighLow' %}" id="Header">Price High-Low</a>
-				      <a class="nav-link" href="#" id="Header">Price Low-High</a>
+				      <a class="nav-link" href="{% url 'filter' 'priceLowHigh' %}" id="Header">Price Low-High</a>
+              <a class="nav-link" href="{% url 'product' %}" id="Header">Reset</a>
 				    </ul>
 				</div>
         </form>
         <div class="row">
           {% for product in products %}
           <div class="product col-lg-3" align="center">
-            <a href="{% url 'detail' product.id %}"><div class="product-img "><img src="{{ product.pictureUrl.url }}"></div></a>
+            <a href="{% url 'detail' product.id %}"><div class="product-img "><img  id="images" src="{{ product.pictureUrl.url }}"></div></a>
             <div>
               <h5>{{ product.name }}</h5>
               <!-- <p>This is an awesome Batman model</p> -->
+              <div style="color:red;">
+                {% if product.point > 4 %}
+                <i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+                {% endif %}
+                {% if product.point > 3 %}
+                <i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+                {% endif %}
+                {% if product.point > 2 %}
+                <i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+                {% endif %}
+                {% if product.point > 1 %}
+                <i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+                {% endif %}
+                {% if product.point > 0 %}
+                <i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+                {% endif %}
+                {% if product.point == 0 %}
+                <div style="color:black; opacity:0.1;">
+                  <i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" id="review-star" aria-hidden="true"></i>
+                </div>
+                {% endif %}
+              </div>
               <p>{{ product.cost }} USD</p>
+
             </div>
           </div>
           {% endfor %}

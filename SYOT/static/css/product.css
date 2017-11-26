@@ -17,9 +17,9 @@ div.productSection{
 
 .bgimg {
 	background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
 
 	background-image: url(../images/batman.jpg);
 	min-height: 100%;
@@ -53,20 +53,27 @@ div.productSection{
 	margin-bottom: 5px;
 }
 
+#images{
+	height: 415px;
+	width: 283px;
+}
+
 .product-img img {
-	max-height: 415px;
-	max-width: 350px;
 
 	-webkit-transition: opacity 0.5s ease-in-out;
-  	-moz-transition: opacity 0.5s ease-in-out;
-  	-o-transition: opacity 0.5s ease-in-out;
-  	transition: opacity 0.5s ease-in-out;
+		-moz-transition: opacity 0.5s ease-in-out;
+		-o-transition: opacity 0.5s ease-in-out;
+		transition: opacity 0.5s ease-in-out;
 
-  	-moz-box-shadow: 0 0 10px #ccc;
+		-moz-box-shadow: 0 0 10px #ccc;
 	-webkit-box-shadow: 0 0 10px #ccc;
 	box-shadow: 0 0 20px #ccc;
 }
 
 	.product-img img:hover {
 		opacity: 0.80;
+	}
+	#filter{
+		margin-left: 90%;
+		margin-bottom: 50px;
 	}

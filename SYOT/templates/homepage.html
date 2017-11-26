@@ -3,56 +3,132 @@
 
 {% block addcssjs %}
     <link rel="stylesheet" type="text/css" href='{% static "css/homepage.css" %}' />
+    <style media="screen">
+    div#recommend{
+    	height: 610px;
+    }
+    #blockRec{
+    	padding-top: 20px;
+    	display: block;
+    	height: 500px;
+    }
+    div#first-promote{
+    	margin: 52px 0px 0px 0px;
+    	height: 500px;
+    }
+
+    div#promote{
+    	height: 500px;
+    }
+    body, html {
+      height: 100%;
+    }
+
+    div.productSection{
+      margin-top: 50px;
+    }
+
+    #input-search-box{
+      width: 300px;
+    }
+
+    #search-box{
+      margin-left: 38%;
+      margin-bottom: 50px;
+    }
+
+    .bgimg {
+      background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+      background-image: url(../images/batman.jpg);
+      min-height: 100%;
+    }
+
+    .main {
+      padding-top: 40px;
+    }
+
+    .main h1 {
+      margin-bottom: 50px;
+      text-align: center;
+    }
+
+    .product {
+      margin-bottom: 30px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .product p {
+      margin-bottom: 2px;
+    }
+
+    .product h5 {
+      margin-top: 10px;
+      margin-bottom: 2px;
+    }
+
+    .product-img {
+      margin-bottom: 5px;
+    }
+
+    #images{
+      height: 415px;
+      width: 283px;
+    }
+
+    .product-img img {
+
+      -webkit-transition: opacity 0.5s ease-in-out;
+        -moz-transition: opacity 0.5s ease-in-out;
+        -o-transition: opacity 0.5s ease-in-out;
+        transition: opacity 0.5s ease-in-out;
+
+        -moz-box-shadow: 0 0 10px #ccc;
+      -webkit-box-shadow: 0 0 10px #ccc;
+      box-shadow: 0 0 20px #ccc;
+    }
+
+      .product-img img:hover {
+        opacity: 0.80;
+      }
+      #filter{
+        margin-left: 90%;
+        margin-bottom: 50px;
+      }
+    </style>
 {% endblock %}
 
 {% block content %}
   <!-- Homepage Section -->
-<div id="first-promote" style="background-color: red">
-  <h1>First Paragraph</h1>
-</div>
-<div id="recommend">
-  <h1 style="margin-left: 680px;">Recommended</h1>
-  <div id="blockRec">
-    <div class="row">
-      <div class="col-lg-3" align="center">
-        <a href="#"><img src="{% static 'images/babygroot.jpg' %}" id="recImg"></a>
-        <div id="details">
-          <h5>Babygroot</h5>
-          <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
-          <p>$99.00</p>
-        </div>
-      </div>
-      <div class="col-lg-3" align="center">
-        <a href="#"><img src="{% static 'images/babygroot.jpg' %}" id="recImg"></a>
-        <div id="details">
-          <h5>Babygroot</h5>
-          <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
-          <p>$99.00</p>
-        </div>
-      </div>
-      <div class="col-lg-3" align="center">
-        <a href="#"><img src="{% static 'images/babygroot.jpg' %}" id="recImg"></a>
-        <div id="details">
-          <h5>Babygroot</h5>
-          <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
-          <p>$99.00</p>
-        </div>
-      </div>
-      <div class="col-lg-3" align="center">
-        <a href="#"><img src="{% static 'images/babygroot.jpg' %}" id="recImg"></a>
-        <div id="details">
-          <h5>Babygroot</h5>
-          <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
-          <p>$99.00</p>
-        </div>
-      </div>
+  <div id="first-promote" style="background-image: url({% static 'images/flash-homepage.jpg' %}); background-size: 100% 100%;">
+    <h1>Kanoktat</h1>
+   	</div>
+    <div id="promote" style="background-image: url({% static 'images/luke-homepage.jpg' %}); background-size: 100% 100%;">
+      <h1>Second Paragraph</h1>
     </div>
+    <div id="recommend">
+      <h1 style="text-align: center; margin-bottom: 50px; margin-top: 40px; text-transform: uppercase;">Recommended</h1>
+      <div class="row" id="recommend">
+        {% for product in product %}
+            <div class="product col-lg-3" align="center">
+              <a href="{% url 'detail' product.id %}"><div class="product-img "><img id="images" src="{{ product.pictureUrl.url }}"></div></a>
+              <div>
+                <h5>{{ product.name }}</h5>
+                <!-- <p>This is an awesome Batman model</p> -->
+                <p>{{ product.cost }} USD</p>
+              </div>
+            </div>
+        {% endfor %}
+      </div>
   </div>
-</div>
-<div id="promote" style="background-color:green">
-  <h1>Second Paragraph</h1>
-</div>
-<div id="promote" style="background-color:yellow">
-  <h1>Third Paragraph</h1>
-</div>
+  <div id="first-promote" style="background-image: url({% static 'images/batman-homepage.png' %}); background-size: 100% 100%;">
+    <h1>Kanoktat</h1>
+    </div>
+    <!-- <div id="first-promote" style="background-image: url({% static 'images/iron-homepage.jpg' %}); background-size: 100% 100%;">
+      <h1>Kanoktat</h1>
+      </div> -->
 {% endblock %}

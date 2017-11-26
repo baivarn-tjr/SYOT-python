@@ -5,6 +5,18 @@
 #text{
 	font-size: 40px;
 }
+<<<<<<< HEAD
+.textinput{
+	color: gray;
+	margin-top: 20px;
+	font-size: 15px;
+}
+#box{
+	margin-top: 20px;
+}
+.card{
+  color:black;
+=======
 
 .textinput {
 	color: grey;
@@ -22,6 +34,7 @@
   display: block;
   margin: auto;
   color: black;
+>>>>>>> f6a0b0062c2cbe1ddde8605a56f5f1c84f569e57
   font-family: Helvetica, Arial, sans-serif;
   font-weight:500;
   font-size: 18px;
@@ -32,7 +45,11 @@
   transition: all 0.3s;
   padding: 13px;
   margin-bottom: 15px;
+<<<<<<< HEAD
+  width:400px;
+=======
   min-width: 60%;
+>>>>>>> f6a0b0062c2cbe1ddde8605a56f5f1c84f569e57
   box-sizing: border-box;
   outline:0;
 }
@@ -53,7 +70,11 @@
   outline:0;
 }
 .cardcvv{
+<<<<<<< HEAD
+	margin-left: 35px;
+=======
 	/*margin-left: 35px;*/
+>>>>>>> f6a0b0062c2cbe1ddde8605a56f5f1c84f569e57
 	color:black;
   font-family: Helvetica, Arial, sans-serif;
   font-weight:500;
@@ -64,14 +85,22 @@
   border:2px solid gray;
   transition: all 0.3s;
   padding: 13px;
+<<<<<<< HEAD
+  margin-bottom: 15px;
+=======
   /*margin-bottom: 15px;*/
+>>>>>>> f6a0b0062c2cbe1ddde8605a56f5f1c84f569e57
   width:20%;
   box-sizing: border-box;
   outline:0;
 }
 
 #cvv{
+<<<<<<< HEAD
+  margin-left: 43px;
+=======
   margin-left: 25px;
+>>>>>>> f6a0b0062c2cbe1ddde8605a56f5f1c84f569e57
 }
 
 .buy{
@@ -92,7 +121,11 @@
  #submit{
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   width: 100%;
+<<<<<<< HEAD
+  background:#ce251c;
+=======
   background:#ff4f2c;
+>>>>>>> f6a0b0062c2cbe1ddde8605a56f5f1c84f569e57
   border-radius:5px;
   border:0;
   cursor:pointer;
@@ -131,6 +164,15 @@
   margin-top: 42px;
 }
 
+<<<<<<< HEAD
+.credit{
+  margin-top:130px;
+}
+
+#fix-footer{
+  margin-top: 700px;
+}
+=======
 #fix-footer{
   margin-top: 100px;
 }
@@ -158,3 +200,4 @@
   text-align: center;
   padding-right: 30%;
 }
+>>>>>>> f6a0b0062c2cbe1ddde8605a56f5f1c84f569e57
