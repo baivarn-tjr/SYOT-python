@@ -27,6 +27,7 @@ class Product(models.Model):
     pictureUrl = models.ImageField(upload_to = get_product_image_path, blank = True, null = True)
     count = models.PositiveIntegerField(default = 0)
     point = models.PositiveIntegerField(default=0, null = True)
+    # date_modified = models.FloatField(null = True)
     date_modified = models.DateTimeField(default=datetime.now()+timedelta(days=30))
 
     def __str__(self):
