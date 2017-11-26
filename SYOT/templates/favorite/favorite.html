@@ -22,7 +22,8 @@
         <li class="fav-parent" product_id="{{ item.id }}">
           <div class="col-md-4" align="center">
             <div class="product">
-              <img id="pic3" src="{{ item.pictureUrl.url }}">
+              <div class="container"   style='background-image:url("{{ item.pictureUrl.url }}")'>
+              </div>
               <div class="row">
                 <div class="col-sm-9">
                   <p>{{ item.name }}<br>{{ item.cost }} $</p>
