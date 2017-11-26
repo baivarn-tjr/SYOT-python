@@ -38,3 +38,37 @@ div#recommend{
 	height:100%;
 
 }
+
+#theFlash{
+	color: white;
+	padding-top:80px;
+	padding-left:50px; 
+}
+
+#skywalker{
+	text-align: right;
+	color: black;
+	padding-top: 80px;
+	padding-right:50px; 
+}
+
+#batman{
+	color: white;
+	padding-top:80px;
+	padding-left:50px; 
+}
+
+#rightBut{
+	margin-left: 125px;
+}
+
+#rightBut2{
+	margin-left: 85px;
+}
+
+#leftBut{
+	margin-right: 150px;
+}
+
+
+
