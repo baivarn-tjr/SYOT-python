@@ -1,6 +1,10 @@
+
 nav#Header{
 	background-color: white;
-	padding: 8px 0 8px 0;
+	padding: 5px 0 2px 0;  
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #bfc0c1;
 }
 #Left-Header{
 	padding-left: 42px;
@@ -26,6 +30,37 @@ a#Header{
 	color: black;
 }
 
+#navHeaderCenter{
+	margin-left:4%;
+	margin-right:4%;
+}
+
+#rightHeader{
+  margin-left: 14%;
+  padding-left: 0px;
+}
+
+/*@media screen and (max-width: 600px) {
+  #Header a:not(:first-child) {display: none;}
+  #Header a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #Header.responsive {position: relative;}
+  #Header.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  #Header.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }*/
+
 /*login Dialog Section*/
 .modal-dialog {
     width: 300px;
@@ -47,6 +82,117 @@ a#Header{
     color:white;
 }
 
-/*#search-box{
+/* SearchBox*/
+.clearable{
+  background: #fff url(http://i.stack.imgur.com/mJotv.gif) no-repeat right -20px center;
+  border-radius: 3px;
+  transition: background 0.4s;
+}
 
-}*/
+.clearable.x { 
+  background-position: right 5px center; 
+}
+
+.clearable.onX{ 
+  cursor: pointer;
+}          
+
+.clearable::-ms-clear{
+  display: none;
+  width:0; 
+  height:0;
+}
+
+/*----------DropDown--------------*/
+
+.dropbtn {
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 80px;
+    background-color: #fcfcfc;
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover{
+  color:#ce251c;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    width: 85px;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+#logo{
+  margin-left: 50px;
+}
+
+@media only screen and (max-width: 1130px){
+   input#searchBox{
+    width: 150px;
+   }
+  /* div#navHeaderCenter{
+    margin-left: 20px;
+    margin-right: 20px;
+   }
+   div#navbarCollapse{
+    width: 180px;
+   }*/
+}
+@media only screen and (max-width: 991px){
+  input#searchBox{
+    width:100px;
+  }
+  div.col-lg-3{
+    width: 184.8px;
+  }
+  div.col-lg-1{
+    width: 61.6px;
+  }
+  div.col-lg-4{
+    width: 220.03px;
+  }
+  div#navHeaderCenter{
+    padding-left:0px;
+    padding-right:0px;
+   }
+  div.justify-content-end{
+    width: 150.04px;
+  }
+  li#tabHeader{
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  li#Left-Header{
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
