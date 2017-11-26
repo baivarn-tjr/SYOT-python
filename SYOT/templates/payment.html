@@ -25,7 +25,7 @@
 	</div> -->
 
 
-	<div id="payment-section">
+  <div id="payment-section">
 	    <div class="box left">
 	        <div class="credit">
 	          <img src="images/credit.png">
@@ -37,7 +37,6 @@
 	            <p style="font-family: Fjalla One; font-size:40px; text-align: center; margin-bottom:0px;">
 	            	Payment Details
 	            </p>
-				<form class='form' action="{% url 'payment' %}" method="post" id="payment-form"> {% csrf_token %}
 	        	<div id="text">
 		          <div id="information" style="font-size: 20px;">
 		            <div class="textinput">Name on Card
@@ -54,7 +53,6 @@
 		          	<div id="box"><input id="submit" type="submit" value="Pay"/></div>
 		          </div>
   				</div>
-			</form>
   			</div>
   		</div>
   	</div>
