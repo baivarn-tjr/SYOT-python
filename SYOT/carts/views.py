@@ -4,8 +4,9 @@ from django.core.urlresolvers import reverse
 
 from products.models import Product
 
-from .models import Basket
+from .models import Basket, CompanyMoney
 from account.models import Applicant
+
 
 def calMoney(userBasket,usercart,carts):
     money = 0
@@ -48,9 +49,22 @@ def checkout(request, user_id, totalmoney):
     template = 'payment.html'
     return render(request,template,context)
 
-def payment(request):
+def payment(request, user_id ,totalmoney):
+    item = get_object_or_404(CompanyMoney, pk=1)
+    item.money += float(totalmoney)
+    item.save()
+    # user = Applicant.objects.get(id=user_id)
+    userr = Applicant.objects.get(id=user_id)
+    userBasket = userr.myBasket.all()
+    for product in userBasket:
+        a = Basket.objects.get(userId=userr, productID=product)
+        a.delete()
+    # itemfav = get_object_or_404(FavoriteItem, userId=user)
+    # itemfav.delete()
+    # print(FavoriteItem.objects.filter(userId=user))
+    # FavoriteItem.objects.filter(userId=user).delete()
+    # user.myFav.all().delete()
     context = {
-
     }
     template = 'thankyou.html'
     return render(request,template,context)

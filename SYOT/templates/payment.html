@@ -37,7 +37,7 @@
 	            <p style="font-family: Fjalla One; font-size:40px; text-align: center; margin-bottom:0px;">
 	            	Payment Details
 	            </p>
-				<form class='form' action="{% url 'payment' %}" method="post" id="payment-form"> {% csrf_token %}
+				<form class='form' action="{% url 'payment' request.session.user_id totalmoney %}" method="post" id="payment-form"> {% csrf_token %}
 	        	<div id="text">
 		          <div id="information" style="font-size: 20px;">
 		            <div class="textinput">Name on Card
