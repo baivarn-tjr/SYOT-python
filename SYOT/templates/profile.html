@@ -36,8 +36,8 @@
             <h6>MOBILE</h6>
             <h6>ADDRESS</h6>
             <h6>STATUS</h6>
-            {% for shipping in user.shipping_set.all %}
-              <h6 style="font-size:140%;">{{ shipping.productID }}</h6>
+            {% for shipping in shipping_list %}
+              <h6>{{ shipping.productID }}</h6>
             {% endfor %}
           </pre>
         </div>
@@ -54,8 +54,8 @@
             <h6>{{ mobile }}</h6>
             <h6>{{ address }} {{ city }} {{ state }} {{ zip }}</h6>
             <div class="dot"><h6>   shiping</h6></div>
-            {% for shipping in user.shipping_set.all %}
-              <h6 style="font-size:140%;">{{ shipping.status }}</h6>
+            {% for shipping in shipping_list %}
+              <h6>{{ shipping.status }}</h6>
             {% endfor %}
           </pre>
         </div>

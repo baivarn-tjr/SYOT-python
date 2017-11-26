@@ -48,7 +48,8 @@ class Applicant(models.Model):
     #     return "%s %s (%s)" % (    self.username,
     #                                 self.tel,
     #                                 self.email)
-
+    def __str__(self):
+        return str(self.username)
     @staticmethod
     def find_by_username(username):
         try:
@@ -69,6 +70,7 @@ class Applicant(models.Model):
 
     def check_password(self, password):
         return check_hashed_password(password, self.hashed_password)
+
 
 class Shipping(models.Model):
     time = models.DateTimeField(auto_now_add=True, auto_now=False)
