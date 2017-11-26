@@ -10,7 +10,7 @@ class Migration(migrations.Migration):
     dependencies = [
         ('products', '0001_initial'),
         ('carts', '0002_basket_userid'),
-        ('favorite', '0002_favorite_userid'),
+        ('favorite', '__first__'),
         ('account', '0001_initial'),
     ]
 
