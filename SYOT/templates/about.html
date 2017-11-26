@@ -1,0 +1,149 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block addcssjs %}
+		<style media="screen">
+		#textL{
+	margin-left: 80px;
+	}
+	#left{
+		padding-left: 17%;
+		text-align: center;
+	}
+	#right{
+		padding-left: 5%;
+		padding-right: 15%;
+		text-align: center;
+	}
+	hr{
+
+	padding-left: 25%;
+	border-bottom:1px solid #848484;
+	width: 70%;
+
+	}
+	#infor{
+	text-align: center;
+	padding-top: 20px;
+	font-size: 20px;
+	}
+	.header{
+	margin-top: 100px;
+	}
+
+	.feedback-input {
+	color:black;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight:500;
+	font-size: 18px;
+	border-radius: 5px;
+	line-height: 22px;
+	background-color: transparent;
+	border:2px solid #ff4f2c;
+	transition: all 0.3s;
+	padding: 13px;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	width:400px;
+	box-sizing: border-box;
+	outline:0;
+	}
+
+	textarea{
+	height: 120px;
+	line-height: 150%;
+	margin-bottom:20px;
+	}
+
+	.feedback-input:focus {
+	border:2px solid #ce251c;
+	}
+
+	#submit{
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+	width:400px;
+	background:#ff4f2c;
+	border-radius:5px;
+	border:0;
+	cursor:pointer;
+	color:white;
+	font-size:24px;
+	padding-top:10px;
+	padding-bottom:10px;
+	transition: all 0.3s;
+	margin-top:-4px;
+	font-weight:700;
+	}
+
+	#submit:hover{
+	background:#ce251c;
+	}
+
+	.submit{
+	margin-top:20px;
+	}
+
+	#information{
+	margin-top: 42px;
+	}
+
+	#map{
+	margin-top:30px;
+	margin-left: 40px;
+	width:400px;
+	height: 280px;
+	}
+
+
+	.hr-left,.hr-right{
+	border-top: none;
+	border-bottom:1px solid #848484;
+	}
+
+	#fix-footer{
+	margin-top: 100px;
+	}
+		</style>
+{% endblock %}
+{% block content %}
+<div class="header">
+<div class="row"  >
+<div class="col-lg-6" id="left"><h1 >CONTACT US</h1>
+	<hr></hr>
+	<form method="post">
+		<input name="name" type="text" class="feedback-input" placeholder="Name"><br>
+									<input name="email" type="email" class="feedback-input" placeholder="Email"><br>
+									<input name="subject" type="text" class="feedback-input" placeholder="Subject"><br>
+									<textarea name="text" class="feedback-input" placeholder="Comment"></textarea><br>
+									<div class="submit">
+										<input id="submit" type="submit" value="SUBMIT"></div>
+	</form>
+</div>
+<div class="col-lg-6" id="right"><h1>INFORMATION</h1>
+	<hr></hr>
+	<p id="infor">
+						Address: 50 Ngam Wong Wan Road <br>Ladyaow Chatuchak Bangkok 10230<br>
+						Email: SYOT@gmail.com<br>
+						Facebook: SYOT-The best online toys store<br>
+						Tel: 02-9428200<br>
+						<div id="map"></div>
+						<script>
+							function initMap() {
+								var uluru = {lat: 13.8463613, lng:100.5711059};
+								var map = new google.maps.Map(document.getElementById('map'), {
+									zoom:16,
+									center: uluru
+								});
+								var marker = new google.maps.Marker({
+									position: uluru,
+									map: map
+								});
+							}
+						</script>
+						<script async defer
+							src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD30SRcIi_ElHjWrV0sd4m6A-YiTKfM4WM&callback=initMap">
+						</script>
+	</p>
+</div>
+</div>
+</div>
+{% endblock %}

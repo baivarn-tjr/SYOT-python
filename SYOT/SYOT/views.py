@@ -10,3 +10,9 @@ def index(request):
         'count' : count,
     }
     return render(request, 'homepage.html' , context)
+
+def about(request):
+    context = {
+
+    }
+    return render(request, 'about.html' , context)
