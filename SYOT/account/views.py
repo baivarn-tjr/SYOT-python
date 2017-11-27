@@ -101,7 +101,7 @@ def signup(request):
             token = account_activation_token.make_token(user)
             user.token = token
             user.save()
-            domain = 'http://localhost:8000'
+            domain = 'http://wwww.syotshop.xyz'
             uid = urlsafe_base64_encode(force_bytes(user.pk))
             message = render_to_string('activated_account_email.html', {
                 'user': user,
@@ -196,7 +196,7 @@ def forgotCheck(request):
             user.token = token
             user.reset_password = 'RS'
             user.save()
-            domain = 'http://localhost:8000'
+            domain = 'http://www.syotshop.xyz'
             uid = urlsafe_base64_encode(force_bytes(user.pk))
             message = render_to_string('reset_password_email.html', {
                 'user': user,
